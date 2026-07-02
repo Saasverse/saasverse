@@ -1,0 +1,137 @@
+import React from 'react';
+import PageBanner from '../components/PageBanner';
+import SalesforceServiceReuseable from '../components/SalesforceServiceReuseable';
+import CTASection from '../components/Home/CTASection';
+import HealthSolution from '../work-salesforce-health-cloud/HealthSolution';
+import CertificateSlider from '../components/Home/CertificateSlider';
+import OurPartners from '../components/Home/OurPartners';
+import FaqReuseable from '../components/FaqReuseable';
+import ContactForm from '../components/ContactForm';
+import WhyChooseUs from '../about/WhyChooseUs';
+
+const faqs = [
+  {
+    question: 'Why hire Salesforce Consultants?',
+    answer:
+      'Hiring Salesforce Consultants will make sure that your Salesforce implementation is perfectly aligned with your business goals and delivers maximum ROI.',
+  },
+  {
+    question: 'Can you customize Salesforce to fit my business needs?',
+    answer:
+      'Absolutely. Our Consultants specialize in customizing Salesforce solutions – be it CRM, Marketing Cloud, Mobile App development, or CDP – to meet your specific business requirements.',
+  },
+  {
+    question:
+      'What is the typical engagement process with Saasverse Consultants?',
+    answer:
+      'Our engagement process is client-centric, starting with understanding your business needs, followed by providing strategic Salesforce consultancy tailored to those needs. We work either on a project basis or time & material contracts.',
+  },
+  {
+    question: 'How long does it take to hire Saasverse Consultants?',
+    answer:
+      'Our efficient hiring process ensures that you can quickly onboard a skilled Salesforce Consultant, often within a few days to a few weeks, depending on your specific requirements.',
+  },
+  {
+    question: 'Can Saasverse provide ongoing support after implementation?',
+    answer:
+      'Yes, we offer ongoing support and consultancy to ensure your Salesforce ecosystem continues to evolve with your business, delivering continual value.',
+  },
+  {
+    question:
+      'How do I get started with hiring Salesforce Consultants from Saasverse?',
+    answer:
+      'Starting is simple. Contact us, and we will guide you through our straightforward process to connect you with the ideal Salesforce consultant for your needs.',
+  },
+];
+
+const benefits = [
+  {
+    title: 'Unified Customer Experience:',
+    description:
+      'Deliver a seamless omnichannel experience, whether customers shop online, in-store, or through mobile apps.',
+  },
+  {
+    title: 'Personalized Customer Engagement:',
+    description:
+      'Gain a single view of your customer and leverage data to personalize marketing campaigns, product recommendations, and loyalty programs.',
+  },
+  {
+    title: 'Empowered Sales Associates:',
+    description:
+      'Equip your sales associates with real-time customer data and mobile tools to provide exceptional service and close deals on the go.',
+  },
+  {
+    title: 'Inventory Management & Optimization:',
+    description:
+      'Gain real-time visibility into inventory levels across all channels, optimize stock allocation, and minimize stockouts.',
+  },
+  {
+    title: 'Streamlined Order Management:',
+    description:
+      'Offer a frictionless buying experience with efficient order fulfillment across online and in-store purchases.',
+  },
+  {
+    title: 'Enhanced Loyalty Programs:',
+    description:
+      'Design and manage engaging loyalty programs that foster customer relationships and drive repeat business.',
+  },
+];
+const page = () => {
+  return (
+    <>
+      <PageBanner
+        image="/images/banner/industrybanner.webp"
+        title="Reimagine Retail"
+        description="Salesforce Solutions for the Modern Shopping Experience"
+      />
+
+      <SalesforceServiceReuseable
+        heading="Why Salesforce for Retail?"
+        benefits={benefits}
+      />
+
+      <CTASection />
+
+      <HealthSolution
+        title="Saasverse Expertise in"
+        highlight="Retail"
+        description="Healthcare"
+        image="/images/websiteimages/20.webp"
+        imageAlt="Salesforce Healthcare Cloud Solution"
+        solutions={[
+          {
+            title: 'Tailored Retail Cloud Solutions',
+            description:
+              'Customize Salesforce Retail Cloud to fit your business—whether you’re a large store, boutique, or online retailer.',
+          },
+          {
+            title: 'Unified System Integration',
+            description:
+              'Seamlessly connect your eCommerce, POS, and other platforms for a comprehensive view of operations and customer data.',
+          },
+          {
+            title: 'Custom Solutions for Retail Challenges',
+            description:
+              'Address unique needs like managing in-store promotions, enhancing social media marketing, or improving click-and-collect experiences.',
+          },
+          {
+            title: 'Training and Continuous Support',
+            description:
+              'Ensure your team is confident and capable with expert-led onboarding, training, and ongoing support.',
+          },
+        ]}
+      />
+
+      <WhyChooseUs />
+      <CertificateSlider />
+
+      <OurPartners />
+
+      <FaqReuseable title="FAQ" faqs={faqs} />
+
+      <ContactForm />
+    </>
+  );
+};
+
+export default page;
