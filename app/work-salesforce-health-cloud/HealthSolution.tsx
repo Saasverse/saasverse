@@ -23,7 +23,7 @@ export default function HealthSolution({
   solutions,
 }: HealthSolutionProps) {
   return (
-    <section className="py-5">
+    <section className="py-10">
       <div className="mx-auto max-w-7xl px-6">
         <div className="grid items-center gap-12 lg:grid-cols-2">
           
@@ -47,8 +47,8 @@ export default function HealthSolution({
               </span>
             </h2>
 
-            <p className="mt-6 text-lg leading-relaxed text-slate-600">
-              {description}
+            <p className="mt-6  leading-relaxed text-slate-600">
+              {/* {description} */}
             </p>
 
             <div className="mt-1 space-y-1">

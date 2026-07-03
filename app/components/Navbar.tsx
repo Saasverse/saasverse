@@ -70,7 +70,7 @@ const menuItems: MenuItem[] = [
       { name: "Retail", href: "/retail-industry" },
       { name: "Education", href: "/education-industry" },
       { name: "Energy", href: "/energy-industry" },
-      { name: "Technology", href: "/technology-industry" },
+      // { name: "Technology", href: "/technology-industry" },
       { name: "Travel & Hospitality", href: "/travels-hospitality-industry" },
       { name: "Financial", href: "/financial-industry" },
     ],

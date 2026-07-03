@@ -1,6 +1,6 @@
-"use client";
 
-import { useEffect, useState } from "react";
+
+
 import {
   FaLinkedin,
   FaFacebook,
@@ -29,33 +29,29 @@ interface SocialLinks {
   [key: string]: SocialLink;
 }
 
-export default function ContactInfo() {
-  const [contact, setContact] = useState<ContactDetails | null>(null);
-  const [socialLinks, setSocialLinks] = useState<SocialLinks | null>(null);
+export default async function ContactInfo() {
+ const res = await fetch(
+  "https://saasverse.in/saasadmin/wp-json/wp/v2/pages?slug=contact-us-page",
+  {
+    next: { revalidate: 3600 },
+  }
+);
 
-  useEffect(() => {
-    const fetchData = async () => {
-      try {
-        const res = await fetch(
-          "https://saasverse.in/saasadmin/wp-json/wp/v2/pages?slug=contact-us-page"
-        );
+const pages = await res.json();
+const acf = pages?.[0]?.acf;
 
-        const pages = await res.json();
+const contact = acf?.contact_details;
+const socialLinks = acf?.social_media_links;
 
-        if (pages?.length) {
-          const acf = pages[0]?.acf;
-
-          setContact(acf?.contact_details);
-          setSocialLinks(acf?.social_media_links);
-        }
-      } catch (error) {
-        console.error("Error fetching contact info:", error);
-      }
-    };
-
-    fetchData();
-  }, []);
-
+if (!contact) {
+  return (
+    <section className="py-24">
+      <div className="mx-auto max-w-6xl px-6">
+        <div className="h-[500px] rounded-[32px] bg-slate-100" />
+      </div>
+    </section>
+  );
+}
   if (!contact) {
     return (
       <section className="py-24">
