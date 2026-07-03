@@ -176,7 +176,7 @@ if (!contact) {
 
               <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
                 {socialLinks &&
-                  Object.entries(socialLinks).map(([key, value]) => (
+  Object.entries(socialLinks as SocialLinks).map(([key, value]) => (
                     <a
                       key={key}
                       href={value.url}
