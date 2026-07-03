@@ -5,6 +5,7 @@ import HealthClient from '../work-salesforce-health-cloud/HealthClient';
 import FaqReuseable from '../components/FaqReuseable';
 import StickyServices from '../components/StickyServices';
 import WhyChoose from '../components/WhyChoose';
+import { Metadata } from 'next';
 
 const faqs = [
   {
@@ -101,6 +102,12 @@ const features = [
       'Magento allows secure transactions, PCI compliance, and regular updates to ensure customer data security.',
   },
 ];
+
+export const metadata: Metadata = {
+  title: "Magento development services | saasverse",
+  description:
+    "Get custom Magento development services to build high-performing, secure, and scalable eCommerce stores tailored to your business needs.",
+};
 
 const page = () => {
   return (

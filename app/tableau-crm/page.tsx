@@ -8,6 +8,7 @@ import OurPartners from '../components/Home/OurPartners';
 import FaqReuseable from '../components/FaqReuseable';
 import ContactForm from '../components/ContactForm';
 import WhyChooseUs from '../about/WhyChooseUs';
+import { Metadata } from 'next';
 
 const faqs = [
   {
@@ -66,6 +67,13 @@ const benefits = [
       'Transform insights into action by drilling into key metrics, identifying improvement areas, and making data-driven decisions that enhance business performance.',
   },
 ];
+
+export const metadata: Metadata = {
+  title: "Salesforce Tableau Implementation Services | Tableau Consulting Services - Saasverse",
+  description:
+    "Saasverse offers expert Tableau consulting services to help businesses unlock insights, visualize data, and make data-driven decisions for better growth.",
+};
+
 const page = () => {
   return (
     <>

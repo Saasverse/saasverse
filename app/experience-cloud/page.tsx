@@ -8,6 +8,7 @@ import OurPartners from '../components/Home/OurPartners';
 import FaqReuseable from '../components/FaqReuseable';
 import ContactForm from '../components/ContactForm';
 import WhyChooseUs from '../about/WhyChooseUs';
+import { Metadata } from 'next';
 
 const faqs = [
   {
@@ -66,6 +67,14 @@ const benefits = [
       'Focus on meaningful business outcomes with Experience Cloud solutions that help improve customer lifetime value, reduce churn, and deliver measurable return on investment (ROI).',
   },
 ];
+
+export const metadata: Metadata = {
+  title: "Salesforce Experience Cloud Services - Saasverse",
+  description:
+    "Saasverse offers Salesforce Experience Cloud services to build engaging digital experiences, enhance customer interactions, and improve business collaboration.",
+};
+
+
 const page = () => {
   return (
     <>

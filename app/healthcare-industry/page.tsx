@@ -8,6 +8,7 @@ import OurPartners from '../components/Home/OurPartners';
 import FaqReuseable from '../components/FaqReuseable';
 import ContactForm from '../components/ContactForm';
 import WhyChooseUs from '../about/WhyChooseUs';
+import { Metadata } from 'next';
 
 
 const faqs = [
@@ -76,6 +77,12 @@ const benefits = [
       "Proactively identify at-risk patients and tailor preventive care programs.",
   },
 ];
+
+export const metadata: Metadata = {
+  title: " Salesforce Solutions for the Healthcare Industry- Saasverse",
+  description:
+    "Saasverse provides Salesforce solutions for the healthcare industry to improve patient management, streamline operations, and enhance care delivery.",
+};
 
 const page = () => {
   return (

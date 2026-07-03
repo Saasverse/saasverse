@@ -8,6 +8,7 @@ import OurPartners from '../components/Home/OurPartners';
 import FaqReuseable from '../components/FaqReuseable';
 import ContactForm from '../components/ContactForm';
 import WhyChooseUs from '../about/WhyChooseUs';
+import { Metadata } from 'next';
 
 const faqs = [
   {
@@ -61,6 +62,13 @@ const benefits = [
       'Implement automated workflows to streamline repetitive tasks, reduce manual effort, and empower your team to focus on strategic initiatives.',
   },
 ];
+
+export const metadata: Metadata = {
+  title: "Salesforce Sales Cloud Consulting Service - Saasverse",
+  description:
+    "Saasverse offers expert Salesforce Sales Cloud consulting services to help businesses optimize sales processes, improve efficiency, and drive revenue growth.",
+};
+
 const page = () => {
   return (
     <>

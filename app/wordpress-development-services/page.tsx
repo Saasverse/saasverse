@@ -5,6 +5,7 @@ import HealthClient from '../work-salesforce-health-cloud/HealthClient';
 import FaqReuseable from '../components/FaqReuseable';
 import StickyServices from '../components/StickyServices';
 import WhyChoose from '../components/WhyChoose';
+import { Metadata } from 'next';
 
 const whyChooseHeading = 'Why Choose Saasverse for WordPress Development?';
 
@@ -104,7 +105,11 @@ const features = [
       'Continuous maintenance and support to keep your website running smoothly.',
   },
 ];
-
+export const metadata: Metadata = {
+  title: "Wordpress Development Services | Scalable & Custom Solutions",
+  description:
+    "Get custom WordPress development services for fast, secure, and SEO-friendly websites that match your brand and business goals.",
+};
 const page = () => {
   return (
     <>

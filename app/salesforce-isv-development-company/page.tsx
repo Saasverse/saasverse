@@ -8,6 +8,7 @@ import OurPartners from '../components/Home/OurPartners';
 import FaqReuseable from '../components/FaqReuseable';
 import ContactForm from '../components/ContactForm';
 import WhyChooseUs from '../about/WhyChooseUs';
+import { Metadata } from 'next';
 
 
 const faqs = [
@@ -94,7 +95,11 @@ const benefits = [
       "We build responsive Lightning Components to enhance user experience and functionality.",
   },
 ];
-
+export const metadata: Metadata = {
+  title: " Salesforce ISV Development Company | Custom App Solutions Experts",
+  description:
+    "Looking for a trusted Salesforce ISV development partner? Saasverse builds custom Salesforce apps, offering expert services in the USA, UK, and Australia.",
+};
 const page = () => {
   return (
     <>

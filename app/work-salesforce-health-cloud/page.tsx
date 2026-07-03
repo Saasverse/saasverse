@@ -8,6 +8,14 @@ import HealthResult from './HealthResult';
 import HealthFuture from './HealthFuture';
 import HealthConclusion from './HealthConclusion';
 import ContactForm from '../components/ContactForm';
+import { Metadata } from 'next';
+
+
+export const metadata: Metadata = {
+  title: "Salesforce Healthcare Cloud | Transform Healthcare Operations - Saasverse",
+  description:
+    "Transform healthcare operations with Salesforce Healthcare Cloud by Saasverse. Improve patient experiences, streamline workflows, and deliver better care solutions.",
+};
 
 const page = () => {
   return (

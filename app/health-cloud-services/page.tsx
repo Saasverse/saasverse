@@ -8,6 +8,7 @@ import OurPartners from '../components/Home/OurPartners';
 import FaqReuseable from '../components/FaqReuseable';
 import ContactForm from '../components/ContactForm';
 import WhyChooseUs from '../about/WhyChooseUs';
+import { Metadata } from 'next';
 
 const faqs = [
   {
@@ -66,6 +67,13 @@ const benefits = [
       'Leverage advanced analytics and population health insights to identify trends, optimize care strategies, improve operational efficiency, and achieve better patient outcomes.',
   },
 ];
+
+export const metadata: Metadata = {
+  title: "Salesforce Health Cloud Implementation Services - Saasverse",
+  description:
+    "Saasverse provides Salesforce Health Cloud implementation services to help healthcare organizations streamline patient management, enhance care, and ensure compliance.",
+};
+
 const page = () => {
   return (
     <>

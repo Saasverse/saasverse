@@ -8,6 +8,7 @@ import OurPartners from '../components/Home/OurPartners';
 import FaqReuseable from '../components/FaqReuseable';
 import ContactForm from '../components/ContactForm';
 import WhyChooseUs from '../about/WhyChooseUs';
+import { Metadata } from 'next';
 
 const faqs = [
   {
@@ -66,6 +67,14 @@ const benefits = [
       'Provide sales representatives with intuitive CPQ tools that simplify complex quoting processes, increase efficiency, and create more time for customer engagement.',
   },
 ];
+
+export const metadata: Metadata = {
+  title: "Salesforce CPQ Implementation Services - Saasverse",
+  description:
+    "Saasverse provides Salesforce CPQ implementation services to streamline pricing, automate quotes, and enhance sales efficiency for your business.",
+};
+
+
 const page = () => {
   return (
     <>

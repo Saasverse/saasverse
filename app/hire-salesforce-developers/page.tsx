@@ -8,6 +8,7 @@ import OurPartners from '../components/Home/OurPartners';
 import FaqReuseable from '../components/FaqReuseable';
 import ContactForm from '../components/ContactForm';
 import WhyChooseUs from '../about/WhyChooseUs';
+import { Metadata } from 'next';
 
 
 const faqs = [
@@ -71,6 +72,12 @@ const benefits = [
       "Our developers build solutions that scale with your business growth and adapt to evolving needs.",
   },
 ];
+
+export const metadata: Metadata = {
+  title: "Hire Salesforce Developer | Certified Experts - Saasverse",
+  description:
+    "Saasverse provides expert Salesforce developers to build custom solutions, optimize CRM functionality, and enhance business processes efficiently.",
+};
 
 const page = () => {
   return (

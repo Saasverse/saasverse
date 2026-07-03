@@ -8,6 +8,7 @@ import OurPartners from '../components/Home/OurPartners';
 import FaqReuseable from '../components/FaqReuseable';
 import ContactForm from '../components/ContactForm';
 import WhyChooseUs from '../about/WhyChooseUs';
+import { Metadata } from 'next';
 
 
 const faqs = [
@@ -94,6 +95,12 @@ const benefits = [
       "Provide ongoing support and maintenance to address any issues, implement updates, and ensure the app remains optimized.",
   },
 ];
+
+export const metadata: Metadata = {
+  title: " Top Salesforce AppExchange Development Company - USA, UK & Australia",
+  description:
+    "Looking for a trusted partner for your Salesforce AppExchange project? Saasverse offers expert app development services in the USA, UK & Australia. Contact us today!",
+};
 
 const page = () => {
   return (

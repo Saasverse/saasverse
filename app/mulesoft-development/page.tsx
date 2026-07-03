@@ -8,6 +8,7 @@ import OurPartners from '../components/Home/OurPartners';
 import FaqReuseable from '../components/FaqReuseable';
 import ContactForm from '../components/ContactForm';
 import WhyChooseUs from '../about/WhyChooseUs';
+import { Metadata } from 'next';
 
 const faqs = [
   {
@@ -66,6 +67,13 @@ const benefits = [
     'Leverage integrated data across systems to generate meaningful reports, uncover valuable insights, and make data-driven decisions that improve marketing, sales, and customer service outcomes.',
 },
 ];
+
+export const metadata: Metadata = {
+  title: "MuleSoft Development Services | API Integration Experts - Saasverse",
+  description:
+    "Saasverse offers expert MuleSoft development services to streamline API integration, connect applications, and enhance business efficiency. Contact us today!",
+};
+
 const page = () => {
   return (
     <>

@@ -7,6 +7,7 @@ import FaqReuseable from '../components/FaqReuseable';
 
 import HealthResult from '../work-salesforce-health-cloud/HealthResult';
 import WhyChooseUs from '../about/WhyChooseUs';
+import { Metadata } from 'next';
 
 const faqs = [
   {
@@ -41,6 +42,13 @@ const faqs = [
       'We manage both version upgrades and migrations from other CMS platforms to Sitecore, ensuring data integrity and a seamless transition.',
   },
 ];
+
+export const metadata: Metadata = {
+  title: "Sitecore Development Services | Scalable & Custom Solutions",
+  description:
+    "Get expert Sitecore development services for scalable, secure, and personalized digital experiences. Build powerful CMS solutions tailored to your needs.",
+};
+
 
 const page = () => {
   return (

@@ -7,6 +7,7 @@ import FaqReuseable from '../components/FaqReuseable';
 
 import HealthResult from '../work-salesforce-health-cloud/HealthResult';
 import WhyChooseUs from '../about/WhyChooseUs';
+import { Metadata } from 'next';
 
 const faqs = [
   {
@@ -30,6 +31,12 @@ const faqs = [
       'Kentico can be integrated with various third-party solutions such as CRMs, e-commerce platforms, and marketing automation tools. We also develop custom APIs for seamless data exchange.',
   },
 ];
+
+export const metadata: Metadata = {
+  title: "Kentico Development & Integration | Scalable CMS Solutions",
+  description:
+    "Looking for seamless Kentico development and integration? We help you build a secure, scalable CMS that enhances your digital experience and business growth",
+};
 
 const page = () => {
   return (

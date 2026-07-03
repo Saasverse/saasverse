@@ -3,6 +3,13 @@ import PageBanner from '../components/PageBanner'
 import WhyWork from './WhyWork'
 import JobOpenings from './JobOpenings'
 import HowToApply from './HowToApply'
+import { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: "Careers at Saasverse | Join Our Salesforce Consulting Team",
+  description:
+    "Explore career opportunities at Saasverse. Join our team of passionate professionals and contribute to transforming businesses through cutting-edge technology.",
+};
 
 const page = () => {
   return (

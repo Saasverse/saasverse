@@ -8,6 +8,7 @@ import OurPartners from '../components/Home/OurPartners';
 import FaqReuseable from '../components/FaqReuseable';
 import ContactForm from '../components/ContactForm';
 import WhyChooseUs from '../about/WhyChooseUs';
+import { Metadata } from 'next';
 
 const faqs = [
   {
@@ -76,6 +77,13 @@ const benefits = [
       'Protect sensitive financial data with enterprise-grade security features and compliance-focused solutions that build trust and ensure regulatory adherence.',
   },
 ];
+
+export const metadata: Metadata = {
+  title: "Salesforce Financial Cloud Implementation Services - Saasverse",
+  description:
+    "Saasverse offers Salesforce Financial Cloud implementation services to help financial firms optimize operations, improve client experiences, and drive growth.",
+};
+
 const page = () => {
   return (
     <>

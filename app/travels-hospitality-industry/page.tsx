@@ -8,6 +8,7 @@ import OurPartners from '../components/Home/OurPartners';
 import FaqReuseable from '../components/FaqReuseable';
 import ContactForm from '../components/ContactForm';
 import WhyChooseUs from '../about/WhyChooseUs';
+import { Metadata } from 'next';
 
 const faqs = [
   {
@@ -76,6 +77,13 @@ const benefits = [
       'Integrate seamlessly with online travel agencies, booking platforms, and loyalty programs to create a frictionless digital experience.',
   },
 ];
+
+export const metadata: Metadata = {
+  title: "Salesforce Solutions for the Travel & Hospitality Industry - Saasverse",
+  description:
+    "Saasverse offers Salesforce solutions for the travel and hospitality industry to enhance customer experiences, streamline bookings, and boost operational efficiency.",
+};
+
 const page = () => {
   return (
     <>

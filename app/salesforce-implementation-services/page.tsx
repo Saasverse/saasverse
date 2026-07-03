@@ -8,6 +8,7 @@ import OurPartners from '../components/Home/OurPartners';
 import FaqReuseable from '../components/FaqReuseable';
 import ContactForm from '../components/ContactForm';
 import WhyChooseUs from '../about/WhyChooseUs';
+import { Metadata } from 'next';
 
 
 const faqs = [
@@ -95,7 +96,11 @@ const benefits = [
   },
  
 ];
-
+export const metadata: Metadata = {
+  title: "Salesforce Implementation Services | Saasverse",
+  description:
+    "Saasverse offers expert Salesforce Implementation Services to help you set up, customize, and launch Salesforce for better productivity and sales growth.",
+};
 const page = () => {
   return (
     <>

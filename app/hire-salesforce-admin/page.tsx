@@ -8,6 +8,7 @@ import OurPartners from '../components/Home/OurPartners';
 import FaqReuseable from '../components/FaqReuseable';
 import ContactForm from '../components/ContactForm';
 import WhyChooseUs from '../about/WhyChooseUs';
+import { Metadata } from 'next';
 
 
 const faqs = [
@@ -71,6 +72,12 @@ const benefits = [
       "Robust security protocols and user access controls protect your data and ensure regulatory compliance.",
   },
 ];
+
+export const metadata: Metadata = {
+  title: "Hire Top Salesforce Administrators | Expert Support - Saasverse",
+  description:
+    "Saasverse provides expert Salesforce administrators to manage configurations, optimize CRM performance, and streamline business operations efficiently.",
+};
 
 const page = () => {
   return (

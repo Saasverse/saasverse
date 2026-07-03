@@ -8,6 +8,7 @@ import OurPartners from '../components/Home/OurPartners';
 import FaqReuseable from '../components/FaqReuseable';
 import ContactForm from '../components/ContactForm';
 import WhyChooseUs from '../about/WhyChooseUs';
+import { Metadata } from 'next';
 
 const faqs = [
   {
@@ -76,6 +77,13 @@ const benefits = [
       'Leverage AI and automation to personalize client experiences, streamline workflows, and drive operational efficiency.',
   },
 ];
+
+export const metadata: Metadata = {
+  title: "Salesforce Solutions for the Financial Industry - Saasverse",
+  description:
+    "Saasverse provides Salesforce solutions for the financial industry to optimize operations, enhance client relationships, and drive business growth.",
+};
+
 const page = () => {
   return (
     <>

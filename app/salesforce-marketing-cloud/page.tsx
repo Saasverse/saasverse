@@ -8,6 +8,7 @@ import OurPartners from '../components/Home/OurPartners';
 import FaqReuseable from '../components/FaqReuseable';
 import ContactForm from '../components/ContactForm';
 import WhyChooseUs from '../about/WhyChooseUs';
+import { Metadata } from 'next';
 
 const faqs = [
   {
@@ -61,6 +62,13 @@ const benefits = [
     'Track key performance metrics and optimize campaigns in real-time to maximize marketing effectiveness and return on investment (ROI).',
 },
 ];
+
+export const metadata: Metadata = {
+  title: "Best Salesforce Marketing Cloud Services - Saasverse",
+  description:
+    "Saasverse provides expert Salesforce Marketing Cloud services to help businesses automate campaigns, personalize customer journeys, and boost engagement.",
+};
+
 const page = () => {
   return (
     <>

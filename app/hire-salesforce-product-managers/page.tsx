@@ -8,6 +8,7 @@ import OurPartners from '../components/Home/OurPartners';
 import FaqReuseable from '../components/FaqReuseable';
 import ContactForm from '../components/ContactForm';
 import WhyChooseUs from '../about/WhyChooseUs';
+import { Metadata } from 'next';
 
 
 const faqs = [
@@ -71,6 +72,13 @@ const benefits = [
       "Your PM will proactively plan for future growth and evolving needs, ensuring your Salesforce solution remains sustainable and scalable.",
   },
 ];
+
+export const metadata: Metadata = {
+  title: "Hire Salesforce Product Manager | Expert Leadership - Saasverse",
+  description:
+    "Saasverse offers skilled Salesforce product managers to drive strategy, enhance CRM solutions, and ensure successful product development and execution.",
+};
+
 const page = () => {
   return (
     <>

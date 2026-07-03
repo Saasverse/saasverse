@@ -4,6 +4,7 @@ import HealthClient from '../work-salesforce-health-cloud/HealthClient';
 import HealthSolution from '../work-salesforce-health-cloud/HealthSolution';
 import HealthImplementation from '../work-salesforce-health-cloud/HealthImplementation';
 import FaqReuseable from '../components/FaqReuseable';
+import { Metadata } from 'next';
 
 const faqs = [
   {
@@ -39,6 +40,12 @@ const faqs = [
       'The duration depends on the size and complexity of your existing system and the chosen modernization approach. Simple rehosting projects may take a few weeks, while more complex refactoring or microservices transitions can span several months. We provide a clear timeline after the initial assessment.',
   },
 ];
+
+export const metadata: Metadata = {
+  title: " Application Modernization Services | Legacy App Experts - Saasverse",
+  description:
+    "Transform legacy systems with Saasverse's Application Modernization Services to boost agility, scalability, and reduce technical debt.",
+};
 
 const page = () => {
   return (

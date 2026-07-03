@@ -8,6 +8,14 @@ import HealthResult from '@/app/work-salesforce-health-cloud/HealthResult'
 import HealthFuture from '@/app/work-salesforce-health-cloud/HealthFuture'
 import HealthConclusion from '@/app/work-salesforce-health-cloud/HealthConclusion'
 import ContactForm from '../components/ContactForm'
+import { Metadata } from 'next'
+
+
+export const metadata: Metadata = {
+  title: "Salesforce Sales Cloud | Boost Sales Performance - Saasverse",
+  description:
+    "Unlock the power of Salesforce Sales Cloud with Saasverse. Streamline sales, enhance customer relationships, and boost revenue growth with efficient solutions.",
+};
 
 const page = () => {
   return (

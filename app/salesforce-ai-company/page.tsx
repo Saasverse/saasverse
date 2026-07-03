@@ -8,6 +8,7 @@ import OurPartners from '../components/Home/OurPartners';
 import FaqReuseable from '../components/FaqReuseable';
 import ContactForm from '../components/ContactForm';
 import WhyChooseUs from '../about/WhyChooseUs';
+import { Metadata } from 'next';
 
 const faqs = [
   {
@@ -66,6 +67,14 @@ const benefits = [
       'We integrate AI capabilities with your existing systems and workflows, ensuring smooth adoption, operational efficiency, and minimal disruption to your business.',
   },
 ];
+
+export const metadata: Metadata = {
+  title: "Salesforce Einstein AI Services - Saasverse",
+  description:
+    "Saasverse provides Salesforce Einstein AI solutions to help businesses leverage AI-powered insights, automate processes, and enhance decision-making.",
+};
+
+
 const page = () => {
   return (
     <>

@@ -8,6 +8,7 @@ import OurPartners from '../components/Home/OurPartners';
 import FaqReuseable from '../components/FaqReuseable';
 import ContactForm from '../components/ContactForm';
 import WhyChooseUs from '../about/WhyChooseUs';
+import { Metadata } from 'next';
 
 const faqs = [
   {
@@ -76,6 +77,13 @@ const benefits = [
       'Strengthen connections with alumni and donors, fostering engagement and driving fundraising efforts.',
   },
 ];
+
+export const metadata: Metadata = {
+  title: "Salesforce Solutions for the Education Industry - Saasverse",
+  description:
+    "Saasverse provides Salesforce solutions for the education industry to enhance student engagement, streamline administration, and improve learning experiences.",
+};
+
 const page = () => {
   return (
     <>

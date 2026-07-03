@@ -8,6 +8,7 @@ import WhyChooseUs from '../about/WhyChooseUs';
 import SalesforceServiceReuseable from '../components/SalesforceServiceReuseable';
 import CTASection from '../components/Home/CTASection';
 import ContactForm from '../components/ContactForm';
+import { Metadata } from 'next';
 
 const partnerLogos = [
   '/images/traininglogoo/CapgeminiLogo.png',
@@ -53,7 +54,11 @@ const benefits = [
       "Customize the training format to suit your team's needs and availability.",
   },
 ];
-
+export const metadata: Metadata = {
+  title: " Salesforce Training & Certifications | Learn from Experts - Saasverse",
+  description:
+    "Gain in-depth Salesforce training & certifications with Saasverse. Learn from experts, enhance your skills, and advance your career with top-notch training.",
+};
 const page = () => {
   return (
     <>

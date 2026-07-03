@@ -8,6 +8,7 @@ import OurPartners from '../components/Home/OurPartners';
 import FaqReuseable from '../components/FaqReuseable';
 import ContactForm from '../components/ContactForm';
 import WhyChooseUs from '../about/WhyChooseUs';
+import { Metadata } from 'next';
 
 const faqs = [
   {
@@ -66,6 +67,14 @@ const benefits = [
       'Deploy updates quickly and monitor user engagement through built-in analytics, enabling continuous optimization and improved app performance.',
   },
 ];
+
+export const metadata: Metadata = {
+  title: "Salesforce Mobile Publisher Services - Saasverse",
+  description:
+    "Saasverse offers Salesforce Mobile Publisher services to help businesses create, customize, and publish branded mobile apps for better user engagement.",
+};
+
+
 const page = () => {
   return (
     <>

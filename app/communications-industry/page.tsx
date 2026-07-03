@@ -8,6 +8,7 @@ import OurPartners from '../components/Home/OurPartners';
 import FaqReuseable from '../components/FaqReuseable';
 import ContactForm from '../components/ContactForm';
 import WhyChooseUs from '../about/WhyChooseUs';
+import { Metadata } from 'next';
 
 
 const faqs = [
@@ -76,6 +77,12 @@ const benefits = [
       "Empower customers to manage their accounts, troubleshoot issues, and access information independently.",
   },
 ];
+
+export const metadata: Metadata = {
+  title: "Salesforce Solutions for the Communications Industry- Saasverse",
+  description:
+    "Saasverse provides Salesforce solutions for the communications industry, offering a unified customer journey, automated order management, and self-service.",
+};
 
 const page = () => {
   return (

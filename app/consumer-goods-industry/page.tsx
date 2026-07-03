@@ -8,6 +8,7 @@ import OurPartners from '../components/Home/OurPartners';
 import FaqReuseable from '../components/FaqReuseable';
 import ContactForm from '../components/ContactForm';
 import WhyChooseUs from '../about/WhyChooseUs';
+import { Metadata } from 'next';
 
 const faqs = [
   {
@@ -76,6 +77,12 @@ const benefits = [
       'Equip your sales reps with customer data and insights to close deals faster and build stronger relationships with retailers and distributors.',
   },
 ];
+
+export const metadata: Metadata = {
+  title: "Salesforce Solutions for the Consumer Goods Industry - Saasverse",
+  description:
+    "Saasverse provides Salesforce solutions for the consumer goods industry to optimize sales, streamline supply chains, enhance customer engagement, and drive growth.",
+};
 
 const page = () => {
   return (

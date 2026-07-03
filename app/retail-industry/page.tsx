@@ -8,6 +8,7 @@ import OurPartners from '../components/Home/OurPartners';
 import FaqReuseable from '../components/FaqReuseable';
 import ContactForm from '../components/ContactForm';
 import WhyChooseUs from '../about/WhyChooseUs';
+import { Metadata } from 'next';
 
 const faqs = [
   {
@@ -76,6 +77,13 @@ const benefits = [
       'Design and manage engaging loyalty programs that foster customer relationships and drive repeat business.',
   },
 ];
+
+export const metadata: Metadata = {
+  title: "Salesforce Solutions for the Retail Industry - Saasverse",
+  description:
+    "Saasverse offers Salesforce solutions for the retail industry to enhance customer experiences, streamline operations, optimize sales, and drive business growth.",
+};
+
 const page = () => {
   return (
     <>

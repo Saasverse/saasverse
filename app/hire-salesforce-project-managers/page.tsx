@@ -8,6 +8,7 @@ import OurPartners from '../components/Home/OurPartners';
 import FaqReuseable from '../components/FaqReuseable';
 import ContactForm from '../components/ContactForm';
 import WhyChooseUs from '../about/WhyChooseUs';
+import { Metadata } from 'next';
 
 
 const faqs = [
@@ -71,6 +72,12 @@ const benefits = [
       "With a dedicated PM at the helm, you can focus on your core business while your Salesforce project progresses smoothly.",
   },
 ];
+
+export const metadata: Metadata = {
+  title: "  Hire Salesforce Project Managers | Expert Management - Saasverse",
+  description:
+    "Saasverse offers skilled Salesforce project managers to ensure smooth implementation, efficient workflows, and successful project execution for your business.",
+};
 
 const page = () => {
   return (

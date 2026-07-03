@@ -8,6 +8,7 @@ import OurPartners from '../components/Home/OurPartners';
 import FaqReuseable from '../components/FaqReuseable';
 import ContactForm from '../components/ContactForm';
 import WhyChooseUs from '../about/WhyChooseUs';
+import { Metadata } from 'next';
 
 
 const faqs = [
@@ -95,7 +96,11 @@ const benefits = [
   },
 ];
 
-
+export const metadata: Metadata = {
+  title: "Best Salesforce Managed Services | Expert Support by Saasverse",
+  description:
+    "Saasverse offers Salesforce managed services in the USA, UK & Australia, including implementation, training & expert support to maximize your Salesforce investment.",
+};
 const page = () => {
   return (
     <>

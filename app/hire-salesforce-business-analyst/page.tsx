@@ -8,6 +8,7 @@ import OurPartners from '../components/Home/OurPartners';
 import FaqReuseable from '../components/FaqReuseable';
 import ContactForm from '../components/ContactForm';
 import WhyChooseUs from '../about/WhyChooseUs';
+import { Metadata } from 'next';
 
 
 const faqs = [
@@ -71,6 +72,12 @@ const benefits = [
       "By optimizing processes and promoting user adoption, you maximize the return on investment in your Salesforce platform.",
   },
 ];
+
+export const metadata: Metadata = {
+  title: "Hire Salesforce Business Analysts | Data-Driven Solutions - Saasverse",
+  description:
+    "Hire skilled Salesforce business analysts from Saasverse to analyze requirements, optimize CRM strategies, and drive data-driven business growth.",
+};
 
 const page = () => {
   return (

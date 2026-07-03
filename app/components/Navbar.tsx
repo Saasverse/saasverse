@@ -111,7 +111,7 @@ const menuItems: MenuItem[] = [
     links: [
       { name: "About Us", href: "/about" },
       { name: "Our Services", href: "/services" },
-      { name: "Blogs", href: "/blogs" },
+      // { name: "Blogs", href: "/blogs" },
       { name: "Careers", href: "/careers" },
       { name: "Contact Us", href: "/contact" },
     ],

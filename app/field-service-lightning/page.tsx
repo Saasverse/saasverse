@@ -8,6 +8,7 @@ import OurPartners from '../components/Home/OurPartners';
 import FaqReuseable from '../components/FaqReuseable';
 import ContactForm from '../components/ContactForm';
 import WhyChooseUs from '../about/WhyChooseUs';
+import { Metadata } from 'next';
 
 const faqs = [
   {
@@ -71,6 +72,14 @@ const benefits = [
       'Deliver faster response times, efficient service experiences, and transparent communication that strengthen customer relationships and improve overall satisfaction.',
   },
 ];
+
+export const metadata: Metadata = {
+  title: "Salesforce Field Service Lightning Company - Saasverse",
+  description:
+    "Saasverse offers Salesforce Field Service Lightning solutions to optimize scheduling, automate workflows, and enhance on-site service efficiency.",
+};
+
+
 const page = () => {
   return (
     <>

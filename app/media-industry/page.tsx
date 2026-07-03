@@ -8,6 +8,7 @@ import OurPartners from '../components/Home/OurPartners';
 import FaqReuseable from '../components/FaqReuseable';
 import ContactForm from '../components/ContactForm';
 import WhyChooseUs from '../about/WhyChooseUs';
+import { Metadata } from 'next';
 
 
 const faqs = [
@@ -76,6 +77,12 @@ const benefits = [
       "Break down silos between teams and foster a collaborative environment for content creation, sales, and marketing.",
   },
 ];
+
+export const metadata: Metadata = {
+  title: " Salesforce Solutions for the Media Industry- Saasverse",
+  description:
+    "Saasverse offers Salesforce solutions for the media industry to enhance audience engagement, automate workflows, optimize ad sales, and drive growth.",
+};
 
 const page = () => {
   return (

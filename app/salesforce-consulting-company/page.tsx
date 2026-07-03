@@ -7,6 +7,7 @@ import CertificateSlider from '../components/Home/CertificateSlider';
 import OurPartners from '../components/Home/OurPartners';
 import FaqReuseable from '../components/FaqReuseable';
 import ContactForm from '../components/ContactForm';
+import { Metadata } from 'next';
 
 const faqs = [
   {
@@ -90,7 +91,11 @@ const benefits = [
       'We provide comprehensive training to your team, empowering them to utilize Salesforce effectively and efficiently.',
   },
 ];
-
+export const metadata: Metadata = {
+  title: "Salesforce Consulting Services Company - 25$/hour",
+  description:
+    "We provides best Salesforce Consulting Services in USA, Australia, UK, & India - including implementation, customization, support, and strategy. Unlock Salesforce’s full potential—get a free quote today!",
+};
 const page = () => {
   return (
     <>

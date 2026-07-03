@@ -7,6 +7,7 @@ import FaqReuseable from '../components/FaqReuseable';
 
 import HealthResult from '../work-salesforce-health-cloud/HealthResult';
 import WhyChooseUs from '../about/WhyChooseUs';
+import { Metadata } from 'next';
 
 const faqs = [
   {
@@ -35,6 +36,12 @@ const faqs = [
       'Yes, Saasverse specializes in implementing DevOps practices, including CI/CD pipelines, automated testing, and infrastructure automation, to streamline your development and deployment processes.',
   },
 ];
+
+export const metadata: Metadata = {
+  title: "AWS Development Services | Amazon Cloud Application Consulting",
+  description:
+    "Get expert AWS Development Services for scalable, secure, and cost-effective cloud solutions. Boost performance, security & reliability with our AWS expertise.",
+};
 
 const page = () => {
   return (

@@ -5,6 +5,7 @@ import HealthClient from '../work-salesforce-health-cloud/HealthClient';
 import FaqReuseable from '../components/FaqReuseable';
 import StickyServices from '../components/StickyServices';
 import WhyChoose from '../components/WhyChoose';
+import { Metadata } from 'next';
 
 const faqs = [
   {
@@ -105,6 +106,11 @@ const features = [
   },
 ];
 
+export const metadata: Metadata = {
+  title: "DotNet development services | saasverse",
+  description:
+    "Get robust and scalable web solutions with expert DotNet development services tailored to your business needs.",
+};
 const page = () => {
   return (
     <>

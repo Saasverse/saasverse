@@ -7,6 +7,7 @@ import CertificateSlider from '../components/Home/CertificateSlider';
 import OurPartners from '../components/Home/OurPartners';
 import FaqReuseable from '../components/FaqReuseable';
 import ContactForm from '../components/ContactForm';
+import { Metadata } from 'next';
 
 
 const faqs = [
@@ -86,7 +87,11 @@ const benefits = [
   },
 ];
 
-
+export const metadata: Metadata = {
+  title: "Salesforce Support and Maintenance Services | Saasverse",
+  description:
+    "Get reliable Salesforce Support and Maintenance Services from Saasverse to ensure smooth performance, quick issue resolution, and system optimization.",
+};
 const page = () => {
   return (
     <>

@@ -5,6 +5,7 @@ import HealthClient from '../work-salesforce-health-cloud/HealthClient';
 import FaqReuseable from '../components/FaqReuseable';
 import StickyServices from '../components/StickyServices';
 import WhyChoose from '../components/WhyChoose';
+import { Metadata } from 'next';
 
 const faqs = [
   {
@@ -110,6 +111,12 @@ const features = [
       'Shopify possesses robust SEO capabilities to reach the top of search results pages.',
   },
 ];
+
+export const metadata: Metadata = {
+  title: "Shopify development services | saasverse",
+  description:
+    "Get custom Shopify development services to build scalable, user-friendly, and mobile-optimized eCommerce websites.",
+};
 
 const page = () => {
   return (

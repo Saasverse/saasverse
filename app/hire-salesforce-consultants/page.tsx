@@ -8,6 +8,7 @@ import OurPartners from '../components/Home/OurPartners';
 import FaqReuseable from '../components/FaqReuseable';
 import ContactForm from '../components/ContactForm';
 import WhyChooseUs from '../about/WhyChooseUs';
+import { Metadata } from 'next';
 
 
 const faqs = [
@@ -71,6 +72,13 @@ const benefits = [
       "Our commitment to your success doesn't end with implementation. We offer ongoing support services to ensure you continue to maximize the value of your Salesforce investment.",
   },
 ];
+
+export const metadata: Metadata = {
+  title: " Hire Top Salesforce Consultants | Trusted Experts - Saasverse",
+  description:
+    "Saasverse Pvt Ltd is a leading Salesforce consulting firm dedicated to helping businesses of all sizes unlock the full potential of the Salesforce platform.",
+};
+
 
 const page = () => {
   return (

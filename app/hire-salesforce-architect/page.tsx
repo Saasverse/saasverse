@@ -8,6 +8,7 @@ import OurPartners from '../components/Home/OurPartners';
 import FaqReuseable from '../components/FaqReuseable';
 import ContactForm from '../components/ContactForm';
 import WhyChooseUs from '../about/WhyChooseUs';
+import { Metadata } from 'next';
 
 
 const faqs = [
@@ -71,6 +72,12 @@ const benefits = [
       "Our architects design with the future in mind, ensuring your Salesforce platform adapts to evolving technologies and business requirements.",
   },
 ];
+
+export const metadata: Metadata = {
+  title: "Hire Top Salesforce Architects | Scalable Solutions - Saasverse",
+  description:
+    "Hire expert Salesforce architects from Saasverse to design scalable, high-performance CRM solutions tailored to your business needs.",
+};
 
 const page = () => {
   return (

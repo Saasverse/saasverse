@@ -8,6 +8,14 @@ import HealthResult from '../work-salesforce-health-cloud/HealthResult'
 import HealthFuture from '../work-salesforce-health-cloud/HealthFuture'
 import HealthConclusion from '../work-salesforce-health-cloud/HealthConclusion'
 import ContactForm from '../components/ContactForm'
+import { Metadata } from 'next'
+
+
+export const metadata: Metadata = {
+  title: "Salesforce Service Cloud | Enhance Customer Support - Saasverse",
+  description:
+    "Leverage Salesforce Service Cloud with Saasverse to streamline customer support, improve case management, and deliver exceptional service experiences.",
+};
 
 const page = () => {
   return (

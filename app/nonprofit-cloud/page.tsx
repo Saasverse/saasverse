@@ -8,6 +8,7 @@ import OurPartners from '../components/Home/OurPartners';
 import FaqReuseable from '../components/FaqReuseable';
 import ContactForm from '../components/ContactForm';
 import WhyChooseUs from '../about/WhyChooseUs';
+import { Metadata } from 'next';
 
 const faqs = [
   {
@@ -76,6 +77,14 @@ const benefits = [
       'Leverage modern technology solutions to improve efficiency, expand reach, streamline operations, and maximize the impact of your organization’s initiatives.',
   },
 ];
+
+export const metadata: Metadata = {
+  title: "Salesforce Nonprofit Cloud Consultant Services - Saasverse",
+  description:
+    "Saasverse offers expert Salesforce Nonprofit Cloud consulting services to help organizations streamline operations, enhance donor engagement, and drive impact.",
+};
+
+
 const page = () => {
   return (
     <>

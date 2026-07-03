@@ -8,6 +8,7 @@ import OurPartners from '../components/Home/OurPartners';
 import FaqReuseable from '../components/FaqReuseable';
 import ContactForm from '../components/ContactForm';
 import WhyChooseUs from '../about/WhyChooseUs';
+import { Metadata } from 'next';
 
 
 const faqs = [
@@ -94,7 +95,11 @@ const benefits = [
       "Assess your Salesforce environment against relevant regulatory requirements and industry standards.",
   },
 ];
-
+export const metadata: Metadata = {
+  title: "Salesforce Security Review Services | Protect & Comply - Saasverse",
+  description:
+    "Saasverse offers expert Salesforce Security Review services in the USA, UK & Australia. Ensure compliance, protect data, and secure your Salesforce apps.",
+};
 const page = () => {
   return (
     <>

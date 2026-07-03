@@ -8,6 +8,7 @@ import OurPartners from '../components/Home/OurPartners';
 import FaqReuseable from '../components/FaqReuseable';
 import ContactForm from '../components/ContactForm';
 import WhyChooseUs from '../about/WhyChooseUs';
+import { Metadata } from 'next';
 
 
 const faqs = [
@@ -71,6 +72,12 @@ const benefits = [
       "They collaborate effectively with developers, business analysts, and other stakeholders to ensure a smooth and successful project outcome.",
   },
 ];
+
+export const metadata: Metadata = {
+  title: "Hire Salesforce Quality Analyst | Ensure CRM Excellence - Saasverse",
+  description:
+    "Hire expert Salesforce quality analysts from Saasverse to test, optimize, and ensure high-performance, error-free CRM solutions for your business.",
+};
 
 const page = () => {
   return (

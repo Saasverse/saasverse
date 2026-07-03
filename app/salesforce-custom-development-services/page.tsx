@@ -8,6 +8,7 @@ import OurPartners from '../components/Home/OurPartners';
 import FaqReuseable from '../components/FaqReuseable';
 import ContactForm from '../components/ContactForm';
 import WhyChooseUs from '../about/WhyChooseUs';
+import { Metadata } from 'next';
 
 
 const faqs = [
@@ -111,7 +112,11 @@ const benefits = [
  
 ];
 
-
+export const metadata: Metadata = {
+  title: "Salesforce Custom Development Experts | USA, UK & Australia",
+  description:
+    "Saasverse provides Salesforce custom development services in the USA, UK & Australia, delivering tailored solutions to optimize processes and drive growth.",
+};
 const page = () => {
   return (
     <>

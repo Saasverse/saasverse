@@ -8,6 +8,7 @@ import OurPartners from '../components/Home/OurPartners';
 import FaqReuseable from '../components/FaqReuseable';
 import ContactForm from '../components/ContactForm';
 import WhyChooseUs from '../about/WhyChooseUs';
+import { Metadata } from 'next';
 
 const faqs = [
   {
@@ -61,6 +62,13 @@ const benefits = [
       'Grow your service capabilities with scalable solutions that adapt to your business needs and customer demands.',
   },
 ];
+
+export const metadata: Metadata = {
+  title: "Salesforce Service Cloud Consultant | Expert Solutions - Saasverse",
+  description:
+    "Saasverse offers an expert Salesforce Service Cloud consultant to enhance customer service, streamline support processes, and improve customer satisfaction.",
+};
+
 const page = () => {
   return (
     <>
