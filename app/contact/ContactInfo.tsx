@@ -37,16 +37,16 @@ export default function ContactInfo() {
 
   const socialLinks: SocialLinks = {
     linkedin: {
-      url: "https://www.linkedin.com/company/saasverse",
+      url: "https://www.linkedin.com/company/saasverse-it/",
     },
     facebook: {
-      url: "https://www.facebook.com/",
+      url: "https://www.facebook.com/saasverse.in",
     },
     instagram: {
-      url: "https://www.instagram.com/",
+      url: "https://www.instagram.com/saasverse.in/",
     },
     "x-twitter": {
-      url: "https://x.com/",
+      url: "https://x.com/SAASVERSEIndia",
     },
   };
 
