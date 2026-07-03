@@ -133,59 +133,81 @@ export default async function Footer() {
  
           {/* Contact */}
           <div>
-            <div className="mb-5 -mt-1">
-              <Image
-                src="/images/footer/saasverse_whitelogo.webp"
-                alt="Saasverse"
-                width={150}
-                height={80}
-                style={{ width: '150px', height: 'auto' }}
-              />
-            </div>
- 
-            {(contactDetails.contact_number || contactDetails.contact_number2) && (
-              <address className="not-italic mb-5">
-                <p className="text-xs font-bold uppercase tracking-[0.13em] text-white/50 mb-2">Call Us</p>
-                {contactDetails.contact_number && (
-                  <a href={`tel:+${contactDetails.contact_number}`} className="block text-sm text-white/80 hover:text-white">
-                    {formatPhone(contactDetails.contact_number)}
-                  </a>
-                )}
-                {contactDetails.contact_number2 && (
-                  <a href={`tel:+${contactDetails.contact_number2}`} className="block text-sm text-white/80 hover:text-white mt-1">
-                    {formatPhone(contactDetails.contact_number2)}
-                  </a>
-                )}
-                <a href="mailto:contact@saasverse.in" className="mt-2 block text-sm text-white/80 hover:text-white">
-                  contact@saasverse.in
-                </a>
-              </address>
-            )}
- 
-            {/* Social icons */}
-            <div className="flex gap-3">
-              {socialLinks.linkedin?.url && (
-                <a href={socialLinks.linkedin.url} target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" className="text-white/60 hover:text-white transition-colors">
-                  <FaLinkedin size={20} />
-                </a>
-              )}
-              {socialLinks.facebook?.url && (
-                <a href={socialLinks.facebook.url} target="_blank" rel="noopener noreferrer" aria-label="Facebook" className="text-white/60 hover:text-white transition-colors">
-                  <FaFacebook size={20} />
-                </a>
-              )}
-              {socialLinks.instagram?.url && (
-                <a href={socialLinks.instagram.url} target="_blank" rel="noopener noreferrer" aria-label="Instagram" className="text-white/60 hover:text-white transition-colors">
-                  <FaInstagram size={20} />
-                </a>
-              )}
-              {socialLinks['x-twitter']?.url && (
-                <a href={socialLinks['x-twitter'].url} target="_blank" rel="noopener noreferrer" aria-label="X (Twitter)" className="text-white/60 hover:text-white transition-colors">
-                  <FaXTwitter size={20} />
-                </a>
-              )}
-            </div>
-          </div>
+  <div className="mb-5 -mt-1">
+    <Image
+      src="/images/footer/saasverse_whitelogo.webp"
+      alt="Saasverse"
+      width={150}
+      height={80}
+      style={{ width: "150px", height: "auto" }}
+    />
+  </div>
+
+  <address className="not-italic mb-5">
+    <p className="text-xs font-bold uppercase tracking-[0.13em] text-white/50 mb-2">
+      Call Us
+    </p>
+
+   
+
+    <a
+      href="tel:+919001622254"
+      className="block text-sm text-white/80 hover:text-white mt-1"
+    >
+      +91-9001622254
+    </a>
+
+    <a
+      href="mailto:contact@saasverse.in"
+      className="mt-2 block text-sm text-white/80 hover:text-white"
+    >
+      contact@saasverse.in
+    </a>
+  </address>
+
+  {/* Social Icons */}
+  <div className="flex gap-3">
+    <a
+      href="https://www.linkedin.com/company/saasverse-pvt-ltd/"
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="LinkedIn"
+      className="text-white/60 hover:text-white transition-colors"
+    >
+      <FaLinkedin size={20} />
+    </a>
+
+    <a
+      href="https://www.instagram.com/saasverse.in/"
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="Instagram"
+      className="text-white/60 hover:text-white transition-colors"
+    >
+      <FaInstagram size={20} />
+    </a>
+
+    <a
+      href="https://www.facebook.com/saasverse.in"
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="Facebook"
+      className="text-white/60 hover:text-white transition-colors"
+    >
+      <FaFacebook size={20} />
+    </a>
+
+    <a
+      href="https://x.com/SAASVERSEIndia"
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="X (Twitter)"
+      className="text-white/60 hover:text-white transition-colors"
+    >
+      <FaXTwitter size={20} />
+    </a>
+  </div>
+</div>
         </div>
  
         {/* Divider */}
