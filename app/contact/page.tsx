@@ -7,9 +7,9 @@ import ContactForm from '../components/ContactForm'
 import { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: "Contact Us - Saasverse Pvt. Ltd.",
+  title: "Contact Saasverse | Hire Salesforce Consultants",
   description:
-    "Reach out to Saasverse for expert Salesforce consulting and development. Connect with us to discuss your business needs and explore tailored solutions.",
+    "Contact Saasverse to hire expert Salesforce consultants & developers for your US, UAE or India project. Get a free consultation within 24 hours.",
 };
 
 const page = () => {

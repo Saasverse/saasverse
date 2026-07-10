@@ -55,9 +55,9 @@ const benefits = [
   },
 ];
 export const metadata: Metadata = {
-  title: " Salesforce Training & Certifications | Learn from Experts - Saasverse",
+  title: " Salesforce Training & Certification Courses | Saasverse",
   description:
-    "Gain in-depth Salesforce training & certifications with Saasverse. Learn from experts, enhance your skills, and advance your career with top-notch training.",
+    "Get hands-on Salesforce training & certification from Saasverse's certified trainers. Flexible online, on-site & hybrid programs for all skill levels.",
 };
 const page = () => {
   return (

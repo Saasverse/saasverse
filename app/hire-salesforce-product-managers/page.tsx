@@ -74,9 +74,9 @@ const benefits = [
 ];
 
 export const metadata: Metadata = {
-  title: "Hire Salesforce Product Manager | Expert Leadership - Saasverse",
+  title: "Hire Salesforce Product Managers in India | Saasverse",
   description:
-    "Saasverse offers skilled Salesforce product managers to drive strategy, enhance CRM solutions, and ensure successful product development and execution.",
+    "Hire a dedicated Salesforce product manager in India. Flexible hourly or full-time hire, US/UAE time-zone overlap. Get a free quote today.",
 };
 
 const page = () => {

@@ -8,8 +8,13 @@ import OurPartners from '../components/Home/OurPartners';
 import FaqReuseable from '../components/FaqReuseable';
 import ContactForm from '../components/ContactForm';
 import WhyChooseUs from '../about/WhyChooseUs';
+import { Metadata } from 'next';
 
-
+export const metadata: Metadata = {
+  title: "Salesforce Integration Services | Saasverse",
+  description:
+    "Seamless Salesforce integration services connecting CRM, ERP & marketing tools for US, UAE & India clients. Certified experts. Request a demo.",
+};
 const faqs = [
   {
     question: 'Why hire Salesforce Consultants?',

@@ -96,9 +96,9 @@ const benefits = [
   },
 ];
 export const metadata: Metadata = {
-  title: " Salesforce ISV Development Company | Custom App Solutions Experts",
+  title: "Salesforce ISV Development Company | Saasverse",
   description:
-    "Looking for a trusted Salesforce ISV development partner? Saasverse builds custom Salesforce apps, offering expert services in the USA, UK, and Australia.",
+    "Salesforce ISV development company helping US, UAE & global partners build, secure & publish apps on AppExchange. Certified experts. Contact us.",
 };
 const page = () => {
   return (

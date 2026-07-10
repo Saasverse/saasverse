@@ -92,9 +92,9 @@ const benefits = [
   },
 ];
 export const metadata: Metadata = {
-  title: 'Salesforce Consulting Services Company - 25$/hour',
+  title: 'Salesforce Consulting Company | Saasverse',
   description:
-    'We provides best Salesforce Consulting Services in USA, Australia, UK, & India - including implementation, customization, support, and strategy. Unlock Salesforce’s full potential—get a free quote today!',
+    'Certified Salesforce consulting company delivering proven implementations for US, UAE & global clients from India. Get a free consultation today.',
 };
 const page = () => {
   return (

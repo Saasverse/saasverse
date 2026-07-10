@@ -74,9 +74,9 @@ const benefits = [
 ];
 
 export const metadata: Metadata = {
-  title: "Hire Salesforce Quality Analyst | Ensure CRM Excellence - Saasverse",
+  title: "Hire Salesforce QA Testers in India | Saasverse",
   description:
-    "Hire expert Salesforce quality analysts from Saasverse to test, optimize, and ensure high-performance, error-free CRM solutions for your business.",
+    "Hire dedicated Salesforce QA testers in India for functional & technical testing. Flexible hourly or full-time hire, US/UAE time-zone overlap. Free quote.",
 };
 
 const page = () => {

@@ -2,6 +2,13 @@
 
 import React, { useEffect, useRef, useState } from "react";
 import Head from "next/head";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Terms & Conditions | Saasverse",
+  description:
+    "Read Saasverse's Terms & Conditions covering website use, service policies, IP rights & account guidelines for our consulting services.",
+};
 
 const sections = [
   {

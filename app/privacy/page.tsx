@@ -2,6 +2,13 @@
 
 import React, { useEffect, useRef, useState } from "react";
 import Head from "next/head";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Privacy Policy | Saasverse",
+  description:
+    "Saasverse's Privacy Policy explains how we collect, use and protect your data via cookies, log files and web beacons across our website.",
+};
 
 const sections = [
   {
@@ -324,7 +331,7 @@ export default function Privacy() {
                       Questions about your privacy?
                     </h3>
                     <p className="text-slate-400 text-sm leading-relaxed">
-                      Reach out and we'll address any concerns about how we
+                      Reach out and we will address any concerns about how we
                       handle your data promptly and transparently.
                     </p>
                   </div>

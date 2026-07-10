@@ -74,9 +74,9 @@ const benefits = [
 ];
 
 export const metadata: Metadata = {
-  title: " Hire Top Salesforce Consultants | Trusted Experts - Saasverse",
+  title: "Hire Salesforce Consultants in India | Saasverse",
   description:
-    "Saasverse Pvt Ltd is a leading Salesforce consulting firm dedicated to helping businesses of all sizes unlock the full potential of the Salesforce platform.",
+    "Hire dedicated Salesforce consultants in India. Flexible hourly, part-time or full-time hire, US/UAE time-zone overlap. Get a free quote today.",
 };
 
 

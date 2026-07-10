@@ -74,9 +74,9 @@ const benefits = [
 ];
 
 export const metadata: Metadata = {
-  title: "  Hire Salesforce Project Managers | Expert Management - Saasverse",
+  title: "Hire Salesforce Project Managers in India | Saasverse",
   description:
-    "Saasverse offers skilled Salesforce project managers to ensure smooth implementation, efficient workflows, and successful project execution for your business.",
+    "Hire a dedicated Salesforce project manager in India. Flexible hourly or full-time hire, US/UAE time-zone overlap. Get a free quote today.",
 };
 
 const page = () => {

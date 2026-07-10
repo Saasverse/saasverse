@@ -15,9 +15,9 @@ import { Metadata } from "next";
 
 
 export const metadata: Metadata = {
-  title: "Best Salesforce Consulting Company - Saasverse",
+  title: "Saasverse – Salesforce Consulting & Software Development",
   description:
-    "Saasverse is a trusted Salesforce consulting company, offering expert implementation, customization, integration, and support services to optimize your business operations.",
+    "Saasverse: Salesforce consulting, implementation & custom software development for US, UAE & global businesses. India-based experts. Get a free quote",
 };
 
 export default function Home() {

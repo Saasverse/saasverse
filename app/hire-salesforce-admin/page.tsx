@@ -74,9 +74,9 @@ const benefits = [
 ];
 
 export const metadata: Metadata = {
-  title: "Hire Top Salesforce Administrators | Expert Support - Saasverse",
+  title: "Hire Salesforce Admin in India | Saasverse",
   description:
-    "Saasverse provides expert Salesforce administrators to manage configurations, optimize CRM performance, and streamline business operations efficiently.",
+    "Hire a dedicated Salesforce admin in India. Flexible hourly, part-time or full-time hire, US/UAE time-zone overlap. Get a free quote today.",
 };
 
 const page = () => {

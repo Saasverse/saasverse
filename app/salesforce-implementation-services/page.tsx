@@ -97,9 +97,9 @@ const benefits = [
  
 ];
 export const metadata: Metadata = {
-  title: "Salesforce Implementation Services | Saasverse",
+  title: "Salesforce Implementation Company | Saasverse",
   description:
-    "Saasverse offers expert Salesforce Implementation Services to help you set up, customize, and launch Salesforce for better productivity and sales growth.",
+    "Trusted Salesforce implementation company serving India, US & UAE with certified experts, proven deployments & global delivery. Talk to us.",
 };
 const page = () => {
   return (

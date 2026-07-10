@@ -74,9 +74,9 @@ const benefits = [
 ];
 
 export const metadata: Metadata = {
-  title: "Hire Salesforce Business Analysts | Data-Driven Solutions - Saasverse",
+  title: "Hire Salesforce Business Analysts in India | Saasverse",
   description:
-    "Hire skilled Salesforce business analysts from Saasverse to analyze requirements, optimize CRM strategies, and drive data-driven business growth.",
+    "Hire a dedicated Salesforce business analyst in India. Flexible hourly or full-time hire, US/UAE time-zone overlap. Get a free quote today.",
 };
 
 const page = () => {

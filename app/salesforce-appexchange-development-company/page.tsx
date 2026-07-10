@@ -97,9 +97,9 @@ const benefits = [
 ];
 
 export const metadata: Metadata = {
-  title: " Top Salesforce AppExchange Development Company - USA, UK & Australia",
+  title: "Salesforce AppExchange Development Company | Saasverse",
   description:
-    "Looking for a trusted partner for your Salesforce AppExchange project? Saasverse offers expert app development services in the USA, UK & Australia. Contact us today!",
+    "Salesforce AppExchange development company building & launching apps for US, UAE & global markets. Certified ISV experts. Book a consultation.",
 };
 
 const page = () => {

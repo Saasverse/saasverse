@@ -74,9 +74,9 @@ const benefits = [
 ];
 
 export const metadata: Metadata = {
-  title: "Hire Salesforce Developer | Certified Experts - Saasverse",
+  title: "Hire Salesforce Developers in India | Saasverse",
   description:
-    "Saasverse provides expert Salesforce developers to build custom solutions, optimize CRM functionality, and enhance business processes efficiently.",
+    "Hire dedicated Salesforce developers in India. Flexible hourly, part-time or full-time hire, US/UAE time-zone overlap. Get a free quote today.",
 };
 
 const page = () => {

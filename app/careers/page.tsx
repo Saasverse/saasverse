@@ -7,9 +7,9 @@ import { Metadata } from 'next'
 import CTASection from '../components/Home/CTASection'
 
 export const metadata: Metadata = {
-  title: "Careers at Saasverse | Join Our Salesforce Consulting Team",
+  title: "Careers at Saasverse | Salesforce Jobs in India",
   description:
-    "Explore career opportunities at Saasverse. Join our team of passionate professionals and contribute to transforming businesses through cutting-edge technology.",
+    "Build your career at Saasverse. Explore open Salesforce consultant & developer jobs in India and grow with a fast-scaling global consulting team.",
 };
 
 const page = () => {

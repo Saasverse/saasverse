@@ -97,9 +97,9 @@ const benefits = [
 ];
 
 export const metadata: Metadata = {
-  title: "Best Salesforce Managed Services | Expert Support by Saasverse",
+  title: "Salesforce Managed Services | Saasverse",
   description:
-    "Saasverse offers Salesforce managed services in the USA, UK & Australia, including implementation, training & expert support to maximize your Salesforce investment.",
+    "Salesforce managed services for US, UAE & India orgs - proactive monitoring, health checks & security updates. Certified team. Get a free audit.",
 };
 const page = () => {
   return (

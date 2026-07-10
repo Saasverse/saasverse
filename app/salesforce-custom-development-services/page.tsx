@@ -113,9 +113,9 @@ const benefits = [
 ];
 
 export const metadata: Metadata = {
-  title: "Salesforce Custom Development Experts | USA, UK & Australia",
+  title: "Salesforce Custom Development Services | Saasverse",
   description:
-    "Saasverse provides Salesforce custom development services in the USA, UK & Australia, delivering tailored solutions to optimize processes and drive growth.",
+    "Custom Salesforce development services - Apex, Visualforce & workflow automation for US, UAE & India teams. Certified developers. Get a quote.",
 };
 const page = () => {
   return (

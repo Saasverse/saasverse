@@ -74,9 +74,9 @@ const benefits = [
 ];
 
 export const metadata: Metadata = {
-  title: "Hire Top Salesforce Architects | Scalable Solutions - Saasverse",
+  title: "Hire Salesforce Architects in India | Saasverse",
   description:
-    "Hire expert Salesforce architects from Saasverse to design scalable, high-performance CRM solutions tailored to your business needs.",
+    "Hire dedicated Salesforce architects in India. Flexible hourly, part-time or full-time hire, US/UAE time-zone overlap. Get a free quote today.",
 };
 
 const page = () => {
