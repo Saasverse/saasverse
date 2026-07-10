@@ -21,9 +21,9 @@ const page = () => {
             description="At Saasverse Pvt Ltd, we value open communication and are always here to assist you. "
           />
           <ContactInfo/>
+          <VisitUs/>
           <CTASection/>
           <ContactForm/>
-          <VisitUs/>
 
    </>
   )

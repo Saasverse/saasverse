@@ -24,8 +24,8 @@ const page = () => {
       />
       <Our/>
       <AboutOurServices/>
-      <CTASection/>
       <WhyChooseUs/>
+      <CTASection/>
       <ContactForm/>
     </>
   )
