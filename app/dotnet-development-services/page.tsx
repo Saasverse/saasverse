@@ -6,6 +6,7 @@ import FaqReuseable from '../components/FaqReuseable';
 import StickyServices from '../components/StickyServices';
 import WhyChoose from '../components/WhyChoose';
 import { Metadata } from 'next';
+import CTASection from '../components/Home/CTASection';
 
 const faqs = [
   {
@@ -145,6 +146,7 @@ Expert DotNET Development Services for Web, Mobile & Desktop Apps"
       />
 
       <FaqReuseable title=".NET Development FAQ" faqs={faqs} />
+      <CTASection/>
     </>
   );
 };

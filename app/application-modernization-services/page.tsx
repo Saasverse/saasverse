@@ -5,6 +5,7 @@ import HealthSolution from '../work-salesforce-health-cloud/HealthSolution';
 import HealthImplementation from '../work-salesforce-health-cloud/HealthImplementation';
 import FaqReuseable from '../components/FaqReuseable';
 import { Metadata } from 'next';
+import CTASection from '../components/Home/CTASection';
 
 const faqs = [
   {
@@ -146,8 +147,8 @@ const page = () => {
           },
         ]}
       />
-
       <FaqReuseable title="Application Modernization FAQs" faqs={faqs} />
+      <CTASection/>
     </>
   );
 };

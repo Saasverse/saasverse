@@ -83,7 +83,7 @@ const page = () => {
         benefits={benefits}
       />
 
-      <CTASection />
+    
 
       <HealthSolution
         title="Why Partner with ?"
@@ -121,7 +121,7 @@ const page = () => {
       <OurPartners />
 
       <FaqReuseable title="FAQ" faqs={faqs} />
-
+          <CTASection />
       <ContactForm />
     </>
   );

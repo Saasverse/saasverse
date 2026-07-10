@@ -7,6 +7,7 @@ import Image from "next/image";
 type LinkItem = { name: string; href: string };
 
 const servicesLinks: LinkItem[] = [
+  { name: "Service Now", href: "/servicenow" },
   { name: "Shopify Development", href: "/shopify-development-services" },
   { name: "Magento Development", href: "/magento-development-services" },
   { name: "WordPress Development", href: "/wordpress-development-services" },
@@ -111,7 +112,7 @@ const menuItems: MenuItem[] = [
     links: [
       { name: "About Us", href: "/about" },
       { name: "Our Services", href: "/services" },
-      // { name: "Blogs", href: "/blogs" },
+      { name: "Blogs", href: "/blogs" },
       { name: "Careers", href: "/careers" },
       { name: "Contact Us", href: "/contact" },
     ],

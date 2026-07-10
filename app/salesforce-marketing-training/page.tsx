@@ -87,12 +87,12 @@ const page = () => {
         heading="Salesforce Marketing Cloud Training"
         benefits={benefits}
       />
-      <CTASection />
       <LogoGrid
         title="Elevating Training Through Accredited Collaborations"
         subtitle="Industry Partnerships"
         logos={partnerLogos}
       />
+      <CTASection />
       <ContactForm />
     </>
   );

@@ -64,9 +64,9 @@ const benefits = [
 ];
 
 export const metadata: Metadata = {
-  title: "Salesforce Service Cloud Consultant | Expert Solutions - Saasverse",
+  title: 'Salesforce Service Cloud Consultant | Expert Solutions - Saasverse',
   description:
-    "Saasverse offers an expert Salesforce Service Cloud consultant to enhance customer service, streamline support processes, and improve customer satisfaction.",
+    'Saasverse offers an expert Salesforce Service Cloud consultant to enhance customer service, streamline support processes, and improve customer satisfaction.',
 };
 
 const page = () => {
@@ -82,8 +82,6 @@ const page = () => {
         heading="Key Benefits of Our Approach"
         benefits={benefits}
       />
-
-      <CTASection />
 
       <HealthSolution
         title="Why Choose "
@@ -116,7 +114,7 @@ const page = () => {
       <OurPartners />
 
       <FaqReuseable title="FAQ" faqs={faqs} />
-
+      <CTASection />
       <ContactForm />
     </>
   );

@@ -21,7 +21,7 @@ const page = () => {
   return (
       <>
             <PageBanner
-                  image="/images/servicebanner.webp"
+                  image="/images/banner/workS.webp"
                   title="Improving Customer Service Excellence with Salesforce Service Cloud"
                   description="We are a thriving squad of nerd minds, think tankers, pro coders, business geeks, and awesomely creative beings."
                 />

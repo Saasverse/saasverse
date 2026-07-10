@@ -10,6 +10,12 @@ const poppins = Poppins({
   weight: ["300", "400", "500", "600", "700", "800", "900"],
 });
 
+export const metadata: Metadata = {
+  verification: {
+    google: "sIfd-4cZsZsFPJo_TgdZme-_a42ZpA73IBltgHuI-zE",
+  },
+};
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -19,10 +25,8 @@ export default function RootLayout({
     <html lang="en">
       <body className={poppins.className}>
         <Navbar />
-        <main>
-          {children}
-        </main>
-        {/* <FooterContent/> */}
+        <main>{children}</main>
+        {/* <FooterContent /> */}
         <Footer />
       </body>
     </html>

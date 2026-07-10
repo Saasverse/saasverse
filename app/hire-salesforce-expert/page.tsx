@@ -93,7 +93,7 @@ const page = () => {
       benefits={benefits}
     />
 
-    <CTASection/>
+    
 
      <HealthSolution
             title="Benefits of Hiring a Saasverse"
@@ -132,7 +132,7 @@ const page = () => {
           <OurPartners/>
 
            <FaqReuseable title="FAQ" faqs={faqs} />
-
+            <CTASection/>
            <ContactForm/>
     </>
   )

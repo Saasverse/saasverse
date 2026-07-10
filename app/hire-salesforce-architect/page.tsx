@@ -93,7 +93,7 @@ const page = () => {
       benefits={benefits}
     />
 
-    <CTASection/>
+  
 
      <HealthSolution
             title="Why Hire a Salesforce Architect "
@@ -131,7 +131,7 @@ const page = () => {
           <OurPartners/>
 
            <FaqReuseable title="FAQ" faqs={faqs} />
-
+              <CTASection/>
            <ContactForm/>
     </>
   )

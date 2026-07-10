@@ -94,7 +94,7 @@ const page = () => {
         benefits={benefits}
       />
 
-      <CTASection />
+      
 
       <HealthSolution
         title="FSL Integration: "
@@ -133,7 +133,7 @@ const page = () => {
       <OurPartners />
 
       <FaqReuseable title="FAQ" faqs={faqs} />
-
+        <CTASection />
       <ContactForm />
     </>
   );

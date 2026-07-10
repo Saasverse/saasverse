@@ -4,6 +4,7 @@ import WhyWork from './WhyWork'
 import JobOpenings from './JobOpenings'
 import HowToApply from './HowToApply'
 import { Metadata } from 'next'
+import CTASection from '../components/Home/CTASection'
 
 export const metadata: Metadata = {
   title: "Careers at Saasverse | Join Our Salesforce Consulting Team",
@@ -22,6 +23,7 @@ const page = () => {
           <WhyWork/>
           <JobOpenings/>
           <HowToApply/>
+          <CTASection/>
 
     </>
   )

@@ -21,7 +21,7 @@ const page = () => {
   return (
     <>
          <PageBanner
-               image="/images/clientsalesbanner.webp"
+               image="/images/banner/workS.webp"
                title="Enhancing Sales Efficiency with Salesforce Sales Cloud"
                description="Case Study Banner
 Enhancing Sales Efficiency with Salesforce Sales Cloud
