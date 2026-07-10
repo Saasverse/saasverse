@@ -2,13 +2,7 @@
 
 import React, { useEffect, useRef, useState } from "react";
 import Head from "next/head";
-import { Metadata } from "next";
 
-export const metadata: Metadata = {
-  title: "Privacy Policy | Saasverse",
-  description:
-    "Saasverse's Privacy Policy explains how we collect, use and protect your data via cookies, log files and web beacons across our website.",
-};
 
 const sections = [
   {
