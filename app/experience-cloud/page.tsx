@@ -69,9 +69,9 @@ const benefits = [
 ];
 
 export const metadata: Metadata = {
-  title: "Salesforce Experience Cloud Services - Saasverse",
+  title: "Salesforce Experience Cloud Implementation | SaaSverse",
   description:
-    "Saasverse offers Salesforce Experience Cloud services to build engaging digital experiences, enhance customer interactions, and improve business collaboration.",
+    "Certified Salesforce Experience Cloud consultants building branded portals & communities for India, US & UAE businesses. Get a free consultation.",
 };
 
 

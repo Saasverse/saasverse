@@ -69,9 +69,9 @@ const benefits = [
 ];
 
 export const metadata: Metadata = {
-  title: "MuleSoft Development Services | API Integration Experts - Saasverse",
+  title: "MuleSoft Development Services | SaaSverse",
   description:
-    "Saasverse offers expert MuleSoft development services to streamline API integration, connect applications, and enhance business efficiency. Contact us today!",
+    "Certified MuleSoft developers helping businesses streamline API integration, connect applications, and enhance business efficiency. India, US & UAE. Free consultation.",
 };
 
 const page = () => {

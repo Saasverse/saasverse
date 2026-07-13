@@ -79,9 +79,9 @@ const benefits = [
 ];
 
 export const metadata: Metadata = {
-  title: "Salesforce Financial Cloud Implementation Services - Saasverse",
+  title: "Salesforce Financial Cloud Implementation | SaaSverse",
   description:
-    "Saasverse offers Salesforce Financial Cloud implementation services to help financial firms optimize operations, improve client experiences, and drive growth.",
+    "Certified Salesforce Financial Cloud implementation services for financial firms. Optimize operations, improve client experiences, and drive growth. Free consultation.",
 };
 
 const page = () => {

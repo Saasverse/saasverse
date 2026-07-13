@@ -74,9 +74,9 @@ const benefits = [
 ];
 
 export const metadata: Metadata = {
-  title: "Salesforce Field Service Lightning Company - Saasverse",
+  title: "Salesforce Field Service Implementation | SaaSverse",
   description:
-    "Saasverse offers Salesforce Field Service Lightning solutions to optimize scheduling, automate workflows, and enhance on-site service efficiency.",
+    "Certified Salesforce Field Service Lightning consultants optimizing scheduling, automating workflows, and enhancing on-site service efficiency for India, US & UAE businesses. Free consultation.",
 };
 
 

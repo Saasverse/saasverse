@@ -5,9 +5,9 @@ import ContactForm from '../components/ContactForm';
 import PageBanner from '../components/PageBanner';
  
 export const metadata: Metadata = {
-  title: 'All Services — Salesforce, Cloud & Enterprise Solutions | Saasverse',
+  title: 'Salesforce Cloud Services & Consulting | SaaSverse',
   description:
-    'Every service Saasverse offers — in one place. Salesforce consulting, implementation, cloud infrastructure, AppExchange development, ServiceNow, and more, delivered by certified experts across 15+ countries.',
+    'Certified Salesforce consultants delivering Sales, Service & Marketing Cloud solutions for India, US & UAE businesses. Book a free consultation today.',
   alternates: { canonical: 'https://saasverse.in/services' },
   openGraph: {
     title: 'All Services — Saasverse Global Consulting Partner',

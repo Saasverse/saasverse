@@ -69,9 +69,9 @@ const benefits = [
 ];
 
 export const metadata: Metadata = {
-  title: "Salesforce Tableau Implementation Services | Tableau Consulting Services - Saasverse",
+  title: "Tableau CRM (Einstein Analytics) Services | SaaSverse",
   description:
-    "Saasverse offers expert Tableau consulting services to help businesses unlock insights, visualize data, and make data-driven decisions for better growth.",
+    "Certified Tableau CRM consultants helping businesses unlock insights, visualize data, and make data-driven decisions for better growth. India, US & UAE. Free consultation.",
 };
 
 const page = () => {

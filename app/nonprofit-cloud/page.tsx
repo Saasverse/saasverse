@@ -79,9 +79,9 @@ const benefits = [
 ];
 
 export const metadata: Metadata = {
-  title: "Salesforce Nonprofit Cloud Consultant Services - Saasverse",
+  title: "Salesforce Nonprofit Cloud Implementation | SaaSverse",
   description:
-    "Saasverse offers expert Salesforce Nonprofit Cloud consulting services to help organizations streamline operations, enhance donor engagement, and drive impact.",
+    "Certified Salesforce Nonprofit Cloud consultants helping NGOs with fundraising, program management & donor engagement. India, US & UAE. Free consultation.",
 };
 
 

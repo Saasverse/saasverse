@@ -69,9 +69,9 @@ const benefits = [
 ];
 
 export const metadata: Metadata = {
-  title: "Salesforce Mobile Publisher Services - Saasverse",
+  title: "Salesforce Mobile Publisher Services | SaaSverse",
   description:
-    "Saasverse offers Salesforce Mobile Publisher services to help businesses create, customize, and publish branded mobile apps for better user engagement.",
+    "Certified Salesforce Mobile Publisher consultants helping businesses create, customize, and publish branded mobile apps for better user engagement. India, US & UAE. Free consultation.",
 };
 
 

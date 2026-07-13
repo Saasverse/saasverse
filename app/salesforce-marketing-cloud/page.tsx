@@ -64,9 +64,9 @@ const benefits = [
 ];
 
 export const metadata: Metadata = {
-  title: "Best Salesforce Marketing Cloud Services - Saasverse",
+  title: "Salesforce Marketing Cloud Consulting | SaaSverse",
   description:
-    "Saasverse provides expert Salesforce Marketing Cloud services to help businesses automate campaigns, personalize customer journeys, and boost engagement.",
+    "Certified Salesforce Marketing Cloud consultants delivering strategy, implementation & campaign optimization for India, US & UAE brands. Free consultation.",
 };
 
 const page = () => {

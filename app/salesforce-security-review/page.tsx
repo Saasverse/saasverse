@@ -96,9 +96,9 @@ const benefits = [
   },
 ];
 export const metadata: Metadata = {
-  title: "Salesforce Security Review Services | Protect & Comply - Saasverse",
+  title: "Salesforce Security Review Services | SaaSverse",
   description:
-    "Saasverse offers expert Salesforce Security Review services in the USA, UK & Australia. Ensure compliance, protect data, and secure your Salesforce apps.",
+    "Salesforce security review services for AppExchange ISVs in US, UAE & India - vulnerability checks, compliance & data protection. Contact us.",
 };
 const page = () => {
   return (

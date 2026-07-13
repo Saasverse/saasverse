@@ -88,9 +88,9 @@ const benefits = [
 ];
 
 export const metadata: Metadata = {
-  title: "Salesforce Support and Maintenance Services | Saasverse",
+  title: "Salesforce Support & Maintenance Services | SaaSverse",
   description:
-    "Get reliable Salesforce Support and Maintenance Services from Saasverse to ensure smooth performance, quick issue resolution, and system optimization.",
+    "24/7 Salesforce support & maintenance services for US, UAE & India businesses - bug fixes, updates, optimization. Talk to our certified team.",
 };
 const page = () => {
   return (

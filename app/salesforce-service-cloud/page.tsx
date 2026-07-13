@@ -64,9 +64,9 @@ const benefits = [
 ];
 
 export const metadata: Metadata = {
-  title: 'Salesforce Service Cloud Consultant | Expert Solutions - Saasverse',
+  title: 'Salesforce Service Cloud Consulting | SaaSverse',
   description:
-    'Saasverse offers an expert Salesforce Service Cloud consultant to enhance customer service, streamline support processes, and improve customer satisfaction.',
+    'Certified Salesforce Service Cloud consultants offering implementation, customization & support for India, US & UAE support teams. Get a free consultation.',
 };
 
 const page = () => {

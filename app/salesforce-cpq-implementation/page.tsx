@@ -69,9 +69,9 @@ const benefits = [
 ];
 
 export const metadata: Metadata = {
-  title: "Salesforce CPQ Implementation Services - Saasverse",
+  title: "Salesforce CPQ Implementation Services | SaaSverse",
   description:
-    "Saasverse provides Salesforce CPQ implementation services to streamline pricing, automate quotes, and enhance sales efficiency for your business.",
+    "Certified Salesforce CPQ implementation consultants helping businesses streamline pricing, automate quotes, and enhance sales efficiency. India, US & UAE. Free consultation.",
 };
 
 

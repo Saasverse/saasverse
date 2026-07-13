@@ -64,9 +64,9 @@ const benefits = [
 ];
 
 export const metadata: Metadata = {
-  title: "Salesforce Sales Cloud Consulting Service - Saasverse",
+  title: "Salesforce Sales Cloud Implementation | SaaSverse",
   description:
-    "Saasverse offers expert Salesforce Sales Cloud consulting services to help businesses optimize sales processes, improve efficiency, and drive revenue growth.",
+    "Certified Salesforce Sales Cloud consultants: implementation, customization & support for India, US & UAE teams. Get a free consultation.",
 };
 
 const page = () => {
