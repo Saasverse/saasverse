@@ -69,7 +69,7 @@ const benefits = [
 ];
 
 export const metadata: Metadata = {
-  title: "Salesforce Mobile Publisher Services | SaaSverse",
+  title: "Salesforce Mobile Publisher Services | Saasverse",
   description:
     "Certified Salesforce Mobile Publisher consultants helping businesses create, customize, and publish branded mobile apps for better user engagement. India, US & UAE. Free consultation.",
 };

@@ -88,7 +88,7 @@ const benefits = [
 ];
 
 export const metadata: Metadata = {
-  title: "Salesforce Support & Maintenance Services | SaaSverse",
+  title: "Salesforce Support & Maintenance Services | Saasverse",
   description:
     "24/7 Salesforce support & maintenance services for US, UAE & India businesses - bug fixes, updates, optimization. Talk to our certified team.",
 };

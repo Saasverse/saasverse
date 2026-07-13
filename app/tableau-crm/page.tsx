@@ -69,7 +69,7 @@ const benefits = [
 ];
 
 export const metadata: Metadata = {
-  title: "Tableau CRM (Einstein Analytics) Services | SaaSverse",
+  title: "Tableau CRM (Einstein Analytics) Services | Saasverse",
   description:
     "Certified Tableau CRM consultants helping businesses unlock insights, visualize data, and make data-driven decisions for better growth. India, US & UAE. Free consultation.",
 };

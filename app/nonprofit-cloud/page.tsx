@@ -79,7 +79,7 @@ const benefits = [
 ];
 
 export const metadata: Metadata = {
-  title: "Salesforce Nonprofit Cloud Implementation | SaaSverse",
+  title: "Salesforce Nonprofit Cloud Implementation | Saasverse",
   description:
     "Certified Salesforce Nonprofit Cloud consultants helping NGOs with fundraising, program management & donor engagement. India, US & UAE. Free consultation.",
 };

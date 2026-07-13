@@ -69,7 +69,7 @@ const benefits = [
 ];
 
 export const metadata: Metadata = {
-  title: "MuleSoft Development Services | SaaSverse",
+  title: "MuleSoft Development Services | Saasverse",
   description:
     "Certified MuleSoft developers helping businesses streamline API integration, connect applications, and enhance business efficiency. India, US & UAE. Free consultation.",
 };

@@ -64,7 +64,7 @@ const benefits = [
 ];
 
 export const metadata: Metadata = {
-  title: 'Salesforce Service Cloud Consulting | SaaSverse',
+  title: 'Salesforce Service Cloud Consulting | Saasverse',
   description:
     'Certified Salesforce Service Cloud consultants offering implementation, customization & support for India, US & UAE support teams. Get a free consultation.',
 };

@@ -69,7 +69,7 @@ const benefits = [
 ];
 
 export const metadata: Metadata = {
-  title: "Salesforce Einstein AI Services | SaaSverse",
+  title: "Salesforce Einstein AI Services | Saasverse",
   description:
     "Certified Salesforce Einstein AI consultants helping businesses leverage AI-powered insights, automate processes, and enhance decision-making. India, US & UAE. Free consultation.",
 };

@@ -64,7 +64,7 @@ const benefits = [
 ];
 
 export const metadata: Metadata = {
-  title: "Salesforce Sales Cloud Implementation | SaaSverse",
+  title: "Salesforce Sales Cloud Implementation | Saasverse",
   description:
     "Certified Salesforce Sales Cloud consultants: implementation, customization & support for India, US & UAE teams. Get a free consultation.",
 };

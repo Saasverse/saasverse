@@ -5,7 +5,7 @@ import ContactForm from '../components/ContactForm';
 import PageBanner from '../components/PageBanner';
  
 export const metadata: Metadata = {
-  title: 'Salesforce Cloud Services & Consulting | SaaSverse',
+  title: 'Salesforce Cloud Services & Consulting | Saasverse',
   description:
     'Certified Salesforce consultants delivering Sales, Service & Marketing Cloud solutions for India, US & UAE businesses. Book a free consultation today.',
   alternates: { canonical: 'https://saasverse.in/services' },
