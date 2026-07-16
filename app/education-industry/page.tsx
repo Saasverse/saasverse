@@ -79,9 +79,9 @@ const benefits = [
 ];
 
 export const metadata: Metadata = {
-  title: "Salesforce Solutions for the Education Industry - Saasverse",
+  title: "Salesforce Education Cloud Solutions | Saasverse",
   description:
-    "Saasverse provides Salesforce solutions for the education industry to enhance student engagement, streamline administration, and improve learning experiences.",
+    "Saasverse implements Salesforce Education Cloud for schools and universities - admissions, student success, SIS integration. Book a consult.",
 };
 
 const page = () => {

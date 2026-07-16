@@ -4,6 +4,7 @@ import PageBanner from '../components/PageBanner';
 import CTASection from '../components/Home/CTASection';
 import Image from 'next/image';
 import BlogSlider from '../components/BlogSlider';
+import { Metadata } from 'next';
 
 const blogs = [
   {
@@ -50,6 +51,12 @@ const blogs = [
   
 ];
 
+
+export const metadata: Metadata = {
+  title: "Salesforce and Business Tech Blog | Saasverse",
+  description:
+    "Explore Saasverse's blog for Salesforce CRM, implementation tips and business tech insights. Read more.",
+};
 export default function BlogPage() {
   return (
     <div>

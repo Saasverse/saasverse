@@ -38,9 +38,9 @@ const faqs = [
 ];
 
 export const metadata: Metadata = {
-  title: "AWS Development Services | Amazon Cloud Application Consulting",
+  title: "AWS Cloud Services & Development | Saasverse",
   description:
-    "Get expert AWS Development Services for scalable, secure, and cost-effective cloud solutions. Boost performance, security & reliability with our AWS expertise.",
+    "AWS cloud consulting, migration & managed services from India. Scalable solutions for US & UAE. Free quote.",
 };
 
 const page = () => {

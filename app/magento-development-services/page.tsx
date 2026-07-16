@@ -104,9 +104,9 @@ const features = [
 ];
 
 export const metadata: Metadata = {
-  title: "Magento development services | saasverse",
+  title: "Magento Development Services | Saasverse",
   description:
-    "Get custom Magento development services to build high-performing, secure, and scalable eCommerce stores tailored to your business needs.",
+    "Expert Magento development services from India. Custom stores, migrations & support for US/UAE brands. Get a free quote.",
 };
 
 const page = () => {

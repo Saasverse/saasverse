@@ -44,9 +44,9 @@ const faqs = [
 ];
 
 export const metadata: Metadata = {
-  title: "Sitecore Development Services | Scalable & Custom Solutions",
+  title: "Sitecore Development Services | Saasverse",
   description:
-    "Get expert Sitecore development services for scalable, secure, and personalized digital experiences. Build powerful CMS solutions tailored to your needs.",
+    "Custom Sitecore development, migration & CMS integration for scalable digital experiences. India team serving US & UAE clients. Get a free quote.",
 };
 
 

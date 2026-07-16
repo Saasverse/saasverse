@@ -79,9 +79,9 @@ const benefits = [
 ];
 
 export const metadata: Metadata = {
-  title: "Salesforce Solutions for the Communications Industry- Saasverse",
+  title: "Salesforce Communications Cloud Solutions | Saasverse",
   description:
-    "Saasverse provides Salesforce solutions for the communications industry, offering a unified customer journey, automated order management, and self-service.",
+    "Saasverse implements Salesforce Communications Cloud for telecom providers - order automation, self-service, and CX. Talk to an expert.",
 };
 
 const page = () => {

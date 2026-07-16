@@ -79,9 +79,9 @@ const benefits = [
 ];
 
 export const metadata: Metadata = {
-  title: "Salesforce Solutions for the Energy Industry - Saasverse",
+  title: "Salesforce for Energy and Utilities | Saasverse",
   description:
-    "Saasverse provides Salesforce solutions for the energy industry to streamline operations, optimize resource management, and enhance customer engagement.",
+    "Saasverse delivers Salesforce CRM solutions for energy and utility firms - grid ops, field service, sustainability tracking. Get a free consult.",
 };
 
 const page = () => {

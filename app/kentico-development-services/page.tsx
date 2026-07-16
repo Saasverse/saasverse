@@ -33,9 +33,9 @@ const faqs = [
 ];
 
 export const metadata: Metadata = {
-  title: "Kentico Development & Integration | Scalable CMS Solutions",
+  title: "Kentico Development Services | Saasverse",
   description:
-    "Looking for seamless Kentico development and integration? We help you build a secure, scalable CMS that enhances your digital experience and business growth",
+    "Expert Kentico CMS development & migration services from Saasverse. Trusted by US & UAE clients. Free consult.",
 };
 
 const page = () => {

@@ -79,9 +79,9 @@ const benefits = [
 ];
 
 export const metadata: Metadata = {
-  title: "Salesforce Solutions for the Financial Industry - Saasverse",
+  title: "Salesforce Financial Services Cloud | Saasverse",
   description:
-    "Saasverse provides Salesforce solutions for the financial industry to optimize operations, enhance client relationships, and drive business growth.",
+    "Saasverse builds Salesforce Financial Services Cloud solutions for banks and advisors - compliance, client 360, growth. Free consult.",
 };
 
 const page = () => {

@@ -12,9 +12,9 @@ import { Metadata } from 'next'
 
 
 export const metadata: Metadata = {
-  title: "Salesforce Service Cloud | Enhance Customer Support - Saasverse",
+  title: "Salesforce Service Cloud Case Study | Saasverse",
   description:
-    "Leverage Salesforce Service Cloud with Saasverse to streamline customer support, improve case management, and deliver exceptional service experiences.",
+    "See how Saasverse implemented Salesforce Service Cloud to streamline customer support and improve case management. Read the case study.",
 };
 
 const page = () => {

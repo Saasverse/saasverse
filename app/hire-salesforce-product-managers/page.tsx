@@ -1,5 +1,5 @@
-import React from 'react'
-import PageBanner from '../components/PageBanner'
+import React from 'react';
+import PageBanner from '../components/PageBanner';
 import SalesforceServiceReuseable from '../components/SalesforceServiceReuseable';
 import CTASection from '../components/Home/CTASection';
 import HealthSolution from '../work-salesforce-health-cloud/HealthSolution';
@@ -9,7 +9,6 @@ import FaqReuseable from '../components/FaqReuseable';
 import ContactForm from '../components/ContactForm';
 import WhyChooseUs from '../about/WhyChooseUs';
 import { Metadata } from 'next';
-
 
 const faqs = [
   {
@@ -23,7 +22,8 @@ const faqs = [
       'Absolutely. Our Consultants specialize in customizing Salesforce solutions – be it CRM, Marketing Cloud, Mobile App development, or CDP – to meet your specific business requirements.',
   },
   {
-    question: 'What is the typical engagement process with Saasverse Consultants?',
+    question:
+      'What is the typical engagement process with Saasverse Consultants?',
     answer:
       'Our engagement process is client-centric, starting with understanding your business needs, followed by providing strategic Salesforce consultancy tailored to those needs. We work either on a project basis or time & material contracts.',
   },
@@ -47,95 +47,92 @@ const faqs = [
 
 const benefits = [
   {
-    title: "Enhanced User Adoption:",
+    title: 'Enhanced User Adoption:',
     description:
-      "A user-centric approach leads to a positive user experience and higher adoption rates of the Salesforce platform.",
+      'A user-centric approach leads to a positive user experience and higher adoption rates of the Salesforce platform.',
   },
   {
-    title: "Improved Business Alignment:",
+    title: 'Improved Business Alignment:',
     description:
-      "Your Salesforce product will perfectly align with your business goals, driving strategic initiatives and maximizing ROI.",
+      'Your Salesforce product will perfectly align with your business goals, driving strategic initiatives and maximizing ROI.',
   },
   {
-    title: "Optimized Functionality:",
+    title: 'Optimized Functionality:',
     description:
-      "Data-driven decision-making ensures your Salesforce product offers the most relevant and valuable features for your users.",
+      'Data-driven decision-making ensures your Salesforce product offers the most relevant and valuable features for your users.',
   },
   {
-    title: "Boosted Productivity:",
+    title: 'Boosted Productivity:',
     description:
-      "Streamlined workflows and user-friendly functionalities enhance team productivity and empower them to achieve more.",
+      'Streamlined workflows and user-friendly functionalities enhance team productivity and empower them to achieve more.',
   },
   {
-    title: "A Future-Proofed Salesforce Solution:",
+    title: 'A Future-Proofed Salesforce Solution:',
     description:
-      "Your PM will proactively plan for future growth and evolving needs, ensuring your Salesforce solution remains sustainable and scalable.",
+      'Your PM will proactively plan for future growth and evolving needs, ensuring your Salesforce solution remains sustainable and scalable.',
   },
 ];
 
 export const metadata: Metadata = {
-  title: "Hire Salesforce Product Managers in India | Saasverse",
+  title: 'Hire Salesforce Product Managers in India | Saasverse',
   description:
-    "Hire a dedicated Salesforce product manager in India. Flexible hourly or full-time hire, US/UAE time-zone overlap. Get a free quote today.",
+    'Hire a dedicated Salesforce product manager in India. Flexible hourly or full-time hire, US/UAE time-zone overlap. Get a free quote today.',
 };
 
 const page = () => {
   return (
     <>
-       <PageBanner
-                 image="/images/banner/hirebanner.webp"
-                 title="Hire Salesforce Product Manager"
-                 description="Shape Your Salesforce Vision: Hire Top-Tier Salesforce Product Managers at Saasverse Pvt Ltd"
-               />
+      <PageBanner
+        image="/images/banner/hirebanner.webp"
+        title="Hire Salesforce Product Manager"
+        description="Shape Your Salesforce Vision: Hire Top-Tier Salesforce Product Managers at Saasverse Pvt Ltd"
+      />
 
-                <SalesforceServiceReuseable
-      heading="Our Approach to Hire Product Manager"
-      benefits={benefits}
-    />
+      <SalesforceServiceReuseable
+        heading="Our Approach to Hire Product Manager"
+        benefits={benefits}
+      />
 
-    
+      <HealthSolution
+        title="Why Hire a Salesforce Product Manager "
+        highlight="from Saasverse?"
+        description=""
+        image="/images/websiteimages/4.webp"
+        imageAlt="Salesforce Healthcare Cloud Solution"
+        solutions={[
+          {
+            title: 'Strategic Visionaries',
+            description:
+              "Our PMs are Salesforce-certified experts with a keen understanding of the platform's capabilities and strategic thinking to define a roadmap aligned with your business objectives.",
+          },
+          {
+            title: 'Product Expertise',
+            description:
+              'They possess a deep understanding of product development lifecycles, user experience (UX) principles, and best practices for maximizing Salesforce product adoption.',
+          },
+          {
+            title: 'User Advocacy',
+            description:
+              'Our PMs champion the needs of your users, ensuring the Salesforce solution caters to their workflows and drives productivity and satisfaction.',
+          },
+          {
+            title: 'Technical Proficiency',
+            description:
+              'They possess a solid grasp of Salesforce functionalities and collaborate effectively with development teams to translate product vision into reality.',
+          },
+        ]}
+      />
 
-     <HealthSolution
-            title="Why Hire a Salesforce Product Manager "
-            highlight="from Saasverse?"
-            description=""
-            image="/images/websiteimages/4.webp"
-            imageAlt="Salesforce Healthcare Cloud Solution"
-            solutions={[
-              {
-    title: 'Strategic Visionaries',
-    description:
-      "Our PMs are Salesforce-certified experts with a keen understanding of the platform's capabilities and strategic thinking to define a roadmap aligned with your business objectives.",
-  },
-  {
-    title: 'Product Expertise',
-    description:
-      'They possess a deep understanding of product development lifecycles, user experience (UX) principles, and best practices for maximizing Salesforce product adoption.',
-  },
-  {
-    title: 'User Advocacy',
-    description:
-      'Our PMs champion the needs of your users, ensuring the Salesforce solution caters to their workflows and drives productivity and satisfaction.',
-  },
-  {
-    title: 'Technical Proficiency',
-    description:
-      'They possess a solid grasp of Salesforce functionalities and collaborate effectively with development teams to translate product vision into reality.',
-  },
-             
-            ]}
-          />
+      <WhyChooseUs />
+      <CertificateSlider />
 
-<WhyChooseUs/>
-          <CertificateSlider/>
+      <OurPartners />
 
-          <OurPartners/>
-
-           <FaqReuseable title="FAQ" faqs={faqs} />
-            <CTASection/>
-           <ContactForm/>
+      <FaqReuseable title="FAQ" faqs={faqs} />
+      <CTASection />
+      <ContactForm />
     </>
-  )
-}
+  );
+};
 
-export default page
+export default page;

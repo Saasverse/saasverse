@@ -79,9 +79,9 @@ const benefits = [
 ];
 
 export const metadata: Metadata = {
-  title: "Salesforce Solutions for the Consumer Goods Industry - Saasverse",
+  title: "Salesforce Consumer Goods Cloud | Saasverse",
   description:
-    "Saasverse provides Salesforce solutions for the consumer goods industry to optimize sales, streamline supply chains, enhance customer engagement, and drive growth.",
+    "Saasverse delivers Salesforce Consumer Goods Cloud for CPG brands and retailers - omnichannel CX, supply chain. Get a free consult.",
 };
 
 const page = () => {

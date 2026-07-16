@@ -79,9 +79,9 @@ const benefits = [
 ];
 
 export const metadata: Metadata = {
-  title: " Salesforce Solutions for the Media Industry- Saasverse",
+  title: "Salesforce Media Cloud Solutions | Saasverse",
   description:
-    "Saasverse offers Salesforce solutions for the media industry to enhance audience engagement, automate workflows, optimize ad sales, and drive growth.",
+    "Saasverse delivers Salesforce Media Cloud for publishers and broadcasters - ad sales, subscriptions, audience data. Free consultation.",
 };
 
 const page = () => {

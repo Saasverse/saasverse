@@ -113,9 +113,9 @@ const features = [
 ];
 
 export const metadata: Metadata = {
-  title: "Shopify development services | saasverse",
+  title: "Shopify Development Services | Saasverse",
   description:
-    "Get custom Shopify development services to build scalable, user-friendly, and mobile-optimized eCommerce websites.",
+    "Top-rated Shopify development services from India for US & UAE e-commerce brands. Get a free quote today.",
 };
 
 const page = () => {

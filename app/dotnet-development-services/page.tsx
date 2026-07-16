@@ -108,9 +108,9 @@ const features = [
 ];
 
 export const metadata: Metadata = {
-  title: "DotNet development services | saasverse",
+  title: "Custom .NET Development Services | Saasverse",
   description:
-    "Get robust and scalable web solutions with expert DotNet development services tailored to your business needs.",
+    "Hire dedicated .NET developers in India for scalable web & cloud apps. Trusted by US and UAE clients. Get a free quote today.",
 };
 const page = () => {
   return (

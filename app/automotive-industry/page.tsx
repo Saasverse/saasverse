@@ -79,9 +79,9 @@ const benefits = [
 ];
 
 export const metadata: Metadata = {
-  title: "Salesforce Solutions for the Automotive Industry - Saasverse",
+  title: "Salesforce Automotive Cloud Solutions | Saasverse",
   description:
-    "Saasverse offers Salesforce solutions for the automotive industry to streamline operations, enhance customer experiences, and drive business growth efficiently.",
+    "Saasverse builds Salesforce Automotive Cloud solutions for dealers and OEMs - lead management, service, and CX. Book a free consult.",
 };
 
 const page = () => {

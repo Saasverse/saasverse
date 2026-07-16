@@ -12,9 +12,9 @@ import { Metadata } from 'next';
 
 
 export const metadata: Metadata = {
-  title: "Salesforce Healthcare Cloud | Transform Healthcare Operations - Saasverse",
+  title: "Salesforce Health Cloud Case Study | Saasverse",
   description:
-    "Transform healthcare operations with Salesforce Healthcare Cloud by Saasverse. Improve patient experiences, streamline workflows, and deliver better care solutions.",
+    "See how Saasverse implemented Salesforce Health Cloud to boost patient care and efficiency. Read the case study.",
 };
 
 const page = () => {

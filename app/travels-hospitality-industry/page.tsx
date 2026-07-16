@@ -79,9 +79,9 @@ const benefits = [
 ];
 
 export const metadata: Metadata = {
-  title: "Salesforce Solutions for the Travel & Hospitality Industry - Saasverse",
+  title: "Salesforce CRM for Travel and Hospitality | Saasverse",
   description:
-    "Saasverse offers Salesforce solutions for the travel and hospitality industry to enhance customer experiences, streamline bookings, and boost operational efficiency.",
+    "Saasverse builds Salesforce CRM solutions for hotels and travel brands - guest 360, loyalty, PMS integration. Book a free consult.",
 };
 
 const page = () => {

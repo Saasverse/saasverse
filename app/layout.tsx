@@ -3,7 +3,8 @@ import { Poppins } from "next/font/google";
 import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
 import "./globals.css";
-import FooterContent from "./components/FooterContent";
+import { GoogleAnalytics, GoogleTagManager } from "@next/third-parties/google";
+
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -24,9 +25,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={poppins.className}>
+          <GoogleTagManager gtmId="GTM-546F769K" />
+
         <Navbar />
         <main>{children}</main>
-        {/* <FooterContent /> */}
+       
         <Footer />
       </body>
     </html>

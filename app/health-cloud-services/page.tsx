@@ -69,9 +69,9 @@ const benefits = [
 ];
 
 export const metadata: Metadata = {
-  title: "Salesforce Health Cloud Implementation | Saasverse",
+  title: "Salesforce Health Cloud Solutions | Saasverse",
   description:
-    "Certified Salesforce Health Cloud implementation for HIPAA-ready patient engagement & care coordination. India, US & UAE. Free consultation.",
+    "Saasverse implements Salesforce Health Cloud for hospitals and payers - unified patient view, care coordination, HIPAA-ready. Free consult.",
 };
 
 const page = () => {

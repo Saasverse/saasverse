@@ -43,9 +43,9 @@ const faqs = [
 ];
 
 export const metadata: Metadata = {
-  title: " Application Modernization Services | Legacy App Experts - Saasverse",
+  title: "Application Modernization Services | Saasverse",
   description:
-    "Transform legacy systems with Saasverse's Application Modernization Services to boost agility, scalability, and reduce technical debt.",
+    "Application modernization services: legacy migration to cloud. India-based team serving US & UAE. Free consult.",
 };
 
 const page = () => {

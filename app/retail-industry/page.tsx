@@ -79,9 +79,9 @@ const benefits = [
 ];
 
 export const metadata: Metadata = {
-  title: "Salesforce Solutions for the Retail Industry - Saasverse",
+  title: "Salesforce Retail Cloud Solutions | Saasverse",
   description:
-    "Saasverse offers Salesforce solutions for the retail industry to enhance customer experiences, streamline operations, optimize sales, and drive business growth.",
+    "Saasverse builds Salesforce Retail Cloud solutions for omnichannel retailers - inventory, orders, personalization. Free consultation.",
 };
 
 const page = () => {

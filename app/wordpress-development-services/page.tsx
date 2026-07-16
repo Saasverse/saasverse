@@ -106,9 +106,9 @@ const features = [
   },
 ];
 export const metadata: Metadata = {
-  title: "Wordpress Development Services | Scalable & Custom Solutions",
+  title: "WordPress Development Services | Saasverse",
   description:
-    "Get custom WordPress development services for fast, secure, and SEO-friendly websites that match your brand and business goals.",
+    "Custom WordPress development services by India-based experts. Themes, plugins & secure sites for US/UAE clients. Free quote.",
 };
 const page = () => {
   return (

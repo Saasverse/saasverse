@@ -7,6 +7,14 @@ import StickyServices from '../components/StickyServices';
 
 import HealthResult from '../work-salesforce-health-cloud/HealthResult';
 import WhyChooseUs from '../about/WhyChooseUs';
+import { Metadata } from 'next';
+
+
+export const metadata: Metadata = {
+  title: "Zoho CRM Services & Implementation | Saasverse",
+  description:
+    "Certified Zoho CRM services: setup, customization & migration by India experts. Serving US & UAE. Free consult.",
+};
 
 const faqs = [
   {
