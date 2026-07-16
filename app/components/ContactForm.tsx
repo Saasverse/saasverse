@@ -100,6 +100,15 @@ export default function ContactForm() {
       setSubmitted(true);
       setFormData({ name: '', email: '', phone: '', subject: '', message: '' });
       setErrors({});
+ 
+      // GTM/GA4 lead tracking — fire only on confirmed success
+      if (typeof window !== 'undefined' && (window as any).dataLayer) {
+        (window as any).dataLayer.push({
+          event: 'generate_lead',
+          form_name: 'consultation_form',
+          service_selected: formData.subject,
+        });
+      }
     } catch (error) {
       console.error('Email Error:', error);
       alert('Something went wrong. Please try again.');
