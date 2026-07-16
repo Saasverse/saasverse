@@ -18,6 +18,10 @@ export const metadata: Metadata = {
   title: "Saasverse – Salesforce Consulting & Software Development",
   description:
     "Saasverse: Salesforce consulting, implementation & custom software development for US, UAE & global businesses. India-based experts. Get a free quote",
+
+      alternates: {
+    canonical: "https://www.saasverse.in",
+  },
 };
 
 export default function Home() {
