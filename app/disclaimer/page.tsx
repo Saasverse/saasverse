@@ -5,13 +5,7 @@ import Head from "next/head";
 import { Metadata } from "next";
 
 
-export const metadata: Metadata = {
-  title: "Disclaimer | Saasverse",
-  description:
-    "Saasverse's disclaimer: content on this site is for general information only and does not constitute professional advice. Services may change anytime.",
 
- alternates: { canonical: 'https://www.saasverse.in/disclaimer' },
-  };
 
 const sections = [
   {
