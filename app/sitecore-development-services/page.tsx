@@ -47,7 +47,9 @@ export const metadata: Metadata = {
   title: "Sitecore Development Services | Saasverse",
   description:
     "Custom Sitecore development, migration & CMS integration for scalable digital experiences. India team serving US & UAE clients. Get a free quote.",
-};
+    alternates: { canonical: 'https://www.saasverse.in/sitecore-development-services' },
+
+  };
 
 
 const page = () => {

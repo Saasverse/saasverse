@@ -77,7 +77,9 @@ export const metadata: Metadata = {
   title: "Hire Salesforce Business Analysts in India | Saasverse",
   description:
     "Hire a dedicated Salesforce business analyst in India. Flexible hourly or full-time hire, US/UAE time-zone overlap. Get a free quote today.",
-};
+    alternates: { canonical: 'https://www.saasverse.in/hire-salesforce-business-analyst' },
+
+  };
 
 const page = () => {
   return (

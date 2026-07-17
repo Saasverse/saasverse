@@ -82,7 +82,9 @@ export const metadata: Metadata = {
   title: "Salesforce for Energy and Utilities | Saasverse",
   description:
     "Saasverse delivers Salesforce CRM solutions for energy and utility firms - grid ops, field service, sustainability tracking. Get a free consult.",
-};
+
+    alternates: { canonical: 'https://www.saasverse.in/energy-industry' },
+  };
 
 const page = () => {
   return (

@@ -109,7 +109,9 @@ export const metadata: Metadata = {
   title: "WordPress Development Services | Saasverse",
   description:
     "Custom WordPress development services by India-based experts. Themes, plugins & secure sites for US/UAE clients. Free quote.",
-};
+    alternates: { canonical: 'https://www.saasverse.in/wordpress-development-services' },
+
+  };
 const page = () => {
   return (
     <>

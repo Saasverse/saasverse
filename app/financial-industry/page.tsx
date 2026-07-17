@@ -82,7 +82,10 @@ export const metadata: Metadata = {
   title: "Salesforce Financial Services Cloud | Saasverse",
   description:
     "Saasverse builds Salesforce Financial Services Cloud solutions for banks and advisors - compliance, client 360, growth. Free consult.",
-};
+
+
+    alternates: { canonical: 'https://www.saasverse.in/financial-industry' }, 
+  };
 
 const page = () => {
   return (

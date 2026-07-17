@@ -10,6 +10,8 @@ export const metadata: Metadata = {
   title: "Careers at Saasverse | Salesforce Jobs in India",
   description:
     "Build your career at Saasverse. Explore open Salesforce consultant & developer jobs in India and grow with a fast-scaling global consulting team.",
+
+    alternates: { canonical: 'https://www.saasverse.in/careers' },
 };
 
 const page = () => {

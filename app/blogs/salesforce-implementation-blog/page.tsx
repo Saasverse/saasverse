@@ -4,6 +4,17 @@ import { Newsreader, Inter, Space_Grotesk } from "next/font/google";
 import CTASection from "@/app/components/Home/CTASection";
 import PageBanner from "@/app/components/PageBanner";
 import BlogSlider from "@/app/components/BlogSlider";
+import { Metadata } from "next";
+
+
+export const metadata: Metadata = {
+  title: "Salesforce Implementation Strategies | Saasverse",
+  description:
+    "Learn key Salesforce implementation strategies, steps and best practices for business success. Read more.",
+
+    alternates: { canonical: 'https://www.saasverse.in/blogs/salesforce-implementation-blog' },
+  };
+
 
 const newsreader = Newsreader({
   subsets: ["latin"],

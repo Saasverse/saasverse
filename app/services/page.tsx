@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   title: 'Salesforce Cloud Services & Consulting | Saasverse',
   description:
     'Certified Salesforce consultants delivering Sales, Service & Marketing Cloud solutions for India, US & UAE businesses. Book a free consultation today.',
-  alternates: { canonical: 'https://saasverse.in/services' },
+  alternates: { canonical: 'https://www.saasverse.in/services' },
   openGraph: {
     title: 'All Services — Saasverse Global Consulting Partner',
     description:

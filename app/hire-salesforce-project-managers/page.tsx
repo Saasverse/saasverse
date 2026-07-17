@@ -77,7 +77,9 @@ export const metadata: Metadata = {
   title: "Hire Salesforce Project Managers in India | Saasverse",
   description:
     "Hire a dedicated Salesforce project manager in India. Flexible hourly or full-time hire, US/UAE time-zone overlap. Get a free quote today.",
-};
+
+    alternates: { canonical: 'https://www.saasverse.in/hire-salesforce-project-managers' },
+  };
 
 const page = () => {
   return (

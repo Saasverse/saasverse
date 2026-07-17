@@ -72,7 +72,9 @@ export const metadata: Metadata = {
   title: "Salesforce Einstein AI Services | Saasverse",
   description:
     "Certified Salesforce Einstein AI consultants helping businesses leverage AI-powered insights, automate processes, and enhance decision-making. India, US & UAE. Free consultation.",
-};
+    alternates: { canonical: 'https://www.saasverse.in/salesforce-ai-company' },
+
+  };
 
 
 const page = () => {

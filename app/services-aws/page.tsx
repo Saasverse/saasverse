@@ -41,7 +41,9 @@ export const metadata: Metadata = {
   title: "AWS Cloud Services & Development | Saasverse",
   description:
     "AWS cloud consulting, migration & managed services from India. Scalable solutions for US & UAE. Free quote.",
-};
+    alternates: { canonical: 'https://www.saasverse.in/services-aws' },
+
+  };
 
 const page = () => {
   return (

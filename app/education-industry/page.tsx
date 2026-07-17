@@ -82,7 +82,9 @@ export const metadata: Metadata = {
   title: "Salesforce Education Cloud Solutions | Saasverse",
   description:
     "Saasverse implements Salesforce Education Cloud for schools and universities - admissions, student success, SIS integration. Book a consult.",
-};
+
+    alternates: { canonical: 'https://www.saasverse.in/education-industry' },
+  };
 
 const page = () => {
   return (

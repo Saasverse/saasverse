@@ -72,7 +72,9 @@ export const metadata: Metadata = {
   title: "Salesforce CPQ Implementation Services | Saasverse",
   description:
     "Certified Salesforce CPQ implementation consultants helping businesses streamline pricing, automate quotes, and enhance sales efficiency. India, US & UAE. Free consultation.",
-};
+    alternates: { canonical: 'https://www.saasverse.in/salesforce-cpq-implementation' },
+
+  };
 
 
 const page = () => {

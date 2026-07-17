@@ -77,7 +77,9 @@ export const metadata: Metadata = {
   title: "Hire Salesforce QA Testers in India | Saasverse",
   description:
     "Hire dedicated Salesforce QA testers in India for functional & technical testing. Flexible hourly or full-time hire, US/UAE time-zone overlap. Free quote.",
-};
+
+    alternates: { canonical: 'https://www.saasverse.in/hire-salesforce-expert' },
+  };
 
 const page = () => {
   return (

@@ -56,7 +56,9 @@ export const metadata: Metadata = {
   title: "Salesforce and Business Tech Blog | Saasverse",
   description:
     "Explore Saasverse's blog for Salesforce CRM, implementation tips and business tech insights. Read more.",
-};
+
+    alternates: { canonical: 'https://www.saasverse.in/blogs' },
+  };
 export default function BlogPage() {
   return (
     <div>

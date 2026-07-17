@@ -111,7 +111,9 @@ export const metadata: Metadata = {
   title: "Custom .NET Development Services | Saasverse",
   description:
     "Hire dedicated .NET developers in India for scalable web & cloud apps. Trusted by US and UAE clients. Get a free quote today.",
-};
+    alternates: { canonical: 'https://www.saasverse.in/dotnet-development-services' },
+
+  };
 const page = () => {
   return (
     <>

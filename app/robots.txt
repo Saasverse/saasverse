@@ -1,0 +1,51 @@
+# saasverse.in — robots.txt (built by Jayesh Sharma on 17th July 2026)
+# No robots.txt existed on this site before this file (confirmed: both
+# https://www.saasverse.in/robots.txt and https://saasverse.in/robots.txt
+# returned Next.js's default 404). This is a from-scratch build.
+
+# Standard search crawlers — full access
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+# AI / answer-engine crawlers — explicitly allowed on purpose.
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Perplexity-User
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+User-agent: Bytespider
+Allow: /
+
+# Catch-all for every other crawler not named above
+User-agent: *
+Allow: /
+
+Sitemap: https://www.saasverse.in/sitemap.xml

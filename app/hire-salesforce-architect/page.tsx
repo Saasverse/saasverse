@@ -77,7 +77,10 @@ export const metadata: Metadata = {
   title: "Hire Salesforce Architects in India | Saasverse",
   description:
     "Hire dedicated Salesforce architects in India. Flexible hourly, part-time or full-time hire, US/UAE time-zone overlap. Get a free quote today.",
-};
+
+
+    alternates: { canonical: 'https://www.saasverse.in/hire-salesforce-architect' },  
+  };
 
 const page = () => {
   return (

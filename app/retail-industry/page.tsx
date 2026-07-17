@@ -82,7 +82,9 @@ export const metadata: Metadata = {
   title: "Salesforce Retail Cloud Solutions | Saasverse",
   description:
     "Saasverse builds Salesforce Retail Cloud solutions for omnichannel retailers - inventory, orders, personalization. Free consultation.",
-};
+
+    alternates: { canonical: 'https://www.saasverse.in/retail-industry' },
+  };
 
 const page = () => {
   return (

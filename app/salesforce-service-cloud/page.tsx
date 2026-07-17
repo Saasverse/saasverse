@@ -67,7 +67,9 @@ export const metadata: Metadata = {
   title: 'Salesforce Service Cloud Consulting | Saasverse',
   description:
     'Certified Salesforce Service Cloud consultants offering implementation, customization & support for India, US & UAE support teams. Get a free consultation.',
-};
+  alternates: { canonical: 'https://www.saasverse.in/salesforce-service-cloud' },
+
+  };
 
 const page = () => {
   return (

@@ -82,7 +82,9 @@ export const metadata: Metadata = {
   title: "Salesforce Consumer Goods Cloud | Saasverse",
   description:
     "Saasverse delivers Salesforce Consumer Goods Cloud for CPG brands and retailers - omnichannel CX, supply chain. Get a free consult.",
-};
+    alternates: { canonical: 'https://www.saasverse.in/consumer-goods-industry' },
+
+  };
 
 const page = () => {
   return (

@@ -82,7 +82,9 @@ export const metadata: Metadata = {
   title: "Salesforce Automotive Cloud Solutions | Saasverse",
   description:
     "Saasverse builds Salesforce Automotive Cloud solutions for dealers and OEMs - lead management, service, and CX. Book a free consult.",
-};
+
+    alternates: { canonical: 'https://www.saasverse.in/automotive-industry' },
+  };
 
 const page = () => {
   return (

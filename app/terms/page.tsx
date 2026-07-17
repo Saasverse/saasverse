@@ -2,7 +2,16 @@
 
 import React, { useEffect, useRef, useState } from "react";
 import Head from "next/head";
+import { Metadata } from "next";
 
+
+export const metadata: Metadata = {
+  title: "",
+  description:
+    "",
+
+ alternates: { canonical: 'https://www.saasverse.in/terms' },
+  };
 
 
 const sections = [
@@ -315,7 +324,7 @@ export default function Terms() {
               </div>
               <p className="text-[0.9rem] leading-relaxed text-slate-400">
                 Please read these Terms and Conditions carefully before using{" "}
-                <span className="text-white/75 font-medium">Saasverse Private Limited</span>'s website or services. By accessing or using our platform, you agree to be bound by these Terms.
+                <span className="text-white/75 font-medium">Saasverse Private Limited</span> website or services. By accessing or using our platform, you agree to be bound by these Terms.
               </p>
             </div>
           </div>

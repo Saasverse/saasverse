@@ -58,6 +58,8 @@ export const metadata: Metadata = {
   title: " Salesforce Training & Certification Courses | Saasverse",
   description:
     "Get hands-on Salesforce training & certification from Saasverse's certified trainers. Flexible online, on-site & hybrid programs for all skill levels.",
+
+    alternates: { canonical: 'https://www.saasverse.in/training' },
 };
 const page = () => {
   return (

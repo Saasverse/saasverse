@@ -82,7 +82,9 @@ export const metadata: Metadata = {
   title: "Salesforce Media Cloud Solutions | Saasverse",
   description:
     "Saasverse delivers Salesforce Media Cloud for publishers and broadcasters - ad sales, subscriptions, audience data. Free consultation.",
-};
+    alternates: { canonical: 'https://www.saasverse.in/media-industry' },
+
+  };
 
 const page = () => {
   return (

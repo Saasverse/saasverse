@@ -72,7 +72,9 @@ export const metadata: Metadata = {
   title: "Salesforce Health Cloud Solutions | Saasverse",
   description:
     "Saasverse implements Salesforce Health Cloud for hospitals and payers - unified patient view, care coordination, HIPAA-ready. Free consult.",
-};
+  alternates: { canonical: 'https://www.saasverse.in/health-cloud-services' },
+
+  };
 
 const page = () => {
   return (

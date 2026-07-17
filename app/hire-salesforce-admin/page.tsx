@@ -77,7 +77,9 @@ export const metadata: Metadata = {
   title: "Hire Salesforce Admin in India | Saasverse",
   description:
     "Hire a dedicated Salesforce admin in India. Flexible hourly, part-time or full-time hire, US/UAE time-zone overlap. Get a free quote today.",
-};
+    alternates: { canonical: 'https://www.saasverse.in/hire-salesforce-admin' },
+
+  };
 
 const page = () => {
   return (

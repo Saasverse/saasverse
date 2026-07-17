@@ -82,6 +82,7 @@ export const metadata: Metadata = {
   title: "Salesforce Communications Cloud Solutions | Saasverse",
   description:
     "Saasverse implements Salesforce Communications Cloud for telecom providers - order automation, self-service, and CX. Talk to an expert.",
+    alternates: { canonical: 'https://www.saasverse.in/communications-industry' },
 };
 
 const page = () => {

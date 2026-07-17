@@ -95,6 +95,8 @@ export const metadata: Metadata = {
   title: 'Salesforce Consulting Company | Saasverse',
   description:
     'Certified Salesforce consulting company delivering proven implementations for US, UAE & global clients from India. Get a free consultation today.',
+
+    alternates: { canonical: 'https://www.saasverse.in/salesforce-consulting-company' },
 };
 const page = () => {
   return (

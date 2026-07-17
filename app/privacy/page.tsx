@@ -2,7 +2,16 @@
 
 import React, { useEffect, useRef, useState } from "react";
 import Head from "next/head";
+import { Metadata } from "next";
 
+
+export const metadata: Metadata = {
+  title: "",
+  description:
+    "",
+
+ alternates: { canonical: 'https://www.saasverse.in/privacy' },
+  };
 
 const sections = [
   {

@@ -100,6 +100,8 @@ export const metadata: Metadata = {
   title: "Salesforce Managed Services | Saasverse",
   description:
     "Salesforce managed services for US, UAE & India orgs - proactive monitoring, health checks & security updates. Certified team. Get a free audit.",
+
+    alternates: { canonical: 'https://www.saasverse.in/salesforce-managed-services' },
 };
 const page = () => {
   return (

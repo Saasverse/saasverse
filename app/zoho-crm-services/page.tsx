@@ -14,7 +14,9 @@ export const metadata: Metadata = {
   title: "Zoho CRM Services & Implementation | Saasverse",
   description:
     "Certified Zoho CRM services: setup, customization & migration by India experts. Serving US & UAE. Free consult.",
-};
+    alternates: { canonical: 'https://www.saasverse.in/zoho-crm-services' },
+
+  };
 
 const faqs = [
   {

@@ -72,7 +72,9 @@ export const metadata: Metadata = {
   title: "Salesforce Experience Cloud Implementation | Saasverse",
   description:
     "Certified Salesforce Experience Cloud consultants building branded portals & communities for India, US & UAE businesses. Get a free consultation.",
-};
+  alternates: { canonical: 'https://www.saasverse.in/experience-cloud' },
+
+  };
 
 
 const page = () => {

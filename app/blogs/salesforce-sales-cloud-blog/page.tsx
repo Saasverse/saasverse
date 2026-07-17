@@ -4,6 +4,18 @@ import { Newsreader, Inter, Space_Grotesk } from "next/font/google";
 import CTASection from "@/app/components/Home/CTASection";
 import PageBanner from "@/app/components/PageBanner";
 import BlogSlider from "@/app/components/BlogSlider";
+import { Metadata } from "next";
+
+
+
+export const metadata: Metadata = {
+  title: "What Is Salesforce Sales Cloud? Guide | Saasverse",
+  description:
+    "Learn what Salesforce Sales Cloud is — features, benefits and use cases. Read more from Saasverse.",
+
+    alternates: { canonical: 'https://www.saasverse.in/blogs/salesforce-sales-cloud-blog' },
+  };
+
 
 const newsreader = Newsreader({
   subsets: ["latin"],
@@ -251,7 +263,7 @@ export default function Page() {
                 and automate the sales process — enabling sales teams to
                 engage prospects and customers across multiple channels,
                 access real-time information, and work more collaboratively.
-                Whether you're an enterprise or a small business, Sales Cloud
+                Whether you are an enterprise or a small business, Sales Cloud
                 offers the scalability and flexibility needed to simplify
                 your sales processes.
               </p>
@@ -322,11 +334,11 @@ export default function Page() {
             Supercharge your sales with Salesforce Sales Cloud
           </h2>
           <p className="mx-auto mt-4 max-w-xl text-[16px] leading-[1.85] text-[#3A3D45]">
-            Sales Cloud is more than a CRM — it's your intelligent sales
+            Sales Cloud is more than a CRM — it is your intelligent sales
             partner. From lead generation to closing the deal, empower your
             teams with advanced automation, real-time data, customizable
             dashboards, and AI-powered insights that drive smarter decisions.
-            Whether you're a growing business or an established enterprise,
+            Whether you are a growing business or an established enterprise,
             Sales Cloud adapts to your process and scales with your success.
           </p>
         </div>
@@ -405,7 +417,7 @@ export default function Page() {
               scale their sales operations.
             </p>
             <p>
-              Whether you're new to CRM or upgrading your current system,
+              Whether you are new to CRM or upgrading your current system,
               Sales Cloud offers the tools and insights you need to drive
               sales excellence. Join the future of selling with Salesforce
               Sales Cloud and unlock the full potential of your business.

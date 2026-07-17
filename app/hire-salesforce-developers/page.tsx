@@ -77,7 +77,9 @@ export const metadata: Metadata = {
   title: "Hire Salesforce Developers in India | Saasverse",
   description:
     "Hire dedicated Salesforce developers in India. Flexible hourly, part-time or full-time hire, US/UAE time-zone overlap. Get a free quote today.",
-};
+
+    alternates: { canonical: 'https://www.saasverse.in/hire-salesforce-developers' },
+  };
 
 const page = () => {
   return (

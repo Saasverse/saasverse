@@ -100,6 +100,8 @@ export const metadata: Metadata = {
   title: "Salesforce Implementation Company | Saasverse",
   description:
     "Trusted Salesforce implementation company serving India, US & UAE with certified experts, proven deployments & global delivery. Talk to us.",
+
+    alternates: { canonical: 'https://www.saasverse.in/salesforce-implementation-services' },
 };
 const page = () => {
   return (

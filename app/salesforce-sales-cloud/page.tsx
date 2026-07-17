@@ -67,7 +67,9 @@ export const metadata: Metadata = {
   title: "Salesforce Sales Cloud Implementation | Saasverse",
   description:
     "Certified Salesforce Sales Cloud consultants: implementation, customization & support for India, US & UAE teams. Get a free consultation.",
-};
+
+  alternates: { canonical: 'https://www.saasverse.in/salesforce-sales-cloud' },
+  };
 
 const page = () => {
   return (

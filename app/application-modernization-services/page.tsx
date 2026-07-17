@@ -46,7 +46,9 @@ export const metadata: Metadata = {
   title: "Application Modernization Services | Saasverse",
   description:
     "Application modernization services: legacy migration to cloud. India-based team serving US & UAE. Free consult.",
-};
+    alternates: { canonical: 'https://www.saasverse.in/application-modernization-services' },
+
+  };
 
 const page = () => {
   return (

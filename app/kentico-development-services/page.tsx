@@ -36,7 +36,9 @@ export const metadata: Metadata = {
   title: "Kentico Development Services | Saasverse",
   description:
     "Expert Kentico CMS development & migration services from Saasverse. Trusted by US & UAE clients. Free consult.",
-};
+    alternates: { canonical: 'https://www.saasverse.in/kentico-development-services' },
+
+  };
 
 const page = () => {
   return (

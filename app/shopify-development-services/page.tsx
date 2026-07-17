@@ -116,7 +116,9 @@ export const metadata: Metadata = {
   title: "Shopify Development Services | Saasverse",
   description:
     "Top-rated Shopify development services from India for US & UAE e-commerce brands. Get a free quote today.",
-};
+    alternates: { canonical: 'https://www.saasverse.in/shopify-development-services' },
+
+  };
 
 const page = () => {
   return (

@@ -14,6 +14,8 @@ export const metadata: Metadata = {
   title: "Salesforce Integration Services | Saasverse",
   description:
     "Seamless Salesforce integration services connecting CRM, ERP & marketing tools for US, UAE & India clients. Certified experts. Request a demo.",
+
+    alternates: { canonical: 'https://www.saasverse.in/salesforce-integration-services' },
 };
 const faqs = [
   {

@@ -10,6 +10,8 @@ export const metadata: Metadata = {
   title: "Contact Saasverse | Hire Salesforce Consultants",
   description:
     "Contact Saasverse to hire expert Salesforce consultants & developers for your US, UAE or India project. Get a free consultation within 24 hours.",
+
+    alternates: { canonical: 'https://www.saasverse.in/contact' },
 };
 
 const page = () => {

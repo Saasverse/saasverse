@@ -19,8 +19,16 @@ import {
 import Link from 'next/link';
 import { motion, useScroll, useTransform } from 'framer-motion';
 import CTASection from '../components/Home/CTASection';
+import { Metadata } from 'next';
 
+export const metadata: Metadata = {
+  title: "ServiceNow Implementation & Consulting | Saasverse",
+  description:
+    "Saasverse delivers ServiceNow implementation, customization & integration — ITSM, ITOM & HRSD workflows that streamline enterprise operations. Get a quote.",
+   alternates: { canonical: 'https://www.saasverse.in/servicenow' },
 
+  };
+  
 // Reusable Scroll Animation Wrapper
 const FadeIn = ({ children, delay = 0, className = "" }: { children: React.ReactNode, delay?: number, className?: string }) => (
   <motion.div

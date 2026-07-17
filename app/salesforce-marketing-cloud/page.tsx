@@ -67,7 +67,9 @@ export const metadata: Metadata = {
   title: "Salesforce Marketing Cloud Consulting | Saasverse",
   description:
     "Certified Salesforce Marketing Cloud consultants delivering strategy, implementation & campaign optimization for India, US & UAE brands. Free consultation.",
-};
+  alternates: { canonical: 'https://www.saasverse.in/salesforce-marketing-cloud' },
+
+  };
 
 const page = () => {
   return (

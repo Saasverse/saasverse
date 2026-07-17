@@ -82,7 +82,9 @@ export const metadata: Metadata = {
   title: "Salesforce CRM for Travel and Hospitality | Saasverse",
   description:
     "Saasverse builds Salesforce CRM solutions for hotels and travel brands - guest 360, loyalty, PMS integration. Book a free consult.",
-};
+    alternates: { canonical: 'https://www.saasverse.in/travels-hospitality-industry' },
+
+  };
 
 const page = () => {
   return (

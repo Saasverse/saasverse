@@ -3,6 +3,18 @@ import { Newsreader, Inter, Space_Grotesk } from "next/font/google";
 import CTASection from "@/app/components/Home/CTASection";
 import PageBanner from "@/app/components/PageBanner";
 import BlogSlider from "@/app/components/BlogSlider";
+import { Metadata } from "next";
+
+
+export const metadata: Metadata = {
+  title: "Hire Expert Magento Developers | Saasverse",
+  description:
+    "Work with experienced Magento developers for scalable eCommerce builds and Salesforce integration. Read more.",
+
+  alternates: { canonical: 'https://www.saasverse.in/blogs/magento-blog' },
+  };
+
+
 
 const newsreader = Newsreader({
   subsets: ["latin"],

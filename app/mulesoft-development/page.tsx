@@ -72,7 +72,9 @@ export const metadata: Metadata = {
   title: "MuleSoft Development Services | Saasverse",
   description:
     "Certified MuleSoft developers helping businesses streamline API integration, connect applications, and enhance business efficiency. India, US & UAE. Free consultation.",
-};
+  alternates: { canonical: 'https://www.saasverse.in/mulesoft-development' },
+
+  };
 
 const page = () => {
   return (

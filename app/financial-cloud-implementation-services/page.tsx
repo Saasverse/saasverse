@@ -82,7 +82,9 @@ export const metadata: Metadata = {
   title: "Salesforce Financial Cloud Implementation | Saasverse",
   description:
     "Certified Salesforce Financial Cloud implementation services for financial firms. Optimize operations, improve client experiences, and drive growth. Free consultation.",
-};
+  alternates: { canonical: 'https://www.saasverse.in/financial-cloud-implementation-services' },
+
+  };
 
 const page = () => {
   return (

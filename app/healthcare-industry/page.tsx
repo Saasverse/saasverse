@@ -82,7 +82,9 @@ export const metadata: Metadata = {
   title: " Salesforce Solutions for the Healthcare Industry- Saasverse",
   description:
     "Saasverse provides Salesforce solutions for the healthcare industry to improve patient management, streamline operations, and enhance care delivery.",
-};
+
+    alternates: { canonical: 'https://www.saasverse.in/healthcare-industry' },
+  };
 
 const page = () => {
   return (

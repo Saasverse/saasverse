@@ -204,6 +204,6 @@ export default function HeroSection() {
           * { animation: none !important; }
         }
       `}</style>
-    </section>
+    </section> 
   );
 }

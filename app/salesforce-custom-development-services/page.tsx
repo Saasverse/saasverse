@@ -116,6 +116,8 @@ export const metadata: Metadata = {
   title: "Salesforce Custom Development Services | Saasverse",
   description:
     "Custom Salesforce development services - Apex, Visualforce & workflow automation for US, UAE & India teams. Certified developers. Get a quote.",
+
+    alternates: { canonical: 'https://www.saasverse.in/salesforce-custom-development-services' },
 };
 const page = () => {
   return (

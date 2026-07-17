@@ -107,7 +107,9 @@ export const metadata: Metadata = {
   title: "Magento Development Services | Saasverse",
   description:
     "Expert Magento development services from India. Custom stores, migrations & support for US/UAE brands. Get a free quote.",
-};
+    alternates: { canonical: 'https://www.saasverse.in/magento-development-services' },
+
+  };
 
 const page = () => {
   return (

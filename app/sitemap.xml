@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <!-- Core -->
+  <url><loc>https://www.saasverse.in/</loc><changefreq>weekly</changefreq><priority>1.0</priority></url>
+  <url><loc>https://www.saasverse.in/services</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://www.saasverse.in/contact</loc><changefreq>monthly</changefreq><priority>0.85</priority></url>
+  <url><loc>https://www.saasverse.in/about</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.saasverse.in/careers</loc><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.saasverse.in/training</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+
+  <!-- Salesforce core services -->
+  <url><loc>https://www.saasverse.in/salesforce-consulting-company</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.saasverse.in/salesforce-implementation-services</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.saasverse.in/salesforce-integration-services</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.saasverse.in/salesforce-custom-development-services</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.saasverse.in/salesforce-appexchange-development-company</loc><changefreq>monthly</changefreq><priority>0.75</priority></url>
+  <url><loc>https://www.saasverse.in/salesforce-isv-development-company</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.saasverse.in/salesforce-managed-services</loc><changefreq>monthly</changefreq><priority>0.75</priority></url>
+  <url><loc>https://www.saasverse.in/salesforce-support-and-maintenance-services</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.saasverse.in/salesforce-security-review</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+
+  <!-- Salesforce clouds / expertise -->
+  <url><loc>https://www.saasverse.in/salesforce-sales-cloud</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.saasverse.in/salesforce-service-cloud</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.saasverse.in/salesforce-marketing-cloud</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.saasverse.in/health-cloud-services</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.saasverse.in/financial-cloud-implementation-services</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.saasverse.in/experience-cloud</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.saasverse.in/nonprofit-cloud</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.saasverse.in/mulesoft-development</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.saasverse.in/salesforce-ai-company</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.saasverse.in/tableau-crm</loc><changefreq>monthly</changefreq><priority>0.65</priority></url>
+  <url><loc>https://www.saasverse.in/salesforce-cpq-implementation</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.saasverse.in/field-service-lightning</loc><changefreq>monthly</changefreq><priority>0.65</priority></url>
+  <url><loc>https://www.saasverse.in/mobile-publisher-services</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+
+  <!-- Other platforms / dev services -->
+  <url><loc>https://www.saasverse.in/services-aws</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.saasverse.in/application-modernization-services</loc><changefreq>monthly</changefreq><priority>0.65</priority></url>
+  <url><loc>https://www.saasverse.in/servicenow</loc><changefreq>monthly</changefreq><priority>0.65</priority></url>
+  <url><loc>https://www.saasverse.in/sitecore-development-services</loc><changefreq>monthly</changefreq><priority>0.55</priority></url>
+  <url><loc>https://www.saasverse.in/shopify-development-services</loc><changefreq>monthly</changefreq><priority>0.55</priority></url>
+  <url><loc>https://www.saasverse.in/magento-development-services</loc><changefreq>monthly</changefreq><priority>0.55</priority></url>
+  <url><loc>https://www.saasverse.in/wordpress-development-services</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.saasverse.in/dotnet-development-services</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.saasverse.in/kentico-development-services</loc><changefreq>monthly</changefreq><priority>0.55</priority></url>
+  <url><loc>https://www.saasverse.in/zoho-crm-services</loc><changefreq>monthly</changefreq><priority>0.55</priority></url>
+
+  <!-- Hire-a-Salesforce-role landing pages (high commercial intent) -->
+  <url><loc>https://www.saasverse.in/hire-salesforce-consultants</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.saasverse.in/hire-salesforce-developers</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.saasverse.in/hire-salesforce-architect</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.saasverse.in/hire-salesforce-admin</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.saasverse.in/hire-salesforce-business-analyst</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.saasverse.in/hire-salesforce-product-managers</loc><changefreq>monthly</changefreq><priority>0.65</priority></url>
+  <url><loc>https://www.saasverse.in/hire-salesforce-project-managers</loc><changefreq>monthly</changefreq><priority>0.65</priority></url>
+  <url><loc>https://www.saasverse.in/hire-salesforce-expert</loc><changefreq>monthly</changefreq><priority>0.65</priority></url>
+
+  <!-- Industry solution pages -->
+  <url><loc>https://www.saasverse.in/healthcare-industry</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.saasverse.in/financial-industry</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.saasverse.in/retail-industry</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.saasverse.in/education-industry</loc><changefreq>monthly</changefreq><priority>0.55</priority></url>
+  <url><loc>https://www.saasverse.in/energy-industry</loc><changefreq>monthly</changefreq><priority>0.55</priority></url>
+  <url><loc>https://www.saasverse.in/automotive-industry</loc><changefreq>monthly</changefreq><priority>0.55</priority></url>
+  <url><loc>https://www.saasverse.in/media-industry</loc><changefreq>monthly</changefreq><priority>0.55</priority></url>
+  <url><loc>https://www.saasverse.in/communications-industry</loc><changefreq>monthly</changefreq><priority>0.55</priority></url>
+  <url><loc>https://www.saasverse.in/consumer-goods-industry</loc><changefreq>monthly</changefreq><priority>0.55</priority></url>
+  <url><loc>https://www.saasverse.in/travels-hospitality-industry</loc><changefreq>monthly</changefreq><priority>0.55</priority></url>
+
+  <!-- Blog -->
+  <url><loc>https://www.saasverse.in/blogs</loc><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.saasverse.in/blogs/salesforce-implementation-blog</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://www.saasverse.in/blogs/salesforce-sales-cloud-blog</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://www.saasverse.in/blogs/salesforce-crm-blog</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://www.saasverse.in/blogs/wordpress-blog</loc><changefreq>monthly</changefreq><priority>0.45</priority></url>
+  <url><loc>https://www.saasverse.in/blogs/magento-blog</loc><changefreq>monthly</changefreq><priority>0.45</priority></url>
+
+  <!-- Legal -->
+  <url><loc>https://www.saasverse.in/disclaimer</loc><changefreq>yearly</changefreq><priority>0.2</priority></url>
+  <url><loc>https://www.saasverse.in/privacy</loc><changefreq>yearly</changefreq><priority>0.2</priority></url>
+  <url><loc>https://www.saasverse.in/terms</loc><changefreq>yearly</changefreq><priority>0.2</priority></url>
+
+</urlset>

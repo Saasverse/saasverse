@@ -100,6 +100,8 @@ export const metadata: Metadata = {
   title: "Salesforce AppExchange Development Company | Saasverse",
   description:
     "Salesforce AppExchange development company building & launching apps for US, UAE & global markets. Certified ISV experts. Book a consultation.",
+
+    alternates: { canonical: 'https://www.saasverse.in/salesforce-appexchange-development-company' },
 };
 
 const page = () => {

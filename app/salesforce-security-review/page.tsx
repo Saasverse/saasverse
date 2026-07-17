@@ -99,7 +99,9 @@ export const metadata: Metadata = {
   title: "Salesforce Security Review Services | Saasverse",
   description:
     "Salesforce security review services for AppExchange ISVs in US, UAE & India - vulnerability checks, compliance & data protection. Contact us.",
-};
+  alternates: { canonical: 'https://www.saasverse.in/salesforce-security-review' },
+
+  };
 const page = () => {
   return (
     <>
