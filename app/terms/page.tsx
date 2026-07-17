@@ -6,9 +6,9 @@ import { Metadata } from "next";
 
 
 export const metadata: Metadata = {
-  title: "",
+  title: "Terms & Conditions | Saasverse",
   description:
-    "",
+    "Read Saasverse's Terms & Conditions covering website use, service policies, IP rights & account guidelines for our consulting services.",
 
  alternates: { canonical: 'https://www.saasverse.in/terms' },
   };
