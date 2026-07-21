@@ -7,8 +7,10 @@ import BatchList from '../components/BatchList';
 import WhyChooseUs from '../about/WhyChooseUs';
 import SalesforceServiceReuseable from '../components/SalesforceServiceReuseable';
 import CTASection from '../components/Home/CTASection';
-import ContactForm from '../components/ContactForm';
+
 import { Metadata } from 'next';
+import TrainingContactForm from '../components/TrainingContactForm';
+
 
 const partnerLogos = [
   '/images/traininglogoo/CapgeminiLogo.png',
@@ -70,6 +72,8 @@ const page = () => {
         description="At Saasverse Pvt Ltd, we are committed to helping individuals and organizations unlock the full potential of Salesforce."
       />
 
+      <TrainingContactForm/>
+     
       <HealthSolution
         title="Why Choose Saasverse for"
         highlight="Salesforce Training?"
@@ -112,7 +116,7 @@ const page = () => {
         benefits={benefits}
       />
 
-      <ContactForm />
+   
     </>
   );
 };

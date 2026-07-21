@@ -22,10 +22,10 @@ const page = () => {
             title="Contact Us"
             description="At Saasverse Pvt Ltd, we value open communication and are always here to assist you. "
           />
+          <ContactForm/>
           <ContactInfo/>
           <VisitUs/>
           <CTASection/>
-          <ContactForm/>
 
    </>
   )

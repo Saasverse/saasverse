@@ -4,6 +4,7 @@ import SalesforceServiceReuseable from '../components/SalesforceServiceReuseable
 import CTASection from '../components/Home/CTASection';
 import ContactForm from '../components/ContactForm';
 import LogoGrid from '../components/LogoGrid';
+import TrainingContactForm from '../components/TrainingContactForm';
 
 const benefits = [
   {
@@ -110,6 +111,7 @@ const page = () => {
         description="Ensure your business gets value from Salesforce"
       />
 
+      <TrainingContactForm/>
       <SalesforceServiceReuseable
         heading="Salesforce Development Training"
         benefits={benefits}
