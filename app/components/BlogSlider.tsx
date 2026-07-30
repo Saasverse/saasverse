@@ -47,6 +47,15 @@ const blogs = [
       "Magento offers unmatched flexibility and customization for eCommerce businesses.",
     image: "/images/blogs/3.jpg",
   },
+  {
+    id: 5,
+    slug: "salesforce-consulting-blog",
+    category: "salesforce consulting blog",
+    title: "What Is Salesforce Consulting? A Complete Guide (2026)",
+    excerpt:
+      "Salesforce consulting is the professional service of helping businesses plan, implement, customize, integrate, and optimize Salesforce so it actually solves their sales, service, and marketing problems.",
+    image: "/images/blogs/Feature.png",
+  },
 ];
 
 export default function BlogSlider() {

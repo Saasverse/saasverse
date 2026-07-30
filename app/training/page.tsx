@@ -110,13 +110,13 @@ const page = () => {
       <BatchList />
 
       <WhyChooseUs />
-      <CTASection />
+      
       <SalesforceServiceReuseable
         heading="Our Salesforce Integration Services"
         benefits={benefits}
       />
 
-   
+   <CTASection />
     </>
   );
 };

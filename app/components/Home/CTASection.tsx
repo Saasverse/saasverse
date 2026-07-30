@@ -1,37 +1,11 @@
-'use client';
-
-import { useEffect, useState } from 'react';
 import StatsCounter from './StatsCounter';
 
 export default function CTASection() {
-  const [stats, setStats] = useState({
+  const stats = {
     delivered_projects: 120,
     no_of_certificate: 50,
     years_of_experience: 5,
-  });
-
-  useEffect(() => {
-    async function load() {
-      try {
-        const res = await fetch(
-          'https://saasverse.in/saasadmin/wp-json/wp/v2/pages?slug=home-page'
-        );
-
-        const data = await res.json();
-        const h = data?.[0]?.acf?.company_history;
-
-        setStats({
-          delivered_projects: h?.delivered_projects ?? 120,
-          no_of_certificate: h?.no_of_certificate ?? 50,
-          years_of_experience: h?.years_of_experience ?? 5,
-        });
-      } catch (err) {
-        console.error(err);
-      }
-    }
-
-    load();
-  }, []);
+  };
 
   return (
     <section

@@ -187,7 +187,7 @@ export default function TrainingContactForm() {
                   </svg>
                 </div>
               </Field>
-
+ 
               <Field label="Message" error={errors.message}>
                 <textarea
                   name="message"

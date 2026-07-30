@@ -7,8 +7,16 @@ import BlogSlider from '../components/BlogSlider';
 import { Metadata } from 'next';
 
 const blogs = [
-  {
+
+    {
     id: 1,
+    slug: 'salesforce-consulting-blog',
+    title: 'What Is Salesforce Consulting? A Complete Guide (2026)',
+    excerpt:'Salesforce consulting is the professional service of helping businesses plan, implement, customize, integrate, and optimize Salesforce so it actually solves their sales, service, and marketing problems.',
+    image: '/images/blogs/Feature.png',
+  },
+  {
+    id: 2,
     slug: 'salesforce-implementation-blog',
     title:
       'Salesforce Implementation: Proven Strategies, Key Steps & Best Practices',
@@ -17,7 +25,7 @@ const blogs = [
     image: '/images/blogs/4.jpg',
   },
   {
-    id: 2,
+    id: 3,
     slug: 'salesforce-sales-cloud-blog',
     title: 'Explore Salesforce Sales Cloud: Features, Benefits & Use Cases',
     excerpt:
@@ -25,7 +33,7 @@ const blogs = [
     image: '/images/blogs/5.jpg',
   },
   {
-    id: 3,
+    id: 4,
     slug: 'wordpress-blog',
     title: 'How to Build a Scalable WordPress Site for Your Business',
     excerpt:
@@ -33,7 +41,7 @@ const blogs = [
     image: '/images/blogs/2.jpg',
   },
   {
-    id: 4,
+    id: 5,
     slug: 'magento-blog',
     title: 'How Expert Magento Developers Can Transform Your Online Store ',
     excerpt:
@@ -41,13 +49,14 @@ const blogs = [
     image: '/images/blogs/3.jpg',
   },
   {
-    id: 5,
+    id: 6,
     slug: 'salesforce-crm-blog',
     title: 'Top Benefits of Using Salesforce CRM for Your Business',
     excerpt:
       'Let us discuss this subject and all the benefits of using Salesforce CRM for your business.',
     image: '/images/blogs/1.jpg',
   },
+
   
 ];
 

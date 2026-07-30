@@ -32,7 +32,7 @@ const spaceGrotesk = Space_Grotesk({
   weight: ["500", "600"],
 });
 
-/* ---------- small building blocks ---------- */
+
 
 function Eyebrow({ children, tone = "light" }: { children: React.ReactNode; tone?: "light" | "dark" }) {
   return (
@@ -90,7 +90,7 @@ function BenefitCard({
   );
 }
 
-/* ---------- main component ---------- */
+
 
 export default function Page() {
   return (
@@ -133,7 +133,7 @@ export default function Page() {
         </div>
       </section>
 
-      {/* Section 2 — What is Salesforce */}
+      
       <section className="bg-[#0A0E1A] px-6 py-20 sm:py-28">
         <div className="mx-auto grid max-w-6xl gap-14 lg:grid-cols-2 lg:items-center">
           <div>
