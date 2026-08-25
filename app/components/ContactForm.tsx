@@ -190,7 +190,9 @@ export default function ContactForm() {
               Or reach us directly
             </p>
             <a
-              href="mailto:contact@saasverse.in"
+              href="mailto: info@saasverse.in"
+               target="_blank"
+  rel="noopener noreferrer"
               className="cf-email-link inline-flex items-center gap-2.5 text-sm font-medium text-white"
             >
               <span
@@ -201,7 +203,7 @@ export default function ContactForm() {
                   <path strokeLinecap="round" strokeLinejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                 </svg>
               </span>
-              contact@saasverse.in
+               info@saasverse.in
             </a>
  
             {/* Stats mini-grid */}
@@ -210,7 +212,7 @@ export default function ContactForm() {
                 { value: '120+', label: 'Projects Delivered' },
                 { value: '50+',  label: 'Certified Experts' },
                 { value: '15+',  label: 'Countries Served' },
-                { value: '5.0★', label: 'Clutch Rating' },
+                { value: '5.0 ★', label: 'Clutch Rating' },
               ].map(s => (
                 <div
                   key={s.label}

@@ -158,10 +158,12 @@ export default async function Footer() {
     </a>
 
     <a
-      href="mailto:contact@saasverse.in"
+      href="mailto: info@saasverse.in"
+      target="_blank"
+  rel="noopener noreferrer"
       className="mt-2 block text-sm text-white/80 hover:text-white"
     >
-      contact@saasverse.in
+      info@saasverse.in
     </a>
   </address>
 

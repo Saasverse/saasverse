@@ -3,8 +3,18 @@
 import { useState, useEffect, useRef } from "react";
 import Link from "next/link";
 import Image from "next/image";
+import emailjs from "@emailjs/browser";
+import CaseStudyForm from "./CaseStudyForm";
 
-type LinkItem = { name: string; href: string };
+
+// type LinkItem = { name: string; href: string };
+
+type LinkItem = {
+  name: string;
+  href: string;
+  isProfile?: boolean;
+  isCaseStudy?: boolean;
+};
 
 const servicesLinks: LinkItem[] = [
   { name: "Service Now", href: "/servicenow" },
@@ -102,6 +112,15 @@ const menuItems: MenuItem[] = [
   {
     title: "Work",
     links: [
+      
+       {
+      name: "Get Our Company Profile",
+      href:"/documents/company-profile.pdf",
+      isProfile: true,
+    },
+      {   name: "Explore Our Case Study",
+  href: "/work-gg",
+  isCaseStudy: true, },
       { name: "Healthcare Cloud", href: "/work-salesforce-health-cloud" },
       { name: "Sales Cloud", href: "/work-salesforce-sales-cloud" },
       { name: "Service Cloud", href: "/work-salesforce-service-cloud" },
@@ -141,6 +160,13 @@ export default function Navbar() {
   const [navHeight, setNavHeight] = useState(72);
   const timeoutRef = useRef<NodeJS.Timeout | null>(null);
   const headerRef = useRef<HTMLElement>(null);
+const [profileModal, setProfileModal] = useState(false);
+const [profileSubmitted, setProfileSubmitted] = useState(false);
+const [profileLoading, setProfileLoading] = useState(false);
+const [profileError, setProfileError] = useState("");
+const [formError, setFormError] = useState("");
+
+ const [caseStudyOpen, setCaseStudyOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => setScrolled(window.scrollY > 40);
@@ -372,7 +398,8 @@ export default function Navbar() {
         /* ── Large desktop ── */
         @media (min-width: 1280px) {
           .desktop-nav { gap: 36px !important; }
-        }
+        }import CaseStudyForm from './CaseStudyForm';
+
 
         /* ── Mobile overlay slide-in ── */
         .mobile-overlay {
@@ -487,9 +514,44 @@ export default function Navbar() {
                           : "w-[440px] xl:w-[520px] grid grid-cols-2"
                       }`}
                     >
-                      {menu.links.map((item) => (
-                        <Link key={item.href} href={item.href} className="regular-link" onClick={() => setActiveDropdown(null)}>{item.name}</Link>
-                      ))}
+  {menu.links.map((item) =>
+  item.isProfile ? (
+    <button
+      key={`${menu.title}-${item.name}`}
+      type="button"
+      className="regular-link w-full text-left"
+      onClick={() => {
+        setActiveDropdown(null);
+        setProfileError("");
+        setProfileSubmitted(false);
+        setProfileModal(true);
+      }}
+    >
+      {item.name}
+    </button>
+  ) : item.isCaseStudy ? (
+    <button
+      key={`${menu.title}-${item.name}`}
+      type="button"
+      className="regular-link w-full text-left"
+      onClick={() => {
+        setActiveDropdown(null);
+        setCaseStudyOpen(true);
+      }}
+    >
+      {item.name}
+    </button>
+  ) : (
+    <Link
+      key={`${menu.title}-${item.name}`}
+      href={item.href}
+      className="regular-link"
+      onClick={() => setActiveDropdown(null)}
+    >
+      {item.name}
+    </Link>
+  )
+)}
                     </div>
                   </div>
                 )}
@@ -568,20 +630,51 @@ export default function Navbar() {
                   )}
 
                   {/* Regular mobile dropdown */}
-                  {mobileDropdown === menu.title && !menu.isMegaMobile && (
-                    <div className="mobile-links-grid">
-                      {menu.links.map((item) => (
-                        <Link
-                          key={item.href}
-                          href={item.href}
-                          className="mobile-item-link"
-                          onClick={() => setMobileMenu(false)}
-                        >
-                          {item.name}
-                        </Link>
-                      ))}
-                    </div>
-                  )}
+                {/* Regular mobile dropdown */}
+{mobileDropdown === menu.title && !menu.isMegaMobile && (
+  <div className="mobile-links-grid">
+    {menu.links.map((item) =>
+      item.isProfile ? (
+        <button
+          key={item.name}
+          type="button"
+          className="mobile-item-link w-full text-left"
+          onClick={() => {
+            setMobileMenu(false);
+            setMobileDropdown(null);
+            setProfileError("");
+            setProfileSubmitted(false);
+            setProfileModal(true);
+          }}
+        >
+          {item.name}
+        </button>
+      ) : item.isCaseStudy ? (
+        <button
+          key={item.name}
+          type="button"
+          className="mobile-item-link w-full text-left"
+          onClick={() => {
+            setMobileMenu(false);
+            setMobileDropdown(null);
+            setCaseStudyOpen(true);
+          }}
+        >
+          {item.name}
+        </button>
+      ) : (
+        <Link
+          key={item.href}
+          href={item.href}
+          className="mobile-item-link"
+          onClick={() => setMobileMenu(false)}
+        >
+          {item.name}
+        </Link>
+      )
+    )}
+  </div>
+)}
                 </div>
               ))}
 
@@ -599,6 +692,285 @@ export default function Navbar() {
           </div>
         )}
       </header>
+
+
+      {/* ── COMPANY PROFILE MODAL ── */}
+{/* ── COMPANY PROFILE MODAL ── */}
+{profileModal && (
+  <div
+    className="fixed inset-0 z-[9999] flex items-center justify-center bg-black/60 backdrop-blur-sm px-4"
+    onClick={() => {
+      setProfileModal(false);
+      setProfileSubmitted(false);
+      setProfileError("");
+    }}
+  >
+    <div
+      className="relative w-full max-w-[500px] rounded-2xl bg-white p-6 sm:p-8 shadow-2xl"
+      onClick={(e) => e.stopPropagation()}
+    >
+      {/* Close */}
+      <button
+        type="button"
+        onClick={() => {
+          setProfileModal(false);
+          setProfileSubmitted(false);
+          setProfileError("");
+        }}
+        className="absolute right-4 top-4 flex h-9 w-9 items-center justify-center rounded-full bg-gray-100 text-gray-600 hover:bg-gray-200"
+      >
+        ✕
+      </button>
+
+      {!profileSubmitted ? (
+        <>
+          <div className="pr-8">
+            <h2 className="text-2xl sm:text-3xl font-bold text-[#1a1a2e]">
+              Get Our Company Profile
+            </h2>
+
+            <p className="mt-2 text-sm text-gray-500">
+              Fill in your details to receive our company profile.
+            </p>
+          </div>
+
+          <form
+            className="mt-6 space-y-4"
+            onSubmit={async (e) => {
+              e.preventDefault();
+              setProfileError("");
+
+              const form = e.currentTarget;
+
+              const name = (
+                form.elements.namedItem("profile_name") as HTMLInputElement
+              ).value.trim();
+
+              const email = (
+                form.elements.namedItem("profile_email") as HTMLInputElement
+              ).value.trim();
+
+              const company = (
+                form.elements.namedItem("profile_company") as HTMLInputElement
+              ).value.trim();
+
+              const phone = (
+                form.elements.namedItem("profile_phone") as HTMLInputElement
+              ).value.trim();
+
+              // Email validation
+              const emailRegex =
+                /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+
+              // Indian mobile validation
+              const phoneRegex = /^[6-9]\d{9}$/;
+
+              if (!name) {
+                setProfileError("Please enter your full name.");
+                return;
+              }
+
+              if (!emailRegex.test(email)) {
+                setProfileError("Please enter a valid email address.");
+                return;
+              }
+
+              if (!company) {
+                setProfileError("Please enter your company name.");
+                return;
+              }
+
+              if (!phoneRegex.test(phone)) {
+                setProfileError(
+                  "Please enter a valid 10-digit Indian mobile number."
+                );
+                return;
+              }
+
+              try {
+                setProfileLoading(true);
+
+                // EmailJS submission
+                await emailjs.send(
+                  "service_7isxnke",
+                  "template_ukxkdd6",
+                  {
+                    name: name,
+                    email: email,
+                    phone: phone,
+                    company: company,
+                    subject: "Company Profile Request",
+                    message: `Company Profile requested by ${name} from ${company}.`,
+                  },
+                  "Nyne2oTRE0UX0KKSA"
+                );
+
+                // Only after EmailJS success
+                setProfileSubmitted(true);
+
+              } catch (error) {
+                console.error("Company Profile Email Error:", error);
+
+                setProfileError(
+                  "Something went wrong while submitting. Please try again."
+                );
+              } finally {
+                setProfileLoading(false);
+              }
+            }}
+          >
+            {/* Name */}
+            <div>
+              <label className="mb-1.5 block text-sm font-medium text-gray-700">
+                Full Name
+              </label>
+
+              <input
+                type="text"
+                name="profile_name"
+                placeholder="Enter your full name"
+                className="w-full rounded-lg border border-gray-200 px-4 py-3 text-sm outline-none focus:border-[#003e95]"
+                required
+              />
+            </div>
+
+            {/* Email */}
+            <div>
+              <label className="mb-1.5 block text-sm font-medium text-gray-700">
+                Business Email
+              </label>
+
+              <input
+                type="email"
+                name="profile_email"
+                placeholder="Enter your business email"
+                className="w-full rounded-lg border border-gray-200 px-4 py-3 text-sm outline-none focus:border-[#003e95]"
+                required
+              />
+            </div>
+
+            {/* Company */}
+            <div>
+              <label className="mb-1.5 block text-sm font-medium text-gray-700">
+                Company Name
+              </label>
+
+              <input
+                type="text"
+                name="profile_company"
+                placeholder="Enter your company name"
+                className="w-full rounded-lg border border-gray-200 px-4 py-3 text-sm outline-none focus:border-[#003e95]"
+                required
+              />
+            </div>
+
+            {/* Phone */}
+            <div>
+              <label className="mb-1.5 block text-sm font-medium text-gray-700">
+                Phone Number
+              </label>
+
+              <input
+                type="tel"
+                name="profile_phone"
+                placeholder="10-digit mobile number"
+                maxLength={10}
+                inputMode="numeric"
+                className="w-full rounded-lg border border-gray-200 px-4 py-3 text-sm outline-none focus:border-[#003e95]"
+                onInput={(e) => {
+                  e.currentTarget.value = e.currentTarget.value
+                    .replace(/\D/g, "")
+                    .slice(0, 10);
+                }}
+                required
+              />
+            </div>
+
+            {/* Error */}
+            {profileError && (
+              <div className="rounded-lg bg-red-50 px-4 py-3 text-sm text-red-600">
+                {profileError}
+              </div>
+            )}
+
+            {/* Submit */}
+            <button
+              type="submit"
+              disabled={profileLoading}
+              className="w-full rounded-lg bg-[#003e95] py-3.5 text-sm font-semibold text-white transition hover:bg-[#002d70] disabled:cursor-not-allowed disabled:opacity-60"
+            >
+              {profileLoading ? "Submitting..." : "Request Company Profile"}
+            </button>
+          </form>
+        </>
+      ) : (
+        /* SUCCESS */
+        <div className="py-8 text-center">
+
+          <div className="mx-auto flex h-16 w-16 items-center justify-center rounded-full bg-green-100">
+            <svg
+              className="h-8 w-8 text-green-600"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              strokeWidth={2}
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                d="M5 13l4 4L19 7"
+              />
+            </svg>
+          </div>
+
+          <h2 className="mt-5 text-2xl font-bold text-[#1a1a2e]">
+            Thank You!
+          </h2>
+
+          <p className="mt-2 text-gray-500">
+            Your details have been submitted successfully.
+          </p>
+
+          <p className="mt-1 text-sm text-gray-400">
+            You can now access our company profile.
+          </p>
+
+          {/* PDF Buttons */}
+          <div className="mt-7 flex flex-col gap-3 sm:flex-row">
+
+            {/* Preview */}
+            <a
+              href="/documents/company-profile.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex-1 rounded-lg border border-[#003e95] px-5 py-3 text-sm font-semibold text-[#003e95] transition hover:bg-[#003e95] hover:text-white"
+            >
+              Preview PDF
+            </a>
+
+            {/* Download */}
+            <a
+              href="/documents/company-profile.pdf"
+              download="Saasverse-Company-Profile.pdf"
+              className="flex-1 rounded-lg bg-[#003e95] px-5 py-3 text-sm font-semibold text-white transition hover:bg-[#002d70]"
+            >
+              Download PDF
+            </a>
+
+          </div>
+        </div>
+      )}
+    </div>
+  </div>
+)}
+
+
+{caseStudyOpen && (
+  <CaseStudyForm
+    onClose={() => setCaseStudyOpen(false)}
+  />
+)}
+
     </>
   );
 }
