@@ -65,10 +65,11 @@ export default function JobOpenings() {
               </p>
 
               <a
-                href={`mailto:hr@saasverse.in?subject=Application for ${encodeURIComponent(
+                href={`mailto:info@saasverse.in?subject=Application for ${encodeURIComponent(
                   job.title
                 )}`}
                 className="inline-flex rounded-lg bg-[#006b95] px-5 py-3 text-sm font-medium text-white transition hover:opacity-90"
+                target="_blank"
               >
                 Apply Now
               </a>

@@ -13,10 +13,11 @@ export default function HowToApply() {
             positions listed above, please send your resume and a cover letter
             to{" "}
             <a
-              href="mailto:hr@saasverse.in"
+              href="mailto:info@saasverse.in"
+              target="_blank"
               className="font-medium text-[#006b95] hover:underline"
             >
-              hr@saasverse.in
+              info@saasverse.in
             </a>
             . In your cover letter, please specify the position you are
             applying for and explain why you would be a great fit for our team.
@@ -24,7 +25,8 @@ export default function HowToApply() {
 
           <div className="mt-8 flex justify-center">
             <a
-              href="mailto:hr@saasverse.in"
+              href="mailto:info@saasverse.in"
+              target="_blank"
               className="inline-flex rounded-xl bg-[#006b95] px-5 py-3 text-white transition hover:opacity-90"
             >
               Send Your Resume
