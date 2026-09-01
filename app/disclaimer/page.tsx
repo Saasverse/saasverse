@@ -246,7 +246,8 @@ export default function Disclaimer() {
                     </p>
                   </div>
                   <a
-                    href="mailto:learning@saasverse.in"
+                    href="mailto:info@saasverse.in"
+                    target="_blank"
                     className="shrink-0 inline-flex items-center gap-2.5 rounded-xl bg-blue-600 hover:bg-blue-500 px-6 py-3.5 text-sm font-semibold text-white transition-all duration-200 hover:shadow-lg hover:shadow-blue-500/25 active:scale-[0.97]"
                   >
                     <svg
@@ -262,7 +263,7 @@ export default function Disclaimer() {
                       <rect width="20" height="16" x="2" y="4" rx="2" />
                       <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
                     </svg>
-                    learning@saasverse.in
+                    info@saasverse.in
                   </a>
                 </div>
               </div>

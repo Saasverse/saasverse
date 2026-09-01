@@ -359,14 +359,15 @@ export default function Terms() {
                     </p>
                   </div>
                   <a
-                    href="mailto:learning@saasverse.in"
+                    href="mailto:info@saasverse.in"
+                    target="_blank"
                     className="shrink-0 inline-flex items-center gap-2.5 rounded-xl px-6 py-3.5 text-sm font-semibold text-white transition-all duration-200 hover:shadow-lg hover:shadow-emerald-500/20 active:scale-[0.97]"
                     style={{ background: "linear-gradient(135deg, #059669 0%, #047857 100%)" }}
                   >
                     <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                       <rect width="20" height="16" x="2" y="4" rx="2" /><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
                     </svg>
-                    learning@saasverse.in
+                    info@saasverse.in
                   </a>
                 </div>
               </div>
