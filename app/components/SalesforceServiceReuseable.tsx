@@ -1,9 +1,9 @@
 
-import React from "react";
+import type { ReactNode } from "react";
 
 interface Benefit {
   title: string;
-  description: string;
+  description: ReactNode;
 }
 
 interface BenefitsSectionProps {
@@ -18,7 +18,7 @@ const SalesforceServiceReuseable = ({
   return (
     <section className="py-16">
       <div className="container mx-auto px-4">
-        <h2 className="mb-10 text-center ">
+        <h2 className="mb-10 text-center">
           {heading}
         </h2>
 
@@ -32,9 +32,9 @@ const SalesforceServiceReuseable = ({
                 {item.title}
               </h3>
 
-              <p className="text-gray-600 leading-7">
+              <div className="text-gray-600 leading-7">
                 {item.description}
-              </p>
+              </div>
             </div>
           ))}
         </div>
@@ -44,3 +44,4 @@ const SalesforceServiceReuseable = ({
 };
 
 export default SalesforceServiceReuseable;
+
