@@ -1,16 +1,14 @@
-
 import Image from "next/image";
-import type { ReactNode } from "react";
 
 interface SolutionItem {
   title: string;
-  description: ReactNode;
+  description: string;
 }
 
 interface HealthSolutionProps {
   title: string;
   highlight: string;
-  description: ReactNode;
+  description: string;
   image: string;
   imageAlt?: string;
   solutions: SolutionItem[];
@@ -28,6 +26,7 @@ export default function HealthSolution({
     <section className="py-10">
       <div className="mx-auto max-w-7xl px-6">
         <div className="grid items-center gap-12 lg:grid-cols-2">
+          
           {/* Image */}
           <div className="relative overflow-hidden bg-white p-3 shadow-[0_20px_60px_rgba(15,23,42,0.08)]">
             <Image
@@ -48,9 +47,9 @@ export default function HealthSolution({
               </span>
             </h2>
 
-            <div className="mt-6 leading-relaxed text-slate-600">
-              {description}
-            </div>
+            <p className="mt-6  leading-relaxed text-slate-600">
+              {/* {description} */}
+            </p>
 
             <div className="mt-1 space-y-1">
               {solutions.map((item, index) => (
@@ -62,16 +61,16 @@ export default function HealthSolution({
                     {item.title}
                   </h3>
 
-                  <div className="leading-relaxed text-slate-600">
+                  <p className="leading-relaxed text-slate-600">
                     {item.description}
-                  </div>
+                  </p> 
                 </div>
               ))}
             </div>
           </div>
+
         </div>
       </div>
     </section>
   );
 }
-
