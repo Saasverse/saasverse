@@ -305,7 +305,7 @@ export default function Privacy() {
               transform: ctaVisible ? "translateY(0)" : "translateY(28px)",
             }}
           >
-            <div className="relative rounded-2xl overflow-hidden border border-violet-500/20">
+            <div className="relative rounded-2xl overflow-hidden border border-violet-500/20">  
               <div
                 className="absolute inset-0"
                 style={{

@@ -152,6 +152,8 @@ const mobileMenuItems: MobileMenuItem[] = [
     .map((m) => ({ title: m.title, isMegaMobile: false as const, links: m.links })),
 ];
 
+
+
 export default function Navbar() {
   const [mobileMenu, setMobileMenu] = useState(false);
   const [scrolled, setScrolled] = useState(false);
@@ -167,6 +169,10 @@ const [profileError, setProfileError] = useState("");
 const [formError, setFormError] = useState("");
 
  const [caseStudyOpen, setCaseStudyOpen] = useState(false);
+
+
+ const [isScrolled, setIsScrolled] = useState(false); useEffect(() => { const handleScroll = () => { setIsScrolled(window.scrollY > 50); }; window.addEventListener('scroll', handleScroll, { passive: true }); handleScroll(); return () => { window.removeEventListener('scroll', handleScroll); }; }, []);
+
 
   useEffect(() => {
     const handleScroll = () => setScrolled(window.scrollY > 40);
@@ -433,7 +439,7 @@ const [formError, setFormError] = useState("");
           <Link href="/" className="flex-shrink-0">
             <Image
               src={scrolled ? "/images/logo4.svg" : "/images/logo.png"}
-              alt="Saasverse"
+              alt="Saasverse home "
               width={0}
               height={0}
               sizes="(max-width: 640px) 100px, 130px"
@@ -560,9 +566,25 @@ const [formError, setFormError] = useState("");
           </nav>
 
           {/* ── CTA ── */}
-          <Link href="/contact" className="cta-btn hidden lg:inline-flex items-center">
-            Get Free Consultation
-          </Link>
+      
+{isScrolled ? (
+  <Link
+    href="/contact"
+    className="cta-btn hidden lg:inline-flex items-center"
+  >
+    Book a Free Consultation
+  </Link>
+) : (
+  <Link
+    href="https://appexchange.salesforce.com/appxListingDetail?listingId=bf4cc5b0-f7c4-4d44-99ac-1ddaa2ca27e1"
+    className="cta-btn hidden lg:inline-flex items-center"
+    target="_blank" rel="noopener noreferrer"
+  >
+    Salesforce Partner
+  </Link>
+)}
+
+
 
           {/* ── Hamburger ── */}
           <button

@@ -46,51 +46,51 @@ const benefits = [
       "Our experienced Salesforce experts will actively keep an eye on Salesforce implementation activities. We will also offer the recommendations required for improvement areas so that your Salesforce solution can provide a seamless experience.",
   },
   {
-    title: "Continuous Administration",
+    title: "Ongoing Salesforce Administration ",
     description:
       "Our Salesforce professionals will assist you in managing and monitoring the system operation 24/7. From security management, system operation free of bugs to demo and training, we will provide an extensive variety of services based on your business needs.",
   },
   {
-    title: "Bug fixing and resolution",
+    title: "Bug Fixing and Issue Resolution ",
     description:
       "We will help you enhance your current infrastructure by determining and fixing the mistakes within the present system. Our specialists will go through the codes and address the performance problems to ensure the faultless running of your Salesforce solution.",
   },
   {
-    title: "Salesforce Customization",
+    title: "Salesforce Customization and Enhancements ",
     description:
       "We make every effort to provide best-in-class features and functionalities that provide your Salesforce solutions with a competitive advantage. We are always on our toes with the newest trends and technologies of the world of CRM that will enable you to provide more sophisticated solutions to your customers.",
   },
   {
-    title: "Application Maintenance Support",
+    title: "Application Maintenance and Release Updates ",
     description:
       "We will give you long-term application maintenance service and support, such as debugging, changing applications functionality, increasing, and others, prolonging the life of your application.",
   },
   {
-    title: "Performance Support",
+    title: "Performance Optimization ",
     description:
       "For an effortless customer experience, we provide improvement plans that leverage the full potential of your current Salesforce infrastructure and lead to enhancing the productivity and performance of your workforce.",
   },
   {
-    title: "Salesforce Support Services",
+    title: "On-Demand Salesforce Support (under Support Engagement Models) ",
     description:
       "We offer round-the-clock Salesforce Support Services to handle everything from minor bugs to system-wide issues. Our certified experts ensure your Salesforce CRM runs seamlessly, enhancing overall performance and user satisfaction.",
   },
   {
-    title: "Salesforce Maintenance Services",
+    title: "Scheduled Salesforce Maintenance (under Support Engagement Models) ",
     description:
       "Routine maintenance is essential for the longevity of your CRM. Our Salesforce Maintenance Services cover performance tuning, updates, health checks, and proactive error handling to ensure maximum system uptime.",
   },
   {
-    title: "Managed Salesforce Support and Maintenance Services",
+    title: "Fully Managed Salesforce Support (under Support Engagement Models) ",
     description:
       "Whether you're a startup or an enterprise, our managed Salesforce support and maintenance services give you peace of mind. We offer scalable packages tailored to your business size and goals.",
   },
 ];
 
 export const metadata: Metadata = {
-  title: "Salesforce Support & Maintenance Services | Saasverse",
+  title: "Salesforce Support and Maintenance Services | Saasverse",
   description:
-    "24/7 Salesforce support & maintenance services for US, UAE & India businesses - bug fixes, updates, optimization. Talk to our certified team.",
+    "24/7 Salesforce support and maintenance from certified experts: managed admin, bug fixes, release updates and performance tuning. Talk to our team today. ",
     alternates: { canonical: 'https://www.saasverse.in/salesforce-support-and-maintenance-services' },
   };
 const page = () => {
@@ -103,15 +103,15 @@ const page = () => {
                />
 
                 <SalesforceServiceReuseable
-      heading="Our Comprehensive Salesforce Services"
+      heading="Salesforce Support Services We Offer"
       benefits={benefits}
     />
 
   
 
      <HealthSolution
-            title="Why Choose Saasverse for  "
-            highlight="Salesforce Support and Maintenance? "
+            title="Why Choose Saasverse for"
+            highlight="Salesforce Support"
             description=""
             image="/images/websiteimages/1.webp"
             imageAlt="Salesforce Healthcare Cloud Solution"
@@ -122,17 +122,17 @@ const page = () => {
                   'Our team holds extensive certifications and experience across Salesforce products.',
               },
               {
-                title: '24/7 Support',
+                title: '24/7 Support Coverage ',
                 description:
                   'Global support to address your needs and issues you are facing anytime, anywhere.',
               },
               {
-                title: 'Tailored Plans',
+                title: 'Flexible Support Plans ',
                 description:
                   'Flexible service models suited to your business as per unique operational needs.',
               },
               {
-                title: 'Performance-Focused',
+                title: 'Performance-Focused Approach ',
                 description:
                   'Regular system audits and optimizations to keep your CRM at peak performance.',
               },
@@ -143,7 +143,7 @@ const page = () => {
 
           <OurPartners/>
 
-           <FaqReuseable title="FAQ" faqs={faqs} />
+           <FaqReuseable title="Salesforce Support FAQs " faqs={faqs} />
               <CTASection/>
            <ContactForm/>
     </>

@@ -1,19 +1,19 @@
 import Image from 'next/image';
  
 const clients = [
-  { src: '/images/ourclients/Databricks.webp',         alt: 'Databricks' },
-  { src: '/images/ourclients/Doordash.webp',           alt: 'DoorDash' },
-  { src: '/images/ourclients/Elkay.webp',              alt: 'Elkay' },
-  { src: '/images/ourclients/Five9.webp',              alt: 'Five9' },
-  { src: '/images/ourclients/IngersolRand.webp',       alt: 'Ingersoll Rand' },
-  { src: '/images/ourclients/Lafarge.webp',            alt: 'Lafarge' },
-  { src: '/images/ourclients/Lkpackaging.webp',        alt: 'LK Packaging' },
-  { src: '/images/ourclients/Marlab.webp',             alt: 'Marlab' },
-  { src: '/images/ourclients/SYSCO.webp',              alt: 'Sysco' },
-  { src: '/images/ourclients/Telstra.webp',            alt: 'Telstra' },
-  { src: '/images/ourclients/XPO.webp',                alt: 'XPO Logistics' },
-  { src: '/images/ourclients/origin.webp',             alt: 'Origin Energy' },
-  { src: '/images/ourclients/SpringEducationGroup.webp', alt: 'Spring Education Group' },
+  { src: '/images/ourclients/Databricks.webp',         alt: 'Databricks logo' },
+  { src: '/images/ourclients/Doordash.webp',           alt: 'DoorDash logo' },
+  { src: '/images/ourclients/Elkay.webp',              alt: 'Elkay logo' },
+  { src: '/images/ourclients/Five9.webp',              alt: 'Five9 logo' },
+  { src: '/images/ourclients/IngersolRand.webp',       alt: 'Ingersoll Rand logo' },
+  { src: '/images/ourclients/Lafarge.webp',            alt: 'Lafarge logo' },
+  { src: '/images/ourclients/Lkpackaging.webp',        alt: 'LK Packaging logo' },
+  { src: '/images/ourclients/Marlab.webp',             alt: 'Marlab logo' },
+  { src: '/images/ourclients/SYSCO.webp',              alt: 'Sysco logo' },
+  { src: '/images/ourclients/Telstra.webp',            alt: 'Telstra logo' },
+  { src: '/images/ourclients/XPO.webp',                alt: 'XPO Logistics logo' },
+  { src: '/images/ourclients/origin.webp',             alt: 'Origin Energy logo' },
+  { src: '/images/ourclients/SpringEducationGroup.webp', alt: 'Spring Education Group logo' },
 ];
  
 export default function OurPartners() {
@@ -29,7 +29,7 @@ export default function OurPartners() {
           Trusted By
         </p>
         <h2 className="text-white">
-          Global Enterprises That Scale With Us
+          Trusted by 41 Companies in 19 Countries 
         </h2>
         <p className="mt-4 leading-relaxed text-white/45">
           From Fortune 500 corporations to high-growth innovators — enterprises across

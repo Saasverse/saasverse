@@ -2,10 +2,10 @@ import Image from 'next/image';
 import Link from 'next/link';
  
 const PILLARS = [
-  { icon: '◈', text: 'Certified Salesforce Consulting Partner' },
-  { icon: '◈', text: '120+ Enterprise Projects Delivered' },
+  { icon: '◈', text: 'Salesforce Partner with Navigator Expert status ' },
+  { icon: '◈', text: 'Offices in Boston and Jaipur, one team from planning to support ' },
   { icon: '◈', text: 'Certified across Sales, Service, Marketing & Health Cloud' },
-  { icon: '◈', text: 'Trusted by enterprises in 15+ countries' },
+  { icon: '◈', text: 'ISO 27001 and Cyber Essentials Plus certified ' },
 ];
  
 export default function AboutSaasverse() {
@@ -18,7 +18,7 @@ export default function AboutSaasverse() {
           <div className="relative">
             <Image
               src="/images/team.webp"
-              alt="Saasverse team working on Salesforce solutions"
+              alt="Illustration of a team meeting"
               width={600}
               height={440}
               className="w-full rounded-2xl object-cover"
@@ -34,14 +34,11 @@ export default function AboutSaasverse() {
             </p>
  
             <h2 className="text-slate-900">
-              Your Trusted Salesforce Partner
+              Why Companies Choose Saasverse as Their Salesforce Partner 
             </h2>
  
             <p className="mt-5 text-base leading-7 text-slate-500">
-              Saasverse Technologies helps businesses unlock their full potential with
-              comprehensive Salesforce consulting, custom development, data integration,
-              and automation. We tailor every engagement to the unique demands of each
-              client — from initial strategy through deployment, training, and ongoing support.
+             Most Salesforce projects don't fail at go-live. They fail six months later, when people stop using the system and go back to spreadsheets. We plan, build, integrate and support your org as one team, so it keeps working long after launch. For one mortgage advisory client, automating follow-ups raised sales team productivity by 25–40%. 
             </p>
  
             <ul className="mt-7 space-y-3">
@@ -57,7 +54,7 @@ export default function AboutSaasverse() {
               href="/about"
               className="mt-8 inline-flex items-center gap-2 rounded-lg border border-slate-200 bg-white px-5 py-2.5 text-sm font-semibold text-slate-700 shadow-sm transition-all duration-200 hover:border-blue-200 hover:text-[#003E95]"
             >
-              Learn more about us
+             See how we work 
               <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
                 <path strokeLinecap="round" strokeLinejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
               </svg>

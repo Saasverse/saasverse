@@ -142,13 +142,13 @@ export default function ContactForm() {
             Get In Touch
           </p>
           <h2 className="text-white" style={{ letterSpacing: '-0.02em' }}>
-            Let&apos;s build your<br className="hidden sm:block" /> Salesforce advantage.
+           Book a Free Salesforce Consultation 
           </h2>
           <p
             className="mt-4 text-base leading-relaxed"
             style={{ color: 'rgba(255,255,255,0.42)' }}
           >
-            Tell us what you&apos;re looking for. Our team responds within 24 hours.
+           Tell us what you need help with. We reply within 24 hours. 
           </p>
         </div>
  
@@ -161,17 +161,12 @@ export default function ContactForm() {
             <ul className="space-y-4">
               {[
                 '100% Confidential',
-                'We Sign NDA',
+                'NDA on request ',
                 'Free Initial Consultation',
-                'Response within 24 hours',
+                
               ].map(item => (
                 <li key={item} className="flex items-center gap-3">
-                  <span
-                    className="flex h-5 w-5 shrink-0 items-center justify-center rounded-full text-[10px] font-bold"
-                    style={{ background: 'rgba(0,62,149,0.18)', color: '#4D8FE0', border: '1px solid rgba(0,62,149,0.30)' }}
-                  >
-                    ✓
-                  </span>
+                 
                   <span className="text-sm" style={{ color: 'rgba(255,255,255,0.58)' }}>
                     {item}
                   </span>
@@ -190,7 +185,7 @@ export default function ContactForm() {
               Or reach us directly
             </p>
             <a
-              href="mailto: info@saasverse.in"
+              href="mailto:info@saasverse.in"
                target="_blank"
   rel="noopener noreferrer"
               className="cf-email-link inline-flex items-center gap-2.5 text-sm font-medium text-white"
@@ -207,7 +202,7 @@ export default function ContactForm() {
             </a>
  
             {/* Stats mini-grid */}
-            <div className="mt-10 grid grid-cols-2 gap-3">
+            {/* <div className="mt-10 grid grid-cols-2 gap-3">
               {[
                 { value: '120+', label: 'Projects Delivered' },
                 { value: '50+',  label: 'Certified Experts' },
@@ -236,7 +231,7 @@ export default function ContactForm() {
                   </div>
                 </div>
               ))}
-            </div>
+            </div> */}
           </div>
  
           {/* ── Right: form ── */}

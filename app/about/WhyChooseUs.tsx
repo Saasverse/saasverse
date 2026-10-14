@@ -6,12 +6,12 @@ export default function WhyChooseUs() {
         "At Saasverse, we are not just service providers; we are your partners in growth. Our commitment to excellence is reflected in every project we undertake. We stay abreast of the latest trends and best practices to ensure that our solutions are both innovative and effective. Our design philosophy emphasizes user experience and brand consistency, creating interfaces that are visually appealing, intuitive, and adaptable across platforms.",
     },
     {
-      title: "Ongoing Support and Training",
+      title: "Ongoing Support and Team Training ",
       description:
         "We understand that the journey doesn’t end with implementation. Our team provides continuous support and training to ensure that you maximize the value of your Salesforce investment. We are here to help you navigate challenges and keep your systems running smoothly.",
     },
     {
-      title: "Let's Thrive Together",
+      title: "",
       description:
         "At Saasverse, your success is our success. We are dedicated to helping your business thrive in the dynamic Salesforce ecosystem. Contact us today to discover how our solutions can propel your business to new heights.",
     },

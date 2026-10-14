@@ -7,18 +7,11 @@ const SERVICES = [
     icon: '/images/salesforceconsultingnew.png',
     title: 'Salesforce Consulting',
     badge: 'Consulting',
-    desc: 'Strategic Salesforce guidance, roadmap planning, and expert advisory to maximise your CRM investment.',
+    desc: 'Get a clear plan before you spend on licenses or development. We review your org, map your processes and tell you what to fix first.',
     href: '/salesforce-consulting-company',
     accent: '#0176D3',
   },
-  {
-    icon: '/images/servicenoww.png',
-    title: 'ServiceNow',
-    badge: 'Platform',
-    desc: 'ServiceNow implementation, customisation, and integration services to streamline enterprise workflows.',
-    href: '/services',
-    accent: '#62D84E',
-  },
+ 
   {
     icon: '/images/CRMnew.png',
     title: 'CRM Implementation',
@@ -27,11 +20,19 @@ const SERVICES = [
     href: '/salesforce-implementation-services',
     accent: '#003E95',
   },
+   {
+    icon: '/images/servicenoww.png',
+    title: 'ServiceNow',
+    badge: 'Platform',
+    desc: 'ServiceNow implementation, customisation, and integration services to streamline enterprise workflows.',
+    href: '/servicenow',
+    accent: '#62D84E',
+  },
   {
     icon: '/images/cms.webp',
     title: 'CMS Development',
     badge: 'Web',
-    desc: 'WordPress, Shopify, and Magento solutions that combine powerful content management with flawless user experiences.',
+    desc: 'Custom Salesforce Development: Apex, Lightning Web Components and automation for the processes standard Salesforce cant handle. ',
     href: '/wordpress-development-services',
     accent: '#059669',
   },
@@ -58,13 +59,13 @@ export default function PlatformServices() {
     <section className="bg-white py-20 md:py-10">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
  
-        <div className="mb-14 max-w-2xl">
+        <div className="mb-14 max-w-9xl">
           <p className="mb-3 text-xs font-semibold uppercase tracking-[0.16em] text-[#003E95]">
             What We Do
           </p>
-          <h2 className="text-slate-900">Our Services</h2>
+          <h2 className="text-slate-900">Salesforce Services, From Planning to Support </h2>
           <p className="mt-3 text-base text-slate-500 leading-relaxed">
-            End-to-end technology services built for enterprise scale and reliability.
+            From the first roadmap to day-to-day support, we cover every stage of your Salesforce work.
           </p>
         </div>
  
@@ -92,7 +93,9 @@ export default function PlatformServices() {
               </div>
  
               <div className="mb-3">
-                <p className="text-base font-bold text-slate-800">{s.title}</p>
+               <h3 className="text-lg font-semibold text-gray-900">
+  {s.title}
+</h3>
                 <span
                   className="mt-1.5 inline-flex items-center rounded-full px-2 py-0.5 text-[10px] font-semibold uppercase tracking-wide"
                   style={{ background: `${s.accent}14`, color: s.accent }}

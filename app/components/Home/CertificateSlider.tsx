@@ -4,12 +4,12 @@ import Image from 'next/image';
 import { useEffect, useRef, useState, useCallback } from 'react';
 
 const CERTIFICATES = [
-  { src: '/images/certificateImage/certificate1.webp', label: 'Certificate 1', num: '01' },
-  { src: '/images/certificateImage/certificate2.webp', label: 'Certificate 2', num: '02' },
-  { src: '/images/certificateImage/certificate3.webp', label: 'Certificate 3', num: '03' },
-  { src: '/images/certificateImage/certificate4.webp', label: 'Certificate 4', num: '04' },
-  { src: '/images/certificateImage/certificate5.webp', label: 'Certificate 5', num: '05' },
-  { src: '/images/certificateImage/certificate6.webp', label: 'Certificate 6', num: '06' },
+  { src: '/images/certificateImage/certificate1.webp', label: 'Salesforce Certified Administrator badge ', num: '01' },
+  { src: '/images/certificateImage/certificate2.webp', label: 'Salesforce Certified Sales Cloud Consultant badge ', num: '02' },
+  { src: '/images/certificateImage/certificate3.webp', label: 'Salesforce Certified CPQ Specialist badge ', num: '03' },
+  { src: '/images/certificateImage/certificate4.webp', label: 'Salesforce Certified Service Cloud Consultant badge ', num: '04' },
+  { src: '/images/certificateImage/certificate5.webp', label: 'Salesforce Certified Community Cloud Consultant badge ', num: '05' },
+  { src: '/images/certificateImage/certificate6.webp', label: 'Salesforce Certified Field Service Lightning Consultant badge ', num: '06' },
 ];
 
 const CARD_W = 210;
@@ -81,14 +81,8 @@ export default function CertificateSlider() {
           </p>
 
           <h2 className="font-light text-[#0a0f1e] tracking-tight leading-snug">
-            We hold skilled,{' '}
-            <strong className="font-medium text-[#003e95]">well-trained</strong>{' '}
-            and
-            <br />
-            certified{' '}
-            <strong className="font-medium text-[#003e95]">
-              Salesforce team
-            </strong>
+           We hold skilled, well-trained and 50+ Certified Salesforce Experts 
+           
           </h2>
 
           <p className="mt-3 text-[14px] text-gray-400">

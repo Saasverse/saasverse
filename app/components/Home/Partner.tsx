@@ -3,11 +3,11 @@
 import Image from 'next/image';
 
 const partners = [
-  { src: '/images/salesforce.webp', alt: 'Salesforce',  name: 'Salesforce'          },
-  { src: '/images/servicenoww.png',   alt: 'Sitecore',    name: 'ServiceNow'            },
-  { src: '/images/aws22.webp',      alt: 'AWS',         name: 'Amazon Web Services' },
-  { src: '/images/micros.webp',     alt: 'Microsoft',   name: 'Microsoft'           },
-  { src: '/images/google.webp',     alt: 'Google',      name: 'Google'              },
+  { src: '/images/salesforce.webp', alt: 'Salesforce logo ',  name: 'Salesforce'          },
+  { src: '/images/servicenoww.png',   alt: 'ServiceNow logo',    name: 'ServiceNow'            },
+  { src: '/images/aws22.webp',      alt: 'Amazon Web Services logo ',         name: 'Amazon Web Services' },
+  { src: '/images/micros.webp',     alt: 'Microsoft logo ',   name: 'Microsoft'           },
+  { src: '/images/google.webp',     alt: 'Google logo ',      name: 'Google'              },
 ];
 
 export default function Partner() {
@@ -50,9 +50,9 @@ export default function Partner() {
               letterSpacing: '-0.03em',
             }}
           >
-            Backed by the world's
-            <br />
-            <span style={{ color: '#003e95' }}>best&nbsp;platforms.</span>
+            Partnered With Salesforce, ServiceNow, AWS, Microsoft and Google 
+            {/* <br /> */}
+            {/* <span style={{ color: '#003e95' }}>best&nbsp;platforms.</span> */}
           </h2>
         </div>
 

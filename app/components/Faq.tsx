@@ -1,34 +1,44 @@
 export default function Faq() {
   const faqs = [
     {
-      question: 'What Salesforce services does Saasverse provide?',
+      question: 'What Salesforce services does Saasverse offer?',
       answer:
-        'We offer Salesforce consulting, implementation, customization, integration, migration, support, and managed services tailored to your business requirements.',
+        'Consulting, implementation, integration, custom development, AppExchange app development, data migration and managed services, across Sales, Service, Marketing, Health and Financial Services Cloud.',
     },
     {
-      question: 'Do you provide Salesforce support after deployment?',
+      question: 'Do you support Salesforce after go-live?',
       answer:
-        'Yes. We provide ongoing support, maintenance, optimization, and enhancement services to ensure your Salesforce ecosystem continues to deliver maximum value.',
+        ' Yes. Our team handles admin requests, fixes, Salesforce release updates and new features, so your org keeps improving instead of slowly breaking.',
     },
     {
-      question: 'Can Saasverse help with Salesforce data migration?',
+      question: 'Can you move our data into Salesforce?',
       answer:
-        'Absolutely. Our team specializes in secure and seamless migration from legacy systems, spreadsheets, and third-party CRMs into Salesforce.',
+        ' Yes. We move data from old CRMs, spreadsheets and ERPs into Salesforce, with field mapping, duplicate checks and validation before go-live.',
     },
     {
-      question: 'Do you offer cloud and digital transformation services?',
+      question: 'Is Saasverse a certified Salesforce partner?',
       answer:
-        'Yes. We help businesses modernize operations through cloud adoption, workflow automation, integration solutions, and digital transformation strategies.',
+        'Yes. Saasverse is a Salesforce Partner with Navigator Expert status, and our 50+ certified experts work across Sales, Service, Marketing and Health Cloud.',
     },
     {
-      question: 'How can I get started with Saasverse?',
+      question: ' How do we get started?',
       answer:
-        "Simply contact our team through the website. We'll schedule a consultation to understand your requirements and recommend the best solution.",
+        "Book a free consultation using the form below. We sign an NDA if you need one, look at your goals and current setup, and reply within 24 hours with next steps.",
     },
     {
       question: 'Which industries do you work with?',
       answer:
-        'We work with organizations across healthcare, finance, retail, manufacturing, technology, education, and many other industries.',
+        'Healthcare, financial services, banking, retail, manufacturing, technology and education. We also implement industry clouds such as Health Cloud, Financial Services Cloud and Nonprofit Cloud.',
+    },
+    {
+      question: 'How much does a Salesforce project cost?',
+      answer:
+        'Projects start at $5,000, support plans start at $250/month, and you can hire dedicated developers from $25/hour. After a free consultation we send a written proposal with scope, timeline and cost, so you know the price before work starts.Projects start at $5,000, support plans start at $250/month, and you can hire dedicated developers from $25/hour. After a free consultation we send a written proposal with scope, timeline and cost, so you know the price before work starts..',
+    },
+    {
+      question: 'Do you work with companies in the US and UAE?',
+      answer:
+        'Yes. We have offices in Boston and Jaipur and have worked with 41 clients in 19 countries, including the US and the UAE. An NDA is in place from day one.',
     },
   ];
 
@@ -41,9 +51,9 @@ export default function Faq() {
             FAQ
           </span>
 
-          <h3 className="mt-6 text-4xl font-bold tracking-tight text-slate-900 md:text-6xl">
-            Frequently Asked Questions
-          </h3>
+          <h2 className="mt-6 text-4xl font-bold tracking-tight text-slate-900 md:text-6xl">
+           Salesforce Consulting FAQs.
+          </h2>
 
           <p className="mx-auto mt-4 max-w-2xl text-lg text-slate-600">
             Everything you need to know about our Salesforce, Cloud and Digital
@@ -66,12 +76,12 @@ export default function Faq() {
               itemType="https://schema.org/Question"
             >
               <summary className="flex cursor-pointer list-none items-center justify-between px-6 py-6">
-                <span
+                <h3
                   itemProp="name"
                   className="pr-8 text-lg font-semibold text-slate-900"
                 >
                   {faq.question}
-                </span>
+                </h3>
 
                 <div className="flex h-10 w-10 items-center justify-center rounded-full bg-slate-100 transition-all duration-300 group-open:bg-blue-50">
                   <svg

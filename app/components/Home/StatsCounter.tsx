@@ -63,8 +63,8 @@ export default function StatsCounter({
   const stats: Stat[] = [
     { target: projects, suffix: '+', label: 'Projects Delivered' },
     { target: experts,  suffix: '+', label: 'Certified Experts'  },
-    { target: years,    suffix: '+', label: 'Years Experience'   },
-    { target: 15,       suffix: '+', label: 'Countries Served'   },
+    { target: years,    suffix: '+', label: 'Clients'   },
+    { target: 19,       suffix: '+', label: 'Countries Served'   },
   ];
 
   return (

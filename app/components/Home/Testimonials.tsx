@@ -5,7 +5,7 @@ const testimonials = [
     company: 'Enterprise Solutions',
     initials: 'MA',
     review:
-      'Saasverse transformed our Salesforce ecosystem with exceptional expertise. Their team delivered scalable solutions that significantly improved operational efficiency.',
+      'Their quick response time and attention to detail made the entire process seamless." Celina, CEO, Mortgage Advisory Firm, Singapore Result: 25–40% higher sales team productivity .',
   },
   {
     name: 'Sarah Johnson',
@@ -13,7 +13,7 @@ const testimonials = [
     company: 'Global Retail Group',
     initials: 'SJ',
     review:
-      'The professionalism and technical excellence demonstrated by Saasverse exceeded our expectations. Their consultants became a true extension of our internal team.',
+      'Four-year partnership on Field Service Lightning and Service Cloud projects, every project delivered on time. Daniel Jacob, Project Head, FHLBC, Pune ',
   },
   {
     name: 'David Miller',
@@ -21,7 +21,7 @@ const testimonials = [
     company: 'Fintech Innovations',
     initials: 'DM',
     review:
-      'From planning to deployment, the entire engagement was seamless. Their cloud and Salesforce expertise helped us accelerate growth while reducing costs.',
+      'Salesforce consulting project for a healthcare company, delivered on the agreed timeline. Project Delivery Head, JM Healthcare, Jaipur ',
   },
 ];
  
@@ -36,10 +36,10 @@ export default function Testimonials() {
             <p className="mb-2 text-xs font-semibold uppercase tracking-[0.16em] text-[#003E95]">
               Client Stories
             </p>
-            <h2 className="text-slate-900">What Our Clients Say</h2>
+            <h2 className="text-slate-900">Rated 5.0 on Clutch: What Our Clients Say </h2>
           </div>
           <a
-            href="https://clutch.co/profile/saasverse"
+            href="https://clutch.co/profile/saasverse-salesforce-consulting-partner"
             target="_blank"
             rel="noopener noreferrer"
             className="shrink-0 text-xs font-semibold text-slate-400 underline-offset-2 hover:text-[#003E95] hover:underline"

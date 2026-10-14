@@ -47,22 +47,22 @@ const faqs = [
 
 const benefits = [
   {
-    title: "Proven Expertise:",
+    title: "Proven Salesforce Expertise ",
     description:
       "Our consultants are Salesforce certified professionals with a proven track record of success. They stay up-to-date on the latest Salesforce features and functionalities to ensure you receive the most cutting-edge solutions.",
   },
   {
-    title: "End-to-End Support:",
+    title: "End-to-End Project Support ",
     description:
       "We offer a comprehensive suite of Salesforce consulting services, from implementation and customization to integration and data migration. We guide you through every step of the process, ensuring a smooth and successful Salesforce adoption.",
   },
   {
-    title: "Business-Centric Approach:",
+    title: "Business-First Approach ",
     description:
       "We don't just implement technology; we understand your business goals. Our consultants work closely with you to develop a customized Salesforce strategy that drives measurable results.",
   },
   {
-    title: "Focus on User Adoption:",
+    title: "Focus on User Adoption ",
     description:
       "We believe that successful Salesforce implementations hinge on user adoption. Our team provides comprehensive training programs to empower your team to leverage the platform effectively.",
   },
@@ -74,9 +74,9 @@ const benefits = [
 ];
 
 export const metadata: Metadata = {
-  title: "Hire Salesforce Consultants in India | Saasverse",
+  title: "Hire Salesforce Consultants & Experts in India | Saasverse ",
   description:
-    "Hire dedicated Salesforce consultants in India. Flexible hourly, part-time or full-time hire, US/UAE time-zone overlap. Get a free quote today.",
+    "Hire certified Salesforce consultants and dedicated developers in India on hourly, part-time or full-time models with US/UAE time-zone overlap. Get a quote. ",
     alternates: { canonical: 'https://www.saasverse.in/hire-salesforce-consultants' },
 
   };
@@ -87,19 +87,19 @@ const page = () => {
     <>
        <PageBanner
                  image="/images/banner/hirebanner.webp"
-                 title="Hire Saasverse Salesforce Consultants"
+                 title="Hire Certified Salesforce Consultants in India "
                  description="Saasverse Pvt Ltd: Your Trusted Salesforce Consulting Partner"
                />
 
                 <SalesforceServiceReuseable
-      heading="Why Hire Saasverse Salesforce Consultants?"
+      heading="Why Hire Salesforce Consultants From Saasverse "
       benefits={benefits}
     />
 
     
 
      <HealthSolution
-            title="What We Can Do for You: "
+            title="What Our Salesforce Consultants Deliver  "
             highlight=""
             description=""
             image="/images/websiteimages/4.webp"
@@ -116,9 +116,14 @@ const page = () => {
                   'Seamlessly integrate Salesforce with your existing business systems to eliminate data silos and improve data flow.',
               },
               {
-                title: 'Salesforce Development',
+                title: 'Custom Salesforce Development ',
                 description:
                   'Develop custom applications to extend Salesforce functionality and automate complex tasks.',
+              },
+              {
+                title: 'Flexible Hiring Models  ',
+                description:
+                  'Hourly Engagement / Part-Time Dedicated Consultant / Full-Time Dedicated Team',
               },
              
             ]}
@@ -129,7 +134,7 @@ const page = () => {
 
           <OurPartners/>
 
-           <FaqReuseable title="FAQ" faqs={faqs} />
+           <FaqReuseable title="Hiring Salesforce Consultants: FAQs " faqs={faqs} />
             <CTASection/>
            <ContactForm/>
     </>

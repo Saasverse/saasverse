@@ -14,12 +14,12 @@ import ContactForm from './components/ContactForm';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Saasverse – Salesforce Consulting & Software Development',
+  title: 'Salesforce Consulting & Implementation Partner | Saasverse ',
   description:
-    'Saasverse: Salesforce consulting, implementation & custom software development for US, UAE & global businesses. India-based experts. Get a free quote',
+    'Salesforce consulting partner with offices in Boston and Jaipur. 120+ projects for 41 clients in 19 countries, rated 5.0 on Clutch. Book a free consultation.  ',
 
   alternates: {
-    canonical: 'https://www.saasverse.in',
+    canonical: 'https://www.saasverse.in/',
   },
 };
 

@@ -46,15 +46,15 @@ async function getContactData(): Promise<{ contactDetails: ContactDetails; socia
 }
  
 const partnerLogos = [
-  { src: '/images/footer/c6.webp', alt: 'Salesforce Crest Partner' },
-  { src: '/images/footer/c1.webp', alt: 'Certification Partner 1' },
-  { src: '/images/footer/c5.webp', alt: 'Certification Partner 2' },
-  { src: '/images/footer/c4.webp', alt: 'Certification Partner 3' },
-  { src: '/images/footer/c3.webp', alt: 'Certification Partner 4' },
-  { src: '/images/footer/c2.webp', alt: 'Certification Partner 5' },
-  { src: '/images/footer/2.webp', alt: 'Certification Partner 6' },
-  { src: '/images/footer/4.webp', alt: 'Certification Partner 7' },
-  { src: '/images/footer/c8.webp', alt: 'Certification Partner 8' },
+  { src: '/images/footer/c6.webp', alt: 'Pledge 1% member badge (the image is the Pledge 1% logo) ' },
+  { src: '/images/footer/c1.webp', alt: 'Available on Salesforce AppExchange badge ' },
+  { src: '/images/footer/c5.webp', alt: 'Salesforce Partner badge ' },
+  { src: '/images/footer/c4.webp', alt: 'Salesforce Navigator Expert badge ' },
+  { src: '/images/footer/c3.webp', alt: 'Salesforce Navigator Specialist I badge ' },
+  { src: '/images/footer/c2.webp', alt: 'Salesforce Navigator Specialist II badge ' },
+  { src: '/images/footer/2.webp', alt: 'Cyber Essentials Plus certified badge ' },
+  { src: '/images/footer/4.webp', alt: 'ISO 27001 certified badge ' },
+  { src: '/images/footer/c8.webp', alt: 'Upwork Top Rated badge ' },
 ];
  
 const values = [
@@ -136,7 +136,7 @@ export default async function Footer() {
   <div className="mb-5 -mt-1">
     <Image
       src="/images/footer/saasverse_whitelogo.webp"
-      alt="Saasverse"
+      alt="Saasverse logo"
       width={150}
       height={80}
       style={{ width: "150px", height: "auto" }}
@@ -156,9 +156,9 @@ export default async function Footer() {
     >
       +91-9001622254
     </a>
-
+<p className="block text-sm text-white/80 hover:text-white mt-1">Office 301 and FC-1, Anchor Mall, Ajmer Road, Jaipur, Rajasthan 302006 </p>
     <a
-      href="mailto: info@saasverse.in"
+      href="mailto:info@saasverse.in"
       target="_blank"
   rel="noopener noreferrer"
       className="mt-2 block text-sm text-white/80 hover:text-white"
@@ -227,7 +227,7 @@ export default async function Footer() {
               </div>
             ))}
             <a href="https://clutch.co/profile/saasverse" target="_blank" rel="noopener noreferrer">
-              <Image src="/images/footer/1.webp" alt="Clutch Profile" width={200} height={65} style={{ width: '200px', height: '65px', objectFit: 'contain' }} />
+              <Image src="/images/footer/1.webp" alt="Reviewed on Clutch, 5.0 rating " width={200} height={65} style={{ width: '200px', height: '65px', objectFit: 'contain' }} />
             </a>
           </div>
         </div>

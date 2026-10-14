@@ -43,9 +43,9 @@ export default function FaqReuseable({
                   onClick={() => toggleFAQ(index)}
                   className="flex w-full items-center justify-between px-6 py-5 text-left"
                 >
-                  <span className="text-lg font-semibold text-slate-900">
+                  <h3 className="text-lg font-semibold text-slate-900">
                     {faq.question}
-                  </span>
+                  </h3>
 
                   <ChevronDown
                     size={20}

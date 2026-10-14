@@ -4,7 +4,7 @@ export default function CTASection() {
   const stats = {
     delivered_projects: 120,
     no_of_certificate: 50,
-    years_of_experience: 5,
+    clients: 49,
   };
 
   return (
@@ -16,7 +16,7 @@ export default function CTASection() {
         <StatsCounter
           projects={stats.delivered_projects}
           experts={stats.no_of_certificate}
-          years={stats.years_of_experience}
+          years={stats.clients}
         />
       </div>
     </section>
