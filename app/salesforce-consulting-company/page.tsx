@@ -1,7 +1,4 @@
-
-import type { Metadata } from 'next';
-import type { ReactNode } from 'react';
-
+import React from 'react';
 import PageBanner from '../components/PageBanner';
 import SalesforceServiceReuseable from '../components/SalesforceServiceReuseable';
 import CTASection from '../components/Home/CTASection';
@@ -10,16 +7,7 @@ import CertificateSlider from '../components/Home/CertificateSlider';
 import OurPartners from '../components/Home/OurPartners';
 import FaqReuseable from '../components/FaqReuseable';
 import ContactForm from '../components/ContactForm';
-
-type Benefit = {
-  title: string;
-  description: ReactNode;
-};
-
-type Solution = {
-  title: string;
-  description: ReactNode;
-};
+import { Metadata } from 'next';
 
 const faqs = [
   {
@@ -28,218 +16,141 @@ const faqs = [
       'Hiring Salesforce Consultants will make sure that your Salesforce implementation is perfectly aligned with your business goals and delivers maximum ROI.',
   },
   {
-    question: 'How quickly can a consultant start?',
+    question: 'Can you customize Salesforce to fit my business needs?',
     answer:
-      'Often within a few days of choosing your consultant. Specialist skills can take up to a few weeks to match.',
+      'Absolutely. Our Consultants specialize in customizing Salesforce solutions – be it CRM, Marketing Cloud, Mobile App development, or CDP – to meet your specific business requirements.',
   },
   {
-    question: 'Can I interview the consultant first?',
+    question:
+      'What is the typical engagement process with Saasverse Consultants?',
     answer:
-      'Yes. Before onboarding, we share profiles of certified consultants who match your requirements. You interview them to make sure their skills and communication style fit your team before any work begins.',
+      'Our engagement process is client-centric, starting with understanding your business needs, followed by providing strategic Salesforce consultancy tailored to those needs. We work either on a project basis or time & material contracts.',
   },
   {
-    question: 'Will the consultant work in my time zone?',
+    question: 'How long does it take to hire Saasverse Consultants?',
     answer:
-      'Yes. Our consultants work with US and UAE time-zone overlap, so they join your meetings and reply during your working day.',
+      'Our efficient hiring process ensures that you can quickly onboard a skilled Salesforce Consultant, often within a few days to a few weeks, depending on your specific requirements.',
   },
   {
-    question: 'Are your consultants certified?',
+    question: 'Can Saasverse provide ongoing support after implementation?',
     answer:
-      'Yes. Our team holds Salesforce certifications including Administrator, Sales Cloud Consultant, Service Cloud Consultant, CPQ Specialist and Field Service Lightning Consultant.',
+      'Yes, we offer ongoing support and consultancy to ensure your Salesforce ecosystem continues to evolve with your business, delivering continual value.',
   },
   {
-    question: 'What if the consultant is not the right fit?',
+    question:
+      'How do I get started with hiring Salesforce Consultants from Saasverse?',
     answer:
-      'We replace them at no extra cost and manage the handover, so your project keeps moving without disruption.',
-  },
-  {
-    question: 'Should I hire a consultant or start a consulting project?',
-    answer:
-      'Hire a consultant when you need extra Salesforce skills inside your team. They can often start within a few days and work on the tasks you give them. Choose a consulting project when you want a fixed scope, timeline and price, and our team plans and delivers the work from start to finish.',
-  },
-  {
-    question: 'Who owns the work the consultant does?',
-    answer:
-      'You do. All code, configuration and documentation created for your project belong to you, as set out in our service agreement. We also sign an NDA before we access your org.',
-  },
-  {
-    question: 'Can we hire for a different number of hours?',
-    answer:
-      'Yes. Our standard plans are part-time at 80 hours a month and full-time at 160 hours a month. If your project needs a different level of support, we can arrange a custom block of hours.',
-  },
-  {
-    question: 'Which Salesforce skills can you supply?',
-    answer:
-      'Admins, developers, consultants and architects across Sales Cloud, Service Cloud, Field Service, Experience Cloud, Marketing Cloud, Revenue Cloud, CPQ, Billing, Einstein and Agent Force.',
-  },
-  {
-    question: 'Where are your consultants based?',
-    answer:
-      'Our consultants work from our office in Jaipur, India. We also have an office in Boston, US, and our team works with US and UAE time-zone overlap.',
+      'Starting is simple. Contact us, and we will guide you through our straightforward process to connect you with the ideal Salesforce consultant for your needs.',
   },
 ];
 
-const benefits: Benefit[] = [
+const benefits = [
   {
-    title: 'Strategy and Roadmaps',
-    description: (
-      <>
-        Review your org, map your processes and plan what to build next. For a
-        complete project, see our{' '}
-        <a
-          href="/salesforce-consulting-company"
-          className="text-blue-600 hover:underline"
-        >
-          Salesforce consulting services.
-        </a>
-      </>
-    ),
-  },
-  {
-    title: 'Implementation and Customization',
-    description: (
-      <>
-        Set up Sales, Service and Experience Cloud around the way your team
-        actually works. Learn more about{' '}
-        <a
-          href="/salesforce-implementation-services"
-          className="text-blue-600 hover:underline"
-        >
-          Salesforce implementation.
-        </a>
-      </>
-    ),
-  },
-  {
-    title: 'Integration',
-    description: (
-      <>
-        Connect Salesforce to your ERP, marketing and finance tools with APIs
-        or MuleSoft, so data moves without manual work. See our{' '}
-        <a
-          href="/salesforce-integration-services"
-          className="text-blue-600 hover:underline"
-        >
-          Salesforce integration services.
-        </a>
-      </>
-    ),
-  },
-  {
-    title: 'Custom Development',
-    description: (
-      <>
-        Apex, Lightning Web Components and automation for work standard
-        Salesforce cannot do. Need coding capacity only?{' '}
-        <a
-          href="/hire-salesforce-developers"
-          className="text-blue-600 hover:underline"
-        >
-          Hire Salesforce developers.
-        </a>
-      </>
-    ),
-  },
-  {
-    title: 'Data Migration',
+    title: 'Strategic Planning:',
     description:
-      'Move data from old CRMs and spreadsheets into Salesforce, with field mapping, duplicate checks and testing before go-live.',
+      'We begin by understanding your business goals and processes to create a strategic implementation plan that aligns with your objectives.',
   },
   {
-    title: 'Training and Adoption',
+    title: 'Custom Configuration:',
     description:
-      'Train admins and end users and write simple guides, so the system you pay for gets used every day.',
+      'Our team configures Salesforce to meet your specific requirements, ensuring a seamless integration with your existing systems.',
+  },
+  {
+    title: 'Data Migration:',
+    description:
+      'We ensure a smooth transition of your data to Salesforce, maintaining data integrity and security throughout the process.',
+  },
+  {
+    title: 'Tailored Solutions:',
+    description:
+      'We customize Salesforce to fit your unique business processes, from custom objects and fields to workflow rules and validation.',
+  },
+  {
+    title: 'App Development:',
+    description:
+      'Our developers create custom applications within Salesforce to enhance functionality and provide additional value to your operations.',
+  },
+  {
+    title: 'Integration Services:',
+    description:
+      'We integrate Salesforce with other systems and platforms you use, ensuring a unified and efficient workflow.',
+  },
+  {
+    title: 'Ongoing Support:',
+    description:
+      'Our support team is always available to help you with any issues, ensuring that your Salesforce environment runs smoothly.',
+  },
+  {
+    title: 'Regular Updates:',
+    description:
+      'We keep your Salesforce system up to date with the latest features and security updates, maximizing its performance and reliability.',
+  },
+  {
+    title: 'User Training',
+    description:
+      'We provide comprehensive training to your team, empowering them to utilize Salesforce effectively and efficiently.',
   },
 ];
-
 export const metadata: Metadata = {
   title: 'Salesforce Consulting Company | Saasverse',
   description:
     'Certified Salesforce consulting company delivering proven implementations for US, UAE & global clients from India. Get a free consultation today.',
-  alternates: {
-    canonical: 'https://www.saasverse.in/salesforce-consulting-company',
-  },
+
+    alternates: { canonical: 'https://www.saasverse.in/salesforce-consulting-company' },
 };
-
-export default function SalesforceConsultingCompanyPage() {
-  const solutions: Solution[] = [
-    {
-      title: 'Certified Consultants',
-      description:
-        'Every consultant holds Salesforce certifications. Between them, our team covers Sales Cloud, Service Cloud, CPQ, Experience Cloud and Field Service.',
-    },
-    {
-      title: 'Your Hours, Your Tools',
-      description:
-        'Our consultants work with US and UAE time-zone overlap, join your meetings and use your project tools, just like your own staff.',
-    },
-    {
-      title: 'Flexible Arrangements',
-      description:
-        'Move between hourly, part-time and full-time as your needs change, without a long recruitment process.',
-    },
-    {
-      title: 'Knowledge Stays With You',
-      description:
-        'Your consultant documents their work and trains your admins and users along the way, so your team never depends on one person.',
-    },
-    {
-      title: 'Support After the Project',
-      description: (
-        <>
-          When the main work is done, our team can look after your org through
-          a{' '}
-          <a
-            href="/salesforce-support-and-maintenance-services"
-            className="text-blue-600 hover:underline"
-          >
-            Salesforce support and maintenance plan.
-          </a>
-        </>
-      ),
-    },
-    {
-      title: 'Easy Replacement',
-      description:
-        'If a consultant is not the right fit, we replace them at no extra cost and manage the handover, so your work keeps moving.',
-    },
-  ];
-
+const page = () => {
   return (
     <>
       <PageBanner
         image="/images/banner/banner002.webp"
-        title="Hire Salesforce Consultants Who Work as Part of Your Team"
-        description="Add certified Salesforce consultants to your team by the hour, part-time or full-time. They work with US and UAE time-zone overlap, follow your process and can start within days. Rates start at $25 an hour."
+        title="Salesforce Consulting Company"
+        description="At Saasverse Pvt Ltd, we are dedicated to helping your business unlock its full potential with our comprehensive Salesforce Consulting Services."
       />
 
       <SalesforceServiceReuseable
-        heading="What Our Salesforce Consultants Can Help With"
+        heading="Our Salesforce Consulting Covers the following"
         benefits={benefits}
       />
 
       <HealthSolution
-        title="Why Hire a Salesforce Consultant From Saasverse"
+        title="Why Choose Saasverse  "
         highlight=" "
         description=""
         image="/images/websiteimages/4.webp"
         imageAlt="Salesforce Healthcare Cloud Solution"
-        solutions={solutions}
+        solutions={[
+          {
+            title: 'Expertise and Experience:',
+            description:
+              'Our team of certified Salesforce professionals brings extensive experience and deep expertise to every project.',
+          },
+          {
+            title: 'Client-Centric Approach:',
+            description:
+              'We prioritize understanding your unique needs and delivering solutions that are tailored to your business.',
+          },
+          {
+            title: 'Commitment to Excellence:',
+            description:
+              'We are dedicated to providing exceptional service and ensuring that our clients achieve outstanding results with Salesforce.',
+          },
+          {
+            title: 'Proven Track Record:',
+            description:
+              'Our successful track record speaks for itself, with numerous satisfied clients and successful Salesforce implementations across various industries.',
+          },
+        ]}
       />
 
       <CertificateSlider />
 
       <OurPartners />
 
-      <FaqReuseable
-        title="Hiring Salesforce Consultants: FAQs"
-        faqs={faqs}
-      />
-
+      <FaqReuseable title="FAQ" faqs={faqs} />
       <CTASection />
-
       <ContactForm />
     </>
   );
-}
+};
 
+export default page;
