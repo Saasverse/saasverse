@@ -81,13 +81,12 @@ export default function CertificateSlider() {
           </p>
 
           <h2 className="font-light text-[#0a0f1e] tracking-tight leading-snug">
-           We hold skilled, well-trained and 50+ Certified Salesforce Experts 
+          40+ Certified Salesforce Experts
            
           </h2>
 
           <p className="mt-3 text-[14px] text-gray-400">
-            Industry-recognized certifications across the full Salesforce
-            ecosystem
+            Industry-recognized certifications across the full Salesforce ecosystem” → Our team holds Salesforce certifications across admin, consultant and specialist tracks.
           </p>
         </div>
 

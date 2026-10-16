@@ -16,10 +16,10 @@ import { Metadata } from 'next';
 export const metadata: Metadata = {
   title: 'Salesforce Consulting & Implementation Partner | Saasverse',
   description:
-    'Salesforce consulting partner with offices in Boston and Jaipur. 120+ projects for 41 clients in 19 countries, rated 5.0 on Clutch. Book a free consultation.',
+    'Saasverse is a certified Salesforce partner trusted by 40+ clients in 19 countries for consulting, implementation, integration and ongoing support.',
 
   alternates: {
-    canonical: 'https://www.saasverse.in/',
+    canonical: 'https://www.saasverse.in',
   },
 };
 

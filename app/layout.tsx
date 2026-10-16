@@ -17,7 +17,7 @@ export const metadata: Metadata = {
   title: "Salesforce Consulting & Implementation Partner | Saasverse",
 
   description:
-    "Salesforce consulting partner with offices in Boston and Jaipur. 120+ projects for 41 clients in 19 countries. Book a free consultation.",
+    "Salesforce consulting partner with offices in Boston and Jaipur. 120+ projects for 40+ clients in 19 countries. Book a free consultation.",
 
   verification: {
     google: "sIfd-4cZsZsFPJo_TgdZme-_a42ZpA73IBltgHuI-zE",
@@ -33,7 +33,7 @@ export const metadata: Metadata = {
     siteName: "Saasverse",
     title: "Salesforce Consulting & Implementation Partner | Saasverse",
     description:
-      "Salesforce consulting partner with offices in Boston and Jaipur. 120+ projects for 41 clients in 19 countries.",
+      "Salesforce consulting partner with offices in Boston and Jaipur. 120+ projects for 40+ clients in 19 countries.",
     images: [
       {
         url: "/images/og-home.jpg",
@@ -48,7 +48,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Salesforce Consulting & Implementation Partner | Saasverse",
     description:
-      "Salesforce consulting partner with offices in Boston and Jaipur. 120+ projects for 41 clients in 19 countries.",
+      "Salesforce consulting partner with offices in Boston and Jaipur. 120+ projects for 40+ clients in 19 countries.",
     images: ["/images/og-home.jpg"],
   },
 };

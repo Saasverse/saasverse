@@ -122,7 +122,7 @@ export default function HeroSection() {
           }}
         >
           {' '}
-        Certified Salesforce consultants who plan, build, connect and support your org, so your team actually uses it. 120+ projects for 41 clients in 19 countries. {' '}
+        Certified Salesforce consultants who plan, build, connect and support your org, so your team actually uses it. 120+ projects for 40+ clients in 19 countries. {' '}
         </p>{' '}
         {/* ======================================================= CTA Buttons ======================================================= */}{' '}
         <div className="mt-7 flex flex-wrap items-center justify-center gap-3">

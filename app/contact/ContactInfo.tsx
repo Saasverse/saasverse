@@ -31,7 +31,7 @@ export default function ContactInfo() {
     company_name: "Saasverse Pvt Ltd",
     company_address:
       "Office 301 and FC-1, Anchor Mall, Ajmer Rd, Madrampur, Ganpati Nagar, Jaipur, Rajasthan - 302006",
-    contact_number: "+91 9001622264",
+    contact_number: "+91 9001622254",
     email_address: " info@saasverse.in",
   };
 
