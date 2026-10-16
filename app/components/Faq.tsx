@@ -56,7 +56,7 @@ export default function Faq() {
           </h2>
 
           <p className="mx-auto mt-4 max-w-2xl text-lg text-slate-600">
-           Everything you need to know about our Salesforce, Cloud and Digital Transformation services.” → Answers to the questions we get asked most.
+         Answers to the questions we get asked most.
           </p>
         </div>
 

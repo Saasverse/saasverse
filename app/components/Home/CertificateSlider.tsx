@@ -86,7 +86,7 @@ export default function CertificateSlider() {
           </h2>
 
           <p className="mt-3 text-[14px] text-gray-400">
-            Industry-recognized certifications across the full Salesforce ecosystem” → Our team holds Salesforce certifications across admin, consultant and specialist tracks.
+           Our team holds Salesforce certifications across admin, consultant and specialist tracks.
           </p>
         </div>
 

@@ -14,7 +14,7 @@ const SERVICES = [
  
   {
     icon: '/images/CRMnew.png',
-    title: 'CRM Implementation',
+    title: 'Salesforce Implementation',
     badge: 'Salesforce',
     desc: 'Salesforce CRM deployments that align with your business goals — from configuration and migration to go-live and adoption.',
     href: '/salesforce-implementation-services',
@@ -40,7 +40,7 @@ const SERVICES = [
     icon: '/images/dotnet-image.webp',
     title: '.NET Development',
     badge: 'Microsoft',
-    desc: 'Custom enterprise applications built on Microsoft .NET — secure, scalable, and built for long-term performance.',
+    desc: 'Custom web and business applications built on Microsoft .NET, from new builds to upgrading older systems.',
     href: '/dotnet-development-services',
     accent: '#0078D4',
   },
@@ -48,7 +48,7 @@ const SERVICES = [
     icon: '/images/AWSNEW.png',
     title: 'Amazon Web Services',
     badge: 'AWS Partner',
-    desc: 'Leverage AWS cloud infrastructure to build secure, scalable, and cost-effective solutions tailored to your workload.',
+    desc: 'Set up, move and run your applications on AWS, with costs you can see and control each month.',
     href: '/services-aws',
     accent: '#FF9900',
   },

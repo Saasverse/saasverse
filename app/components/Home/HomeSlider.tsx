@@ -51,7 +51,7 @@ const slides = [
     ],
   },
   {
-    title: "Salesforce Health Cloud Solutions",
+    title: "Health Cloud Solutions",
     tag: "Patient Care",
     desc: "Give care teams one view of each patient, with records, care plans and coordination in one secure system.",
     url: "/health-cloud-services",
@@ -81,7 +81,7 @@ const slides = [
     ],
   },
   {
-    title: "Salesforce for Insurance",
+    title: "Insurance",
     tag: "Claims & Policy",
     desc: "Manage policies, claims and renewals in Salesforce, with less manual work for agents and adjusters.",
     url: "/salesforce-consulting-company",

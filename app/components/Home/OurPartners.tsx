@@ -32,8 +32,7 @@ export default function OurPartners() {
           Trusted by 40+ Companies in 19 Countries 
         </h2>
         <p className="mt-4 leading-relaxed text-white/45">
-          From Fortune 500 corporations to high-growth innovators — enterprises across
-          every industry trust Saasverse to power their Salesforce transformation.
+          From Fortune 500 manufacturers to fast-growing tech companies, these teams rely on Saasverse to run and improve Salesforce.
         </p>
       </div>
  
