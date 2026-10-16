@@ -18,7 +18,7 @@ export default function Faq() {
     {
       question: 'Is Saasverse a certified Salesforce partner?',
       answer:
-        'Yes. Saasverse is a Salesforce Partner with Navigator Expert status, and our 50+ certified experts work across Sales, Service, Marketing and Health Cloud.',
+        'Yes. Saasverse is a Salesforce Partner with Navigator Expert status, and our 40+ certified experts work across Sales, Service, Marketing and Health Cloud.',
     },
     {
       question: ' How do we get started?',
@@ -52,7 +52,7 @@ export default function Faq() {
           </span>
 
           <h2 className="mt-6 text-4xl font-bold tracking-tight text-slate-900 md:text-6xl">
-           Salesforce Consulting FAQs.
+           Salesforce Consulting FAQs
           </h2>
 
           <p className="mx-auto mt-4 max-w-2xl text-lg text-slate-600">

@@ -29,7 +29,7 @@ export default function OurPartners() {
           Trusted By
         </p>
         <h2 className="text-white">
-          Trusted by 41 Companies in 19 Countries 
+          Trusted by 40+ Companies in 19 Countries 
         </h2>
         <p className="mt-4 leading-relaxed text-white/45">
           From Fortune 500 corporations to high-growth innovators — enterprises across

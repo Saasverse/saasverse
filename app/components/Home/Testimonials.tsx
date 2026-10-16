@@ -1,28 +1,25 @@
 const testimonials = [
   {
-    name: 'Michael Anderson',
-    role: 'VP Technology',
-    company: 'Enterprise Solutions',
-    initials: 'MA',
-    review:
-      'Their quick response time and attention to detail made the entire process seamless." Celina, CEO, Mortgage Advisory Firm, Singapore Result: 25–40% higher sales team productivity .',
-  },
-  {
-    name: 'Sarah Johnson',
-    role: 'Digital Transformation Lead',
-    company: 'Global Retail Group',
-    initials: 'SJ',
-    review:
-      'Four-year partnership on Field Service Lightning and Service Cloud projects, every project delivered on time. Daniel Jacob, Project Head, FHLBC, Pune ',
-  },
-  {
-    name: 'David Miller',
-    role: 'Head of IT',
-    company: 'Fintech Innovations',
-    initials: 'DM',
-    review:
-      'Salesforce consulting project for a healthcare company, delivered on the agreed timeline. Project Delivery Head, JM Healthcare, Jaipur ',
-  },
+  name: 'Celina',
+  role: 'CEO',
+  company: 'Mortgage Advisory Firm, Singapore',
+  initials: 'C',
+  review: 'Their quick response time and attention to detail made the entire process seamless.',
+},
+{
+  name: 'Daniel Jacob',
+  role: 'Project Head',
+  company: 'FHLBC, Pune',
+  initials: 'DJ',
+  review: 'Their commitment and punctuality were impressive.',
+},
+{
+  name: 'Anonymous',
+  role: 'Project Delivery Head',
+  company: 'JM Healthcare, Jaipur',
+  initials: 'JM',
+  review: 'Their coordination and understanding were impressive.',
+},
 ];
  
 export default function Testimonials() {
