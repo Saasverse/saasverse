@@ -1,5 +1,5 @@
-import React from 'react'
-import PageBanner from '../components/PageBanner'
+import React from 'react';
+import PageBanner from '../components/PageBanner';
 import SalesforceServiceReuseable from '../components/SalesforceServiceReuseable';
 import CTASection from '../components/Home/CTASection';
 import HealthSolution from '../work-salesforce-health-cloud/HealthSolution';
@@ -9,136 +9,190 @@ import FaqReuseable from '../components/FaqReuseable';
 import ContactForm from '../components/ContactForm';
 import WhyChooseUs from '../about/WhyChooseUs';
 import { Metadata } from 'next';
-
+import Link from 'next/link';
+import HiringModels from '../components/HiringModels';
+import HowHiringWorks from '../components/HowHiringWorks';
+import ConsultantOverview from '../components/ConsultantOverview';
 
 const faqs = [
   {
-    question: 'Why hire Salesforce Consultants?',
+    question:
+      'Why hire a Salesforce consultant instead of a full-time employee?',
     answer:
-      'Hiring Salesforce Consultants will make sure that your Salesforce implementation is perfectly aligned with your business goals and delivers maximum ROI.',
+      'A full-time hire can take months to find, and costs the same in busy and quiet months. A Salesforce consultant for hire can start sooner, and you can switch between hourly, part-time and full-time as your workload changes.',
   },
   {
-    question: 'Can you customize Salesforce to fit my business needs?',
+    question: 'How quickly can a Salesforce consultant start?',
     answer:
-      'Absolutely. Our Consultants specialize in customizing Salesforce solutions – be it CRM, Marketing Cloud, Mobile App development, or CDP – to meet your specific business requirements.',
+      'It depends on the skills you need. Many engagements start within a few days. A specialist profile can take a few weeks. We give you a start date when we send profiles.',
   },
   {
-    question: 'What is the typical engagement process with Saasverse Consultants?',
+    question: 'Can I interview the consultant before hiring?',
     answer:
-      'Our engagement process is client-centric, starting with understanding your business needs, followed by providing strategic Salesforce consultancy tailored to those needs. We work either on a project basis or time & material contracts.',
+      'Yes. You talk to the consultants we suggest, and you decide who joins your team.',
   },
   {
-    question: 'How long does it take to hire Saasverse Consultants?',
+    question: 'Which hiring model should I choose?',
     answer:
-      'Our efficient hiring process ensures that you can quickly onboard a skilled Salesforce Consultant, often within a few days to a few weeks, depending on your specific requirements.',
+      'Hourly works for short reviews and one-off fixes. A part-time dedicated consultant works for a steady flow of requests. A full-time consultant or team works for rollouts and big clean-ups. If you’re not sure, start small and add hours later.',
   },
   {
-    question: 'Can Saasverse provide ongoing support after implementation?',
+    question: 'Will the consultant work in my time zone?',
     answer:
-      'Yes, we offer ongoing support and consultancy to ensure your Salesforce ecosystem continues to evolve with your business, delivering continual value.',
+      'Yes. Our team is in Jaipur, India, and works with clients in the US. Before work starts, we agree on the hours your consultant will overlap with your team, so they can join your meetings.',
+  },
+  {
+    question: 'Which Salesforce certifications do your consultants hold?',
+    answer:
+      'Our team holds Salesforce certifications across admin, consultant and specialist tracks, covering platform administration, Sales Cloud, Service Cloud, CPQ, Experience Cloud and Field Service. When we send profiles, each one lists that consultant’s own certifications.',
   },
   {
     question:
-      'How do I get started with hiring Salesforce Consultants from Saasverse?',
+      'Can a hired consultant work alongside our admin or another partner?',
     answer:
-      'Starting is simple. Contact us, and we will guide you through our straightforward process to connect you with the ideal Salesforce consultant for your needs.',
+      'Yes. Many clients use our consultants to add capacity next to their own admin team or an existing partner, without handing over the whole account.',
+  },
+  {
+    question: 'Is my org data safe with a hired consultant?',
+    answer:
+      'We sign an NDA before we look at your org. Saasverse is ISO 27001 and Cyber Essentials Plus certified, and you decide which systems and data the consultant can access.',
   },
 ];
 
 const benefits = [
   {
-    title: "Proven Salesforce Expertise ",
+    title: 'Clean up an org that has grown messy',
     description:
-      "Our consultants are Salesforce certified professionals with a proven track record of success. They stay up-to-date on the latest Salesforce features and functionalities to ensure you receive the most cutting-edge solutions.",
+      'Years of quick fixes leave behind duplicate fields, old workflow rules and reports nobody trusts. Your consultant goes through the org, lists what is broken and what is risky, and fixes the problems that hurt your teams most first.',
   },
   {
-    title: "End-to-End Project Support ",
-    description:
-      "We offer a comprehensive suite of Salesforce consulting services, from implementation and customization to integration and data migration. We guide you through every step of the process, ensuring a smooth and successful Salesforce adoption.",
+    title: 'Run a new Salesforce rollout',
+    description: (
+      <>
+        {' '}
+        Setting up Sales Cloud, Service Cloud or another cloud for the first
+        time? Your consultant runs the requirement sessions, designs the setup
+        and works with developers to build it. If you would rather hand us the
+        whole project at a fixed scope, see our{' '}
+        <Link
+          href="https://www.saasverse.in/salesforce-implementation-services"
+          className="font-medium text-blue-700 underline underline-offset-4 hover:text-blue-900"
+        >
+          {' '}
+          Salesforce implementation services{' '}
+        </Link>{' '}
+        .{' '}
+      </>
+    ),
   },
   {
-    title: "Business-First Approach ",
+    title: 'Set up processes and automation',
     description:
-      "We don't just implement technology; we understand your business goals. Our consultants work closely with you to develop a customized Salesforce strategy that drives measurable results.",
+      'Think lead routing, approvals, case escalation or renewal reminders. Your consultant maps how the work happens today, then builds it with Flow and standard Salesforce features before writing any code.',
   },
   {
-    title: "Focus on User Adoption ",
+    title: 'Build reports your managers use',
     description:
-      "We believe that successful Salesforce implementations hinge on user adoption. Our team provides comprehensive training programs to empower your team to leverage the platform effectively.",
+      'Your consultant builds reports around the questions your managers ask every week, and checks the numbers with finance or operations before they go on a dashboard.',
   },
   {
-    title: "Ongoing Support:",
+    title: 'Work with developers and other systems',
+    description: (
+      <>
+        {' '}
+        When a task needs Apex code, an integration or a data migration, your
+        consultant writes the requirement and works with the developers, whether
+        they are yours or{' '}
+        <Link
+          href="https://www.saasverse.in/hire-salesforce-developers"
+          className="font-medium text-blue-700 underline underline-offset-4 hover:text-blue-900"
+        >
+          {' '}
+          our Salesforce developers{' '}
+        </Link>{' '}
+        . For connecting other systems, see our{' '}
+        <Link
+          href="https://www.saasverse.in/salesforce-integration-services"
+          className="font-medium text-blue-700 underline underline-offset-4 hover:text-blue-900"
+        >
+          {' '}
+          Salesforce integration services{' '}
+        </Link>{' '}
+        .{' '}
+      </>
+    ),
+  },
+  {
+    title: 'Fill a gap in your team',
     description:
-      "Our commitment to your success doesn't end with implementation. We offer ongoing support services to ensure you continue to maximize the value of your Salesforce investment.",
+      'Your admin has left, your partner has moved on, or a Salesforce release is coming and nobody has time to test it. A consultant can step in for a few weeks or a few months while you plan the long-term setup.',
   },
 ];
-
 export const metadata: Metadata = {
-  title: "Hire Salesforce Consultants & Experts in India | Saasverse ",
+  title: 'Hire Salesforce Consultants in India | Saasverse',
   description:
-    "Hire certified Salesforce consultants and dedicated developers in India on hourly, part-time or full-time models with US/UAE time-zone overlap. Get a quote. ",
-    alternates: { canonical: 'https://www.saasverse.in/hire-salesforce-consultants' },
-
-  };
-
+    'Hire certified Salesforce consultants in India. Hourly, part-time or full-time, with US business hours overlap. Book a free consultation.',
+  alternates: {
+    canonical: 'https://www.saasverse.in/hire-salesforce-consultants',
+  },
+};
 
 const page = () => {
   return (
     <>
-       <PageBanner
-                 image="/images/banner/hirebanner.webp"
-                 title="Hire Certified Salesforce Consultants in India "
-                 description="Saasverse Pvt Ltd: Your Trusted Salesforce Consulting Partner"
-               />
+      <PageBanner
+        image="/images/banner/hirebanner.webp"
+        title="Hire Salesforce Consultants in India"
+        description="Hire certified Salesforce consultants who join your team by the hour, part time or full time. They work in your tools, join your meetings and report to you."
+      />
 
-                <SalesforceServiceReuseable
-      heading="Why Hire Salesforce Consultants From Saasverse "
-      benefits={benefits}
-    />
+      <SalesforceServiceReuseable
+        heading="What a hired Salesforce consultant can do for you"
+        benefits={benefits}
+      />
 
-    
+      <HiringModels />
+      <HowHiringWorks />
+      {/* <HealthSolution
+        title="What Our Salesforce Consultants Deliver  "
+        highlight=""
+        description=""
+        image="/images/websiteimages/4.webp"
+        imageAlt="Salesforce Healthcare Cloud Solution"
+        solutions={[
+          {
+            title: 'Salesforce Implementation and Customization',
+            description:
+              'Tailor Salesforce to your specific needs and workflows to optimize your sales processes.',
+          },
+          {
+            title: 'Salesforce Integration',
+            description:
+              'Seamlessly integrate Salesforce with your existing business systems to eliminate data silos and improve data flow.',
+          },
+          {
+            title: 'Custom Salesforce Development ',
+            description:
+              'Develop custom applications to extend Salesforce functionality and automate complex tasks.',
+          },
+          {
+            title: 'Flexible Hiring Models  ',
+            description:
+              'Hourly Engagement / Part-Time Dedicated Consultant / Full-Time Dedicated Team',
+          },
+        ]}
+      /> */}
+      <ConsultantOverview />
+      {/* <WhyChooseUs /> */}
+      <CertificateSlider />
 
-     <HealthSolution
-            title="What Our Salesforce Consultants Deliver  "
-            highlight=""
-            description=""
-            image="/images/websiteimages/4.webp"
-            imageAlt="Salesforce Healthcare Cloud Solution"
-            solutions={[
-              {
-                title: 'Salesforce Implementation and Customization',
-                description:
-                  'Tailor Salesforce to your specific needs and workflows to optimize your sales processes.',
-              },
-              {
-                title: 'Salesforce Integration',
-                description:
-                  'Seamlessly integrate Salesforce with your existing business systems to eliminate data silos and improve data flow.',
-              },
-              {
-                title: 'Custom Salesforce Development ',
-                description:
-                  'Develop custom applications to extend Salesforce functionality and automate complex tasks.',
-              },
-              {
-                title: 'Flexible Hiring Models  ',
-                description:
-                  'Hourly Engagement / Part-Time Dedicated Consultant / Full-Time Dedicated Team',
-              },
-             
-            ]}
-          />
+      <OurPartners />
 
-<WhyChooseUs/>
-          <CertificateSlider/>
-
-          <OurPartners/>
-
-           <FaqReuseable title="Hiring Salesforce Consultants: FAQs " faqs={faqs} />
-            <CTASection/>
-           <ContactForm/>
+      <FaqReuseable title="Hiring Salesforce Consultants: FAQs " faqs={faqs} />
+      <CTASection />
+      <ContactForm />
     </>
-  )
-}
+  );
+};
 
-export default page
+export default page;

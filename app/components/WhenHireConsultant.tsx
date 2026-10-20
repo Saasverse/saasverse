@@ -49,7 +49,7 @@ const hiringReasons = [
 
 export default function WhenHireConsultant() {
   return (
-    <section className="relative overflow-hidden bg-white px-5 py-20 sm:px-8 lg:px-16 lg:py-28">
+    <section className="relative overflow-hidden bg-white px-5 py-20 sm:px-8 lg:px-16 lg:py-0">
       {/* Background Decorations */}
       <div className="pointer-events-none absolute -left-32 top-20 h-72 w-72 rounded-full bg-blue-100/50 blur-[100px]" />
       <div className="pointer-events-none absolute -right-32 bottom-10 h-72 w-72 rounded-full bg-blue-50 blur-[100px]" />
