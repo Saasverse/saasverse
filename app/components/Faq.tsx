@@ -18,7 +18,7 @@ export default function Faq() {
     {
       question: 'Is Saasverse a certified Salesforce partner?',
       answer:
-        'Yes. Saasverse is a Salesforce Partner with Navigator Expert status, and our 40+ certified experts work across Sales, Service, Marketing and Health Cloud.',
+        'Yes. Saasverse is a Salesforce Partner with Navigator Expert status, and our 50+ certified experts work across Sales, Service, Marketing and Health Cloud.',
     },
     {
       question: ' How do we get started?',
@@ -33,12 +33,12 @@ export default function Faq() {
     {
       question: 'How much does a Salesforce project cost?',
       answer:
-        'Projects start at $5,000, support plans start at $250/month, and you can hire dedicated developers from $25/hour. After a free consultation we send a written proposal with scope, timeline and cost, so you know the price before work starts.Projects start at $5,000, support plans start at $250/month, and you can hire dedicated developers from $25/hour. After a free consultation we send a written proposal with scope, timeline and cost, so you know the price before work starts..',
+        'The cost depends on your requirements, integrations and timeline. After a free consultation we send a written proposal with scope, timeline and cost, so you know the price before work starts.',
     },
     {
       question: 'Do you work with companies in the US and UAE?',
       answer:
-        'Yes. We have offices in Boston and Jaipur and have worked with 41 clients in 19 countries, including the US and the UAE. An NDA is in place from day one.',
+        'Yes. We have offices in Boston and Jaipur and have worked with 40+ clients in 19 countries, including the US and the UAE. An NDA is in place from day one.',
     },
   ];
 
