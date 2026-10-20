@@ -4,7 +4,7 @@ export default function CTASection() {
   const stats = {
     delivered_projects: 120,
     no_of_certificate: 50,
-    clients: 49,
+    clients: 40,
   };
 
   return (

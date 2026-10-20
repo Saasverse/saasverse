@@ -81,7 +81,7 @@ export default function CertificateSlider() {
           </p>
 
           <h2 className="font-light text-[#0a0f1e] tracking-tight leading-snug">
-          40+ Certified Salesforce Experts
+          50+ Certified Salesforce Experts
            
           </h2>
 
