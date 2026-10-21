@@ -1,4 +1,4 @@
-# saasverse.in — robots.txt (built by Jayesh Sharma on 17th July 2026)
+# saasverse.in — robots.txt 
 # No robots.txt existed on this site before this file (confirmed: both
 # https://www.saasverse.in/robots.txt and https://saasverse.in/robots.txt
 # returned Next.js's default 404). This is a from-scratch build.

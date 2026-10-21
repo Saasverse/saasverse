@@ -1,4 +1,3 @@
-
 import {
   FaAward,
   FaUsers,
@@ -6,46 +5,46 @@ import {
   FaShieldAlt,
   FaStar,
   FaChartLine,
-} from "react-icons/fa";
-import Link from "next/link";
+} from 'react-icons/fa';
+import Link from 'next/link';
 
 const reasons = [
   {
     icon: FaAward,
-    title: "Salesforce Partner with Navigator Expert Status",
+    title: 'Salesforce Partner with Navigator Expert Status',
     description:
-      "Work with a Salesforce Partner with Navigator Expert status, bringing platform knowledge and experience to your Salesforce projects.",
+      'Work with a Salesforce Partner with Navigator Expert status, bringing platform knowledge and experience to your Salesforce projects.',
   },
   {
     icon: FaUsers,
-    title: "50+ Certified Professionals",
+    title: '50+ Certified Professionals',
     description:
-      "Our team includes 50+ certified professionals. When your consultant needs an architect or developer, they can collaborate with specialists from the same team.",
+      'Our team includes 50+ certified professionals. When your consultant needs an architect or developer, they can collaborate with specialists from the same team.',
   },
   {
     icon: FaGlobeAmericas,
-    title: "Offices in Jaipur and Boston",
+    title: 'Offices in Jaipur and Boston',
     description:
       "We agree on overlapping working hours with your team, whether you're based in the US, UK, Europe, the Middle East or APAC.",
   },
   {
     icon: FaShieldAlt,
-    title: "Security You Can Trust",
+    title: 'Security You Can Trust',
     description:
-      "ISO 27001 and Cyber Essentials Plus certified. We can sign an NDA before accessing your Salesforce org.",
+      'ISO 27001 and Cyber Essentials Plus certified. We can sign an NDA before accessing your Salesforce org.',
   },
   {
     icon: FaStar,
-    title: "Rated 5.0 on Clutch",
+    title: 'Rated 5.0 on Clutch',
     description:
-      "Our client reviews reflect their experience working with Saasverse. Read their feedback and learn more about our services.",
-    link: "https://clutch.co/profile/saasverse-salesforce-consulting-partner",
-    linkText: "Read our reviews",
+      'Our client reviews reflect their experience working with Saasverse. Read their feedback and learn more about our services.',
+    link: 'https://clutch.co/profile/saasverse-salesforce-consulting-partner',
+    linkText: 'Read our reviews',
     external: true,
   },
   {
     icon: FaChartLine,
-    title: "120+ Projects Across 19 Countries",
+    title: '120+ Projects Across 19 Countries',
     description:
       "We've delivered 120+ projects for 41 clients across 19 countries, bringing experience from different business needs and Salesforce implementations.",
   },
@@ -67,8 +66,7 @@ export default function WhyHireSaasverse() {
           </span>
 
           <h2 className="text-3xl font-semibold tracking-tight text-gray-900 sm:text-4xl lg:text-5xl">
-            Why Hire from{" "}
-            <span className="text-[#003e95]">Saasverse?</span>
+            Why Hire from <span className="text-[#003e95]">Saasverse?</span>
           </h2>
 
           <p className="mx-auto mt-5 max-w-2xl text-base leading-7 text-gray-600 sm:text-lg">
@@ -89,7 +87,7 @@ export default function WhyHireSaasverse() {
               >
                 {/* Number */}
                 <span className="absolute right-6 top-6 text-sm font-semibold text-gray-300 transition-colors duration-300 group-hover:text-blue-300">
-                  {String(index + 1).padStart(2, "0")}
+                  {String(index + 1).padStart(2, '0')}
                 </span>
 
                 {/* Icon */}
@@ -111,8 +109,8 @@ export default function WhyHireSaasverse() {
                 {reason.link && (
                   <Link
                     href={reason.link}
-                    target={reason.external ? "_blank" : undefined}
-                    rel={reason.external ? "noopener noreferrer" : undefined}
+                    target={reason.external ? '_blank' : undefined}
+                    rel={reason.external ? 'noopener noreferrer' : undefined}
                     className="mt-4 inline-flex items-center gap-2 text-sm font-semibold text-[#003e95] transition-colors hover:text-blue-900"
                   >
                     {reason.linkText}
@@ -130,4 +128,3 @@ export default function WhyHireSaasverse() {
     </section>
   );
 }
-
