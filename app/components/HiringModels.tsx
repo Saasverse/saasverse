@@ -1,4 +1,3 @@
-
 import {
   FaClock,
   FaUserTie,
@@ -15,7 +14,7 @@ const hiringModels = [
       "You pay only for the hours used. Good for a short review, a set of fixes or advice on one problem.",
     benefits: [
       "Pay only for hours used",
-      "Ideal for quick fixes and reviews",
+      "Short reviews and audits",
       "Flexible short-term support",
     ],
     label: "Best for Quick Tasks",
@@ -58,19 +57,18 @@ export default function HiringModels() {
       <div className="relative mx-auto max-w-7xl">
         {/* Section Header */}
         <div className="mx-auto mb-14 max-w-3xl text-center">
-          <span className="mb-4 inline-flex items-center gap-2 rounded-full border border-blue-200 bg-blue-50 px-4 py-2 text-sm font-medium text-blue-700">
-            <span className="h-2 w-2 rounded-full bg-blue-600" />
+          <span className="mb-4 inline-flex items-center gap-2 rounded-full border border-blue-200 bg-blue-50 px-4 py-2 text-sm font-medium text-[#003e95]">
+            <span className="h-2 w-2 rounded-full bg-[#003e95]" />
             Flexible Engagement Options
           </span>
 
           <h2 className="text-3xl font-semibold tracking-tight text-gray-900 sm:text-4xl lg:text-5xl">
             Our Salesforce{" "}
-            <span className="text-blue-700">Hiring Models</span>
+            <span className="text-[#003e95]">Hiring Models</span>
           </h2>
 
           <p className="mx-auto mt-5 max-w-2xl text-base leading-7 text-gray-600 sm:text-lg">
-            Choose an engagement model that fits your workload, project scope
-            and budget. Scale your Salesforce support as your business grows.
+            Choose the model that fits your workload and project scope. You can switch models later as the work changes.
           </p>
         </div>
 
@@ -86,17 +84,17 @@ export default function HiringModels() {
               >
                 {/* Card Top */}
                 <div className="mb-7 flex items-center justify-between">
-                  <div className="flex h-14 w-14 items-center justify-center rounded-2xl border border-blue-100 bg-blue-50 transition-all duration-300 group-hover:border-blue-700 group-hover:bg-blue-700">
+                  <div className="flex h-14 w-14 items-center justify-center rounded-2xl border border-blue-100 bg-blue-50 transition-all duration-300 group-hover:border-[#003e95] group-hover:bg-[#003e95]">
                     <Icon className="text-xl text-blue-700 transition-colors duration-300 group-hover:text-white" />
                   </div>
 
-                  <span className="text-3xl font-bold text-gray-200 transition-colors duration-300 group-hover:text-blue-100">
+                  <span className="text-3xl font-bold text-gray-200 transition-colors duration-300 group-hover:text-[#003e95]">
                     {model.number}
                   </span>
                 </div>
 
                 {/* Label */}
-                <span className="mb-4 w-fit rounded-full bg-blue-50 px-3 py-1.5 text-xs font-semibold text-blue-700">
+                <span className="mb-4 w-fit rounded-full bg-blue-50 px-3 py-1.5 text-xs font-semibold text-[#003e95]">
                   {model.label}
                 </span>
 
@@ -117,7 +115,7 @@ export default function HiringModels() {
                       key={benefit}
                       className="flex items-start gap-3 text-sm leading-6 text-gray-700"
                     >
-                      <FaCheckCircle className="mt-1 shrink-0 text-blue-600" />
+                      <FaCheckCircle className="mt-1 shrink-0 text-[#003e95]" />
                       <span>{benefit}</span>
                     </li>
                   ))}
@@ -125,7 +123,7 @@ export default function HiringModels() {
 
                 {/* Bottom Accent */}
                 <div className="mt-auto pt-8">
-                  <div className="h-1 w-12 rounded-full bg-blue-200 transition-all duration-300 group-hover:w-20 group-hover:bg-blue-700" />
+                  <div className="h-1 w-12 rounded-full bg-blue-200 transition-all duration-300 group-hover:w-20 group-hover:bg-[#003e95]" />
                 </div>
               </div>
             );
@@ -157,12 +155,46 @@ export default function HiringModels() {
 
             <div className="rounded-xl border border-blue-100 bg-white px-5 py-4">
               <p className="font-semibold text-gray-900">
-                Time & Material
+                Time & Materials
               </p>
               <p className="mt-1 text-sm text-gray-500">
                 Flexible working hours
               </p>
             </div>
+          </div>
+        </div>
+
+        {/* Salesforce Consultant Cost Section - Added */}
+        <div className="mt-12 rounded-2xl border border-gray-200 bg-white p-7 shadow-sm sm:p-10 lg:p-12">
+          <div className="mx-auto max-w-3xl text-center">
+            <span className="mb-4 inline-flex items-center gap-2 rounded-full border border-blue-200 bg-blue-50 px-4 py-2 text-sm font-medium text-[#003e95]">
+              <span className="h-2 w-2 rounded-full bg-[#003e95]" />
+              Transparent Pricing
+            </span>
+
+            <h2 className="text-2xl font-semibold tracking-tight text-gray-900 sm:text-3xl lg:text-4xl">
+              What It Costs to Hire a{" "}
+              <span className="text-[#003e95]">
+                Salesforce Consultant
+              </span>
+            </h2>
+
+            <p className="mt-5 text-base leading-8 text-gray-600 sm:text-lg">
+              The cost depends on your requirements: the role you need, the
+              clouds you use, the hiring model and how many hours the work takes.
+              Tell us what you need and our experts will send you a quote. You
+              get the cost and terms in writing before anyone starts.
+            </p>
+
+            <a
+              href="/contact"
+              className="mt-8 inline-flex items-center justify-center rounded-xl bg-[#003e95] px-7 py-3.5 text-sm font-semibold text-white shadow-md transition-all duration-300 hover:-translate-y-1 hover:bg-[#002a66] hover:shadow-lg"
+            >
+              Request a Quote
+              <span className="ml-2 text-lg" aria-hidden="true">
+                →
+              </span>
+            </a>
           </div>
         </div>
       </div>

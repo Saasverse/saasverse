@@ -2,31 +2,31 @@
 const hiringSteps = [
   {
     number: "01",
-    title: "Tell us what you need",
+    title: "Tell Us What You Need",
     description:
       "Share the clouds you use, the work you have in mind and roughly how many hours you expect. We sign an NDA first if you want one.",
   },
   {
     number: "02",
-    title: "Get matching profiles",
+    title: "Get Matching Profiles",
     description:
       "We send you profiles of consultants who know your clouds and your type of work.",
   },
   {
     number: "03",
-    title: "Interview them",
+    title: "Interview Them",
     description:
       "Talk to the consultants and ask them about your own org. You decide who joins.",
   },
   {
     number: "04",
-    title: "Agree the terms",
+    title: "Agree on Terms",
     description:
       "We put the model, hours and rate in writing. You then give the consultant access to the systems they need.",
   },
   {
     number: "05",
-    title: "Start work",
+    title: "Start Work",
     description:
       "Your consultant joins your meetings and tools and reports progress as often as you want.",
   },
@@ -43,10 +43,10 @@ export default function HowHiringWorks() {
         {/* Section Heading */}
         <div className="mx-auto mb-16 max-w-3xl text-center">
           <span className="mb-4 inline-flex items-center gap-2 rounded-full border border-[#003e95]/20 bg-[#003e95]/5 px-4 py-2 text-sm font-medium text-[#003e95]">
-            <span className="h-2 w-2 rounded-full bg-[#003e95]" />
-            Simple &amp; Transparent Process
-          </span>
 
+            <span className="h-2 w-2 rounded-full bg-[#003e95]" />
+           5 Steps to Start
+          </span>
           <h2 className="text-3xl font-semibold tracking-tight text-gray-900 sm:text-4xl lg:text-5xl">
             How Hiring{" "}
             <span className="text-[#003e95]">Works</span>

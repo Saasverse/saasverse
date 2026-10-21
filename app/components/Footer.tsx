@@ -226,7 +226,7 @@ export default async function Footer() {
                 <Image src={src} alt={alt} width={60} height={55} style={{ width: '55px', height: '50px', objectFit: 'contain' }} />
               </div>
             ))}
-            <a href="https://clutch.co/profile/saasverse" target="_blank" rel="noopener noreferrer">
+            <a href="https://clutch.co/profile/saasverse-salesforce-consulting-partner" target="_blank" rel="noopener noreferrer">
               <Image src="/images/footer/1.webp" alt="Reviewed on Clutch, 5.0 rating " width={200} height={65} style={{ width: '200px', height: '65px', objectFit: 'contain' }} />
             </a>
           </div>

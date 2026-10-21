@@ -58,15 +58,26 @@ const faqs = [
       'We sign an NDA before we look at your org. Saasverse is ISO 27001 and Cyber Essentials Plus certified, and you decide which systems and data the consultant can access.',
   },
 ];
-
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: faqs.map((faq) => ({
+    "@type": "Question",
+    name: faq.question,
+    acceptedAnswer: {
+      "@type": "Answer",
+      text: faq.answer,
+    },
+  })),
+};
 const benefits = [
   {
-    title: 'Clean up an org that has grown messy',
+    title: 'Clean Up an Org That Has Grown Messy',
     description:
       'Years of quick fixes leave behind duplicate fields, old workflow rules and reports nobody trusts. Your consultant goes through the org, lists what is broken and what is risky, and fixes the problems that hurt your teams most first.',
   },
   {
-    title: 'Run a new Salesforce rollout',
+    title: 'Run a New Salesforce Rollout',
     description: (
       <>
         {' '}
@@ -79,24 +90,23 @@ const benefits = [
           className="font-medium text-blue-700 underline underline-offset-4 hover:text-blue-900"
         >
           {' '}
-          Salesforce implementation services{' '}
-        </Link>{' '}
-        .{' '}
+          Salesforce implementation services.
+        </Link>
       </>
     ),
   },
   {
-    title: 'Set up processes and automation',
+    title: 'Set Up Processes and Automation',
     description:
       'Think lead routing, approvals, case escalation or renewal reminders. Your consultant maps how the work happens today, then builds it with Flow and standard Salesforce features before writing any code.',
   },
   {
-    title: 'Build reports your managers use',
+    title: 'Build Reports Your Managers Use',
     description:
       'Your consultant builds reports around the questions your managers ask every week, and checks the numbers with finance or operations before they go on a dashboard.',
   },
   {
-    title: 'Work with developers and other systems',
+    title: 'Work with Developers and Other Systems',
     description: (
       <>
         {' '}
@@ -108,22 +118,22 @@ const benefits = [
           className="font-medium text-blue-700 underline underline-offset-4 hover:text-blue-900"
         >
           {' '}
-          our Salesforce developers{' '}
+          our Salesforce developers.{' '}
         </Link>{' '}
-        . For connecting other systems, see our{' '}
+         For connecting other systems, see our{' '}
         <Link
           href="https://www.saasverse.in/salesforce-integration-services"
           className="font-medium text-blue-700 underline underline-offset-4 hover:text-blue-900"
         >
           {' '}
-          Salesforce integration services{' '}
+          Salesforce integration services.{' '}
         </Link>{' '}
-        .{' '}
+        {' '}
       </>
     ),
   },
   {
-    title: 'Fill a gap in your team',
+    title: 'Fill a Gap in Your Team',
     description:
       'Your admin has left, your partner has moved on, or a Salesforce release is coming and nobody has time to test it. A consultant can step in for a few weeks or a few months while you plan the long-term setup.',
   },
@@ -147,7 +157,7 @@ const page = () => {
       />
 
       <SalesforceServiceReuseable
-        heading="What a hired Salesforce consultant can do for you"
+        heading="What a Hired Salesforce Consultant Can Do for You"
         benefits={benefits}
       />
 
@@ -187,8 +197,18 @@ const page = () => {
       <CertificateSlider />
 
       <OurPartners />
+             <FaqReuseable
+        title="Hiring Salesforce Consultants: FAQs"
+        faqs={faqs}
+      />
 
-      <FaqReuseable title="Hiring Salesforce Consultants: FAQs " faqs={faqs} />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(faqSchema).replace(/</g, "\\u003c"),
+        }}
+      />
+      {/* <FaqReuseable title="Hiring Salesforce Consultants: FAQs " faqs={faqs} /> */}
       <CTASection />
       <ContactForm />
     </>

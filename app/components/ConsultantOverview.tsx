@@ -135,7 +135,7 @@ const reasonsToChoose = [
     icon: FaGlobe,
     title: "US Time-Zone Overlap",
     description:
-      "Our team is based in Jaipur, India. We agree on overlapping working hours with your team so your consultant can join your meetings.",
+      "Our team is based in Jaipur, India. We agree on overlapping working hours with your team, so your consultant can join your meetings.",
   },
   {
     icon: FaShieldAlt,
@@ -214,7 +214,7 @@ export default function ConsultantOverview() {
                     {reason.description}
                   </p>
 
-                  <div className="mt-7 h-1 w-10 rounded-full bg-blue-200 transition-all duration-300 group-hover:w-16 group-hover:bg-blue-700" />
+                  <div className="mt-7 h-1 w-10 rounded-full bg-blue-200 transition-all duration-300 group-hover:w-16 group-hover:bg-[#003e95]" />
                 </div>
               );
             })}
@@ -226,7 +226,7 @@ export default function ConsultantOverview() {
       <section className="relative overflow-hidden bg-gray-50 px-5 py-20 sm:px-8 lg:px-16 lg:py-24">
         <div className="relative mx-auto max-w-7xl">
           <div className="mx-auto mb-12 max-w-3xl text-center">
-            <span className="mb-4 inline-flex items-center gap-2 rounded-full border border-blue-200 bg-white px-4 py-2 text-sm font-medium text-blue-700">
+            <span className="mb-4 inline-flex items-center gap-2 rounded-full border border-blue-200 bg-white px-4 py-2 text-sm font-medium text-[#003e95]">
               <span className="h-2 w-2 rounded-full bg-[#003e95]" />
               Our Salesforce Expertise
             </span>
@@ -237,8 +237,7 @@ export default function ConsultantOverview() {
             </h2>
 
             <p className="mx-auto mt-5 max-w-2xl text-base leading-7 text-gray-600 sm:text-lg">
-              Find experienced Salesforce consultants for the platform,
-              product or business function your organisation uses.
+             Our consultants work across these Salesforce clouds and products.
             </p>
           </div>
 
@@ -291,19 +290,18 @@ export default function ConsultantOverview() {
 
         <div className="relative mx-auto max-w-7xl">
           <div className="mx-auto mb-14 max-w-3xl text-center">
-            <span className="mb-4 inline-flex items-center gap-2 rounded-full border border-blue-200 bg-blue-50 px-4 py-2 text-sm font-medium text-blue-700">
+            <span className="mb-4 inline-flex items-center gap-2 rounded-full border border-blue-200 bg-blue-50 px-4 py-2 text-sm font-medium text-[#003e95]">
               <span className="h-2 w-2 rounded-full bg-blue-600" />
               The Saasverse Advantage
             </span>
 
             <h2 className="text-3xl font-semibold tracking-tight text-gray-900 sm:text-4xl lg:text-5xl">
               Why Hire from{" "}
-              <span className="text-blue-700">Saasverse?</span>
+              <span className="text-[#003e95]">Saasverse?</span>
             </h2>
 
             <p className="mx-auto mt-5 max-w-2xl text-base leading-7 text-gray-600 sm:text-lg">
-              Get Salesforce expertise backed by a collaborative team,
-              security practices and experience across multiple countries.
+             What you get when you hire a Salesforce consultant from Saasverse.
             </p>
           </div>
 
@@ -317,8 +315,8 @@ export default function ConsultantOverview() {
                   className="group rounded-2xl border border-gray-200 bg-white p-7 transition-all duration-300 hover:-translate-y-1.5 hover:border-blue-300 hover:shadow-xl hover:shadow-blue-900/5 sm:p-8"
                 >
                   <div className="mb-6 flex items-center justify-between">
-                    <div className="flex h-14 w-14 items-center justify-center rounded-2xl border border-blue-100 bg-blue-50 transition-colors duration-300 group-hover:border-blue-700 group-hover:bg-blue-700">
-                      <Icon className="text-xl text-blue-700 transition-colors duration-300 group-hover:text-white" />
+                    <div className="flex h-14 w-14 items-center justify-center rounded-2xl border border-blue-100 bg-blue-50 transition-colors duration-300 group-hover:border-[#003e95] group-hover:bg-[#003e95]">
+                      <Icon className="text-xl text-[#003e95] transition-colors duration-300 group-hover:text-white" />
                     </div>
 
                     <span className="text-sm font-semibold text-gray-300 group-hover:text-blue-300">
@@ -343,14 +341,14 @@ export default function ConsultantOverview() {
                           ? "noopener noreferrer"
                           : undefined
                       }
-                      className="mt-4 inline-flex items-center gap-2 text-sm font-semibold text-blue-700 transition-colors hover:text-blue-900"
+                      className="mt-4 inline-flex items-center gap-2 text-sm font-semibold text-[#003e95] transition-colors hover:text-blue-900"
                     >
                       Read our reviews
                       <FaArrowRight className="text-xs" />
                     </Link>
                   )}
 
-                  <div className="mt-7 h-1 w-10 rounded-full bg-blue-200 transition-all duration-300 group-hover:w-16 group-hover:bg-blue-700" />
+                  <div className="mt-7 h-1 w-10 rounded-full bg-blue-200 transition-all duration-300 group-hover:w-16 group-hover:bg-[#003e95]" />
                 </div>
               );
             })}
@@ -365,7 +363,7 @@ export default function ConsultantOverview() {
               { value: "19", label: "Countries Reached" },
             ].map((stat) => (
               <div key={stat.label} className="py-3 text-center">
-                <p className="text-3xl font-bold tracking-tight text-blue-800 sm:text-4xl">
+                <p className="text-3xl font-bold tracking-tight text-[#003e95] sm:text-4xl">
                   {stat.value}
                 </p>
                 <p className="mt-2 text-xs font-medium text-gray-600 sm:text-sm">
@@ -388,7 +386,7 @@ export default function ConsultantOverview() {
 
             <Link
               href="/contact"
-              className="mt-7 inline-flex items-center justify-center gap-2 rounded-lg bg-[#003E95] px-7 py-3.5 text-sm font-semibold text-white transition-all duration-300 hover:bg-blue-800"
+              className="mt-7 inline-flex items-center justify-center gap-2 rounded-lg bg-[#003E95] px-7 py-3.5 text-sm font-semibold text-white transition-all duration-300 hover:bg-[#003e95]"
             >
               Book a Free Consultation
               <FaArrowRight />
