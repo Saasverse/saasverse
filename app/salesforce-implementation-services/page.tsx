@@ -313,7 +313,7 @@ const page = () => {
 
      <HealthSolution
             title=" How a Salesforce Implementation Works"
-            // highlight="Salesforce Implementation ?"
+           highlight=""
             description=""
             image="/images/websiteimages/23.webp"
             imageAlt="Salesforce Healthcare Cloud Solution"
