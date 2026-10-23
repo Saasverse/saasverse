@@ -637,26 +637,20 @@ export default function Navbar() {
               Book a Free Consultation
             </Link>
           ) : (
-            
-
-<Link
-  href="https://appexchange.salesforce.com/appxListingDetail?listingId=bf4cc5b0-f7c4-4d44-99ac-1ddaa2ca27e1"
-  className="hidden lg:inline-flex items-center"
-  target="_blank"
-  rel="noopener noreferrer"
->
-  <Image
-    src="/images/exchange3.png"
-    alt="AgentExchange"
-    width={250}
-    height={90}
-    className="h-auto w-[250px] shrink-0"
-  />
-</Link>
-
-
-
-
+            <Link
+              href="https://appexchange.salesforce.com/appxListingDetail?listingId=bf4cc5b0-f7c4-4d44-99ac-1ddaa2ca27e1"
+              className="hidden lg:inline-flex items-center"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Image
+                src="/images/exchange3.png"
+                alt="AgentExchange"
+                width={250}
+                height={90}
+                className="h-auto w-[250px] shrink-0"
+              />
+            </Link>
           )}
 
           {/* ── Hamburger ── */}
@@ -802,6 +796,22 @@ export default function Navbar() {
 
               {/* Mobile CTA */}
               <div className="px-4 sm:px-6 mt-6">
+                <Link
+                  href="https://appexchange.salesforce.com/appxListingDetail?listingId=bf4cc5b0-f7c4-4d44-99ac-1ddaa2ca27e1"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex justify-center mb-4 lg:hidden"
+                  onClick={() => setMobileMenu(false)}
+                >
+                  <Image
+                    src="/images/exchange3.png"
+                    alt="AgentExchange"
+                    width={250}
+                    height={90}
+                    className="h-auto w-full max-w-full object-contain"
+                  />
+                </Link>
+
                 <Link
                   href="/contact"
                   className="block rounded-xl bg-[#003e95] py-4 text-center text-white font-semibold text-[15px] tracking-wide shadow-[0_4px_16px_rgba(0,62,149,0.3)]"
