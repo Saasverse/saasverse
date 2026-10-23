@@ -157,3 +157,31 @@ p{
   }
 }
 
+/* Floating Book a Consultant Animation */
+.floating-consultant {
+  animation: consultantFloat 3s ease-in-out infinite;
+  transform-origin: center;
+}
+
+@keyframes consultantFloat {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+/* Stop animation on hover */
+.floating-consultant:hover {
+  animation-play-state: paused;
+}
+
+/* Accessibility: respect reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  .floating-consultant {
+    animation: none;
+  }
+}

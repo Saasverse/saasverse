@@ -119,6 +119,7 @@ export default function ContactForm() {
  
   return (
     <section
+    id="contact-form"
       className="relative"
       style={{
         background: 'linear-gradient(180deg, #0A0B10 0%, #08090D 100%)',

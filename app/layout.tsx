@@ -3,8 +3,10 @@ import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
 import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
+import FloatingConsultant from "./components/FloatingConsultant";
 import "./globals.css";
 import { GoogleTagManager } from "@next/third-parties/google";
+import GoToTopButton from "./components/GoToTopButton";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -64,8 +66,14 @@ export default function RootLayout({
         <GoogleTagManager gtmId="GTM-546F769K" />
 
         <Navbar />
+
         <main>{children}</main>
+
         <Footer />
+
+        {/* Floating Book a Consultant Button */}
+        <FloatingConsultant />
+        <GoToTopButton/>
       </body>
     </html>
   );
