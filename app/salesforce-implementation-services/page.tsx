@@ -13,7 +13,7 @@ import Link from 'next/link';
 
 
 const faqs = [
-   {
+    {
     question: "How long does a Salesforce implementation take?",
     answer:
       "It depends on the clouds, the number of users, the integrations, and the amount of data. A setup with one cloud takes less time than a rollout across several clouds with several integrations. We give you a timeline in the written scope before work starts.",
@@ -45,25 +45,15 @@ const faqs = [
   },
   {
     question: "Do you provide support after go-live?",
-    answer: (
-      <>
-        Yes. We stay on after launch to fix issues and make changes. For ongoing
-        support, we offer{" "}
-        <a
-          href="/salesforce-managed-services"
-          className="font-semibold text-[#003e95] hover:underline"
-        >
-          Salesforce managed services
-        </a>
-        .
-      </>
-    ),
+    answer:
+      "Yes. We stay on after launch to fix issues and make changes. For ongoing support, we offer Salesforce managed services.",
   },
   {
     question: "Will your team work in our time zone?",
     answer:
       "Our team is based in Jaipur, India, and works with clients in the US. Before work starts, we agree on overlapping hours, so we can join your meetings.",
   },
+  
  
 ];
 
