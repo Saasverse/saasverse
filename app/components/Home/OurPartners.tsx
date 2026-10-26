@@ -7,7 +7,7 @@ const clients = [
   { src: '/images/ourclients/Five9.webp',              alt: 'Five9 logo' },
   { src: '/images/ourclients/IngersolRand.webp',       alt: 'Ingersoll Rand logo' },
   { src: '/images/ourclients/Lafarge.webp',            alt: 'Lafarge logo' },
-  { src: '/images/ourclients/Lkpackaging.webp',        alt: 'LK Packaging logo' },
+  // { src: '/images/ourclients/Lkpackaging.webp',        alt: 'LK Packaging logo' },
   { src: '/images/ourclients/Marlab.webp',             alt: 'Marlab logo' },
   { src: '/images/ourclients/SYSCO.webp',              alt: 'Sysco logo' },
   { src: '/images/ourclients/Telstra.webp',            alt: 'Telstra logo' },
@@ -29,7 +29,7 @@ export default function OurPartners() {
           Trusted By
         </p>
         <h2 className="text-white">
-          Trusted by 40+ Companies in 19 Countries 
+          Trusted by 40+ Companies in 19+ Countries 
         </h2>
         <p className="mt-4 leading-relaxed text-white/45">
           From Fortune 500 manufacturers to fast-growing tech companies, these teams rely on Saasverse to run and improve Salesforce.

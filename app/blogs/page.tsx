@@ -56,6 +56,7 @@ const blogs = [
       'Let us discuss this subject and all the benefits of using Salesforce CRM for your business.',
     image: '/images/blogs/1.jpg',
   },
+ 
 
   
 ];
