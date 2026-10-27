@@ -305,11 +305,11 @@ const CSS = String.raw`
 `;
 
 const URL_PATH =
-  "https://www.saasverse.in/blogs/how-to-hire-salesforce-consultant-blog";
+  "https://www.saasverse.in/blogs/hire-salesforce-consultant-blog";
 const TITLE =
-  "How to Hire a Salesforce Consultant in India: Cost, Models and What to Check";
+  "How to Hire a Salesforce Consultant in India: Cost & Models";
 const DESCRIPTION =
-  "What it costs to hire a Salesforce consultant in India, which hiring model gives the best value, and a 5-step checklist to hire the right person the first time.";
+  "Learn how to hire a Salesforce consultant in India: what it costs, which hiring model fits, and 5 steps to hire the right person the first time.";
 
 export const metadata: Metadata = {
   title: TITLE,
