@@ -8,6 +8,7 @@ import OurPartners from '../components/Home/OurPartners';
 import FaqReuseable from '../components/FaqReuseable';
 import ContactForm from '../components/ContactForm';
 import { Metadata } from 'next';
+import SalesforceSupportMaintenanceSections from '../components/SalesforceSupportMaintenanceSections';
 
 
 const faqs = [
@@ -107,7 +108,7 @@ const page = () => {
       benefits={benefits}
     />
 
-  
+  <SalesforceSupportMaintenanceSections/>
 
      <HealthSolution
             title="Why Choose Saasverse for"

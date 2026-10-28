@@ -438,7 +438,7 @@ export default function SalesforceSupportMaintenanceSections() {
       </section>
 
       {/* 3.7 Cost */}
-      <section className="bg-[#003e95] px-4 py-16 text-white md:py-20">
+      <section className="bg-[#0d1c31] px-4 py-16 text-white md:py-20">
         <div className="container mx-auto max-w-4xl text-center">
           <h2 className="text-3xl font-bold tracking-tight md:text-4xl">
             What Salesforce Support Costs
@@ -452,8 +452,8 @@ export default function SalesforceSupportMaintenanceSections() {
           </p>
 
           <Link
-            href="#book-a-free-consultation"
-            className="mt-8 inline-flex items-center justify-center rounded-lg bg-white px-7 py-3.5 font-semibold text-[#003e95] transition-colors hover:bg-gray-100"
+            href="/contact"
+            className="mt-8 inline-flex items-center justify-center rounded-lg bg-white px-7 py-3.5 font-semibold text-[#0d1c31] transition-colors hover:bg-gray-100"
           >
             Book a Free Consultation
           </Link>
