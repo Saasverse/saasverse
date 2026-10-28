@@ -2,7 +2,7 @@ import React from 'react';
 import PageBanner from '../components/PageBanner';
 import SalesforceServiceReuseable from '../components/SalesforceServiceReuseable';
 import CTASection from '../components/Home/CTASection';
-import HealthSolution from '../work-salesforce-health-cloud/HealthSolution';
+
 import CertificateSlider from '../components/Home/CertificateSlider';
 import OurPartners from '../components/Home/OurPartners';
 import FaqReuseable from '../components/FaqReuseable';
@@ -10,6 +10,7 @@ import ContactForm from '../components/ContactForm';
 import { Metadata } from 'next';
 import Link from 'next/link';
 import SalesforceConsultingSections from '../components/SalesforceConsultingSections';
+import SalesforceConsultingWhyChooseUs from '../components/SalesforceConsultingWhyChooseUs';
 
 const faqs = [
   {
@@ -241,58 +242,7 @@ const page = () => {
 
 
 <SalesforceConsultingSections/>
-      <HealthSolution
-        title="Why Choose Saasverse for "
-        highlight="Salesforce Consulting "
-        description=""
-        image="/images/websiteimages/4.webp"
-        imageAlt="Salesforce Healthcare Cloud Solution"
-        solutions={[
-          {
-            title: 'Salesforce Partner with Navigator Expert Status',
-            description:
-              'Salesforce gives Navigator Expert status to partners based on certified experts, completed projects and customer feedback.',
-          },
-          {
-            title: '50+ Certified Salesforce Experts',
-            description:
-              'Consultants, architects and developers work in the same team, so the advice we give is advice we know how to build.',
-          },
-          {
-            title: '120+ Projects for 40+ Clients',
-            description:
-              'We have delivered 120+ projects for 40+ clients across 19+ countries.',
-          },
-          {
-            title: 'US Time-Zone Overlap',
-            description:
-              'Our team is based in Jaipur, India. We agree on overlapping working hours with your team, so we can join your meetings.',
-          },
-          {
-            title: 'Security and Confidentiality',
-            description:
-              'Saasverse is ISO 27001 and Cyber Essentials Plus certified. We sign an NDA before we access your org.',
-          },
-          {
-            title: 'Rated 5.0 on Clutch',
-            description: (
-              <>
-                {' '}
-                Read what clients say about working with us.{' '}
-                <a
-                  href="https://clutch.co/profile/saasverse-salesforce-consulting-partner"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-blue-600 hover:underline"
-                >
-                  {' '}
-                  Read our reviews{' '}
-                </a>{' '}
-              </>
-            ),
-          },
-        ]}
-      />
+     <SalesforceConsultingWhyChooseUs />
 
       <CertificateSlider />
 
