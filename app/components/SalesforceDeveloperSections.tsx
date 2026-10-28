@@ -221,7 +221,7 @@ const reasonsToChoose = [
   {
     title: "Salesforce Partner with Navigator Expert Status",
     description:
-      "Our Salesforce partner credentials and expertise support customers looking for experienced development resources.",
+      "Salesforce gives Navigator Expert status to partners based on certified experts, completed projects and customer feedback.",
   },
   {
     title: "50+ Certified Salesforce Experts",
@@ -318,7 +318,7 @@ export default function SalesforceDeveloperSections() {
         <div className="container mx-auto max-w-7xl">
           <SectionHeading
             title="What Our Salesforce Developers Build"
-            description="From custom Apex logic to integrations and Lightning components, our developers build Salesforce solutions around your business requirements."
+            description=""
           />
           <ContentCards items={developmentServices} />
         </div>
@@ -454,8 +454,7 @@ export default function SalesforceDeveloperSections() {
                 Salesforce Developer
               </h3>
               <p className="mt-3 leading-7 text-gray-600">
-                You need code, Apex, Lightning Web Components, integrations or
-                an AppExchange application. This is the right page for you.
+                You need code: Apex, Lightning Web Components, integrations or an AppExchange app.
               </p>
             </article>
 
@@ -533,7 +532,7 @@ export default function SalesforceDeveloperSections() {
         <div className="container mx-auto max-w-7xl">
           <SectionHeading
             title="Clouds and Products Our Developers Work On"
-            description="Explore Salesforce platforms and products for which we offer relevant development services."
+            description="Our developers work on these Salesforce clouds and products."
           />
 
           <div className="flex flex-wrap justify-center gap-3">
@@ -555,7 +554,7 @@ export default function SalesforceDeveloperSections() {
         <div className="container mx-auto max-w-7xl">
           <SectionHeading
             title="Why Hire Salesforce Developers from Saasverse"
-            description="Work with a team that brings Salesforce development skills together with consulting, architecture and delivery experience."
+            description=""
           />
           <ContentCards items={reasonsToChoose} />
         </div>

@@ -12,12 +12,7 @@ import { Metadata } from 'next';
 import SalesforceManagedServicesSections from '../components/SalesforceManagedServicesSections';
 
 const faqs = [
-  {
-    question:
-      'What is included in your Salesforce support and maintenance services?',
-    answer:
-      'Bug fixing and issue resolution, admin requests, release testing, integration support, performance fixes, data fixes, small changes and scheduled maintenance. Your support model sets out exactly what is included.',
-  },
+ 
   {
     question: 'What is the difference between support and managed services?',
     answer:

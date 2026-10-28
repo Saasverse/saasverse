@@ -1,19 +1,18 @@
-
-import Link from "next/link";
+import Link from 'next/link';
 
 const services = [
   {
-    title: "Day-to-Day Admin",
+    title: 'Day-to-Day Admin',
     description:
-      "We manage user access, picklists, page layouts, reports, dashboards and the small requests that pile up when nobody owns Salesforce.",
+      'We manage user access, picklists, page layouts, reports, dashboards and the small requests that pile up when nobody owns Salesforce.',
   },
   {
-    title: "Fixes and Issue Resolution",
+    title: 'Fixes and Issue Resolution',
     description: (
       <>
         When something breaks, such as a Flow error, failed integration or
-        validation rule, we investigate the cause and work on a fix. For
-        one-off fixes without a monthly plan, see our{" "}
+        validation rule, we investigate the cause and work on a fix. For one-off
+        fixes without a monthly plan, see our{' '}
         <Link
           href="/salesforce-support-and-maintenance-services"
           className="font-semibold text-[#006b95] hover:underline"
@@ -25,32 +24,32 @@ const services = [
     ),
   },
   {
-    title: "Changes and Enhancements",
+    title: 'Changes and Enhancements',
     description:
-      "We build new fields, automation, reports and smaller features each month, prioritized according to your business needs.",
+      'We build new fields, automation, reports and smaller features each month, prioritized according to your business needs.',
   },
   {
-    title: "Release Updates",
+    title: 'Release Updates',
     description:
-      "We review Salesforce releases, test relevant changes in a sandbox and help assess features that could benefit or affect your org.",
+      'We review Salesforce releases, test relevant changes in a sandbox and help assess features that could benefit or affect your org.',
   },
   {
-    title: "Monitoring and Health Checks",
+    title: 'Monitoring and Health Checks',
     description:
-      "We review automation failures, integration errors, data storage, API usage and security settings to identify issues that need attention.",
+      'We review automation failures, integration errors, data storage, API usage and security settings to identify issues that need attention.',
   },
   {
-    title: "Data Quality",
+    title: 'Data Quality',
     description:
-      "We identify duplicate records, gaps in important fields and data quality problems, then recommend or implement measures to improve consistency.",
+      'We identify duplicate records, gaps in important fields and data quality problems, then recommend or implement measures to improve consistency.',
   },
   {
-    title: "Integration Upkeep",
+    title: 'Integration Upkeep',
     description: (
       <>
         We help maintain connections between Salesforce and your other systems,
         investigate failed synchronizations and update integrations when
-        connected systems change. Explore our{" "}
+        connected systems change. Explore our{' '}
         <Link
           href="/salesforce-integration-services"
           className="font-semibold text-[#006b95] hover:underline"
@@ -62,7 +61,7 @@ const services = [
     ),
   },
   {
-    title: "Planning and Reporting",
+    title: 'Planning and Reporting',
     description:
       "You receive a monthly summary of completed work, open requests and org health, followed by planning for the next month's priorities.",
   },
@@ -70,154 +69,154 @@ const services = [
 
 const monthlyProcess = [
   {
-    title: "Request Intake",
+    title: 'Request Intake',
     description:
-      "Your team submits requests through an agreed channel, such as email, a shared Slack channel or a ticket portal. Each request has an owner.",
+      'Your team sends requests through our ticket portal or by email. Every request gets an owner and a reply within 24 hours.',
   },
   {
-    title: "Prioritization",
+    title: 'Prioritization',
     description:
-      "We agree on which requests should come first based on business impact and the priorities established with your team.",
+      'We agree on which requests should come first based on business impact and the priorities established with your team.',
   },
   {
-    title: "Build and Test in a Sandbox",
+    title: 'Build and Test in a Sandbox',
     description:
-      "Changes are developed and tested in a sandbox before being considered for production deployment.",
+      'Changes are developed and tested in a sandbox before being considered for production deployment.',
   },
   {
-    title: "Deployment",
+    title: 'Deployment',
     description:
-      "Changes are deployed on agreed dates, with a rollback plan for larger or higher-risk changes where appropriate.",
+      'Changes are deployed on agreed dates, with a rollback plan for larger or higher-risk changes where appropriate.',
   },
   {
-    title: "Org Health Check",
+    title: 'Org Health Check',
     description:
-      "We review automation errors, limits, security settings and data quality to identify issues that need attention.",
+      'We review automation errors, limits, security settings and data quality to identify issues that need attention.',
   },
   {
-    title: "Monthly Report and Review Call",
+    title: 'Monthly Report and Review Call',
     description:
-      "You receive a written report and meet with the team to review completed work, outstanding requests and upcoming priorities.",
+      'You receive a written report and meet with the team to review completed work, outstanding requests and upcoming priorities.',
   },
 ];
 
 const managedServicesBenefits = [
   {
-    title: "One Team Instead of One Person",
+    title: 'One Team Instead of One Person',
     description:
-      "A dedicated in-house admin can become a single point of failure. A managed services team can bring together admins, developers and architects, with agreed coverage and continuity arrangements.",
+      'A dedicated in-house admin can become a single point of failure. A managed services team can bring together admins, developers and architects, with agreed coverage and continuity arrangements.',
   },
   {
-    title: "More Skills on Call",
+    title: 'More Skills on Call',
     description:
-      "Some requests need an admin, while others require a developer or integration specialist. The team can assign the appropriate skills to each request.",
+      'Some requests need an admin, while others require a developer or integration specialist. The team can assign the appropriate skills to each request.',
   },
   {
-    title: "Predictable Monthly Cost",
+    title: 'Predictable Monthly Cost',
     description:
-      "An agreed monthly plan helps you budget for ongoing Salesforce work instead of arranging a separate engagement for every request.",
+      'An agreed monthly plan helps you budget for ongoing Salesforce work instead of arranging a separate engagement for every request.',
   },
   {
-    title: "Requests Stop Piling Up",
+    title: 'Requests Stop Piling Up',
     description:
-      "Small requests are reviewed and prioritized within a recurring work cycle instead of waiting indefinitely for available capacity.",
+      'Small requests are reviewed and prioritized within a recurring work cycle instead of waiting indefinitely for available capacity.',
   },
   {
-    title: "Release Updates Are Handled",
+    title: 'Release Updates Are Handled',
     description:
-      "Relevant Salesforce releases are reviewed and tested so potential impacts on your configuration and workflows can be addressed.",
+      'Relevant Salesforce releases are reviewed and tested so potential impacts on your configuration and workflows can be addressed.',
   },
   {
-    title: "The Org Stays Clean",
+    title: 'The Org Stays Clean',
     description:
-      "Regular health checks and data quality work help identify unused fields, outdated automation and inconsistent data.",
+      'Regular health checks and data quality work help identify unused fields, outdated automation and inconsistent data.',
   },
 ];
 
 const onboardingSteps = [
   {
-    title: "Discovery Call",
+    title: 'Discovery Call',
     description:
-      "Tell us which Salesforce clouds you use, how many users you have and what kinds of requests your team sends. We can arrange an NDA first if you prefer.",
+      'Tell us which Salesforce clouds you use, how many users you have and what kinds of requests your team sends. We can arrange an NDA first if you prefer.',
   },
   {
-    title: "Org Review",
+    title: 'Org Review',
     description:
-      "We review your org, automation, integrations and open requests to understand the environment and the work that needs attention.",
+      'We review your org, automation, integrations and open requests to understand the environment and the work that needs attention.',
   },
   {
-    title: "Plan and Agreement",
+    title: 'Plan and Agreement',
     description:
-      "We document the agreed plan, monthly hours, response expectations and request channels before work begins.",
+      'We agree on the plan and monthly hours in writing, and set up your access to the ticket portal.',
   },
   {
-    title: "Handover",
+    title: 'Handover',
     description:
-      "We arrange appropriate access, document the org and coordinate the transfer of open requests from your current admin or partner.",
+      'We arrange appropriate access, document the org and coordinate the transfer of open requests from your current admin or partner.',
   },
   {
-    title: "Monthly Cycle",
+    title: 'Monthly Cycle',
     description:
-      "Your ongoing cycle includes request management, sandbox testing, deployment, health checks and a monthly review.",
+      'Your ongoing cycle includes request management, sandbox testing, deployment, health checks and a monthly review.',
   },
 ];
 
 const managedPlans = [
   {
-    title: "Admin Plan",
+    title: 'Admin Plan',
     description:
-      "For teams that need day-to-day administration, user management, reports and smaller changes each month.",
+      'For teams that need day-to-day administration, user management, reports and smaller changes each month.',
   },
   {
-    title: "Admin and Development Plan",
+    title: 'Admin and Development Plan',
     description:
-      "For teams that need administration alongside new automation, custom development and integration work.",
+      'For teams that need administration alongside new automation, custom development and integration work.',
   },
   {
-    title: "Full Org Management",
+    title: 'Full Org Management',
     description:
-      "For companies looking for one partner to coordinate administration, development, releases, integrations, monitoring and planning.",
+      'For companies looking for one partner to coordinate administration, development, releases, integrations, monitoring and planning.',
   },
 ];
 
 const supportedClouds = [
-  { name: "Sales Cloud", href: "/salesforce-sales-cloud" },
-  { name: "Service Cloud", href: "/salesforce-service-cloud" },
-  { name: "Marketing Cloud", href: "/salesforce-marketing-cloud" },
-  { name: "Experience Cloud", href: "/experience-cloud" },
-  { name: "Health Cloud", href: "/health-cloud-services" },
+  { name: 'Sales Cloud', href: '/salesforce-sales-cloud' },
+  { name: 'Service Cloud', href: '/salesforce-service-cloud' },
+  { name: 'Marketing Cloud', href: '/salesforce-marketing-cloud' },
+  { name: 'Experience Cloud', href: '/experience-cloud' },
+  { name: 'Health Cloud', href: '/health-cloud-services' },
   {
-    name: "Financial Services Cloud",
-    href: "/financial-cloud-implementation-services",
+    name: 'Financial Services Cloud',
+    href: '/financial-cloud-implementation-services',
   },
-  { name: "Nonprofit Cloud", href: "/nonprofit-cloud" },
-  { name: "CPQ", href: "/salesforce-cpq-implementation" },
-  { name: "Field Service", href: "/field-service-lightning" },
-  { name: "MuleSoft", href: "/mulesoft-development" },
+  { name: 'Nonprofit Cloud', href: '/nonprofit-cloud' },
+  { name: 'CPQ', href: '/salesforce-cpq-implementation' },
+  { name: 'Field Service', href: '/field-service-lightning' },
+  { name: 'MuleSoft', href: '/mulesoft-development' },
 ];
 
 const idealClients = [
   {
-    title: "Companies Without a Salesforce Admin",
+    title: 'Companies Without a Salesforce Admin',
     description:
-      "You use Salesforce every day, but nobody is responsible for managing it full time.",
+      'You use Salesforce every day, but nobody is responsible for managing it full time.',
   },
   {
-    title: "Teams Whose Admin Has Left",
+    title: 'Teams Whose Admin Has Left',
     description:
-      "Your admin or previous partner has moved on, and support requests are piling up.",
+      'Your admin or previous partner has moved on, and support requests are piling up.',
   },
   {
-    title: "Growing Orgs",
+    title: 'Growing Orgs',
     description:
-      "You are adding users, clouds or integrations, and one person can no longer keep up with the workload.",
+      'You are adding users, clouds or integrations, and one person can no longer keep up with the workload.',
   },
   {
-    title: "After a New Implementation",
+    title: 'After a New Implementation',
     description: (
       <>
         Your Salesforce rollout is complete, and you need a team to manage it
-        going forward. Explore our{" "}
+        going forward. Explore our{' '}
         <Link
           href="/salesforce-implementation-services"
           className="font-semibold text-[#006b95] hover:underline"
@@ -232,35 +231,35 @@ const idealClients = [
 
 const whySaasverse = [
   {
-    title: "Salesforce Partner with Navigator Expert Status",
+    title: 'Salesforce Partner with Navigator Expert Status',
     description:
-      "Our Salesforce partner credentials and expertise support organizations looking for experienced Salesforce services.",
+      'Salesforce gives Navigator Expert status to partners based on certified experts, completed projects and customer feedback.',
   },
   {
-    title: "50+ Certified Salesforce Experts",
+    title: '50+ Certified Salesforce Experts',
     description:
-      "Admins, developers and architects work within the same team, helping route each request to the appropriate specialist.",
+      'Admins, developers and architects work within the same team, helping route each request to the appropriate specialist.',
   },
   {
-    title: "120+ Projects for 40+ Clients",
+    title: '120+ Projects for 40+ Clients',
     description:
-      "We have delivered 120+ projects for 40+ clients across 19+ countries.",
+      'We have delivered 120+ projects for 40+ clients across 19+ countries.',
   },
   {
-    title: "US Time-Zone Overlap",
+    title: 'US Time-Zone Overlap',
     description:
-      "Our team is based in Jaipur, India. We agree on overlapping working hours to support meetings, collaboration and communication with your team.",
+      'Our team is based in Jaipur, India. We agree on overlapping working hours to support meetings, collaboration and communication with your team.',
   },
   {
-    title: "Security and Confidentiality",
+    title: 'Security and Confidentiality',
     description:
-      "Saasverse maintains ISO 27001 and Cyber Essentials Plus certifications. NDA arrangements can be agreed before access to your org.",
+      'Saasverse is ISO 27001 and Cyber Essentials Plus certified. We sign an NDA before we access your org.',
   },
   {
-    title: "Rated 5.0 on Clutch",
+    title: 'Rated 5.0 on Clutch',
     description: (
       <>
-        Read what clients say about working with us on{" "}
+        Read what clients say about working with us on{' '}
         <a
           href="https://clutch.co/profile/saasverse-salesforce-consulting-partner"
           target="_blank"
@@ -316,9 +315,7 @@ function ContentCards({
             {item.title}
           </h3>
 
-          <div className="mt-3 leading-7 text-gray-600">
-            {item.description}
-          </div>
+          <div className="mt-3 leading-7 text-gray-600">{item.description}</div>
         </article>
       ))}
     </div>
@@ -341,7 +338,7 @@ function ProcessCards({
           className="rounded-xl border border-gray-200 bg-white p-6 shadow-sm"
         >
           <span className="mb-5 flex h-11 w-11 items-center justify-center rounded-full bg-[#eaf5f9] font-bold text-[#006b95]">
-            {String(index + 1).padStart(2, "0")}
+            {String(index + 1).padStart(2, '0')}
           </span>
 
           <h3 className="text-xl font-semibold leading-7 text-gray-900">
@@ -410,8 +407,8 @@ export default function SalesforceManagedServicesSections() {
 
               <p className="mt-4 leading-7 text-gray-600">
                 One team manages your org through an ongoing plan covering
-                administration, changes, fixes, release reviews, monitoring
-                and planning. This is the service covered on this page.
+                administration, changes, fixes, release reviews, monitoring and
+                planning. This is the service covered on this page.
               </p>
             </article>
 
@@ -422,7 +419,7 @@ export default function SalesforceManagedServicesSections() {
 
               <p className="mt-4 leading-7 text-gray-600">
                 Need help with specific issues or fixes without a full monthly
-                plan? Explore our{" "}
+                plan? Explore our{' '}
                 <Link
                   href="/salesforce-support-and-maintenance-services"
                   className="font-semibold text-[#006b95] hover:underline"
@@ -435,14 +432,14 @@ export default function SalesforceManagedServicesSections() {
           </div>
 
           <p className="mx-auto mt-8 max-w-4xl text-center leading-8 text-gray-600">
-            Need someone to work within your own team instead? You can{" "}
+            Need someone to work within your own team instead? You can{' '}
             <Link
               href="/hire-salesforce-admin"
               className="font-semibold text-[#006b95] hover:underline"
             >
               hire a Salesforce admin
-            </Link>{" "}
-            or{" "}
+            </Link>{' '}
+            or{' '}
             <Link
               href="/hire-salesforce-developers"
               className="font-semibold text-[#006b95] hover:underline"
@@ -477,9 +474,10 @@ export default function SalesforceManagedServicesSections() {
           <ContentCards items={managedPlans} />
 
           <p className="mx-auto mt-8 max-w-4xl text-center leading-7 text-gray-600">
-            Monthly hours, response times and request channels are agreed in
-            writing for each plan. Unused hours and additional work are handled
-            according to the terms in your agreement.
+            Every plan includes 24/7 support, a reply within 24 hours, and
+            requests through our ticket portal or by email. Monthly hours are
+            agreed in writing for each plan. Unused hours and extra work are
+            handled as set out in your agreement.
           </p>
         </div>
       </section>
@@ -540,13 +538,13 @@ export default function SalesforceManagedServicesSections() {
           <ContentCards items={idealClients} />
 
           <div className="mx-auto mt-10 max-w-4xl rounded-xl border border-gray-200 bg-white p-6 text-center leading-8 text-gray-600 md:p-8">
-            Not sure what your org needs? Start with our{" "}
+            Not sure what your org needs? Start with our{' '}
             <Link
               href="/salesforce-consulting-company"
               className="font-semibold text-[#006b95] hover:underline"
             >
               Salesforce consulting services
-            </Link>{" "}
+            </Link>{' '}
             for a review before planning ongoing work.
           </div>
         </div>
@@ -566,4 +564,3 @@ export default function SalesforceManagedServicesSections() {
     </div>
   );
 }
-

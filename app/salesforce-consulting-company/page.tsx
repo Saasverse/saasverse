@@ -175,7 +175,7 @@ const deliverables: Deliverable[] = [
 export const metadata: Metadata = {
   title: 'Salesforce Consulting Company | Saasverse',
   description:
-    'Salesforce consulting from a certified Salesforce Partner: org reviews, roadmaps, architecture and process design for US teams. Book a free consultation',
+    'Salesforce consulting from a certified Salesforce Partner: org reviews, roadmaps, architecture and process design for US teams. Book a free consultation.',
 
   alternates: {
     canonical: 'https://www.saasverse.in/salesforce-consulting-company',

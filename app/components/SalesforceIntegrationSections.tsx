@@ -80,7 +80,7 @@ const connectionMethods = [
     icon: "↔",
     title: "MuleSoft",
     description:
-      "Connect multiple systems through a managed integration platform with reusable APIs and centralised orchestration.",
+      "Connect multiple systems through a managed integration platform with reusable APIs and centralized orchestration.",
     link: "/mulesoft-development",
     linkText: "Explore MuleSoft development",
   },
@@ -115,7 +115,7 @@ const benefits = [
     icon: "◇",
     title: "Fewer Errors",
     description:
-      "Reduce typos, duplicate records and mismatched information through consistent data synchronisation.",
+      "Reduce typos, duplicate records and mismatched information through consistent data synchronization.",
   },
   {
     icon: "➜",
@@ -409,11 +409,7 @@ export default function SalesforceIntegrationSections() {
           ))}
         </div>
 
-        <p className="mt-6 text-sm leading-6 text-slate-500">
-          The systems listed are examples of common integration scenarios.
-          Final platform selection depends on your requirements and the
-          technologies our team can support.
-        </p>
+       
       </Section>
 
       {/* Connection Methods */}
@@ -564,9 +560,7 @@ export default function SalesforceIntegrationSections() {
             <p className="text-base leading-7 text-slate-600">
               Ongoing maintenance can include monitoring integration jobs,
               investigating failed transactions, reviewing API usage, testing
-              changes and updating documentation. Support channels, coverage
-              hours and response commitments can be agreed as part of your
-              support arrangement.
+              changes and updating documentation. We offer 24/7 support: raise a ticket in our ticket portal or send an email, and you get a reply within 24 hours.
             </p>
 
             <div className="mt-6 flex flex-wrap gap-3">

@@ -11,34 +11,71 @@ import { Metadata } from 'next';
 import SalesforceSupportMaintenanceSections from '../components/SalesforceSupportMaintenanceSections';
 
 
+
 const faqs = [
   {
-    question: 'What is included in your Salesforce Support and Maintenance Services?',
+    question: "What is included in your Salesforce support and maintenance services?",
     answer:
-      'Saasverse Salesforce support and maintenance services include implementation monitoring, continuous administration, bug fixing, customization, application maintenance, and performance optimization under the guidance of experienced developers in particular industries. We also provide round-the-clock support, regular updates, and proactive performance management.',
+      "Bug fixing and issue resolution, admin requests, release testing, integration support, performance fixes, data fixes, small changes and scheduled maintenance. Your support model sets out exactly what is included.",
   },
   {
-    question: 'Do you provide 24/7 Salesforce support?',
+    question: "What is the difference between support and managed services?",
     answer:
-      'Yes, the Saasverse team offers 24/7 Salesforce support to ensure uninterrupted operations during your peak hours. Our team is always available to resolve technical issues, monitor system performance, and provide expert assistance, which doesn’t stop the flow of user.',
+      "Support and maintenance covers issues and fixes as they come up, plus regular maintenance. Managed services is a monthly plan where one team runs your whole org: admin, changes, releases, monitoring and planning.",
   },
   {
-    question: 'Can you help with customizing our existing Salesforce setup?',
+    question: "Do you provide 24/7 Salesforce support?",
     answer:
-      'Absolutely. The team working at Saasverse provides comprehensive Salesforce customization services customized to your business needs, which ensure optimal functionality, a better user experience, and alignment with the latest CRM trends.',
+      "Yes. Support is available 24/7. Raise a ticket in our ticket portal or send an email at any time, and you get a reply within 24 hours.",
   },
   {
-    question: 'What types of businesses do you work with?',
+    question: "How quickly do you respond to support requests?",
     answer:
-      'The certified Salesforce developers at Saasverse work with almost all types of businesses, such as startups, mid-sized companies, and enterprises across industries. Our service plans are scalable and customized to fit your operational and technical requirements',
+      "Every request gets a reply within 24 hours. How long the fix takes depends on the issue, and we keep you updated until it is closed.",
   },
   {
-    question: 'How does your managed support model work?',
+    question: "How do we report an issue?",
     answer:
-      'The managed Salesforce support model at Saasverse includes continuous system monitoring, proactive issue resolution, periodic audits, and performance enhancements — all under flexible service plans customized to your goals.',
+      "Raise a ticket in our ticket portal or send an email. Screenshots or error messages help us find the cause faster.",
   },
- 
+  {
+    question: "Can you support an org that another partner set up?",
+    answer:
+      "Yes. We review the org first, document what we find and then take on support.",
+  },
+  {
+    question: "Do you test changes before they go live?",
+    answer:
+      "Yes. We reproduce issues and test fixes in a sandbox before they go to production.",
+  },
+  {
+    question: "How do you handle Salesforce releases?",
+    answer:
+      "Salesforce releases updates three times a year. We test each release in a sandbox before it reaches your production org, and fix anything that would break.",
+  },
+  {
+    question: "Can you fix Apex code and integrations, not only admin issues?",
+    answer:
+      "Yes. Our team includes developers who fix Apex, Lightning Web Components and integrations, as well as admins for setup issues.",
+  },
+  {
+    question: "Can you help with customizing our existing Salesforce setup?",
+    answer:
+      "Yes. We make small changes as part of support. For larger changes, we scope them as a separate piece of work.",
+  },
+  {
+    question: "What does Salesforce support cost?",
+    answer:
+      "The cost depends on your requirements: the size of your org, the clouds and integrations, the number of issues, and the support model. We send the cost in writing after the discovery call.",
+  },
+  {
+    question: "Is our org data safe with you?",
+    answer:
+      "We sign an NDA before we access your org. Saasverse is ISO 27001 and Cyber Essentials Plus certified, and you decide which systems and data our team can access.",
+  },
 ];
+
+
 
 const benefits = [
   {

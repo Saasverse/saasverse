@@ -113,12 +113,12 @@ const supportSteps = [
   {
     title: "Log the Issue",
     description:
-      "Submit a request through the agreed ticket portal or email channel. Include screenshots and error messages when available.",
+      "Raise a ticket in our ticket portal or send an email, with screenshots or error messages if you have them. Support is available 24/7. Include screenshots and error messages when available.",
   },
   {
     title: "Reply and Priority",
     description:
-      "We acknowledge the request within the agreed response window, assess its business impact, assign a priority and identify an owner.",
+      "You get a reply within 24 hours. We set the priority based on how many users are affected, and assign an owner.",
   },
   {
     title: "Find the Cause",
@@ -202,7 +202,7 @@ const reasonsToChoose = [
   {
     title: "24/7 Support",
     description:
-      "Support availability and response commitments can be agreed to suit your organization's requirements and time zone.",
+      "Support is available 24/7, whatever your time zone. Every request gets a reply within 24 hours.",
   },
   {
     title: "Security and Confidentiality",
@@ -330,7 +330,7 @@ export default function SalesforceSupportMaintenanceSections() {
         <div className="container mx-auto max-w-7xl">
           <SectionHeading
             title="Common Issues We Fix"
-            description="From access problems to failed automation, we help identify the cause of Salesforce issues and work toward a reliable fix."
+            description=""
           />
 
           <ContentCards items={commonIssues} />
@@ -363,10 +363,7 @@ export default function SalesforceSupportMaintenanceSections() {
           <ContentCards items={supportModels} />
 
           <p className="mx-auto mt-8 max-w-4xl text-center leading-7 text-gray-600">
-            Request channels, support availability and response commitments
-            should be documented in your agreement. Confirm the applicable
-            terms for your selected model before publishing a specific
-            service-level commitment.
+          All models include 24/7 support, a reply within 24 hours, and requests through our ticket portal or by email.
           </p>
         </div>
       </section>

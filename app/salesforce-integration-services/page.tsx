@@ -14,7 +14,7 @@ import SalesforceIntegrationSections from '../components/SalesforceIntegrationSe
 export const metadata: Metadata = {
   title: "Salesforce Integration Services | Saasverse",
   description:
-    "Seamless Salesforce integration services connecting CRM, ERP & marketing tools for US, UAE & India clients. Certified experts. Request a demo.",
+    "Salesforce integration services: connect Salesforce to your ERP, website, billing and other systems via APIs or MuleSoft. Book a free consultation.",
 
     alternates: { canonical: 'https://www.saasverse.in/salesforce-integration-services' },
 };
