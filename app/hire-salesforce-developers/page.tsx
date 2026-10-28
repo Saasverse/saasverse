@@ -1,143 +1,116 @@
-import React from 'react'
-import PageBanner from '../components/PageBanner'
-import SalesforceServiceReuseable from '../components/SalesforceServiceReuseable';
+import React from 'react';
+import PageBanner from '../components/PageBanner';
+
 import CTASection from '../components/Home/CTASection';
-import HealthSolution from '../work-salesforce-health-cloud/HealthSolution';
+
 import CertificateSlider from '../components/Home/CertificateSlider';
 import OurPartners from '../components/Home/OurPartners';
 import FaqReuseable from '../components/FaqReuseable';
 import ContactForm from '../components/ContactForm';
-import WhyChooseUs from '../about/WhyChooseUs';
-import { Metadata } from 'next';
 
+import { Metadata } from 'next';
+import SalesforceDeveloperSections from '../components/SalesforceDeveloperSections';
 
 const faqs = [
   {
-    question: 'Why hire Salesforce Consultants?',
+    question:
+      'Why hire a Salesforce developer instead of a full-time employee?',
     answer:
-      'Hiring Salesforce Consultants will make sure that your Salesforce implementation is perfectly aligned with your business goals and delivers maximum ROI.',
+      'A full-time hire can take months to find and costs the same in busy and quiet months. A Salesforce developer for hire can start sooner, and you can switch between hourly, part-time and full-time as your workload changes.',
   },
   {
-    question: 'Can you customize Salesforce to fit my business needs?',
+    question: 'How quickly can a Salesforce developer start?',
     answer:
-      'Absolutely. Our Consultants specialize in customizing Salesforce solutions – be it CRM, Marketing Cloud, Mobile App development, or CDP – to meet your specific business requirements.',
+      'It depends on the skills you need. Many engagements start within a few days. A specialist profile can take a few weeks. We give you a start date when we send profiles.',
   },
   {
-    question: 'What is the typical engagement process with Saasverse Consultants?',
+    question: 'Can I interview the developer before hiring?',
     answer:
-      'Our engagement process is client-centric, starting with understanding your business needs, followed by providing strategic Salesforce consultancy tailored to those needs. We work either on a project basis or time & material contracts.',
+      'Yes. You can speak with the developers we recommend, ask technical questions or give them a short task, and decide who joins your team.',
   },
   {
-    question: 'How long does it take to hire Saasverse Consultants?',
+    question: 'Which hiring model should I choose?',
     answer:
-      'Our efficient hiring process ensures that you can quickly onboard a skilled Salesforce Consultant, often within a few days to a few weeks, depending on your specific requirements.',
-  },
-  {
-    question: 'Can Saasverse provide ongoing support after implementation?',
-    answer:
-      'Yes, we offer ongoing support and consultancy to ensure your Salesforce ecosystem continues to evolve with your business, delivering continual value.',
+      'Hourly works for bug fixes, code reviews and single components. A part-time dedicated developer works for a steady flow of requests. A full-time developer or team works for large builds, integrations and AppExchange apps.',
   },
   {
     question:
-      'How do I get started with hiring Salesforce Consultants from Saasverse?',
+      'What is the difference between a Salesforce developer and a Salesforce admin?',
     answer:
-      'Starting is simple. Contact us, and we will guide you through our straightforward process to connect you with the ideal Salesforce consultant for your needs.',
+      'An admin configures Salesforce using clicks, including users, fields, layouts, reports and Flows. A developer writes code, such as Apex, Lightning Web Components and integrations, for requirements that clicks alone cannot handle.',
+  },
+  {
+    question: 'Do your developers work with Lightning Web Components?',
+    answer:
+      'Yes. Our developers build new screens and components with Lightning Web Components (LWC) and can rebuild legacy Visualforce pages and Aura components as LWC.',
+  },
+  {
+    question: 'Can your developers build integrations?',
+    answer:
+      'Yes. Our developers connect Salesforce to other systems through REST and SOAP APIs, platform events and MuleSoft.',
+  },
+  {
+    question: 'How do you make sure the code is good quality?',
+    answer:
+      'All work is done in a sandbox, maintained in Git and reviewed by a second developer. Every change includes Apex test classes. Salesforce requires at least 75% Apex code coverage for deployment to production, along with successful tests and other deployment checks.',
+  },
+  {
+    question: 'Who owns the code?',
+    answer:
+      'Ownership of the code is set out in your contract. We agree on it in writing before work starts.',
+  },
+  {
+    question: 'Can a developer work alongside our admin or another partner?',
+    answer:
+      'Yes. Many clients use our developers to add development capacity alongside their in-house Salesforce admin or an existing implementation partner.',
+  },
+  {
+    question: 'Will the developer work in my time zone?',
+    answer:
+      'Our team is based in Jaipur, India, and works with clients in the US. Before work starts, we agree on the hours your developer will overlap with your team so they can join meetings and collaborate effectively.',
+  },
+  {
+    question: 'Is my org data safe with a hired developer?',
+    answer:
+      'We sign an NDA before accessing your org. Saasverse is ISO 27001 and Cyber Essentials Plus certified, and you decide which systems and data the developer can access.',
   },
 ];
 
-const benefits = [
-  {
-    title: "Enhanced Productivity:",
-    description:
-      "Custom applications and automations streamline workflows, reduce manual effort, and boost team productivity.",
-  },
-  {
-    title: "Improved Efficiency:",
-    description:
-      "Seamless integrations eliminate data silos and optimize data flow, leading to increased efficiency across your operations.",
-  },
-  {
-    title: "Reduced Costs:",
-    description:
-      "Automation can minimize development costs associated with manual processes and ongoing maintenance.",
-  },
-  {
-    title: "A Competitive Advantage:",
-    description:
-      "Custom solutions can differentiate you from competitors and enhance customer experiences.",
-  },
-  {
-    title: "Scalability & Flexibility:",
-    description:
-      "Our developers build solutions that scale with your business growth and adapt to evolving needs.",
-  },
-];
 
 export const metadata: Metadata = {
-  title: "Hire Salesforce Developers in India | Saasverse",
+  title: 'Hire Salesforce Developers in India | Saasverse',
   description:
-    "Hire dedicated Salesforce developers in India. Flexible hourly, part-time or full-time hire, US/UAE time-zone overlap. Get a free quote today.",
+    'Hire certified Salesforce developers in India for Apex, LWC and integrations. Hourly, part-time or full-time, with US hours overlap. Book a free consultation.',
 
-    alternates: { canonical: 'https://www.saasverse.in/hire-salesforce-developers' },
-  };
+  alternates: {
+    canonical: 'https://www.saasverse.in/hire-salesforce-developers',
+  },
+};
 
 const page = () => {
   return (
     <>
-       <PageBanner
-                 image="/images/banner/hirebanner.webp"
-                 title="Hire Salesforce Developer"
-                 description="Craft Your Salesforce Vision: Hire Top-Tier Salesforce Developers at Saasverse Pvt Ltd"
-               />
+      <PageBanner
+        image="/images/banner/hirebanner.webp"
+        title="Hire Salesforce Developers in India"
+        description="Hire certified Salesforce developers who join your team by the hour, part time or full time. They write Apex, build Lightning Web Components and connect Salesforce to your other systems."
+      />
 
-                <SalesforceServiceReuseable
-      heading="Benefits of Hiring a Saasverse Salesforce Developer"
-      benefits={benefits}
-    />
+      <SalesforceDeveloperSections />
 
-    
+      
+      <CertificateSlider />
 
-     <HealthSolution
-            title="Why Hire a Salesforce Developer from Saasverse? "
-            highlight=""
-            description=""
-            image="/images/websiteimages/4.webp"
-            imageAlt="Salesforce Healthcare Cloud Solution"
-            solutions={[
-              {
-    title: 'Proven Expertise',
-    description:
-      "Our developers are Salesforce-certified professionals with a deep understanding of the platform's architecture, development tools, and best practices.",
-  },
-  {
-    title: 'Custom Application Development',
-    description:
-      'They excel at crafting custom applications that address your unique business challenges and streamline critical workflows.',
-  },
-  {
-    title: 'Apex & Visualforce Proficiency',
-    description:
-      "Our developers are masters of Salesforce's core programming languages (Apex & Visualforce), ensuring robust and scalable solutions.",
-  },
-  {
-    title: 'Testing & Deployment Expertise',
-    description:
-      'They prioritize rigorous testing throughout the development lifecycle and ensure smooth deployment of your Salesforce customizations.',
-  },
-             
-            ]}
-          />
+      <OurPartners />
 
-<WhyChooseUs/>
-          <CertificateSlider/>
-
-          <OurPartners/>
-
-           <FaqReuseable title="FAQ" faqs={faqs} />
-            <CTASection/>
-           <ContactForm/>
+      <FaqReuseable
+        title="FAQs About Hiring Salesforce Developers"
+        faqs={faqs}
+      />
+      <CTASection />
+      <ContactForm />
     </>
-  )
-}
+  );
+};
 
-export default page
+export default page;

@@ -90,7 +90,7 @@ const benefits = [
 export const metadata: Metadata = {
   title: "Salesforce Support and Maintenance Services | Saasverse",
   description:
-    "24/7 Salesforce support and maintenance from certified experts: managed admin, bug fixes, release updates and performance tuning. Talk to our team today. ",
+    "24/7 Salesforce support and maintenance: bug fixes, issue resolution, release checks and health checks from certified experts. Book a free consultation.",
     alternates: { canonical: 'https://www.saasverse.in/salesforce-support-and-maintenance-services' },
   };
 const page = () => {
@@ -99,7 +99,7 @@ const page = () => {
        <PageBanner
                  image="/images/banner/banner002.webp"
                  title="Salesforce Support and Maintenance Services"
-                 description="Trusted Salesforce Solutions for Continuous Business Growth "
+                 description="24/7 Salesforce support from certified experts. We fix issues in your org, keep it maintained and check every Salesforce release before it reaches your users."
                />
 
                 <SalesforceServiceReuseable

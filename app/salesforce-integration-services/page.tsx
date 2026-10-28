@@ -1,14 +1,15 @@
 import React from 'react'
 import PageBanner from '../components/PageBanner'
-import SalesforceServiceReuseable from '../components/SalesforceServiceReuseable';
+
 import CTASection from '../components/Home/CTASection';
-import HealthSolution from '../work-salesforce-health-cloud/HealthSolution';
+
 import CertificateSlider from '../components/Home/CertificateSlider';
 import OurPartners from '../components/Home/OurPartners';
 import FaqReuseable from '../components/FaqReuseable';
 import ContactForm from '../components/ContactForm';
-import WhyChooseUs from '../about/WhyChooseUs';
+
 import { Metadata } from 'next';
+import SalesforceIntegrationSections from '../components/SalesforceIntegrationSections';
 
 export const metadata: Metadata = {
   title: "Salesforce Integration Services | Saasverse",
@@ -17,90 +18,71 @@ export const metadata: Metadata = {
 
     alternates: { canonical: 'https://www.saasverse.in/salesforce-integration-services' },
 };
+
 const faqs = [
   {
-    question: 'Why hire Salesforce Consultants?',
+    question: "What are Salesforce integration services?",
     answer:
-      'Hiring Salesforce Consultants will make sure that your Salesforce implementation is perfectly aligned with your business goals and delivers maximum ROI.',
+      "Salesforce integration services connect Salesforce to your other business systems, such as an ERP, accounting tool, website or support tool, so data moves between them automatically instead of being copied by hand.",
   },
   {
-    question: 'Can you customize Salesforce to fit my business needs?',
+    question: "Which systems can you connect to Salesforce?",
     answer:
-      'Absolutely. Our Consultants specialize in customizing Salesforce solutions – be it CRM, Marketing Cloud, Mobile App development, or CDP – to meet your specific business requirements.',
+      "We can connect Salesforce to most systems that have an API, including ERPs, accounting and billing tools, marketing tools, eCommerce platforms, phone systems, other CRMs and internal databases.",
   },
   {
-    question:
-      'What is the typical engagement process with Saasverse Consultants?',
+    question: "Do we need MuleSoft to integrate Salesforce?",
     answer:
-      'Our engagement process is client-centric, starting with understanding your business needs, followed by providing strategic Salesforce consultancy tailored to those needs. We work either on a project basis or time & material contracts.',
+      "Not always. Many integrations work well with direct APIs or a ready-made connector. MuleSoft is useful when you have many systems to connect and want to manage all connections in one place.",
   },
   {
-    question: 'How long does it take to hire Saasverse Consultants?',
+    question: "Can the data sync in real time?",
     answer:
-      'Our efficient hiring process ensures that you can quickly onboard a skilled Salesforce Consultant, often within a few days to a few weeks, depending on your specific requirements.',
+      "It can be close to real time using APIs or platform events. For large volumes of data, a scheduled sync, such as every hour or every night, is often more reliable. We recommend the method that fits each data flow.",
   },
   {
-    question: 'Can Saasverse provide ongoing support after implementation?',
+    question: "What if our system does not have an API?",
     answer:
-      'Yes, we offer ongoing support and consultancy to ensure your Salesforce ecosystem continues to evolve with your business, delivering continual value.',
+      "We look at other options, such as file-based imports and exports, database connections or a middleware tool. We tell you what is possible before work starts.",
   },
   {
-    question:
-      'How do I get started with hiring Salesforce Consultants from Saasverse?',
+    question: "How long does a Salesforce integration take?",
     answer:
-      'Starting is simple. Contact us, and we will guide you through our straightforward process to connect you with the ideal Salesforce consultant for your needs.',
+      "It depends on the number of systems, the amount of data and whether the other system has a ready API. We give you a timeline in the written scope before work starts.",
   },
- 
- 
+  {
+    question: "How do you handle errors and failed syncs?",
+    answer:
+      "We add error handling, logs and alerts to every integration, so failed records are caught and can be retried.",
+  },
+  {
+    question: "Will the integration use up our Salesforce API limits?",
+    answer:
+      "We check your API limits during design and build the integration to use as few calls as possible, for example by batching records.",
+  },
+  {
+    question: "Can you fix an integration another partner built?",
+    answer:
+      "Yes. We review how it works, document it, and fix or rebuild the parts that fail.",
+  },
+  {
+    question: "Do you provide support after go-live?",
+    answer:
+      "Yes. Support is available 24/7. Raise a ticket in our ticket portal or send an email, and you get a reply within 24 hours.",
+  },
+  {
+    question: "What does Salesforce integration cost?",
+    answer:
+      "The cost depends on your requirements: the number of systems, the data volume, how often it syncs and the method used. We send the cost in writing after the discovery call.",
+  },
+  {
+    question: "Is our data safe during an integration?",
+    answer:
+      "We sign an NDA before we access your systems. Saasverse is ISO 27001 and Cyber Essentials Plus certified. Integrations use secure, authenticated connections, and you decide which data is shared between systems.",
+  },
 ];
 
-const benefits = [
-  {
-    title: "CRM Integration:",
-    description:
-      "Connect Salesforce with other CRM systems to unify customer data and streamline sales and marketing processes.",
-  },
-  {
-    title: "ERP Integration:",
-    description:
-      "Integrate Salesforce with your ERP system to synchronize financial, inventory, and operational data for better resource planning.",
-  },
-  {
-    title: "Marketing Automation Integration:",
-    description:
-      "Link Salesforce with marketing automation platforms to streamline campaigns and improve lead management.",
-  },
-  {
-    title: "Business Analysis:",
-    description:
-      "We start by understanding your business processes, goals, and current systems to identify integration opportunities.",
-  },
-  {
-    title: "Integration Strategy:",
-    description:
-      "Develop a tailored integration strategy that aligns with your business objectives and technical requirements.",
-  },
-  {
-    title: "API Design:",
-    description:
-      "Develop custom APIs to facilitate seamless communication between Salesforce and your other business applications.",
-  },
-  {
-    title: "Data Synchronization:",
-    description:
-      "Ensure real-time data synchronization across all systems, enabling accurate and up-to-date information.",
-  },
-  {
-    title: "Integration Platforms:",
-    description:
-      "Utilize leading integration platforms like MuleSoft, Dell Boomi, and Jitterbit to connect Salesforce with various systems and applications.",
-  },
-  {
-    title: "Custom Middleware:",
-    description:
-      "Develop custom middleware solutions to address unique integration challenges and requirements.",
-  },
-];
+
 
 const page = () => {
   return (
@@ -111,45 +93,12 @@ const page = () => {
                  description="At Saasverse Pvt Ltd, we specialize in delivering tailored Salesforce solutions that perfectly align with your unique business requirements."
                />
 
-                <SalesforceServiceReuseable
-      heading="Our Salesforce Integration Services"
-      benefits={benefits}
-    />
-
-   
-
-     <HealthSolution
-            title="Why Choose "
-            highlight="Salesforce Integration Services?"
-            description=""
-            image="/images/websiteimages/4.webp"
-            imageAlt="Salesforce Healthcare Cloud Solution"
-            solutions={[
-              {
-                title: 'Expand Your Market Reach:',
-                description:
-                  'Tap into the vast Salesforce ecosystem and reach a global audience of potential customers.',
-              },
-              {
-                title: 'Enhance Business Efficiency:',
-                description:
-                  'Create custom solutions tailored to your specific business needs, improving operational efficiency and productivity.',
-              },
-              {
-                title: 'Generate New Revenue Streams:',
-                description:
-                  'Monetize your applications by offering them on the Salesforce AppExchange, creating new revenue opportunities.',
-              },
-             
-            ]}
-          />
-
-<WhyChooseUs/>
+              <SalesforceIntegrationSections/>
           <CertificateSlider/>
 
           <OurPartners/>
 
-           <FaqReuseable title="FAQ" faqs={faqs} />
+           <FaqReuseable title="Salesforce Integration FAQs" faqs={faqs} />
              <CTASection/>
            <ContactForm/>
     </>

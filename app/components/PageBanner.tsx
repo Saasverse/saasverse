@@ -1,3 +1,4 @@
+
 import Image from "next/image";
 
 interface PageBannerProps {
@@ -28,12 +29,24 @@ export default function PageBanner({
           <div className="mx-auto max-w-4xl px-6 text-center text-white">
             <h1>{title}</h1>
 
-           <p className="mt-6 text-lg md:text-xl lg:text-xl text-white/90">
-  {description}
-</p>
+            <p className="mt-6 text-lg text-white/90 md:text-xl">
+              {description}
+            </p>
+
+            {/* Trust Line */}
+            <p className="mt-6 text-sm font-bold leading-7 tracking-wide text-white md:text-base">
+              Salesforce Partner
+              <span className="mx-2 text-white/70">|</span>
+              Navigator Expert
+              <span className="mx-2 text-white/70">|</span>
+              ISO 27001 Certified
+              <span className="mx-2 text-white/70">|</span>
+              Rated 5.0 on Clutch
+            </p>
           </div>
         </div>
       </div>
     </section>
   );
 }
+

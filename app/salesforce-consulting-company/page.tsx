@@ -8,95 +8,177 @@ import OurPartners from '../components/Home/OurPartners';
 import FaqReuseable from '../components/FaqReuseable';
 import ContactForm from '../components/ContactForm';
 import { Metadata } from 'next';
+import Link from 'next/link';
+import SalesforceConsultingSections from '../components/SalesforceConsultingSections';
 
 const faqs = [
   {
-    question: 'Why hire Salesforce Consultants?',
+    question: 'What does a Salesforce consulting company do?',
     answer:
-      'Hiring Salesforce Consultants will make sure that your Salesforce implementation is perfectly aligned with your business goals and delivers maximum ROI.',
-  },
-  {
-    question: 'Can you customize Salesforce to fit my business needs?',
-    answer:
-      'Absolutely. Our Consultants specialize in customizing Salesforce solutions – be it CRM, Marketing Cloud, Mobile App development, or CDP – to meet your specific business requirements.',
+      'A Salesforce consulting company reviews how you use Salesforce, plans what to change and designs the processes, data model and integrations behind it. Many consulting companies, including Saasverse, can also build what they recommend.',
   },
   {
     question:
-      'What is the typical engagement process with Saasverse Consultants?',
+      'What is the difference between Salesforce consulting and implementation?',
     answer:
-      'Our engagement process is client-centric, starting with understanding your business needs, followed by providing strategic Salesforce consultancy tailored to those needs. We work either on a project basis or time & material contracts.',
+      'Consulting is the advice and the plan: reviews, roadmaps, architecture and requirements. Implementation is the build: configuration, development, data migration, testing and go-live. You can hire us for one or both.',
   },
   {
-    question: 'How long does it take to hire Saasverse Consultants?',
+    question: 'Can you review our existing Salesforce org?',
     answer:
-      'Our efficient hiring process ensures that you can quickly onboard a skilled Salesforce Consultant, often within a few days to a few weeks, depending on your specific requirements.',
+      'Yes. We review your setup, data, automation, security and reports, and give you a written report with the fixes in order of priority.',
   },
   {
-    question: 'Can Saasverse provide ongoing support after implementation?',
+    question: 'What do we get at the end of a consulting engagement?',
     answer:
-      'Yes, we offer ongoing support and consultancy to ensure your Salesforce ecosystem continues to evolve with your business, delivering continual value.',
+      'Depending on the scope: an org health report, a roadmap, process maps, an architecture diagram, requirements and user stories, and a license recommendation. Your team keeps all of it.',
+  },
+  {
+    question: 'Do we have to use you to build what you recommend?',
+    answer:
+      'No. You get a written plan and requirements that your own team or another partner can build from. If you want us to build it, we can.',
   },
   {
     question:
-      'How do I get started with hiring Salesforce Consultants from Saasverse?',
+      'Can you help us choose the right Salesforce clouds and licenses?',
     answer:
-      'Starting is simple. Contact us, and we will guide you through our straightforward process to connect you with the ideal Salesforce consultant for your needs.',
+      'Yes. We look at how your teams work and recommend which clouds, editions and add-ons you need, and which you can skip.',
+  },
+  {
+    question:
+      'We still use Workflow Rules and Process Builder. What should we do?',
+    answer:
+      'Salesforce ended support for both on December 31, 2025, so they should be moved to Flow. We list every old automation in your org and plan the move in order of risk.',
+  },
+  {
+    question: 'Can you review a proposal from another Salesforce partner?',
+    answer:
+      'Yes. We review the scope, approach and effort, and tell you what is missing, unclear or overestimated before you sign.',
+  },
+  {
+    question: 'Do you offer ongoing Salesforce advice?',
+    answer:
+      'Yes. With ongoing advisory, you get a set number of consulting hours each month for design reviews, advice and new requests.',
+  },
+  {
+    question: 'How long does a Salesforce consulting engagement take?',
+    answer:
+      'It depends on what you need. A focused org review is shorter than a full roadmap across several teams and clouds. We give you a timeline in the written scope, before work starts.',
+  },
+  {
+    question: 'What does Salesforce consulting cost?',
+    answer:
+      'The cost depends on your requirements: the size of your org, the clouds involved, the number of teams and whether you need a one-time review or ongoing advice. We send the cost in writing after the discovery call.',
+  },
+  {
+    question: 'Will your consultants work in our time zone?',
+    answer:
+      'Our team is based in Jaipur, India, and works with clients in the US. Before work starts, we agree on overlapping hours, so we can join your meetings.',
   },
 ];
 
 const benefits = [
   {
-    title: 'Strategic Planning:',
+    title: 'Org Review',
     description:
-      'We begin by understanding your business goals and processes to create a strategic implementation plan that aligns with your objectives.',
+      'We go through your Salesforce org and list what works, what is broken and what is risky: unused fields, old automation, security gaps, slow pages and reports nobody trusts. You get a written report with the fixes in order of priority, so you know where to start.',
   },
   {
-    title: 'Custom Configuration:',
+    title: 'Roadmap and Priorities',
     description:
-      'Our team configures Salesforce to meet your specific requirements, ensuring a seamless integration with your existing systems.',
+      'We turn your business goals into a plan for the next 6 to 12 months: what to build first, what can wait and what to stop doing. Each item in the roadmap has an owner, an effort estimate and a reason it is there.',
   },
   {
-    title: 'Data Migration:',
+    title: 'Process Design',
     description:
-      'We ensure a smooth transition of your data to Salesforce, maintaining data integrity and security throughout the process.',
+      'We map how your sales, service or operations teams work today, step by step, and design how that work should run in Salesforce. We do this before anyone writes a line of code, so the build matches the way people work.',
   },
   {
-    title: 'Tailored Solutions:',
-    description:
-      'We customize Salesforce to fit your unique business processes, from custom objects and fields to workflow rules and validation.',
+    title: 'Solution Architecture',
+    description: (
+      <>
+        {' '}
+        We design the data model, the integrations and the security model, so
+        the setup still works as you add users, clouds and systems. For complex
+        orgs, you can also{' '}
+        <Link
+          href="/hire-salesforce-architect"
+          className="text-blue-600 hover:underline"
+        >
+          {' '}
+          hire a Salesforce architect{' '}
+        </Link>{' '}
+        to stay with your team.{' '}
+      </>
+    ),
   },
   {
-    title: 'App Development:',
+    title: 'Cloud and License Selection',
     description:
-      'Our developers create custom applications within Salesforce to enhance functionality and provide additional value to your operations.',
+      'We help you decide which Salesforce clouds, editions and add-ons you need, and which you don’t, based on how your teams work. This often saves money on licenses nobody uses.',
   },
   {
-    title: 'Integration Services:',
+    title: 'Requirements and Scope',
     description:
-      'We integrate Salesforce with other systems and platforms you use, ensuring a unified and efficient workflow.',
+      'We write the requirements and user stories for each change, with acceptance criteria, so your team, our team or another partner can build it without guesswork.',
   },
   {
-    title: 'Ongoing Support:',
+    title: 'Second Opinion on Proposals',
     description:
-      'Our support team is always available to help you with any issues, ensuring that your Salesforce environment runs smoothly.',
+      'Received a large proposal from another vendor? We review the scope, the approach and the effort before you sign, and tell you what is missing or overestimated.',
   },
   {
-    title: 'Regular Updates:',
+    title: 'Adoption Review',
     description:
-      'We keep your Salesforce system up to date with the latest features and security updates, maximizing its performance and reliability.',
-  },
-  {
-    title: 'User Training',
-    description:
-      'We provide comprehensive training to your team, empowering them to utilize Salesforce effectively and efficiently.',
+      'We talk to your users, find out where they work around Salesforce instead of in it, and recommend changes to page layouts, automation and reports to fix that.',
   },
 ];
+
+interface Deliverable {
+  title: string;
+  description: string;
+}
+const deliverables: Deliverable[] = [
+  {
+    title: 'Org Health Report',
+    description:
+      'A list of issues in your org, each with the risk it carries, the fix and the effort to fix it.',
+  },
+  {
+    title: 'Roadmap',
+    description:
+      'A prioritized plan for the next 6 to 12 months, with timelines and dependencies.',
+  },
+  {
+    title: 'Process Maps',
+    description:
+      'Diagrams of how each process works today and how it will work in Salesforce.',
+  },
+  {
+    title: 'Architecture Diagram',
+    description:
+      'The data model, integrations and security model on one page, for your team and any future partner.',
+  },
+  {
+    title: 'Requirements and User Stories',
+    description:
+      'Build-ready requirements with acceptance criteria for each change.',
+  },
+  {
+    title: 'License Recommendation',
+    description:
+      'Which clouds, editions and add-ons you need, and which you can drop or skip.',
+  },
+];
+
 export const metadata: Metadata = {
   title: 'Salesforce Consulting Company | Saasverse',
   description:
-    'Certified Salesforce consulting company delivering proven implementations for US, UAE & global clients from India. Get a free consultation today.',
+    'Salesforce consulting from a certified Salesforce Partner: org reviews, roadmaps, architecture and process design for US teams. Book a free consultation',
 
-    alternates: { canonical: 'https://www.saasverse.in/salesforce-consulting-company' },
+  alternates: {
+    canonical: 'https://www.saasverse.in/salesforce-consulting-company',
+  },
 };
 const page = () => {
   return (
@@ -104,40 +186,110 @@ const page = () => {
       <PageBanner
         image="/images/banner/banner002.webp"
         title="Salesforce Consulting Company"
-        description="At Saasverse Pvt Ltd, we are dedicated to helping your business unlock its full potential with our comprehensive Salesforce Consulting Services."
+        description="Certified Salesforce consultants who review your org, plan your roadmap and design processes that your team will use, before anything is built. "
       />
 
       <SalesforceServiceReuseable
-        heading="Our Salesforce Consulting Covers the following"
+        heading=" What Our Salesforce Consulting Covers"
+        subheading="Salesforce consulting is the work that happens before and around the build: finding out what is wrong, deciding what to change and designing how it should work. Our consultants cover eight areas."
         benefits={benefits}
       />
 
+      <section className="bg-white py-16 md:py-20">
+        {' '}
+        <div className="container mx-auto px-4">
+          {' '}
+          {/* Section Heading */}{' '}
+          <div className="mx-auto mb-12 max-w-3xl text-center">
+            {' '}
+            <h2 className="mb-5">
+              {' '}
+              What You Get from a Consulting Engagement{' '}
+            </h2>{' '}
+            <p className="leading-7 text-gray-600">
+              {' '}
+              Every engagement ends with documents your team keeps and can act
+              on, whether or not you work with us afterwards.{' '}
+            </p>{' '}
+          </div>{' '}
+          {/* Deliverables Grid */}{' '}
+          <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+            {' '}
+            {deliverables.map((item, index) => (
+              <div
+                key={item.title}
+                className="group rounded-xl border border-gray-200 bg-white p-6 transition-all duration-300 hover:-translate-y-1 hover:border-[#006b95] hover:shadow-lg"
+              >
+                {' '}
+                <div className="mb-5 flex h-11 w-11 items-center justify-center rounded-lg bg-[#eaf5f9] text-lg font-semibold text-[#006b95] transition-colors duration-300 group-hover:bg-[#006b95] group-hover:text-white">
+                  {' '}
+                  {String(index + 1).padStart(2, '0')}{' '}
+                </div>{' '}
+                <h3 className="mb-3 text-xl font-semibold text-gray-900">
+                  {' '}
+                  {item.title}{' '}
+                </h3>{' '}
+                <p className="leading-7 text-gray-600">
+                  {' '}
+                  {item.description}{' '}
+                </p>{' '}
+              </div>
+            ))}{' '}
+          </div>{' '}
+        </div>{' '}
+      </section>
+
+
+<SalesforceConsultingSections/>
       <HealthSolution
-        title="Why Choose Saasverse  "
-        highlight=" "
+        title="Why Choose Saasverse for "
+        highlight="Salesforce Consulting "
         description=""
         image="/images/websiteimages/4.webp"
         imageAlt="Salesforce Healthcare Cloud Solution"
         solutions={[
           {
-            title: 'Expertise and Experience:',
+            title: 'Salesforce Partner with Navigator Expert Status',
             description:
-              'Our team of certified Salesforce professionals brings extensive experience and deep expertise to every project.',
+              'Salesforce gives Navigator Expert status to partners based on certified experts, completed projects and customer feedback.',
           },
           {
-            title: 'Client-Centric Approach:',
+            title: '50+ Certified Salesforce Experts',
             description:
-              'We prioritize understanding your unique needs and delivering solutions that are tailored to your business.',
+              'Consultants, architects and developers work in the same team, so the advice we give is advice we know how to build.',
           },
           {
-            title: 'Commitment to Excellence:',
+            title: '120+ Projects for 40+ Clients',
             description:
-              'We are dedicated to providing exceptional service and ensuring that our clients achieve outstanding results with Salesforce.',
+              'We have delivered 120+ projects for 40+ clients across 19+ countries.',
           },
           {
-            title: 'Proven Track Record:',
+            title: 'US Time-Zone Overlap',
             description:
-              'Our successful track record speaks for itself, with numerous satisfied clients and successful Salesforce implementations across various industries.',
+              'Our team is based in Jaipur, India. We agree on overlapping working hours with your team, so we can join your meetings.',
+          },
+          {
+            title: 'Security and Confidentiality',
+            description:
+              'Saasverse is ISO 27001 and Cyber Essentials Plus certified. We sign an NDA before we access your org.',
+          },
+          {
+            title: 'Rated 5.0 on Clutch',
+            description: (
+              <>
+                {' '}
+                Read what clients say about working with us.{' '}
+                <a
+                  href="https://clutch.co/profile/saasverse-salesforce-consulting-partner"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-blue-600 hover:underline"
+                >
+                  {' '}
+                  Read our reviews{' '}
+                </a>{' '}
+              </>
+            ),
           },
         ]}
       />
@@ -146,7 +298,7 @@ const page = () => {
 
       <OurPartners />
 
-      <FaqReuseable title="FAQ" faqs={faqs} />
+      <FaqReuseable title="Salesforce Consulting FAQs" faqs={faqs} />
       <CTASection />
       <ContactForm />
     </>
