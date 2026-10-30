@@ -1,82 +1,85 @@
 import React from 'react'
 import PageBanner from '../components/PageBanner'
-import SalesforceServiceReuseable from '../components/SalesforceServiceReuseable';
+
 import CTASection from '../components/Home/CTASection';
-import HealthSolution from '../work-salesforce-health-cloud/HealthSolution';
+
 import CertificateSlider from '../components/Home/CertificateSlider';
 import OurPartners from '../components/Home/OurPartners';
 import FaqReuseable from '../components/FaqReuseable';
 import ContactForm from '../components/ContactForm';
 import WhyChooseUs from '../about/WhyChooseUs';
 import { Metadata } from 'next';
+import SalesforceQATesterSections from '../components/SalesforceQATesterSections';
 
 
 const faqs = [
   {
-    question: 'Why hire Salesforce Consultants?',
+    question: "What does a Salesforce QA tester do?",
     answer:
-      'Hiring Salesforce Consultants will make sure that your Salesforce implementation is perfectly aligned with your business goals and delivers maximum ROI.',
+      "A Salesforce QA tester writes test cases, tests new features in a sandbox, runs regression tests before each release, automates repeat tests and helps your users with user acceptance testing. The goal is to catch problems before your users do.",
   },
   {
-    question: 'Can you customize Salesforce to fit my business needs?',
+    question: "Is a Salesforce QA tester the same as a quality analyst?",
     answer:
-      'Absolutely. Our Consultants specialize in customizing Salesforce solutions – be it CRM, Marketing Cloud, Mobile App development, or CDP – to meet your specific business requirements.',
+      "Yes. Companies use both names for the same role. Some also say QA engineer or test analyst. The work is the same: making sure each change works before it goes live.",
   },
   {
-    question: 'What is the typical engagement process with Saasverse Consultants?',
+    question: "Do your testers do manual or automated testing?",
     answer:
-      'Our engagement process is client-centric, starting with understanding your business needs, followed by providing strategic Salesforce consultancy tailored to those needs. We work either on a project basis or time & material contracts.',
+      "Both. New features usually need manual testing first. Tests you repeat every release, like regression tests, can be automated so they run faster and the same way each time.",
   },
   {
-    question: 'How long does it take to hire Saasverse Consultants?',
+    question: "Why do I need a tester if my developers already write Apex tests?",
     answer:
-      'Our efficient hiring process ensures that you can quickly onboard a skilled Salesforce Consultant, often within a few days to a few weeks, depending on your specific requirements.',
+      "Salesforce needs 75% Apex test coverage before code can be deployed, but those tests only check the code. A QA tester checks the whole change the way a user sees it: flows, page layouts, permissions, reports and integrations.",
   },
   {
-    question: 'Can Saasverse provide ongoing support after implementation?',
+    question: "Can a QA tester help with Salesforce's seasonal releases?",
     answer:
-      'Yes, we offer ongoing support and consultancy to ensure your Salesforce ecosystem continues to evolve with your business, delivering continual value.',
+      "Yes. Salesforce updates every org three times a year. Your tester can run your regression tests in a preview sandbox before the update reaches production, so you see any problems early.",
   },
   {
-    question:
-      'How do I get started with hiring Salesforce Consultants from Saasverse?',
+    question: "How quickly can a QA tester start?",
     answer:
-      'Starting is simple. Contact us, and we will guide you through our straightforward process to connect you with the ideal Salesforce consultant for your needs.',
+      "Many engagements start within a few days. A tester with a specific cloud or tool background can take a few weeks. We give you a start date when we send profiles.",
+  },
+  {
+    question: "Can I interview the QA tester before hiring?",
+    answer:
+      "Yes. You talk to the testers we suggest and decide who joins your team.",
+  },
+  {
+    question: "Which hiring model should I choose?",
+    answer:
+      "Hourly works for testing a single release or a data migration. A part-time tester works if you release every few weeks. A full-time tester works for a new rollout or a team that releases often.",
+  },
+  {
+    question: "Can your tester work with our in-house team or another partner?",
+    answer:
+      "Yes. Many clients use our testers alongside their own developers, or to test work delivered by another Salesforce partner.",
+  },
+  {
+    question: "What does it cost to hire a Salesforce QA tester?",
+    answer:
+      "The cost depends on your requirements: the hiring model, the hours, how often you release and how much testing you want automated. We send you the cost in writing before anyone starts.",
+  },
+  {
+    question: "Will the QA tester work in my time zone?",
+    answer:
+      "Our team is based in Jaipur, India, and works with clients in the US. Before work starts, we agree on overlapping hours, so your tester can join your stand-ups and release calls.",
+  },
+  {
+    question: "Is my data safe with a hired QA tester?",
+    answer:
+      "We sign an NDA before we access your org. Saasverse is ISO 27001 and Cyber Essentials Plus certified. Your tester works in your sandboxes, and you decide what access they get.",
   },
 ];
 
-const benefits = [
-  {
-    title: "Salesforce Expertise & Testing Prowess:",
-    description:
-      "Our QAs are Salesforce Certified professionals with a keen eye for detail and a mastery of testing methodologies. They ensure your Salesforce solution functions flawlessly and meets all your requirements.",
-  },
-  {
-    title: "Functional & Technical Testing Masters:",
-    description:
-      "They excel at conducting both functional testing (verifying features work as intended) and technical testing (ensuring performance, security, and compatibility).",
-  },
-  {
-    title: "Automation Champions:",
-    description:
-      "Our QAs leverage automation tools to streamline the testing process, improve efficiency, and minimize human error.",
-  },
-  {
-    title: "Risk Management & Mitigation Focus:",
-    description:
-      "Our QAs proactively identify potential risks associated with functionality, security, or performance and recommend effective mitigation strategies.",
-  },
-  {
-    title: "Collaboration Champions:",
-    description:
-      "They collaborate effectively with developers, business analysts, and other stakeholders to ensure a smooth and successful project outcome.",
-  },
-];
 
 export const metadata: Metadata = {
   title: "Hire Salesforce QA Testers in India | Saasverse",
   description:
-    "Hire dedicated Salesforce QA testers in India for functional & technical testing. Flexible hourly or full-time hire, US/UAE time-zone overlap. Free quote.",
+    "Hire Salesforce QA testers in India for manual and automated testing, regression and user acceptance testing. Hourly, part-time or full-time.",
 
     alternates: { canonical: 'https://www.saasverse.in/hire-salesforce-expert' },
   };
@@ -86,49 +89,11 @@ const page = () => {
     <>
        <PageBanner
                  image="/images/banner/hirebanner.webp"
-                 title="Hire Salesforce Quality Analyst"
-                 description="Ensure Flawless Execution: Hire Top-Tier Salesforce Quality Analysts at Saasverse Pvt Ltd"
+                 title="Hire Salesforce QA Testers in India”"
+                 description="Salesforce QA testers who find the bugs in your org before your users do."
                />
 
-                <SalesforceServiceReuseable
-      heading="Why Hire a Salesforce Quality Analyst from Saasverse?"
-      benefits={benefits}
-    />
-
-    
-
-     <HealthSolution
-            title="Benefits of Hiring a Saasverse"
-            highlight="Salesforce Quality Analyst"
-            description=""
-            image="/images/websiteimages/4.webp"
-            imageAlt="Salesforce Healthcare Cloud Solution"
-            solutions={[
-               {
-    title: 'Reduced Costs',
-    description:
-      'Early detection and correction of defects minimizes rework and reduces the cost of fixing issues later in the development lifecycle.',
-  },
-  {
-    title: 'Enhanced User Experience',
-    description:
-      'Rigorous testing ensures a bug-free and user-friendly Salesforce environment, leading to higher user satisfaction and adoption.',
-  },
-  {
-    title: 'Improved System Performance',
-    description:
-      'Our QAs identify and address performance bottlenecks, ensuring your Salesforce platform functions optimally.',
-  },
-  {
-    title: 'Peace of Mind',
-    description:
-      'With a dedicated QA professional on board, you gain peace of mind knowing your Salesforce project is in expert hands.',
-  },
-             
-            ]}
-          />
-
-<WhyChooseUs/>
+              <SalesforceQATesterSections/>
           <CertificateSlider/>
 
           <OurPartners/>

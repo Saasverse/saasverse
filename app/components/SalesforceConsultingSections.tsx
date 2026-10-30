@@ -483,10 +483,7 @@ function ConsultingComparison() {
           ))}
         </div>
 
-        <p className="mx-auto mt-8 max-w-3xl text-center leading-7 text-gray-600">
-          The contract can be a fixed-scope project or time and materials,
-          whichever suits the work.
-        </p>
+       
 
         <div className="mt-8 text-center">
           <Link

@@ -3,115 +3,83 @@ import PageBanner from '../components/PageBanner';
 import HealthClient from '../work-salesforce-health-cloud/HealthClient';
 import { FaArrowRight } from "react-icons/fa";
 import FaqReuseable from '../components/FaqReuseable';
-import StickyServices from '../components/StickyServices';
-import WhyChoose from '../components/WhyChoose';
+
 import { Metadata } from 'next';
 import CTASection from '../components/Home/CTASection';
 import Link from 'next/link';
+import DotNetDevelopmentSections from '../components/DotNetDevelopmentSections';
+
 
 const faqs = [
   {
-    question: 'How does a .NET application work?',
+    question: "What is .NET used for?",
     answer:
-      'Native desktop, web, and mobile applications can be made for any operating system using the open-source .NET framework. The tools, libraries, and languages that comprise the .NET system facilitate the development of high-performance, scalable, and modern software.',
+      ".NET is Microsoft's platform for building web apps, APIs, cloud services, desktop apps and mobile apps, mostly in C#. Modern .NET is open source and runs on Windows, Linux and macOS.",
   },
   {
-    question: 'What is .NET migration?',
+    question: "What is the difference between .NET Framework and .NET?",
     answer:
-      'Our area of expertise in .NET migration services is rebuilding or reorganizing legacy systems into scalable, high-performance .NET Core applications without interfering with ongoing business operations.',
+      ".NET Framework is the older, Windows-only version, now in maintenance. Modern .NET (from .NET 5 onward, now .NET 10) is cross-platform, faster and gets all new features. New apps should be built on modern .NET.",
   },
   {
-    question: 'Why is .NET preferred for enterprise applications?',
+    question: "When does support end for .NET 8 and .NET 9?",
     answer:
-      '.NET is considered as best for enterprise applications due to its exceptional performance, scalability, and security. It supports multiple languages, easily connects to legacy systems, and operates flawlessly on desktop, mobile, and online platforms.',
+      "Microsoft ends support for both on November 10, 2026. After that, they no longer get security patches. .NET 10 is supported until November 14, 2028.",
   },
   {
-    question: 'What are the security features of .NET?',
+    question: "How do you upgrade an older .NET application?",
     answer:
-      '.NET comes with built-in security features like code access security, role-based restrictions, and data encryption. Together with our secure coding methods, you get a strong application that protects against vulnerabilities and attacks.',
+      "We review the code and its dependencies, plan the upgrade path, and move the app to .NET 10 step by step. For large apps, we upgrade one part at a time so the business keeps running.",
   },
   {
-    question:
-      'Is .NET a suitable framework for creating cloud-based applications?  ',
+    question: "Can you take over a .NET app another team built?",
     answer:
-      '.NET Core is compatible with popular cloud platforms like Google Cloud, AWS, and Azure. We can assist you with private, public, or hybrid cloud deployments.',
+      "Yes. We review the code, document how it works, list what is risky or out of date, and then take over support and new work.",
+  },
+  {
+    question: "Do you build .NET apps for Azure and AWS?",
+    answer:
+      "Yes. We build and host .NET apps on both, and we can move existing apps from your own servers to either one.",
+  },
+  {
+    question: "Can you connect our .NET app to Salesforce?",
+    answer:
+      "Yes. We're also a Salesforce partner, so we can build the connection between your .NET app and Salesforce and support both sides.",
+  },
+  {
+    question: "Can I hire a dedicated .NET developer?",
+    answer:
+      "Yes. You can add a .NET developer to your team by the hour, part time or full time. You interview the developer before they join.",
+  },
+  {
+    question: "How do you keep .NET applications secure?",
+    answer:
+      "We follow secure coding practices, keep libraries and the .NET runtime patched, use role-based access, and never store secrets in the code. We sign an NDA before we access your systems.",
+  },
+  {
+    question: "How long does a .NET project take?",
+    answer:
+      "It depends on the size of the app and the work involved. You'll get a timeline in the written scope before any work starts.",
+  },
+  {
+    question: "What does .NET development cost?",
+    answer:
+      "The cost depends on your requirements: what needs to be built or upgraded, the size of the code, the integrations and the hosting setup. We send you the cost in writing after the discovery call.",
+  },
+  {
+    question: "Do you provide support after launch?",
+    answer:
+      "Yes. Support is available 24/7. Raise a ticket in our ticket portal or send us an email, and you'll get a reply within 24 hours.",
   },
 ];
 
-const wordpressServices = [
-  {
-    title: 'Custom .NET Web Application Development ',
-    description:
-      'Hire .NET developers to create practical, safe web apps that are customized for your company. From simple websites to intricate enterprise-grade solutions spanning several domains, our developers are adept at creating anything.',
-  },
-  {
-    title: '.NET Desktop Application Development ',
-    description:
-      'Create feature-rich desktop applications for Windows platforms with Dot NET. Our team provides reliable, quick, and responsive solutions that are customized to your workflows, ranging from GUI-based tools to intelligent client applications.',
-  },
-  {
-    title: 'RESTful Web API Development',
-    description:
-      'Using C# and VB.NET, we create and implement scalable APIs that facilitate third-party integration and modular service connectivity. Performance, security, and adaptable website design are given top priority when hiring ASP.NET developers.',
-  },
-  {
-    title: 'Cloud-Based .NET Applications ',
-    description:
-      'In order to give ASP.NET programmers easy performance, quick deployments, and improved availability, we create scalable .NET applications with secure cloud-native design that integrate with leading cloud providers like Azure, AWS, and GCP.',
-  },
-  {
-    title: 'Legacy .NET Modernization ',
-    description:
-      'Update out-of-date apps to the newest .NET frameworks to transform them. Our developers make sure that changes go smoothly without interfering with your core business modernized architecture and speed improvements.',
-  },
-  {
-    title: 'Ongoing .NET Support and Maintenance ',
-    description:
-      'With proactive maintenance, frequent updates, improved security, and plugin troubleshooting. Hire the.NET developers from Saasverse in India to make sure your app functions at its best, reducing downtime and increasing user satisfaction.',
-  },
-];
 
-const whyChooseHeading = '.NET Technologies and Frameworks We Use ';
 
-const whyChooseDescription = '';
-
-const features = [
-  {
-    title: 'ASP.NET Core ',
-    description:
-      'Build high-performance, cross-platform web applications that scale effortlessly.',
-  },
-  {
-    title: 'ADO.NET',
-    description:
-      'Efficiently access and manage data from diverse sources using robust .NET libraries.',
-  },
-  {
-    title: 'SignalR',
-    description:
-      'Enable real-time web functionality for responsive and interactive user experiences.',
-  },
-  {
-    title: 'Blazor',
-    description:
-      'Develop interactive web UIs using C# instead of JavaScript for seamless client-server integration.',
-  },
-  {
-    title: 'Hangfire',
-    description:
-      'Reliably manage background jobs, scheduled tasks, and delayed processing.',
-  },
-  {
-    title: 'Entity Framework Core ',
-    description:
-      'Simplify data access with a powerful object-relational mapper for .NET applications.',
-  },
-];
 
 export const metadata: Metadata = {
   title: ".NET Development Services for Web & Cloud Apps | Saasverse ",
   description:
-    "Custom .NET development services for web, cloud and desktop apps. Hire dedicated ASP.NET Core developers or modernize legacy .NET systems. Get a free quote. ",
+    "Custom .NET development: ASP.NET Core web apps, APIs, cloud apps on Azure and AWS, and upgrades from older .NET versions. Book a free consultation.",
     alternates: { canonical: 'https://www.saasverse.in/dotnet-development-services' },
 
   };
@@ -121,24 +89,11 @@ const page = () => {
       <PageBanner
         image="/images/banner/shopify2.jpg"
         title="
-Custom .NET Development Services "
-        description="The Solutions of Enterprise-Level are designed through Dot Net for Scale, Security, and Performance"
+Custom .NET Development Services"
+        description="We build new .NET applications and upgrade older ones to .NET 10."
       />
 
-      <StickyServices
-        heading="Our .NET Development Services "
-        paragraphs={[
-          'You can hire the best .NET developers for your business with our affordable staff augmentation services.',
-        ]}
-        services={wordpressServices}
-      />
-
-      <WhyChoose
-        heading={whyChooseHeading}
-        description={whyChooseDescription}
-        features={features}
-      />
-
+      <DotNetDevelopmentSections />
       <HealthClient
         title="Trusted by Global Enterprises  "
         highlight=""

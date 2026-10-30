@@ -9,121 +9,98 @@ import FaqReuseable from '../components/FaqReuseable';
 import ContactForm from '../components/ContactForm';
 import WhyChooseUs from '../about/WhyChooseUs';
 import { Metadata } from 'next';
+import SalesCloudImplementationSections from '../components/SalesCloudImplementationSections';
 
 const faqs = [
   {
-    question: 'Why hire Salesforce Consultants?',
+    question: 'What does a Sales Cloud consultant do?',
     answer:
-      'Hiring Salesforce Consultants will make sure that your Salesforce implementation is perfectly aligned with your business goals and delivers maximum ROI.',
+      'A Sales Cloud consultant maps how your team sells and sets up Salesforce to match: lead routing, pipeline stages, forecasting, quotes, automation and reports. They also plan the data move and the connections to your other tools.',
   },
   {
-    question: 'Can you customize Salesforce to fit my business needs?',
+    question: 'How long does a Sales Cloud implementation take?',
     answer:
-      'Absolutely. Our Consultants specialize in customizing Salesforce solutions – be it CRM, Marketing Cloud, Mobile App development, or CDP – to meet your specific business requirements.',
+      "It depends on the number of users, how complex your sales process is and how much data you're moving. You'll get a timeline in the written scope before any work starts.",
   },
   {
     question:
-      'What is the typical engagement process with Saasverse Consultants?',
+      'Can you move our data from HubSpot, spreadsheets or another CRM?',
     answer:
-      'Our engagement process is client-centric, starting with understanding your business needs, followed by providing strategic Salesforce consultancy tailored to those needs. We work either on a project basis or time & material contracts.',
+      'Yes. We move your accounts, contacts, open deals and history, remove duplicates and check the record counts after each load.',
   },
   {
-    question: 'How long does it take to hire Saasverse Consultants?',
+    question: 'Can you fix our existing Sales Cloud setup?',
     answer:
-      'Our efficient hiring process ensures that you can quickly onboard a skilled Salesforce Consultant, often within a few days to a few weeks, depending on your specific requirements.',
+      "Yes. We review your current setup, keep what works, fix what's broken and remove what nobody uses.",
   },
   {
-    question: 'Can Saasverse provide ongoing support after implementation?',
+    question: 'Do we need Salesforce CPQ?',
     answer:
-      'Yes, we offer ongoing support and consultancy to ensure your Salesforce ecosystem continues to evolve with your business, delivering continual value.',
+      'Not always. Standard quotes and price books work well for simple pricing. CPQ helps when you have complex pricing rules, bundles, discount approvals or many product options.',
+  },
+  {
+    question: 'Can Sales Cloud connect to Outlook or Gmail?',
+    answer:
+      'Yes. We connect Sales Cloud to Outlook or Gmail, so reps can log emails and meetings to Salesforce without leaving their inbox.',
+  },
+  {
+    question: 'Can Sales Cloud connect to our ERP or billing system?',
+    answer:
+      'Yes. We connect Sales Cloud to your ERP or billing system, so orders, invoices and payment status show up on the account in Salesforce.',
+  },
+  {
+    question: 'How do you get reps to actually use Sales Cloud?',
+    answer:
+      'We keep the setup simple, show reps only what they need, log activity automatically and set up the mobile app. After launch, we check usage and fix what slows people down.',
   },
   {
     question:
-      'How do I get started with hiring Salesforce Consultants from Saasverse?',
+      'We still use Workflow Rules and Process Builder. What should we do?',
     answer:
-      'Starting is simple. Contact us, and we will guide you through our straightforward process to connect you with the ideal Salesforce consultant for your needs.',
-  },
-];
-
-const benefits = [
-  {
-    title: 'Real-time Insights:',
-    description:
-      'Gain instant visibility into crucial sales metrics such as lead conversion rates, pipeline status, and revenue forecasts.',
+      'Salesforce ended support for both on December 31, 2025, so they should be moved to Flow. We list every old automation in your org and move it in order of risk.',
   },
   {
-    title: 'Customizable Reporting:',
-    description:
-      'Create personalized reports that align with your business objectives, enabling you to track performance metrics and make data-driven decisions.',
+    question: 'What does Sales Cloud implementation cost?',
+    answer:
+      'The cost depends on your requirements: the number of users, how complex your sales process is, the data to move and the integrations. We send you the cost in writing after the discovery call.',
   },
   {
-    title: 'Automated Efficiency:',
-    description:
-      'Implement automated workflows to streamline repetitive tasks, reduce manual effort, and empower your team to focus on strategic initiatives.',
+    question: 'Do you provide support after launch?',
+    answer:
+      "Yes. Support is available 24/7. Raise a ticket in our ticket portal or send us an email, and you'll get a reply within 24 hours.",
+  },
+  {
+    question: 'Will your team work in our time zone?',
+    answer:
+      'Our team is based in Jaipur, India, and works with clients in the US. Before work starts, we agree on overlapping hours, so we can join your meetings.',
   },
 ];
 
 export const metadata: Metadata = {
-  title: "Salesforce Sales Cloud Implementation | Saasverse",
+  title: 'Salesforce Sales Cloud Implementation | Saasverse',
   description:
-    "Certified Salesforce Sales Cloud consultants: implementation, customization & support for India, US & UAE teams. Get a free consultation.",
+    'Salesforce Sales Cloud implementation: lead routing, pipeline stages, forecasting, quotes and reports set up for your sales team. Book a free consultation.',
 
   alternates: { canonical: 'https://www.saasverse.in/salesforce-sales-cloud' },
-  };
+};
 
 const page = () => {
   return (
     <>
       <PageBanner
         image="/images/banner/expbanner.webp"
-        title="Salesforce Sales Cloud Consulting Service"
-        description="Elevate Your Sales Process Monitoring with Saasverse Pvt Limited"
+        title="Salesforce Sales Cloud Implementation and Consulting"
+        description="We set up Sales Cloud around how your team actually sells."
       />
 
-      <SalesforceServiceReuseable
-        heading="Why Monitor Your Sales Process?"
-        benefits={benefits}
-      />
+      <SalesCloudImplementationSections />
 
-    
-
-      <HealthSolution
-        title="Why Partner with ?"
-        highlight="Saasverse"
-        description=""
-        image="/images/websiteimages/4.webp"
-        imageAlt="Salesforce Healthcare Cloud Solution"
-        solutions={[
-         {
-  title: 'Experienced Professionals',
-  description:
-    'Our team of certified Salesforce experts has extensive experience in managing and optimizing Salesforce environments.',
-},
-{
-  title: 'Client-Focused Approach',
-  description:
-    'We work closely with you to understand your specific needs and deliver personalized solutions that drive results.',
-},
-{
-  title: 'Commitment to Excellence',
-  description:
-    'We are dedicated to providing high-quality services that exceed your expectations and support your business goals.',
-},
-{
-  title: 'Proven Results',
-  description:
-    'Our track record of successful Salesforce management and satisfied clients across various industries speaks to our capability and reliability.',
-},
-        ]}
-      />
-
-      <WhyChooseUs />
       <CertificateSlider />
 
       <OurPartners />
 
-      <FaqReuseable title="FAQ" faqs={faqs} />
-          <CTASection />
+      <FaqReuseable title="Salesforce Sales Cloud FAQs" faqs={faqs} />
+      <CTASection />
       <ContactForm />
     </>
   );

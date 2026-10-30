@@ -9,64 +9,77 @@ import FaqReuseable from '../components/FaqReuseable';
 import ContactForm from '../components/ContactForm';
 import WhyChooseUs from '../about/WhyChooseUs';
 import { Metadata } from 'next';
+import MarketingCloudSection from '../components/MarketingCloudSection';
 
 const faqs = [
   {
-    question: 'Why hire Salesforce Consultants?',
+    question: "What does a Marketing Cloud consultant do?",
     answer:
-      'Hiring Salesforce Consultants will make sure that your Salesforce implementation is perfectly aligned with your business goals and delivers maximum ROI.',
+      "A Marketing Cloud consultant sets up your account, data, sending domains, templates and journeys, and helps your team run campaigns that reach the right people at the right time.",
   },
   {
-    question: 'Can you customize Salesforce to fit my business needs?',
+    question: "What is the difference between Marketing Cloud Engagement and Account Engagement?",
     answer:
-      'Absolutely. Our Consultants specialize in customizing Salesforce solutions – be it CRM, Marketing Cloud, Mobile App development, or CDP – to meet your specific business requirements.',
+      "Marketing Cloud Engagement is built for B2C brands that send a lot of email, SMS and mobile messages. Account Engagement, formerly called Pardot, is built for B2B companies that need lead scoring and nurture emails tied closely to Sales Cloud.",
   },
   {
-    question:
-      'What is the typical engagement process with Saasverse Consultants?',
+    question: "Is Pardot still available?",
     answer:
-      'Our engagement process is client-centric, starting with understanding your business needs, followed by providing strategic Salesforce consultancy tailored to those needs. We work either on a project basis or time & material contracts.',
+      "Yes, under a new name. Salesforce renamed Pardot to Account Engagement. It's the same product for B2B marketing.",
   },
   {
-    question: 'How long does it take to hire Saasverse Consultants?',
+    question: "Can you connect Marketing Cloud to Sales Cloud?",
     answer:
-      'Our efficient hiring process ensures that you can quickly onboard a skilled Salesforce Consultant, often within a few days to a few weeks, depending on your specific requirements.',
+      "Yes. We connect the two, so contacts, unsubscribes and lead status stay in sync, and sales can see which emails a lead engaged with.",
   },
   {
-    question: 'Can Saasverse provide ongoing support after implementation?',
+    question: "Why are our emails going to spam?",
     answer:
-      'Yes, we offer ongoing support and consultancy to ensure your Salesforce ecosystem continues to evolve with your business, delivering continual value.',
+      "The most common causes are a sending domain that isn't set up with SPF, DKIM and DMARC, old or bought lists, and sending too much to people who never open. We check all three and fix them.",
   },
   {
-    question:
-      'How do I get started with hiring Salesforce Consultants from Saasverse?',
+    question: "Can you fix our existing Marketing Cloud setup?",
     answer:
-      'Starting is simple. Contact us, and we will guide you through our straightforward process to connect you with the ideal Salesforce consultant for your needs.',
+      "Yes. We review your data, journeys and templates, keep what works, fix what's broken and turn off what nobody uses.",
+  },
+  {
+    question: "Can you build and send our campaigns for us?",
+    answer:
+      "Yes. If you don't have a Marketing Cloud specialist in-house, we can build and send campaigns, update journeys and keep your data clean every month.",
+  },
+  {
+    question: "Do we need Data 360?",
+    answer:
+      "Not always. Data 360, formerly called Data Cloud, helps when you need one customer profile built from many sources. Many teams get good results with Marketing Cloud and Sales Cloud data alone. We'll tell you if you need it before you buy.",
+  },
+  {
+    question: "How long does a Marketing Cloud setup take?",
+    answer:
+      "It depends on the product, the channels and how much data needs to connect. You'll get a timeline in the written scope before any work starts.",
+  },
+  {
+    question: "What does Marketing Cloud consulting cost?",
+    answer:
+      "The cost depends on your requirements: the product, the channels, the number of journeys and templates, and the data connections. We send you the cost in writing after the discovery call.",
+  },
+  {
+    question: "Do you provide support after launch?",
+    answer:
+      "Yes. Support is available 24/7. Raise a ticket in our ticket portal or send us an email, and you'll get a reply within 24 hours.",
+  },
+  {
+    question: "Is our customer data safe with you?",
+    answer:
+      "We sign an NDA before we access your data. Saasverse is ISO 27001 and Cyber Essentials Plus certified, and you decide which systems and data our team can see.",
   },
 ];
 
-const benefits = [
- {
-  title: 'Craft Laser-Targeted Campaigns',
-  description:
-    'Design personalized journeys that resonate with each customer across every touchpoint, including email, social media, mobile, and more.',
-},
-{
-  title: 'Turn Prospects into Loyal Fans',
-  description:
-    'Go beyond basic marketing with data-driven insights that foster deeper customer engagement, satisfaction, and long-term loyalty.',
-},
-{
-  title: 'See Real Results, Fast',
-  description:
-    'Track key performance metrics and optimize campaigns in real-time to maximize marketing effectiveness and return on investment (ROI).',
-},
-];
+
 
 export const metadata: Metadata = {
   title: "Salesforce Marketing Cloud Consulting | Saasverse",
   description:
-    "Certified Salesforce Marketing Cloud consultants delivering strategy, implementation & campaign optimization for India, US & UAE brands. Free consultation.",
+    "Salesforce Marketing Cloud consulting: journeys, email, SMS, Account Engagement and reports, set up and run for your marketing team. Book a free consultation.",
   alternates: { canonical: 'https://www.saasverse.in/salesforce-marketing-cloud' },
 
   };
@@ -77,52 +90,15 @@ const page = () => {
       <PageBanner
         image="/images/banner/expbanner.webp"
         title="Salesforce Marketing Cloud Consulting"
-        description="Stop Wasting Marketing Efforts. Ignite Growth with Saasverse Pvt Ltd's Marketing Cloud Expertise."
+        description="We set up Marketing Cloud and help your team send the right message to the right customer."
       />
 
-      <SalesforceServiceReuseable
-        heading="Saasverse Pvt Ltd unlocks the true potential of Marketing Cloud, empowering you to"
-        benefits={benefits}
-      />
-
-     
-
-      <HealthSolution
-        title="Why Partner with "
-        highlight="Saasverse?"
-        description=""
-        image="/images/websiteimages/21.jpg"
-        imageAlt="Salesforce Healthcare Cloud Solution"
-        solutions={[
-         {
-  title: "We're Marketing Cloud Wizards",
-  description:
-    "Our certified experts have a proven track record of success, ensuring you leverage Salesforce Marketing Cloud to its fullest potential.",
-},
-{
-  title: 'Data Is Our Superpower',
-  description:
-    "We don't just send emails; we use data-driven insights to understand your audience and create hyper-personalized experiences that drive conversions.",
-},
-{
-  title: 'Your Partner Every Step of the Way',
-  description:
-    'From developing the right strategy to ongoing optimization, we provide continuous guidance and support to help your marketing efforts succeed.',
-},
-{
-  title: 'Proven Results',
-  description:
-    'Our track record of successful Salesforce implementations and satisfied clients across various industries demonstrates our expertise, reliability, and commitment to delivering measurable results.',
-},
-        ]}
-      />
-
-      <WhyChooseUs />
+      <MarketingCloudSection />
       <CertificateSlider />
 
       <OurPartners />
 
-      <FaqReuseable title="FAQ" faqs={faqs} />
+      <FaqReuseable title="Salesforce Marketing Cloud FAQs" faqs={faqs} />
          <CTASection />
       <ContactForm />
     </>
