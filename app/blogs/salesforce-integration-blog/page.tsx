@@ -496,7 +496,7 @@ export default function Page() {
             Salesforce integration means connecting Salesforce to your other systems, such as your ERP, website, marketing tools or data warehouse, so data moves between them automatically. To do it well, decide which system owns each piece of data, pick the right pattern (real-time or batch), choose a tool that fits the number of systems you connect, and plan for API limits, security and errors before anyone writes code.
           </p>
           <p>
-            That’s the short answer. Below, we walk through each of those decisions the way we’d talk them through with a client on a first call, whether your team is in Boston, Austin or Bangalore.
+            That’s the short answer. Below, we walk through each of those decisions the way we’d talk them through with a client on a first call, wherever your team is based.
           </p>
 
           <ul className="hsc-stats">
@@ -540,7 +540,7 @@ export default function Page() {
               Because AI can only use the data it can reach. If a customer asks an AI agent “where’s my order?” and the order sits in NetSuite or SAP, the agent can’t answer unless Salesforce can see that system.
             </p>
             <p>
-              <a href="https://www.mulesoft.com/" rel="nofollow noopener" target="_blank">
+              <a href="https://www.mulesoft.com/lp/reports/connectivity-benchmark" rel="nofollow noopener" target="_blank">
                 MuleSoft’s research with more than 11,000 IT leaders
               </a>{" "}
               found that 95% report integration as a hurdle to implementing AI effectively, and 66% still don’t provide an integrated experience across channels.
@@ -719,10 +719,10 @@ export default function Page() {
           <section id="why-saasverse">
             <h2>Why Choose Saasverse for Salesforce Integration?</h2>
             <p>
-              Saasverse is a Salesforce Partner with Navigator Expert status and a 50+ person certified team in Jaipur and Boston.
+              Saasverse is a Salesforce Partner with Navigator Expert status and a 50+ certified Salesforce experts based in Jaipur, India.
             </p>
             <ul className="hsc-plainList">
-              <li><strong>120+ projects for 41 clients in 19 countries.</strong></li>
+              <li><strong>120+ projects for 40+ clients in 19+ countries.</strong></li>
               <li><strong>A Boston office and US-hours overlap</strong>, so your consultant joins your stand-ups.</li>
               <li><strong>One team for design, build and support</strong>, so the people who build your integration also help run it.</li>
               <li><strong>Integration options matched to your setup:</strong> APIs, MuleSoft or ready-made connectors.</li>
