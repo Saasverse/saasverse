@@ -434,10 +434,10 @@ function BoldList({
 }) {
   const Tag = ordered ? "ol" : "ul";
   return (
-    <Tag className="hsc-plainList">
+    <Tag className="hsc-plainList list-disc pl-6">
       {items.map(([k, v]) => (
         <li key={k}>
-          <strong>{k}</strong> {v}
+         {k}{v}
         </li>
       ))}
     </Tag>
@@ -713,7 +713,7 @@ export default function Page() {
             <p>
               The biggest mistakes are skipping data ownership, testing with clean sample data, and having nobody responsible after go-live.
             </p>
-            <BoldList items={mistakes} ordered />
+            <BoldList  items={mistakes} ordered />
           </section>
 
           <section id="why-saasverse">
@@ -721,13 +721,13 @@ export default function Page() {
             <p>
               Saasverse is a Salesforce Partner with Navigator Expert status and 50+ certified Salesforce experts based in Jaipur, India.
             </p>
-            <ul className="hsc-plainList">
-              <li><strong>120+ projects for 40+ clients in 19+ countries.</strong></li>
-              <li><strong>US time-zone overlap,</strong>, so your consultant joins your stand-ups.</li>
-              <li><strong>One team for design, build and support</strong>, so the people who build your integration also help run it.</li>
-              <li><strong>Integration options matched to your setup:</strong> APIs, MuleSoft or ready-made connectors.</li>
-              <li><strong>ISO 27001 and Cyber Essentials Plus certified.</strong> We sign an NDA before we see your org.</li>
-              <li><strong>Rated 5.0 on Clutch.</strong></li>
+            <ul className="hsc-plainList list-disc pl-6">
+              <li>120+ projects for 40+ clients in 19+ countries.</li>
+              <li>US time-zone overlap, so your consultant joins your stand-ups.</li>
+              <li>One team for design, build and support, so the people who build your integration also help run it.</li>
+              <li>Integration options matched to your setup: APIs, MuleSoft or ready-made connectors.</li>
+              <li>ISO 27001 and Cyber Essentials Plus certified. We sign an NDA before we see your org.</li>
+              <li>Rated 5.0 on Clutch.</li>
             </ul>
           </section>
 
