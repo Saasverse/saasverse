@@ -719,11 +719,11 @@ export default function Page() {
           <section id="why-saasverse">
             <h2>Why Choose Saasverse for Salesforce Integration?</h2>
             <p>
-              Saasverse is a Salesforce Partner with Navigator Expert status and a 50+ certified Salesforce experts based in Jaipur, India.
+              Saasverse is a Salesforce Partner with Navigator Expert status and 50+ certified Salesforce experts based in Jaipur, India.
             </p>
             <ul className="hsc-plainList">
               <li><strong>120+ projects for 40+ clients in 19+ countries.</strong></li>
-              <li><strong>A Boston office and US-hours overlap</strong>, so your consultant joins your stand-ups.</li>
+              <li><strong>US time-zone overlap,</strong>, so your consultant joins your stand-ups.</li>
               <li><strong>One team for design, build and support</strong>, so the people who build your integration also help run it.</li>
               <li><strong>Integration options matched to your setup:</strong> APIs, MuleSoft or ready-made connectors.</li>
               <li><strong>ISO 27001 and Cyber Essentials Plus certified.</strong> We sign an NDA before we see your org.</li>
