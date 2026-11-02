@@ -784,9 +784,6 @@ export default function Page() {
           CRM solutions.
         </p>
 
-        <p className="text-sm font-medium text-gray-500 mt-4">
-          Salesforce Developer | Saasverse
-        </p>
       </div>
 
     </div>

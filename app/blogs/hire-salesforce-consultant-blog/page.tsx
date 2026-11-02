@@ -711,6 +711,38 @@ export default function Page() {
               ))}
             </div>
           </section>
+
+            <section className="py-12 md:py-16">
+  <div className="max-w-6xl mx-auto px-4">
+    <div className="bg-gray-50 border border-gray-200 rounded-2xl p-6 md:p-10 flex flex-col md:flex-row items-center md:items-start gap-6 md:gap-8">
+
+     
+     
+
+      {/* Author Details */}
+      <div className="text-center md:text-left">
+        <span className="text-sm font-semibold uppercase tracking-wider text-blue-700">
+          About the Author
+        </span>
+
+        <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mt-2 mb-3">
+          Poorvi Tailang
+        </h2>
+
+        <p className="text-gray-600 text-base leading-7">
+          Poorvi Tailang is a Salesforce Developer at Saasverse, specializing
+          in scalable CRM solutions, enterprise integrations, and custom
+          applications. She focuses on emerging technologies such as
+          Agentforce and Einstein AI, while sharing insights on Salesforce
+          platform advancements, development best practices, and innovative
+          CRM solutions.
+        </p>
+
+      </div>
+
+    </div>
+  </div>
+</section>
         </article>
       </div>
       <BlogSlider />
