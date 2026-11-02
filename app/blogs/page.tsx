@@ -65,6 +65,14 @@ const blogs = [
       'Let us discuss this subject and all the benefits of using Salesforce CRM for your business.',
     image: '/images/blogs/1.jpg',
   },
+  {
+    id: 8,
+    slug: 'salesforce-integration-blog',
+    title: 'Salesforce Integration in 2026: Types, Tools, Patterns and Cost',
+    excerpt:
+      'Salesforce integration means connecting Salesforce to your other systems, such as your ERP, website, marketing tools or data warehouse, so data moves between them automatically. ',
+    image: '/images/blogs/salesforce-integration-guide-2026.webp',
+  },
   
  
 
