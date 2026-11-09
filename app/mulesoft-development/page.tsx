@@ -395,10 +395,8 @@ const page = () => {
             Salesforce integration services
           </Link>{' '}
           team helps you choose, and our guide to{' '}
-          <Link href={INTEGRATION_GUIDE_URL} className={linkClass}>
-            Salesforce integration types, tools and patterns
-          </Link>{' '}
-          explains the options.
+         
+          Salesforce integration types, tools and patterns explains the options.
         </p>
       </section>
 
