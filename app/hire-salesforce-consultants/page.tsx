@@ -2,12 +2,12 @@ import React from 'react';
 import PageBanner from '../components/PageBanner';
 import SalesforceServiceReuseable from '../components/SalesforceServiceReuseable';
 import CTASection from '../components/Home/CTASection';
-import HealthSolution from '../work-salesforce-health-cloud/HealthSolution';
+
 import CertificateSlider from '../components/Home/CertificateSlider';
 import OurPartners from '../components/Home/OurPartners';
 import FaqReuseable from '../components/FaqReuseable';
 import ContactForm from '../components/ContactForm';
-import WhyChooseUs from '../about/WhyChooseUs';
+
 import { Metadata } from 'next';
 import Link from 'next/link';
 import HiringModels from '../components/HiringModels';
@@ -163,37 +163,9 @@ const page = () => {
 
       <HiringModels />
       <HowHiringWorks />
-      {/* <HealthSolution
-        title="What Our Salesforce Consultants Deliver  "
-        highlight=""
-        description=""
-        image="/images/websiteimages/4.webp"
-        imageAlt="Salesforce Healthcare Cloud Solution"
-        solutions={[
-          {
-            title: 'Salesforce Implementation and Customization',
-            description:
-              'Tailor Salesforce to your specific needs and workflows to optimize your sales processes.',
-          },
-          {
-            title: 'Salesforce Integration',
-            description:
-              'Seamlessly integrate Salesforce with your existing business systems to eliminate data silos and improve data flow.',
-          },
-          {
-            title: 'Custom Salesforce Development ',
-            description:
-              'Develop custom applications to extend Salesforce functionality and automate complex tasks.',
-          },
-          {
-            title: 'Flexible Hiring Models  ',
-            description:
-              'Hourly Engagement / Part-Time Dedicated Consultant / Full-Time Dedicated Team',
-          },
-        ]}
-      /> */}
+     
       <ConsultantOverview />
-      {/* <WhyChooseUs /> */}
+     
       <CertificateSlider />
 
       <OurPartners />
@@ -208,7 +180,7 @@ const page = () => {
           __html: JSON.stringify(faqSchema).replace(/</g, "\\u003c"),
         }}
       />
-      {/* <FaqReuseable title="Hiring Salesforce Consultants: FAQs " faqs={faqs} /> */}
+      
       <CTASection />
       <ContactForm />
     </>
