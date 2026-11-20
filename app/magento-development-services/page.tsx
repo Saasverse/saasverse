@@ -1,151 +1,679 @@
 import React from 'react';
-import PageBanner from '../components/PageBanner';
-import HealthClient from '../work-salesforce-health-cloud/HealthClient';
-
+import PageBanner2 from '../components/PageBanner2';
+import SalesforceServiceReuseable from '../components/SalesforceServiceReuseable';
+import HealthSolution from '../work-salesforce-health-cloud/HealthSolution';
 import FaqReuseable from '../components/FaqReuseable';
-import StickyServices from '../components/StickyServices';
-import WhyChoose from '../components/WhyChoose';
+import ContactForm from '../components/ContactForm';
+
 import { Metadata } from 'next';
+import Link from 'next/link';
 
 const faqs = [
   {
-    question: 'Why would I want to choose Magento over WooCommerce?',
+    question: 'What is the difference between Magento Open Source and Adobe Commerce?',
     answer:
-      'Unlike WooCommerce, which positions itself as a community solution, Magento complies with organizations. In any event, this does not rule out the possibility that its provisions will be advantageous to independent businesses. Magento is available in two flavors: an endeavor release for larger organizations and a free commerce version that is incredibly impressive on its own.',
+      'Magento Open Source is the free version. Adobe Commerce is the paid version from Adobe, with extra features such as B2B tools and Adobe’s cloud hosting.',
   },
   {
-    question: 'Can I add features to your Marketplace solution?',
+    question: 'Should we choose Magento or Shopify?',
     answer:
-      'You can, of course. The various components and modules that make up our commercial solution are extremely robust and easy to implement.',
+      'Magento suits large catalogs, complex pricing, B2B and full control of the code. Shopify suits brands that want a hosted store that is quick to launch and easy to run. We build on both.',
   },
   {
-    question:
-      'Is your Magento team in India capable of developing enterprise-level tasks?',
+    question: 'Is Magento a good fit for a small store?',
     answer:
-      'Yes. We have collaborated with a diverse range of enterprise-level clients in sectors such as the transportation sector, healthcare, and broadcast communications. View our clientele by clicking this link.',
+      'Sometimes, but it needs more upkeep than hosted platforms. For a small store, Shopify or WooCommerce is often simpler. We’ll tell you which fits.',
   },
   {
-    question: 'Does Magento Make Sense for Small Businesses?',
+    question: 'We’re still on Magento 1. What should we do?',
     answer:
-      'Indeed, without a doubt. In actuality, Magento can always be the ideal choice whether you are managing a sizable company or even a relatively small internet business. Magneto has gained a lot of popularity in this fast-paced world because it can easily meet all of your unique needs and help your company expand as a whole.',
+      'Magento 1 stopped getting updates in 2020, so it is a security risk. We can move you to Magento 2, Adobe Commerce or another platform.',
   },
   {
-    question: 'How Much Will Magento Development Cost?',
+    question: 'Can you upgrade our Magento 2 store?',
     answer:
-      "License fees are required for Magento's paid options, such as Magento Commerce Cloud and Magento Commerce. As a result, it may be a somewhat expensive choice. However, because of its truly amazing features, large and medium-sized businesses may find the costs worthwhile.",
+      'Yes. We upgrade to a supported version, update extensions and test checkout and orders on a staging store first.',
+  },
+  {
+    question: 'Can you build custom Magento extensions?',
+    answer:
+      'Yes. We build custom extensions and fix or replace third-party ones that cause problems.',
+  },
+  {
+    question: 'Can Magento connect to our ERP or Salesforce?',
+    answer:
+      'Yes. We connect Magento to your ERP and to Salesforce, so orders, products and customers stay in sync.',
+  },
+  {
+    question: 'Does Magento make our store PCI compliant?',
+    answer:
+      'No platform does that on its own. PCI compliance depends on your payment setup, hosting and processes. We help you choose payment options that reduce what you have to manage.',
+  },
+  {
+    question: 'Can you take over a store another developer built?',
+    answer:
+      'Yes. We review the code and extensions, document what we find and then take over support.',
+  },
+  {
+    question: 'How long does a Magento project take?',
+    answer:
+      'It depends on the catalog, features and integrations. You’ll get a timeline in the written scope before any work starts.',
+  },
+  {
+    question: 'What does Magento development cost?',
+    answer:
+      'The cost depends on your requirements: the catalog, custom features, extensions and integrations. We send you the cost in writing after the discovery call.',
+  },
+  {
+    question: 'Do you provide support after launch?',
+    answer:
+      'Yes. Support is available 24/7. Raise a ticket in our ticket portal or send us an email, and you’ll get a reply within 24 hours.',
   },
 ];
 
-const wordpressServices = [
+const benefits = [
   {
-    title: 'Magento E-commerce Design',
+    title: 'New Magento Stores',
     description:
-      "Develop an engaging shopping experience on your beautifully crafted Magento eCommerce website. Our Magento specialists provide bespoke e-commerce design solutions according to the client's business needs. We implement the latest trends in e-store design.",
+      'We build stores on Magento Open Source or Adobe Commerce, from the catalog and checkout to the admin your team uses.',
   },
   {
-    title: 'API Module Integration',
+    title: 'Store Design',
     description:
-      'As a professional Magento development agency, we are experts in third-party API integration to enhance website performance. We possess the capability to integrate FedEx API Integration shipping services, UPS API Integration, etc.',
+      'We design and build themes that match your brand and work well on phones.',
   },
   {
-    title: 'Payment Module Services',
+    title: 'Upgrades and Patches',
     description:
-      'We develop various payment modules to allow clients to expand their online ventures. Various payment gateways are supported to assist clients in paying for goods at their convenience and making secure transactions.',
+      'We upgrade older Magento 2 versions, apply security patches and move stores still on Magento 1.',
   },
   {
-    title: 'Regular Magento Support',
+    title: 'Extensions',
     description:
-      'Besides the design and development services, our Magento professionals also provide 24/7 support services. The aim is to enable clients to push their businesses to the next level through timely maintenance.',
+      'We build custom extensions and set up and fix third-party ones.',
   },
   {
-    title: 'Magento Upgrade & Migration',
+    title: 'Payments and Shipping',
     description:
-      'Our seasoned Magento architects provide professional migration and upgrade solutions to assist you with a seamless move to the newer version of Magento. Our team of experts ensures that everything from your data, configurations, extensions, and custom functionalities is safely migrated without any interruption. Whether you’re upgrading from Magento 1 to Magento 2 or upgrading to the most recent release, we offer a smooth, safe, and optimized upgrade experience.',
+      'We connect payment gateways and carriers such as FedEx and UPS, so checkout and shipping rates work.',
+  },
+  {
+    title: 'ERP and CRM Integrations',
+    description: (
+      <>
+        We connect your store to your ERP and to Salesforce, so orders and
+        customers flow without re-typing. Explore our{' '}
+        <Link
+          href="/salesforce-integration-services"
+          className="font-semibold text-[#003e95] hover:underline"
+        >
+          Salesforce Integration Services
+        </Link>
+        .
+      </>
+    ),
+  },
+  {
+    title: 'Speed Fixes',
+    description:
+      'We find what slows your store down, such as extensions, images or caching, and fix it.',
+  },
+  {
+    title: 'Support and Maintenance',
+    description:
+      'We fix bugs, keep extensions up to date and make small changes to your live store.',
+  },
+];
+
+const platformOptions = [
+  {
+    number: '01',
+    title: 'Magento or Adobe Commerce',
+    description:
+      'For large catalogs, complex pricing, B2B features or many stores from one admin, when you want full control of the code.',
+  },
+  {
+    number: '02',
+    title: 'Shopify',
+    description: (
+      <>
+        For brands that want a hosted store that’s quick to launch and easy to
+        run. Explore{' '}
+        <Link
+          href="/shopify-development-services"
+          className="font-semibold text-[#003e95] hover:underline"
+        >
+          Shopify development
+        </Link>
+        .
+      </>
+    ),
+  },
+  {
+    number: '03',
+    title: 'WordPress With WooCommerce',
+    description: (
+      <>
+        For content-led sites with a smaller store. Explore{' '}
+        <Link
+          href="/wordpress-development-services"
+          className="font-semibold text-[#003e95] hover:underline"
+        >
+          WordPress development
+        </Link>
+        .
+      </>
+    ),
   },
 ];
 
-const whyChooseHeading =
-  'Why do we give Magento the most preference among all platforms?';
-
-const whyChooseDescription =
-  'At Saasverse, we trust Magento for delivering powerful, flexible, and scalable eCommerce experiences. Whether you’re launching a small store or expanding an enterprise business, Magento provides the tools, control, and performance to build your success.';
-
-const features = [
+const warningSigns = [
   {
-    title: 'All-in-One Commerce Platform',
+    number: '01',
+    title: 'Still on Magento 1',
     description:
-      'Magento provides all the tools you require to create, operate, and grow an online store with enterprise-level capabilities.',
+      'Magento 1 stopped getting updates in 2020, and your store still runs on it.',
   },
   {
-    title: 'Open Source Flexibility',
+    number: '02',
+    title: 'Behind on Patches',
     description:
-      'Magento is flexible and customizable to suit individual business requirements with complete mastery of your codebase.',
+      'Security patches haven’t been applied for months.',
   },
   {
-    title: 'Highly Scalable',
+    number: '03',
+    title: 'Slow Pages',
     description:
-      'Magento scales from small stores to large companies, large traffic, and large product ranges comfortably.',
+      'Product and category pages load slowly, and shoppers leave.',
   },
   {
-    title: 'Extensive Marketplace',
+    number: '04',
+    title: 'Extensions Clash',
     description:
-      'There are thousands of extensions and themes available for extending functionality and styling.',
+      'Every update breaks something because extensions conflict.',
   },
   {
-    title: 'Advanced Customization',
+    number: '05',
+    title: 'Orders Typed Into the ERP',
     description:
-      'Magento can customize your eCommerce experience with robust theming and modular architecture.',
+      'Staff copy orders from Magento into other systems by hand.',
   },
   {
-    title: 'Secure and Reliable',
+    number: '06',
+    title: 'Nobody Knows the Code',
     description:
-      'Magento allows secure transactions, PCI compliance, and regular updates to ensure customer data security.',
+      'The original developer left, and nobody wants to touch the store.',
   },
 ];
+
+const reasons = [
+  {
+    number: '01',
+    title: 'One Team for Your Site and Your Systems',
+    description:
+      'Our ecommerce developers work next to our Salesforce and integration team, so your store, ERP and CRM can share orders and customers.',
+  },
+  {
+    number: '02',
+    title: '120+ Projects for 40+ Clients',
+    description:
+      'We’ve delivered 120+ projects for 40+ clients across 19+ countries.',
+  },
+  {
+    number: '03',
+    title: 'US Time-Zone Overlap',
+    description:
+      'Our team is based in Jaipur, India. We agree on overlapping working hours, so we can join your meetings and reviews.',
+  },
+  {
+    number: '04',
+    title: '24/7 Support After Launch',
+    description:
+      'Support is available 24/7, and every request gets a reply within 24 hours through our ticket portal or email.',
+  },
+  {
+    number: '05',
+    title: 'Security and Confidentiality',
+    description:
+      'Saasverse is ISO 27001 and Cyber Essentials Plus certified. We sign an NDA before we access your code or systems.',
+  },
+  {
+    number: '06',
+    title: 'Rated 5.0 on Clutch',
+    description:
+      'See what our clients say about working with us. Read our reviews.',
+  },
+];
+
+const serviceSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'Service',
+  name: 'Magento Development Services',
+  url: 'https://www.saasverse.in/magento-development-services',
+  description:
+    'Magento and Adobe Commerce development: new stores, Magento 2 upgrades, extensions, payment and shipping integrations, performance fixes and support.',
+  serviceType: 'Magento and Adobe Commerce development',
+  provider: {
+    '@type': 'Organization',
+    name: 'Saasverse Pvt. Ltd.',
+    url: 'https://www.saasverse.in',
+  },
+};
+
+const faqSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: faqs.map((faq) => ({
+    '@type': 'Question',
+    name: faq.question,
+    acceptedAnswer: {
+      '@type': 'Answer',
+      text: faq.answer,
+    },
+  })),
+};
 
 export const metadata: Metadata = {
-  title: "Magento Development Services | Saasverse",
+  title: 'Magento Development Services | Saasverse',
   description:
-    "Expert Magento development services from India. Custom stores, migrations & support for US/UAE brands. Get a free quote.",
-    alternates: { canonical: 'https://www.saasverse.in/magento-development-services' },
-
-  };
+    'Magento and Adobe Commerce development: new stores, Magento 2 upgrades, extensions, payment and shipping integrations, performance fixes and support.',
+  alternates: {
+    canonical: 'https://www.saasverse.in/magento-development-services',
+  },
+  openGraph: {
+    title: 'Magento Development Services | Saasverse',
+    description:
+      'Magento and Adobe Commerce development: new stores, Magento 2 upgrades, extensions, payment and shipping integrations, performance fixes and support.',
+    url: 'https://www.saasverse.in/magento-development-services',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Magento Development Services | Saasverse',
+    description:
+      'Magento and Adobe Commerce development: new stores, Magento 2 upgrades, extensions, payment and shipping integrations, performance fixes and support.',
+  },
+};
 
 const page = () => {
   return (
     <>
-      <PageBanner
+      {/* Service Schema */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(serviceSchema),
+        }}
+      />
+
+      {/* FAQ Schema */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(faqSchema),
+        }}
+      />
+
+      {/* Hero Section */}
+      <PageBanner2
         image="/images/banner/mage.webp"
-        title="
-Build High-Performance Stores with Our Magento Development Services"
-        description="Knock on our door to hire end-to-end Magento eCommerce development services to have a low-cost platform that promises quality."
+        title="Magento Development Services"
+        description="We build, upgrade and look after Magento and Adobe Commerce stores for growing online brands."
       />
 
-      <StickyServices
-        heading="Build a Website That Sells with Saasverse"
-        paragraphs={[
-          'An online store is worth more than your retail store in light of the customer outreach it offers 24/7 worldwide. In the era of advanced e-tail customers, Saasverse shatters the bar of customer attention by providing Magento web development services guaranteed to turn your eCommerce into a hit.',
-          'Our Magento-certified developers design from concepts to solutions, surfacing above the screens to in-store operations to provide you services spanning multi-store platforms to single-store implementations, from extensions development to migration.',
+     
+
+      {/* What We Do */}
+      <div id="what-we-do">
+        <SalesforceServiceReuseable
+          heading="What We Do"
+          benefits={benefits}
+        />
+      </div>
+
+      {/* Magento, Shopify or WordPress */}
+      <section className="bg-white py-16 sm:py-20">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div className="mx-auto mb-12 max-w-3xl text-center">
+            <span className="text-sm font-semibold uppercase tracking-[0.18em] text-[#003e95]">
+              Choose the Right Platform
+            </span>
+
+            <h2 className="mt-3 text-3xl font-bold leading-tight text-gray-900 sm:text-4xl">
+              Magento, Shopify or WordPress?
+            </h2>
+          </div>
+
+          <div className="grid gap-6 md:grid-cols-3">
+            {platformOptions.map((option) => (
+              <div
+                key={option.number}
+                className="group rounded-2xl border border-gray-200 bg-white p-7 transition-all duration-300 hover:-translate-y-1 hover:border-[#003e95]/40 hover:shadow-xl sm:p-9"
+              >
+                <span className="inline-flex h-12 w-12 items-center justify-center rounded-xl bg-[#003e95]/10 text-lg font-bold text-[#003e95] transition-colors duration-300 group-hover:bg-[#003e95] group-hover:text-white">
+                  {option.number}
+                </span>
+
+                <h3 className="mt-6 text-xl font-bold text-gray-900 sm:text-2xl">
+                  {option.title}
+                </h3>
+
+                <div className="mt-4 text-base leading-7 text-gray-600">
+                  {option.description}
+                </div>
+              </div>
+            ))}
+          </div>
+
+          <p className="mt-9 text-center text-base leading-7 text-gray-600 sm:text-lg">
+            We build on all three, so we’ll tell you which one fits.
+          </p>
+        </div>
+      </section>
+
+      {/* Signs Your Magento Store Needs Work */}
+      <section className="bg-[#fbfaf7] py-16 sm:py-20">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div className="mx-auto mb-12 max-w-3xl text-center">
+            <span className="text-sm font-semibold uppercase tracking-[0.18em] text-[#003e95]">
+              Store Performance
+            </span>
+
+            <h2 className="mt-3 text-3xl font-bold leading-tight text-gray-900 sm:text-4xl">
+              Signs Your Magento Store Needs Work
+            </h2>
+          </div>
+
+          <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+            {warningSigns.map((item) => (
+              <div
+                key={item.number}
+                className="group rounded-2xl border border-gray-200 bg-white p-6 transition-all duration-300 hover:-translate-y-1 hover:border-[#003e95]/40 hover:shadow-lg sm:p-7"
+              >
+                <span className="text-sm font-bold tracking-widest text-[#003e95]">
+                  {item.number}
+                </span>
+
+                <h3 className="mt-4 text-lg font-bold leading-snug text-gray-900 sm:text-xl">
+                  {item.title}
+                </h3>
+
+                <p className="mt-3 text-sm leading-7 text-gray-600 sm:text-base">
+                  {item.description}
+                </p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* How a Magento Project Works */}
+      <HealthSolution
+        title="How a Magento Project Works"
+        highlight=""
+        description=""
+        image="/images/websiteimages/21.jpg"
+        imageAlt="Magento Development Project Process"
+        solutions={[
+          {
+            title: 'Discovery Call',
+            description:
+              'Tell us about your store, your Magento version and what you want to change. If you’d like an NDA first, we’ll sign one.',
+          },
+          {
+            title: 'Store Review',
+            description:
+              'We review the code, extensions, hosting and speed.',
+          },
+          {
+            title: 'Scope and Plan',
+            description:
+              'We send you a written scope with the timeline and cost. Nothing starts until you approve it.',
+          },
+          {
+            title: 'Build in a Staging Store',
+            description:
+              'We work on a copy of your store, never on the live one.',
+          },
+          {
+            title: 'Test Checkout and Orders',
+            description:
+              'We test browsing, checkout, payments, shipping and order flow before launch.',
+          },
+          {
+            title: 'Launch and Support',
+            description:
+              'We go live at a quiet time and stay on to fix issues after launch.',
+          },
         ]}
-        services={wordpressServices}
       />
 
-      <WhyChoose
-        heading={whyChooseHeading}
-        description={whyChooseDescription}
-        features={features}
-      />
+      {/* Magento Development Costs */}
+      <section className="bg-gray-50 py-16 sm:py-20">
+        <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
+          <div className="relative overflow-hidden rounded-3xl bg-[#003e95] px-6 py-10 text-white shadow-xl sm:px-12 sm:py-14 lg:px-16">
+            <div
+              aria-hidden="true"
+              className="pointer-events-none absolute -right-20 -top-20 h-64 w-64 rounded-full border border-white/10"
+            />
 
-      <HealthClient
-        title="Start Using "
-        highlight="Magento"
-        paragraphs={[
-          'Are you prepared to use Magento strength and versatility to start or grow your online store?',
-          'For a free consultation and customized Magento solutions that support business expansion, get in touch with Saasverse right now.',
-        ]}
-      />
+            <div
+              aria-hidden="true"
+              className="pointer-events-none absolute -right-10 -top-10 h-44 w-44 rounded-full border border-white/10"
+            />
 
-      <FaqReuseable title="Magento FAQ" faqs={faqs} />
+            <div className="relative z-10 max-w-3xl">
+              <span className="text-sm font-semibold uppercase tracking-[0.18em] text-blue-200">
+                Transparent Planning
+              </span>
+
+              <h2 className="mt-3 text-3xl font-bold leading-tight sm:text-4xl">
+                What Magento Development Costs
+              </h2>
+
+              <p className="mt-6 text-base leading-8 text-white/85 sm:text-lg">
+                The cost depends on your requirements: the size of your
+                catalog, custom features and extensions, integrations, and
+                whether you’re on Magento Open Source or Adobe Commerce. After
+                the discovery call, we send you a written scope with the cost
+                and timeline. Adobe Commerce licenses are bought from Adobe
+                and are separate from our work.
+              </p>
+
+              <Link
+                href="/contact"
+                className="mt-8 inline-flex w-full items-center justify-center rounded-xl bg-white px-7 py-4 text-center text-sm font-semibold text-[#003e95] shadow-lg transition-all duration-300 hover:-translate-y-1 hover:bg-blue-50 sm:w-auto sm:text-base"
+              >
+                Book a Free Consultation
+                <svg
+                  className="ml-2 h-5 w-5"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  aria-hidden="true"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M5 12h14m-7-7 7 7-7 7"
+                  />
+                </svg>
+              </Link>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Related Services */}
+      <section className="w-full bg-[#fbfaf7] py-16 md:py-20">
+        <div className="mx-auto max-w-7xl px-5 md:px-8">
+          <div className="mx-auto mb-12 max-w-3xl text-center">
+            <span className="text-sm font-semibold uppercase tracking-[0.18em] text-[#003e95]">
+              Explore More
+            </span>
+
+            <h2 className="mt-3 text-3xl font-bold leading-tight text-gray-900 sm:text-4xl">
+              Related Services
+            </h2>
+          </div>
+
+          <div className="grid gap-6 md:grid-cols-3">
+            <div className="rounded-2xl border border-gray-200 bg-white p-7 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg">
+              <h3 className="text-xl font-bold text-gray-900">
+                Shopify Development
+              </h3>
+
+              <p className="mt-4 leading-7 text-gray-600">
+                Hosted stores that are quick to launch.
+              </p>
+
+              <Link
+                href="/shopify-development-services"
+                className="mt-5 inline-flex font-semibold text-[#003e95] hover:underline"
+              >
+                Explore Shopify development
+                <span className="ml-2" aria-hidden="true">
+                  →
+                </span>
+              </Link>
+            </div>
+
+            <div className="rounded-2xl border border-gray-200 bg-white p-7 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg">
+              <h3 className="text-xl font-bold text-gray-900">
+                WordPress Development
+              </h3>
+
+              <p className="mt-4 leading-7 text-gray-600">
+                Content sites and WooCommerce stores.
+              </p>
+
+              <Link
+                href="/wordpress-development-services"
+                className="mt-5 inline-flex font-semibold text-[#003e95] hover:underline"
+              >
+                Explore WordPress development
+                <span className="ml-2" aria-hidden="true">
+                  →
+                </span>
+              </Link>
+            </div>
+
+            <div className="rounded-2xl border border-gray-200 bg-white p-7 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg">
+              <h3 className="text-xl font-bold text-gray-900">
+                Salesforce Integration Services
+              </h3>
+
+              <p className="mt-4 leading-7 text-gray-600">
+                Send orders and customers to Salesforce.
+              </p>
+
+              <Link
+                href="/salesforce-integration-services"
+                className="mt-5 inline-flex font-semibold text-[#003e95] hover:underline"
+              >
+                Explore integration services
+                <span className="ml-2" aria-hidden="true">
+                  →
+                </span>
+              </Link>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Why Choose Saasverse */}
+      <section className="bg-white py-16 sm:py-20">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div className="mx-auto mb-12 max-w-3xl text-center">
+            <span className="text-sm font-semibold uppercase tracking-[0.18em] text-[#003e95]">
+              Why Choose Saasverse
+            </span>
+
+            <h2 className="mt-3 text-3xl font-bold leading-tight text-gray-900 sm:text-4xl">
+              Why Choose Saasverse for Magento Development
+            </h2>
+          </div>
+
+          <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+            {reasons.map((reason) => (
+              <div
+                key={reason.number}
+                className="group rounded-2xl border border-gray-200 bg-white p-6 transition-all duration-300 hover:-translate-y-1 hover:border-[#003e95]/40 hover:shadow-lg sm:p-7"
+              >
+                <span className="text-sm font-bold tracking-widest text-[#003e95]">
+                  {reason.number}
+                </span>
+
+                <h3 className="mt-4 text-lg font-bold leading-snug text-gray-900 sm:text-xl">
+                  {reason.title}
+                </h3>
+
+                <p className="mt-3 text-sm leading-7 text-gray-600 sm:text-base">
+                  {reason.description}
+                </p>
+
+                {reason.title === 'Rated 5.0 on Clutch' && (
+                  <a
+                    href="https://clutch.co/profile/saasverse-salesforce-consulting-partner"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="mt-5 inline-flex items-center font-semibold text-[#003e95] hover:underline"
+                  >
+                    Read our reviews
+                    <svg
+                      className="ml-2 h-4 w-4"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      strokeWidth="2"
+                      aria-hidden="true"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        d="M7 17 17 7M8 7h9v9"
+                      />
+                    </svg>
+                  </a>
+                )}
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* FAQs */}
+      <FaqReuseable title="Magento Development FAQs" faqs={faqs} />
+
+      {/* Consultation Form */}
+      <section
+        id="book-a-free-consultation"
+        className="scroll-mt-24 bg-[#fbfaf7] py-16 sm:py-20"
+      >
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div className="mx-auto mb-10 max-w-3xl text-center">
+            <span className="text-sm font-semibold uppercase tracking-[0.18em] text-[#003e95]">
+              Let’s Discuss Your Store
+            </span>
+
+            <h2 className="mt-3 text-3xl font-bold leading-tight text-gray-900 sm:text-4xl">
+              Book a Free Consultation
+            </h2>
+
+            <p className="mt-4 text-base leading-7 text-gray-600 sm:text-lg">
+              Tell us about your store, your Magento version and what you want
+              to change. We’ll reply within 24 hours.
+            </p>
+          </div>
+
+          <ContactForm />
+
+          <p className="mt-5 text-center text-sm text-gray-500">
+            No spam. We’ll only use this to respond to your inquiry.
+          </p>
+        </div>
+      </section>
     </>
   );
 };
