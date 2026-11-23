@@ -142,7 +142,7 @@ export default async function Footer() {
               <FooterLink href="/about" label="About Us" />
               <FooterLink href="/careers" label="Careers" />
               <FooterLink href="/blogs" label="Blog" />
-              <FooterLink href="/contact" label="Contact" />
+              <FooterLink href="/contact-us" label="Contact" />
               <FooterLink href="/disclaimer" label="Disclaimer" />
               <FooterLink href="/privacy" label="Privacy Policy" />
               <FooterLink href="/terms" label="Terms & Conditions" />

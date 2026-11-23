@@ -431,7 +431,7 @@ function ConsultingCost() {
           </p>
 
           <Link
-            href="/contact"
+            href="/contact-us"
             className="inline-flex items-center justify-center rounded-lg bg-white px-7 py-3.5 font-semibold text-[#0d1c31] transition-colors hover:bg-gray-100"
           >
             Book a Free Consultation

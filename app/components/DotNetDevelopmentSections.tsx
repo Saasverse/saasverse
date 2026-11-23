@@ -442,7 +442,7 @@ export default function DotNetDevelopmentSections() {
 
             <div>
               <Link
-                href="/contact"
+                href="/contact-us"
                 className="mt-7 inline-flex items-center justify-center gap-3 rounded-full bg-[#003e95] px-7 py-4 text-sm font-bold text-white shadow-md transition-all duration-300 hover:-translate-y-0.5 hover:bg-blue-800 hover:shadow-lg"
               >
                 Book a Free Consultation

@@ -694,7 +694,7 @@ export default function Page() {
               <p>
                 Ready to hire a Salesforce consultant in India? Tell us what you need and we’ll reply within 24 hours with the right role, model and a written quote.
               </p>
-              <Link href="https://www.saasverse.in/contact" className="hsc-button">
+              <Link href="https://www.saasverse.in/contact-us" className="hsc-button">
                 Book a free Salesforce consultation
               </Link>
             </div>

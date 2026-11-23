@@ -528,7 +528,7 @@ export default function Page() {
                 <p>
                   <strong>Ready to unlock Sales Cloud for your team?</strong> Collaborate with a leading Salesforce implementation company to make that first step.
                 </p>
-                <Link href="/contact" className="hsc-button">
+                <Link href="/contact-us" className="hsc-button">
                   Get a quote
                 </Link>
               </div>

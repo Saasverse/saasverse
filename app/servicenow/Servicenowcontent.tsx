@@ -109,7 +109,7 @@ export default function ServiceNowContent() {
               className="flex flex-col sm:flex-row gap-5 justify-center"
               style={{ transform: "translateZ(40px)" }}
             >
-              <Link href="/contact" className="group bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-bold px-8 py-4 rounded-full transition-all duration-300 flex items-center justify-center gap-2 text-lg shadow-lg shadow-emerald-500/25 hover:shadow-emerald-500/40">
+              <Link href="/contact-us" className="group bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-bold px-8 py-4 rounded-full transition-all duration-300 flex items-center justify-center gap-2 text-lg shadow-lg shadow-emerald-500/25 hover:shadow-emerald-500/40">
                 Start Your Transformation
                 <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
               </Link>
@@ -296,7 +296,7 @@ export default function ServiceNowContent() {
               whileTap={{ scale: 0.95 }}
               className="bg-slate-900 hover:bg-slate-800 text-white font-bold px-10 py-5 rounded-full transition-all duration-300 shadow-xl hover:shadow-2xl flex items-center justify-center gap-3 mx-auto text-lg"
             >
-             <Link href="/contact"> Book a Consultation </Link> <ArrowRight className="w-6 h-6" />
+             <Link href="/contact-us"> Book a Consultation </Link> <ArrowRight className="w-6 h-6" />
             </motion.button>
           </div>
         </motion.div>

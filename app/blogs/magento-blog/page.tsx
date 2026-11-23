@@ -335,7 +335,7 @@ export default function Page() {
                 <p>
                   Elevate your eCommerce with Magento development solutions. Book a call and discuss details with our experts.
                 </p>
-                <Link href="/contact" className="hsc-button">
+                <Link href="/contact-us" className="hsc-button">
                   Get a quote
                 </Link>
               </div>

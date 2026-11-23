@@ -473,7 +473,7 @@ export default function Page() {
                 <p>
                   <strong>Ready to build a WordPress site that scales?</strong> Collaborate with a team that builds WordPress sites for long term growth, not just a launch date.
                 </p>
-                <Link href="/contact" className="hsc-button">
+                <Link href="/contact-us" className="hsc-button">
                   Get a quote
                 </Link>
               </div>

@@ -412,7 +412,7 @@ const page = () => {
               </p>
 
               <Link
-                href="/contact#contact-form"
+                href="/contact-us#contact-form"
                 className="mt-8 inline-flex w-full items-center justify-center rounded-xl bg-white px-7 py-4 text-center text-sm font-semibold text-[#003e95] shadow-lg transition-all duration-300 hover:-translate-y-1 hover:bg-blue-50 sm:w-auto sm:text-base"
               >
                 Book a Free Consultation

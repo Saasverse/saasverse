@@ -250,7 +250,7 @@ function FeatureCard({
 function ConsultationButton() {
   return (
     <Link
-      href="/contact"
+      href="/contact-us"
       className="inline-flex items-center justify-center rounded-lg bg-[#003e95] px-7 py-3.5 text-sm font-semibold text-white transition hover:bg-blue-800 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
     >
       Book a Free Consultation
@@ -402,7 +402,7 @@ export default function MarketingCloudSection() {
 
             <div>
               <Link
-                href="/contact"
+                href="/contact-us"
                 className="inline-flex whitespace-nowrap items-center justify-center rounded-lg bg-white px-6 py-3.5 text-sm font-semibold text-[#003e95] transition hover:bg-blue-50"
               >
                 Discuss Your Needs →

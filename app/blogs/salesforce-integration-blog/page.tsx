@@ -740,7 +740,7 @@ export default function Page() {
               <p>
                 Planning a Salesforce integration? Tell us which systems you want to connect and we’ll reply within 24 hours.
               </p>
-              <Link href="https://www.saasverse.in/contact" className="hsc-button">
+              <Link href="https://www.saasverse.in/contact-us" className="hsc-button">
                 Book a free Salesforce integration consultation
               </Link>
             </div>

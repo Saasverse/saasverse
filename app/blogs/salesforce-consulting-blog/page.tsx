@@ -654,7 +654,7 @@ export default function Page() {
               <aside className="hsc-callout">
                 <p>
                   <strong>Why work with a partner like Saasverse?</strong> Saasverse is a certified Salesforce consulting partner delivering strategy, implementation, integration, and managed services across Sales, Service, Marketing, and Health Cloud for clients across 15+ countries, built around the same discovery-first, no-templates approach outlined above. If you’re evaluating whether to bring in a consulting partner,{" "}
-                  <Link href="/contact">talk to our team</Link> or see our full{" "}
+                  <Link href="/contact-us">talk to our team</Link> or see our full{" "}
                   <Link href="/salesforce-consulting-company">Salesforce consulting services</Link>.
                 </p>
               </aside>
@@ -710,7 +710,7 @@ export default function Page() {
                 <p>
                   <strong>Ready to bring in a Salesforce consulting partner?</strong> Talk to a discovery-first Salesforce consulting team to make that first step.
                 </p>
-                <Link href="/contact" className="hsc-button">
+                <Link href="/contact-us" className="hsc-button">
                   Get a quote
                 </Link>
               </div>

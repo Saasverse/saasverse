@@ -385,7 +385,7 @@ export default function ConsultantOverview() {
             </p>
 
             <Link
-              href="/contact"
+              href="/contact-us"
               className="mt-7 inline-flex items-center justify-center gap-2 rounded-lg bg-[#003E95] px-7 py-3.5 text-sm font-semibold text-white transition-all duration-300 hover:bg-[#003e95]"
             >
               Book a Free Consultation

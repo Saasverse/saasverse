@@ -151,7 +151,7 @@ const menuItems: MenuItem[] = [
       { name: 'Our Services', href: '/services' },
       { name: 'Blogs', href: '/blogs' },
       { name: 'Careers', href: '/careers' },
-      { name: 'Contact Us', href: '/contact' },
+      { name: 'Contact Us', href: '/contact-us' },
     ],
   },
 ];
@@ -631,7 +631,7 @@ export default function Navbar() {
 
           {isScrolled ? (
             <Link
-              href="/contact"
+              href="/contact-us"
               className="cta-btn hidden lg:inline-flex items-center"
             >
               Book a Free Consultation
@@ -813,7 +813,7 @@ export default function Navbar() {
                 </Link>
 
                 <Link
-                  href="/contact"
+                  href="/contact-us"
                   className="block rounded-xl bg-[#003e95] py-4 text-center text-white font-semibold text-[15px] tracking-wide shadow-[0_4px_16px_rgba(0,62,149,0.3)]"
                   onClick={() => setMobileMenu(false)}
                 >

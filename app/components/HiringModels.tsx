@@ -187,7 +187,7 @@ export default function HiringModels() {
             </p>
 
             <a
-              href="/contact"
+              href="/contact-us"
               className="mt-8 inline-flex items-center justify-center rounded-xl bg-[#003e95] px-7 py-3.5 text-sm font-semibold text-white shadow-md transition-all duration-300 hover:-translate-y-1 hover:bg-[#002a66] hover:shadow-lg"
             >
               Request a Quote

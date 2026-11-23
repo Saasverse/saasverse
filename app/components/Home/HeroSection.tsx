@@ -129,7 +129,7 @@ export default function HeroSection() {
           {' '}
           {/* Primary CTA */}{' '}
           <Link
-            href="/contact"
+            href="/contact-us"
             className="h-cta-primary inline-flex items-center gap-2 rounded-lg px-6 py-3 text-sm font-semibold text-white"
           >
             {' '}
