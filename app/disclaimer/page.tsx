@@ -1,11 +1,17 @@
 "use client";
 
 import React, { useEffect, useRef, useState } from "react";
-import Head from "next/head";
+
 import { Metadata } from "next";
 
 
+export const metadata: Metadata = {
+  title: "Disclaimer — Saasverse Pvt. Ltd.",
+  description:
+    "Review Saasverse Pvt Ltd's Privacy Policy to understand how we collect, use, and protect your personal information when you visit our website.",
 
+    alternates: { canonical: 'https://www.saasverse.in/disclaimer' },
+  };
 
 const sections = [
   {
@@ -133,14 +139,7 @@ export default function Disclaimer() {
 
   return (
     <>
-      <Head>
-        <title>Disclaimer — Saasverse Pvt. Ltd.</title>
-        <meta
-          name="description"
-          content="Review the terms and conditions, privacy policies, and legal disclaimers for Saasverse Pvt Ltd's services and website usage."
-        />
-        <link rel="canonical" href="https://saasverse.in/disclaimer" />
-      </Head>
+      
 
       <main
         className="min-h-screen relative"

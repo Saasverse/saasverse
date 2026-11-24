@@ -1,9 +1,15 @@
 "use client";
 
 import React, { useEffect, useRef, useState } from "react";
-import Head from "next/head";
+import { Metadata } from "next";
 
+export const metadata: Metadata = {
+  title: "Terms & Conditions — Saasverse Pvt. Ltd.",
+  description:
+    "Review the Terms & Conditions for using Saasverse Pvt. Ltd.'s services and website. Understand your rights and obligations when engaging with us.",
 
+    alternates: { canonical: 'https://saasverse.in/terms' },
+  };
 
 const sections = [
   {
@@ -226,14 +232,7 @@ export default function Terms() {
 
   return (
     <>
-      <Head>
-        <title>Terms &amp; Conditions — Saasverse Pvt. Ltd.</title>
-        <meta
-          name="description"
-          content="Review the Terms & Conditions for using Saasverse Pvt. Ltd.'s services and website. Understand your rights and obligations when engaging with us."
-        />
-        <link rel="canonical" href="https://saasverse.in/terms" />
-      </Head>
+      
 
       <main className="min-h-screen relative" style={{ background: "#060A10" }}>
         {/* Grid */}

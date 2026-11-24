@@ -13,7 +13,7 @@ export const metadata: Metadata = {
   description:
     "Meet Saasverse, an India-based Salesforce consulting partner trusted by US & UAE businesses for implementation, customization & custom development.",
 
-    alternates: { canonical: 'https://www.saasverse.in/services' },
+    alternates: { canonical: 'https://www.saasverse.in/about' },
 };
 
 const page = () => {

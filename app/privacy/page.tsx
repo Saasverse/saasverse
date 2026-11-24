@@ -1,9 +1,15 @@
 "use client";
 
 import React, { useEffect, useRef, useState } from "react";
-import Head from "next/head";
-import { Metadata } from "next";
 
+import { Metadata } from "next";
+export const metadata: Metadata = {
+  title: "Privacy Policy — Saasverse Pvt. Ltd.",
+  description:
+    "Review Saasverse Pvt Ltd's Privacy Policy to understand how we collect, use, and protect your personal information when you visit our website.",
+
+    alternates: { canonical: 'https://www.saasverse.in/privacy' },
+  };
 
 
 
@@ -182,16 +188,11 @@ export default function Privacy() {
   const { ref: introRef, visible: introVisible } = useInView(0.1);
   const { ref: ctaRef, visible: ctaVisible } = useInView();
 
+
+  
   return (
     <>
-      <Head>
-        <title>Privacy Policy — Saasverse Pvt. Ltd.</title>
-        <meta
-          name="description"
-          content="Review Saasverse Pvt Ltd's Privacy Policy to understand how we collect, use, and protect your personal information when you visit our website."
-        />
-        <link rel="canonical" href="https://saasverse.in/privacy" />
-      </Head>
+     
 
       <main className="min-h-screen relative" style={{ background: "#06091A" }}>
         {/* Grid background */}
