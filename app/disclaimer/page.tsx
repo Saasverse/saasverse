@@ -1,17 +1,13 @@
-"use client";
-
-import React, { useEffect, useRef, useState } from "react";
-
-import { Metadata } from "next";
-
+import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Disclaimer — Saasverse Pvt. Ltd.",
   description:
-    "Review Saasverse Pvt Ltd's Privacy Policy to understand how we collect, use, and protect your personal information when you visit our website.",
-
-    alternates: { canonical: 'https://www.saasverse.in/disclaimer' },
-  };
+    "Read the disclaimer for Saasverse Pvt. Ltd. Understand the limitations, terms, and conditions related to the information and services available on our website.",
+  alternates: {
+    canonical: "https://www.saasverse.in/disclaimer",
+  },
+};
 
 const sections = [
   {
@@ -51,53 +47,19 @@ const sections = [
   },
 ];
 
-function useInView(threshold = 0.15) {
-  const ref = useRef<HTMLDivElement>(null);
-  const [visible, setVisible] = useState(false);
-
-  useEffect(() => {
-    const el = ref.current;
-    if (!el) return;
-    const obs = new IntersectionObserver(
-      ([entry]) => {
-        if (entry.isIntersecting) {
-          setVisible(true);
-          obs.disconnect();
-        }
-      },
-      { threshold }
-    );
-    obs.observe(el);
-    return () => obs.disconnect();
-  }, [threshold]);
-
-  return { ref, visible };
-}
-
 function SectionCard({
   number,
   title,
   body,
-  index,
 }: {
   number: string;
   title: string;
   body: string;
-  index: number;
 }) {
-  const { ref, visible } = useInView();
-
   return (
-    <div
-      ref={ref}
-      className="transition-all duration-700 ease-out"
-      style={{
-        opacity: visible ? 1 : 0,
-        transform: visible ? "translateY(0)" : "translateY(32px)",
-        transitionDelay: `${index * 80}ms`,
-      }}
-    >
+    <div className="transition-all duration-700 ease-out">
       <div className="group relative rounded-2xl border border-white/[0.07] bg-white/[0.03] backdrop-blur-sm hover:border-blue-500/30 hover:bg-white/[0.06] transition-all duration-500 overflow-hidden">
+
         {/* Glow left bar */}
         <div className="absolute left-0 top-0 h-full w-[3px] bg-gradient-to-b from-blue-500/0 via-blue-500/80 to-blue-500/0 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
 
@@ -106,11 +68,13 @@ function SectionCard({
 
         <div className="relative px-8 py-8 sm:px-10 sm:py-9">
           <div className="flex items-start gap-6">
+
             {/* Section Number */}
             <span
               className="shrink-0 font-mono text-4xl font-black leading-none tracking-tighter select-none"
               style={{
-                background: "linear-gradient(135deg, #3B82F6 0%, #1D4ED8 100%)",
+                background:
+                  "linear-gradient(135deg, #3B82F6 0%, #1D4ED8 100%)",
                 WebkitBackgroundClip: "text",
                 WebkitTextFillColor: "transparent",
               }}
@@ -122,10 +86,12 @@ function SectionCard({
               <h3 className="text-lg font-semibold text-white/90 mb-3 tracking-tight">
                 {title}
               </h3>
+
               <p className="text-[0.9375rem] leading-relaxed text-slate-400 group-hover:text-slate-300 transition-colors duration-300">
                 {body}
               </p>
             </div>
+
           </div>
         </div>
       </div>
@@ -134,149 +100,136 @@ function SectionCard({
 }
 
 export default function Disclaimer() {
-  const { ref: heroRef, visible: heroVisible } = useInView(0.1);
-  const { ref: footerRef, visible: footerVisible } = useInView();
-
   return (
-    <>
-      
+    <main
+      className="min-h-screen relative"
+      style={{ background: "#070C1A" }}
+    >
+      {/* Background grid */}
+      <div
+        className="pointer-events-none fixed inset-0 z-0"
+        style={{
+          backgroundImage:
+            "linear-gradient(rgba(59,130,246,0.04) 1px, transparent 1px), linear-gradient(90deg, rgba(59,130,246,0.04) 1px, transparent 1px)",
+          backgroundSize: "64px 64px",
+        }}
+      />
 
-      <main
-        className="min-h-screen relative"
-        style={{ background: "#070C1A" }}
-      >
-        {/* Background grid */}
-        <div
-          className="pointer-events-none fixed inset-0 z-0"
-          style={{
-            backgroundImage:
-              "linear-gradient(rgba(59,130,246,0.04) 1px, transparent 1px), linear-gradient(90deg, rgba(59,130,246,0.04) 1px, transparent 1px)",
-            backgroundSize: "64px 64px",
-          }}
-        />
+      {/* Radial glow top */}
+      <div
+        className="pointer-events-none fixed top-0 left-1/2 -translate-x-1/2 w-[900px] h-[500px] z-0"
+        style={{
+          background:
+            "radial-gradient(ellipse at 50% 0%, rgba(59,130,246,0.13) 0%, transparent 70%)",
+        }}
+      />
 
-        {/* Radial glow top */}
-        <div
-          className="pointer-events-none fixed top-0 left-1/2 -translate-x-1/2 w-[900px] h-[500px] z-0"
-          style={{
-            background:
-              "radial-gradient(ellipse at 50% 0%, rgba(59,130,246,0.13) 0%, transparent 70%)",
-          }}
-        />
+      <div className="relative z-10 max-w-4xl mx-auto px-5 sm:px-8 pb-24">
 
-        <div className="relative z-10 max-w-4xl mx-auto px-5 sm:px-8 pb-24">
-          {/* ── Hero Banner ── */}
-          <div
-            ref={heroRef}
-            className="pt-20 pb-16 sm:pt-28 sm:pb-20 text-center transition-all duration-1000 ease-out"
+        {/* Hero Banner */}
+        <div className="pt-20 pb-16 sm:pt-28 sm:pb-20 text-center">
+
+          <h1
+            className="text-5xl sm:text-6xl lg:text-7xl font-black tracking-tighter leading-[1.05] mb-6"
             style={{
-              opacity: heroVisible ? 1 : 0,
-              transform: heroVisible ? "translateY(0)" : "translateY(24px)",
+              background:
+                "linear-gradient(160deg, #FFFFFF 30%, rgba(148,163,184,0.7) 100%)",
+              WebkitBackgroundClip: "text",
+              WebkitTextFillColor: "transparent",
             }}
           >
-         
+            Disclaimer
+          </h1>
 
-            <h1
-              className="text-5xl sm:text-6xl lg:text-7xl font-black tracking-tighter leading-[1.05] mb-6"
+          <p className="mx-auto max-w-xl text-base sm:text-lg text-slate-400 leading-relaxed">
+            Please read this disclaimer carefully before using the{" "}
+            <span className="text-white/70 font-medium">
+              Saasverse Private Limited
+            </span>{" "}
+            website or any of our services.
+          </p>
+
+          {/* Divider */}
+          <div className="mt-12 flex items-center gap-4 justify-center">
+            <div className="h-px flex-1 bg-gradient-to-r from-transparent to-white/10 max-w-[120px]" />
+            <div className="h-1.5 w-1.5 rounded-full bg-blue-500/60" />
+            <div className="h-px flex-1 bg-gradient-to-l from-transparent to-white/10 max-w-[120px]" />
+          </div>
+        </div>
+
+        {/* Section Cards */}
+        <div className="flex flex-col gap-4">
+          {sections.map((section) => (
+            <SectionCard key={section.number} {...section} />
+          ))}
+        </div>
+
+        {/* Contact Card */}
+        <div className="mt-8">
+          <div className="relative rounded-2xl overflow-hidden border border-blue-500/20">
+
+            {/* Background gradient */}
+            <div
+              className="absolute inset-0"
               style={{
                 background:
-                  "linear-gradient(160deg, #FFFFFF 30%, rgba(148,163,184,0.7) 100%)",
-                WebkitBackgroundClip: "text",
-                WebkitTextFillColor: "transparent",
+                  "linear-gradient(135deg, rgba(59,130,246,0.12) 0%, rgba(29,78,216,0.06) 100%)",
               }}
-            >
-              Disclaimer
-            </h1>
+            />
 
-            <p className="mx-auto max-w-xl text-base sm:text-lg text-slate-400 leading-relaxed">
-              Please read this disclaimer carefully before using the{" "}
-              <span className="text-white/70 font-medium">
-                Saasverse Private Limited
-              </span>{" "}
-              website or any of our services.
-            </p>
+            <div className="relative px-8 py-9 sm:px-10 sm:py-10">
+              <div className="flex flex-col sm:flex-row sm:items-center gap-5">
 
-            {/* Divider */}
-            <div className="mt-12 flex items-center gap-4 justify-center">
-              <div className="h-px flex-1 bg-gradient-to-r from-transparent to-white/10 max-w-[120px]" />
-              <div className="h-1.5 w-1.5 rounded-full bg-blue-500/60" />
-              <div className="h-px flex-1 bg-gradient-to-l from-transparent to-white/10 max-w-[120px]" />
-            </div>
-          </div>
+                <div className="flex-1">
+                  <p className="text-xs font-semibold uppercase tracking-widest text-blue-400 mb-2">
+                    08 — Contact Us
+                  </p>
 
-          {/* ── Section Cards ── */}
-          <div className="flex flex-col gap-4">
-            {sections.map((s, i) => (
-              <SectionCard key={s.number} {...s} index={i} />
-            ))}
-          </div>
+                  <h3 className="text-xl font-bold text-white/90 mb-2">
+                    Questions or Concerns?
+                  </h3>
 
-          {/* ── Contact Card ── */}
-          <div
-            ref={footerRef}
-            className="mt-8 transition-all duration-700 ease-out"
-            style={{
-              opacity: footerVisible ? 1 : 0,
-              transform: footerVisible ? "translateY(0)" : "translateY(32px)",
-            }}
-          >
-            <div className="relative rounded-2xl overflow-hidden border border-blue-500/20">
-              {/* Background gradient */}
-              <div
-                className="absolute inset-0"
-                style={{
-                  background:
-                    "linear-gradient(135deg, rgba(59,130,246,0.12) 0%, rgba(29,78,216,0.06) 100%)",
-                }}
-              />
-              <div className="relative px-8 py-9 sm:px-10 sm:py-10">
-                <div className="flex flex-col sm:flex-row sm:items-center gap-5">
-                  <div className="flex-1">
-                    <p className="text-xs font-semibold uppercase tracking-widest text-blue-400 mb-2">
-                      08 — Contact Us
-                    </p>
-                    <h3 className="text-xl font-bold text-white/90 mb-2">
-                      Questions or Concerns?
-                    </h3>
-                    <p className="text-slate-400 text-sm leading-relaxed">
-                      If you have any questions about this disclaimer or any
-                      aspect of our Website or services, reach out , we are here
-                      to help.
-                    </p>
-                  </div>
-                  <a
-                    href="mailto:info@saasverse.in"
-                    target="_blank"
-                    className="shrink-0 inline-flex items-center gap-2.5 rounded-xl bg-blue-600 hover:bg-blue-500 px-6 py-3.5 text-sm font-semibold text-white transition-all duration-200 hover:shadow-lg hover:shadow-blue-500/25 active:scale-[0.97]"
-                  >
-                    <svg
-                      width="16"
-                      height="16"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      strokeWidth="2"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                    >
-                      <rect width="20" height="16" x="2" y="4" rx="2" />
-                      <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
-                    </svg>
-                    info@saasverse.in
-                  </a>
+                  <p className="text-slate-400 text-sm leading-relaxed">
+                    If you have any questions about this disclaimer or any
+                    aspect of our Website or services, reach out, we are here
+                    to help.
+                  </p>
                 </div>
+
+                <a
+                  href="mailto:info@saasverse.in"
+                  className="shrink-0 inline-flex items-center gap-2.5 rounded-xl bg-blue-600 hover:bg-blue-500 px-6 py-3.5 text-sm font-semibold text-white transition-all duration-200 hover:shadow-lg hover:shadow-blue-500/25 active:scale-[0.97]"
+                >
+                  <svg
+                    width="16"
+                    height="16"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  >
+                    <rect width="20" height="16" x="2" y="4" rx="2" />
+                    <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
+                  </svg>
+
+                  info@saasverse.in
+                </a>
+
               </div>
             </div>
           </div>
-
-          {/* ── Footer note ── */}
-          <p className="mt-10 text-center text-xs text-slate-600 leading-relaxed max-w-2xl mx-auto">
-            By using our Website and services, you acknowledge that you have
-            read, understood, and agree to this disclaimer. Your continued use
-            constitutes acceptance of all terms outlined herein.
-          </p>
         </div>
-      </main>
-    </>
+
+        {/* Footer note */}
+        <p className="mt-10 text-center text-xs text-slate-600 leading-relaxed max-w-2xl mx-auto">
+          By using our Website and services, you acknowledge that you have
+          read, understood, and agree to this disclaimer. Your continued use
+          constitutes acceptance of all terms outlined herein.
+        </p>
+
+      </div>
+    </main>
   );
 }
