@@ -9,7 +9,7 @@ import { Metadata } from 'next';
 const blogs = [
     {
     id: 1,
-    slug: 'hubstop-vs-salesforce',
+    slug: 'hubspot-vs-salesforce',
     title: 'HubSpot vs Salesforce : Which CRM Fits Your Business?',
     excerpt:
       'HubSpot suits teams that want one easy system for marketing and sales with little admin work.',
