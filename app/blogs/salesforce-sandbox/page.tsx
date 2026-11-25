@@ -852,7 +852,7 @@ export default function Page() {
                 testing.
               </li>
               <li>
-                <strong>Developer</strong> sandboxes are small on purpose.
+                <strong>Developer </strong> sandboxes are small on purpose.
                 Give each developer or admin their own so they don&apos;t
                 overwrite each other&apos;s work.
               </li>
@@ -1215,6 +1215,35 @@ export default function Page() {
               ))}
             </div>
           </section>
+
+              <section className="py-12 md:py-16">
+            <div className="max-w-6xl mx-auto px-4">
+              <div className="bg-gray-50 border border-gray-200 rounded-2xl p-6 md:p-10 flex flex-col md:flex-row items-center md:items-start gap-6 md:gap-8">
+                <div className="text-center md:text-left">
+                  <span className="text-sm font-semibold uppercase tracking-wider text-blue-700">
+                    About the Author
+                  </span>
+
+                  <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mt-2 mb-3">
+                    Poorvi Tailang
+                  </h2>
+
+                  <p className="text-gray-600 text-base leading-7">
+                    Poorvi is a Salesforce Developer who builds CRM solutions,
+                    enterprise integrations and custom applications. She
+                    works with newer Salesforce technology such as Agentforce
+                    and Einstein AI, and writes about platform updates and
+                    development best practices.
+                  </p>
+
+                  <p className="text-gray-600 text-sm mt-3">
+                    Salesforce Developer, Saasverse
+                  </p>
+                </div>
+              </div>
+            </div>
+          </section>
+
         </article>
       </div>
 
