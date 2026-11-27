@@ -9,6 +9,22 @@ import { Metadata } from 'next';
 const blogs = [
     {
     id: 1,
+    slug: 'salesforce-release-management',
+    title: 'Salesforce Release Management: A Simple Process for Safe Deployments',
+    excerpt:
+      'Salesforce release management is the way you move changes from a sandbox to production in planned, tested batches instead of one edit at a time. ',
+    image: '/images/blogs/salesforce-release-management-process.webp',
+  },
+    {
+    id: 2,
+    slug: 'salesforce-storage-limits',
+    title: 'Salesforce Storage Limits: How Data and File Storage Work',
+    excerpt:
+      'Salesforce storage limits come in two parts. Data storage holds your records and starts at 10 GB per org in most paid editions, plus a per-user amount.',
+    image: '/images/blogs/salesforce-storage-limits.webp',
+  },
+    {
+    id: 3,
     slug: 'salesforce-sandbox',
     title: 'Salesforce Sandbox: Types, Limits and How to Use Them',
     excerpt:
@@ -16,7 +32,7 @@ const blogs = [
     image: '/images/blogs/salesforce-sandbox-types-guide.webp',
   },
     {
-    id: 2,
+    id: 4,
     slug: 'hubspot-vs-salesforce',
     title: 'HubSpot vs Salesforce : Which CRM Fits Your Business?',
     excerpt:
@@ -24,7 +40,7 @@ const blogs = [
     image: '/images/blogs/hubspot-vs-salesforce-crm-comparison.jpg',
   },
     {
-    id: 3,
+    id: 5,
     slug: 'salesforce-case-management-blog',
     title: 'Salesforce Case Management: How It Works and How to Set It Up',
     excerpt:
@@ -32,7 +48,7 @@ const blogs = [
     image: '/images/blogs/salesforce-case-management-guide.jpg',
   },
     {
-    id: 4,
+    id: 6,
     slug: 'salesforce-integration-blog',
     title: 'Salesforce Integration in 2026: Types, Tools, Patterns and Cost',
     excerpt:
@@ -40,7 +56,7 @@ const blogs = [
     image: '/images/blogs/salesforce-integration-guide-2026.webp',
   },
   {
-    id: 5,
+    id: 7,
     slug: 'hire-salesforce-consultant-blog',
     title: 'How to Hire a Salesforce Consultant in India: Cost, Models and What to Check',
     excerpt:
@@ -50,14 +66,14 @@ const blogs = [
  
 
     {
-    id: 6,
+    id: 8,
     slug: 'salesforce-consulting-blog',
     title: 'What Is Salesforce Consulting? A Complete Guide (2026)',
     excerpt:'Salesforce consulting is the professional service of helping businesses plan, implement, customize, integrate, and optimize Salesforce so it actually solves their sales, service, and marketing problems.',
     image: '/images/blogs/Feature.png',
   },
   {
-    id: 7,
+    id: 9,
     slug: 'salesforce-implementation-blog',
     title:
       'Salesforce Implementation: Proven Strategies, Key Steps & Best Practices',
@@ -66,7 +82,7 @@ const blogs = [
     image: '/images/blogs/4.jpg',
   },
   {
-    id: 8,
+    id: 10,
     slug: 'salesforce-sales-cloud-blog',
     title: 'Explore Salesforce Sales Cloud: Features, Benefits & Use Cases',
     excerpt:
@@ -74,7 +90,7 @@ const blogs = [
     image: '/images/blogs/5.jpg',
   },
   {
-    id: 9,
+    id: 11,
     slug: 'wordpress-blog',
     title: 'How to Build a Scalable WordPress Site for Your Business',
     excerpt:
@@ -82,7 +98,7 @@ const blogs = [
     image: '/images/blogs/2.jpg',
   },
   {
-    id: 10,
+    id: 12,
     slug: 'magento-blog',
     title: 'How Expert Magento Developers Can Transform Your Online Store ',
     excerpt:
@@ -90,7 +106,7 @@ const blogs = [
     image: '/images/blogs/3.jpg',
   },
   {
-    id: 11,
+    id: 13,
     slug: 'salesforce-crm-blog',
     title: 'Top Benefits of Using Salesforce CRM for Your Business',
     excerpt:
